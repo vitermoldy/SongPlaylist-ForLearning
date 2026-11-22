@@ -116,3 +116,5 @@ export function createApi(getPool) {
 
   api.get('/health', (_req, res) => res.json({ ok: true, database: Boolean(getPool()) }))
 
+  api.use((_req, res, next) => (getPool() ? next() : res.status(503).json({ error: 'The database is not connected yet.' })))
+
