@@ -10,6 +10,7 @@ import { createAuth } from './auth.js'
  *   PUT /api/state               replace them with the browser's copy (refused with 409 when the
  *                                server already holds a newer one)
  * The state routes need a signed-in account. Each account files its data under one
+ * 12-character code (`devices.id`, `users.device_id`); the browser never chooses it.
  */
 
 const CODE = /^[A-HJ-NP-Z2-9]{12}$/
