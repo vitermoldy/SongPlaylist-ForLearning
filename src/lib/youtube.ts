@@ -118,3 +118,5 @@ declare global {
     YT?: YTNamespace;
     onYouTubeIframeAPIReady?: () => void;
   }
+}
+
