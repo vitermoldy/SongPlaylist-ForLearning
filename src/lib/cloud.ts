@@ -103,6 +103,7 @@ async function enter(path: string, payload: unknown, entry: Entry) {
   try {
     const body = await call<EntryBody>(path, { method: "POST", body: JSON.stringify(payload) });
     setAuth({ status: "signed-in", account: body.user, entry });
+  } catch (error) {
   if (!body.saved) return null;
   const { saved: _, ...state } = body;
   return state as Saved;
