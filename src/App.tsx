@@ -55,3 +55,4 @@ export default function App() {
       const { songs: list, active: at } = live.current;
       if (at < list.length - 1) goTo(at + 1, true);
       else setNotice("Daftar putar selesai.");
+    },
