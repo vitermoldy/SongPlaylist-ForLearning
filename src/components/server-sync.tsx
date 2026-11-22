@@ -103,3 +103,4 @@ export function ServerSync({ code, status, checkedAt, onSwitch }: Props) {
                 type="text"
                 value={entry}
                 autoComplete="off"
+                spellCheck={false}
