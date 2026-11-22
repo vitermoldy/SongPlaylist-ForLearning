@@ -218,3 +218,4 @@ export function PlaylistsDialog({ open, onClose, playlists, songs, linked, saved
             />
           ) : (
             <button
+              type="button"
