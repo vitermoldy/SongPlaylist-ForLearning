@@ -38,3 +38,4 @@ const TABLES = [
   `CREATE TABLE IF NOT EXISTS deck_songs (
     device_id CHAR(12) NOT NULL,
     position SMALLINT UNSIGNED NOT NULL,
+    video_id VARCHAR(16) NOT NULL,
