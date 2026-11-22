@@ -85,3 +85,4 @@ export function accentFromThumb(id: string): Promise<string> {
         resolve(FALLBACK_ACCENT);
       }
     };
+    img.onerror = () => resolve(FALLBACK_ACCENT);
