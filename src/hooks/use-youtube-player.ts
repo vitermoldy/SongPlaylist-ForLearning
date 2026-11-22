@@ -74,3 +74,4 @@ export function useYouTubePlayer(slot: RefObject<HTMLDivElement | null>, options
     (id: string, autoplay: boolean) => {
       const p = player.current;
       if (!p) {
+        pending.current = { id, autoplay };
