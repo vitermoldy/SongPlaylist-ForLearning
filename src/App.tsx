@@ -279,3 +279,4 @@ export default function App() {
         </div>
       </header>
 
+      <main className="min-h-dvh w-full bg-[#E7E8EA] text-[#141414]">
