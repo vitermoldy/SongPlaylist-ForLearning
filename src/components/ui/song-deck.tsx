@@ -321,3 +321,4 @@ function Corner({ song, i, ground, playing, onToggle }: { song: Song; i: number;
         style={{ background: ground }}
       >
         <span className="flex min-w-0 flex-col leading-tight">
+          <span className="max-w-[10.5rem] truncate text-[16px] font-semibold tracking-[-0.015em] sm:max-w-[18rem] sm:text-[19px]">{song.title}</span>
