@@ -215,3 +215,4 @@ export function useYouTubePlayer(slot: RefObject<HTMLDivElement | null>, options
       return;
     }
     if (p.getPlayerState() === ENDED) p.seekTo(0, true);
+    p.playVideo();
