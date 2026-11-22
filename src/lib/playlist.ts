@@ -122,3 +122,4 @@ export function saveState(state: Saved) {
 
 export function forgetSaved() {
   forgotten = true;
+  try {
