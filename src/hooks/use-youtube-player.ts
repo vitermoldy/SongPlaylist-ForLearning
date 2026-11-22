@@ -34,3 +34,4 @@ export function useYouTubePlayer(slot: RefObject<HTMLDivElement | null>, options
   const player = useRef<YTPlayer | null>(null);
   const idRef = useRef(options.initialId);
   const pending = useRef<{ id: string; autoplay: boolean } | null>(null);
+  const intentRef = useRef(false);
