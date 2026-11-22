@@ -60,3 +60,4 @@ export function ServerSync({ code, status, checkedAt, onSwitch }: Props) {
     if (r.ok) setEntry("");
   }
 
+  return (
