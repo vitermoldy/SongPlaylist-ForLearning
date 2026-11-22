@@ -150,3 +150,4 @@ export function createApi(getPool) {
       muted: Boolean(deck.muted),
       linked: deck.linked_playlist,
       songs: deckSongs.map(toSong),
+      playlists: lists.map((l) => ({ id: l.id, name: l.name, savedAt: new Date(l.saved_at).getTime(), songs: byList.get(l.id) ?? [] })),
