@@ -134,3 +134,4 @@ export function AccountGate({ auth }: { auth: AuthState }) {
                 value={password}
                 onChange={(e) => setPassword(e.target.value)}
                 autoComplete={mode === "in" ? "current-password" : "new-password"}
+                maxLength={128}
