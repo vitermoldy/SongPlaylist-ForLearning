@@ -173,3 +173,4 @@ export function AccountGate({ auth }: { auth: AuthState }) {
             >
               {mode === "in" ? "Daftar" : "Masuk"}
             </button>
+          </p>
