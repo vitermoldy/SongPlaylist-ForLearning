@@ -126,3 +126,4 @@ export default function App() {
     if (nextActive !== undefined) setActiveId(nextActive);
   }, []);
 
+  useLayoutEffect(() => {
