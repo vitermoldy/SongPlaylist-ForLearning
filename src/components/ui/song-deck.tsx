@@ -261,3 +261,4 @@ function PlayerCard({ song, i, pos, still, ground, playing, interactive, onToggl
           <div
             className="absolute inset-x-0 top-1/2 aspect-video -translate-y-1/2 transition-opacity duration-300"
             style={{ opacity: showVideo ? 1 : 0, pointerEvents: showVideo ? "auto" : "none" }}
+          >
