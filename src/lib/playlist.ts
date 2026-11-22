@@ -9,3 +9,4 @@ export type Song = {
   artist: string;
   /** The play button's colour, read from the cover the first time the song is shown. */
   accent?: string;
+  /** Set when YouTube refused to play it here. */
