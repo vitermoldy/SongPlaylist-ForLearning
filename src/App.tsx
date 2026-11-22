@@ -159,3 +159,4 @@ export default function App() {
       if (index < 0) return;
       const rest = list.filter((s) => s.id !== id);
       if (id !== list[at]?.id) return changeSongs(rest, "remove");
+      const replacement = rest[Math.min(index, rest.length - 1)] ?? null;
