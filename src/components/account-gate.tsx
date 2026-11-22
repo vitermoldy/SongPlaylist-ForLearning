@@ -35,3 +35,4 @@ export function AccountGate({ auth }: { auth: AuthState }) {
     if (auth.status === "checking") setSkipped(false);
   }, [auth.status]);
 
+  useEffect(() => {
