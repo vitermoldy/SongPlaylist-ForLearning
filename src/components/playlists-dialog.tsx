@@ -133,3 +133,4 @@ export function PlaylistsDialog({ open, onClose, playlists, songs, linked, saved
       </div>
 
       <div className="flex-1 overflow-y-auto px-3 py-3 sm:px-4">
+        {playlists.length === 0 ? (
