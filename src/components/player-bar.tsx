@@ -82,3 +82,4 @@ export function PlayerBar(p: Props) {
   const loading = p.status === "loading";
 
   return (
+    <section aria-label="Pemutar" className="fixed inset-x-0 bottom-0 z-40 px-3 pb-[max(12px,env(safe-area-inset-bottom))] sm:px-6">
