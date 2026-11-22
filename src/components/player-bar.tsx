@@ -8,3 +8,4 @@ import type { PlayerStatus } from "@/hooks/use-youtube-player";
 type Props = {
   song: Song | null;
   index: number;
+  count: number;
