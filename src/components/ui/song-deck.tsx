@@ -18,3 +18,4 @@ import type { Song } from "@/lib/playlist";
 import { thumbUrl } from "@/lib/youtube";
 
 export type SongDeckHandle = {
+  /** Scrolls the page until card `index` lies on top of the deck. */
