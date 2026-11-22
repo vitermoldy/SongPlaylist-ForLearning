@@ -62,3 +62,4 @@ export default function App() {
       const failed = list[at];
       if (!failed) return;
       const reason = describePlayError(code);
+      if (code === 100 || code === 101 || code === 150) {
