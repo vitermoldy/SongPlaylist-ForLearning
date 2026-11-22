@@ -1,4 +1,4 @@
-import { useCallback, useEffect, useLayoutEffect, useRef, useState } from "react";
+import { useCallback, useEffect, useLayoutEffect, useMemo, useRef, useState } from "react";
 import { Library, ListMusic } from "lucide-react";
 import { SongDeck, type SongDeckHandle } from "@/components/ui/song-deck";
 import { AddSongForm, type AddSong } from "@/components/add-song-form";
