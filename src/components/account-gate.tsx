@@ -92,3 +92,4 @@ export function AccountGate({ auth }: { auth: AuthState }) {
       className="m-auto max-h-[calc(100dvh-32px)] w-[min(420px,calc(100%-32px))] overflow-y-auto rounded-[24px] bg-[#F3F4F5] p-5 text-[#111318] backdrop:bg-[#0A0C14]/45 sm:p-6"
     >
       <h2 id={titleId} className="text-[20px] font-semibold tracking-[-0.02em]">
+        {mode === "in" ? "Masuk ke Daftar putar" : "Buat akun Daftar putar"}
