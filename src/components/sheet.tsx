@@ -25,3 +25,4 @@ export function Sheet({ open, onClose, title, children }: { open: boolean; onClo
       className="fixed inset-y-0 right-0 left-auto m-0 h-dvh max-h-dvh w-full max-w-[460px] bg-[#F3F4F5] p-0 text-[#111318] backdrop:bg-[#0A0C14]/45"
     >
       <div className="flex h-full flex-col">
+        <div className="flex items-center justify-between gap-4 px-5 pt-4 pb-2 sm:px-6">
