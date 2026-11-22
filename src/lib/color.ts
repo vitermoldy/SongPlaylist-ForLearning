@@ -41,3 +41,4 @@ export const contrastWithWhite = (rgb: RGB) => 1.05 / (luminance(rgb) + 0.05);
 const toHex = (rgb: RGB) => `#${rgb.map((v) => v.toString(16).padStart(2, "0")).join("")}`.toUpperCase();
 
 /**
+ * The strongest hue in the cover, deepened until a white icon on it reads at 4.5:1 or better.
