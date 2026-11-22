@@ -186,3 +186,4 @@ export function AccountGate({ auth }: { auth: AuthState }) {
           <p className="mt-2 text-[14px] leading-snug text-[#3B3F48]">
             Tanpa akun, daftar putar tetap tersimpan di browser ini. Begitu kamu mendaftar, isinya ikut masuk ke akun.
           </p>
+          <div className="mt-5 flex flex-wrap gap-2">
