@@ -11,3 +11,5 @@ export type Song = {
   accent?: string;
   /** Set when YouTube refused to play it here. */
   problem?: string;
+};
+
