@@ -147,3 +147,4 @@ export const SongDeck = memo(function SongDeck({
         const el = deck.current;
         if (!el || count === 0) return;
         const step = el.offsetHeight / count;
+        const start = el.getBoundingClientRect().top + window.scrollY;
