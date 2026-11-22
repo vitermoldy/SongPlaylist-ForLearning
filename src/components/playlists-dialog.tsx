@@ -86,3 +86,4 @@ export function PlaylistsDialog({ open, onClose, playlists, songs, linked, saved
           <>
             {linked && (
               <div className="mb-4">
+                <p className="text-[14px] leading-snug text-[#3B3F48]">
