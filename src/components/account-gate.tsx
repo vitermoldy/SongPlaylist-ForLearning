@@ -184,3 +184,4 @@ export function AccountGate({ auth }: { auth: AuthState }) {
             <code className="rounded-[6px] bg-white px-1.5 py-0.5 font-mono text-[14px]">npm run server</code>, lalu coba lagi.
           </p>
           <p className="mt-2 text-[14px] leading-snug text-[#3B3F48]">
+            Tanpa akun, daftar putar tetap tersimpan di browser ini. Begitu kamu mendaftar, isinya ikut masuk ke akun.
