@@ -62,3 +62,4 @@ function cleanSong(s) {
 function cleanState(body) {
   if (!body || typeof body !== 'object') return 'The data is empty.'
   const updatedAt = Number(body.updatedAt)
+  if (!Number.isFinite(updatedAt) || updatedAt < 0 || updatedAt > Date.now() + 86_400_000) return 'updatedAt is not a time.'
