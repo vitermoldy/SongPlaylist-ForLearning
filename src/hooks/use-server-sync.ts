@@ -89,6 +89,7 @@ export function useServerSync(snapshot: Saved, apply: (state: Saved) => void) {
   useEffect(() => {
     if (auth.status !== "signed-in") {
       window.clearTimeout(retry.current);
+      setStatus(auth.status === "unavailable" ? "offline" : auth.status === "checking" ? "checking" : "signed-out");
     return () => window.clearTimeout(retry.current);
   }, [code, sync]);
 
