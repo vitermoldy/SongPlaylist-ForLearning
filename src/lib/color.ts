@@ -68,3 +68,4 @@ export function pickAccent(pixels: Uint8ClampedArray): string {
   return toHex(hslToRgb(hsl));
 }
 
+export function accentFromThumb(id: string): Promise<string> {
