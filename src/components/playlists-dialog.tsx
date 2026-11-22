@@ -151,3 +151,4 @@ export function PlaylistsDialog({ open, onClose, playlists, songs, linked, saved
                       <span className="block truncate text-[13px] text-[#3B3F48]">
                         {isOpen ? `${p.songs.length} lagu, sedang dibuka` : `${p.songs.length} lagu, disimpan ${savedDate(p.savedAt)}`}
                       </span>
+                    </span>
