@@ -135,3 +135,4 @@ export function useYouTubePlayer(slot: RefObject<HTMLDivElement | null>, options
               }
             },
             onError: (event) => {
+              const was = intentRef.current;
