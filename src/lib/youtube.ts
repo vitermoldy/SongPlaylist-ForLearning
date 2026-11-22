@@ -65,3 +65,4 @@ export class InfoError extends Error {
  */
 export async function fetchInfo(id: string): Promise<VideoInfo> {
   const res = await fetch(`https://www.youtube.com/oembed?format=json&url=${encodeURIComponent(watchUrl(id))}`);
+  if (!res.ok) throw new InfoError(res.status);
