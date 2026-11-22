@@ -17,3 +17,4 @@ type Props = {
   muted: boolean;
   canFullscreen: boolean;
   note: { text: string; action?: { label: string; run: () => void } } | null;
+  onToggle: () => void;
