@@ -130,3 +130,4 @@ export default function App() {
     const a = anchor.current;
     anchor.current = null;
     if (a === "deck") {
+      if (deck.current) deck.current.scrollToSong(active, false);
