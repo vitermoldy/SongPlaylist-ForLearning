@@ -26,6 +26,7 @@ export function ServerSync({ auth, status, checkedAt, onFlush }: Props) {
     "signed-out": "Belum masuk. Daftar putar dan playlist hanya tersimpan di browser ini.",
     checking: "Menghubungi server lokal…",
     saving: "Menyimpan ke akunmu di server lokal…",
+    saved: checkedAt ? `Tersimpan juga di akunmu di server lokal (MySQL), dicek pukul ${clock(checkedAt)}.` : "Tersimpan juga di akunmu di server lokal (MySQL).",
     offline: "Server lokal tidak menyala. Semuanya tetap tersimpan di browser ini dan dikirim begitu server jalan (npm run server).",
     nodb: "Server lokal menyala, tapi MySQL belum terhubung. Periksa isi .env dan pastikan MySQL berjalan.",
     error: "Server lokal menolak data ini. Perubahan tetap tersimpan di browser ini.",
