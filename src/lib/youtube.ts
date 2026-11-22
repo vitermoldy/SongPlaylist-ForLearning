@@ -79,3 +79,4 @@ export function describePlayError(code: number) {
   return "YouTube tidak bisa memutarnya";
 }
 
+export type YTPlayer = {
