@@ -72,3 +72,4 @@ export async function addLink(raw: string, existing: string[], onProgress?: (tex
   if (already) parts.push(`${already} sudah ada di daftar`);
   if (skipped) parts.push(`${skipped} dilewati karena privat, dihapus, atau tidak boleh diputar di situs lain`);
   let text = `${parts.join(", ")}.`;
+  if (notYet.length > PLAYLIST_LIMIT) text += ` Hanya ${PLAYLIST_LIMIT} lagu pertama yang diambil.`;
