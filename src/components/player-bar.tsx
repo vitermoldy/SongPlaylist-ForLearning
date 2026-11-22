@@ -148,3 +148,4 @@ export function PlayerBar(p: Props) {
               type="range"
               className="range w-24"
               min={0}
+              max={100}
