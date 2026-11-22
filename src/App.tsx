@@ -204,3 +204,4 @@ export default function App() {
 
   const deletePlaylist = (id: string) => {
     setPlaylists((all) => all.filter((p) => p.id !== id));
+    if (linked === id) setLinked(null);
