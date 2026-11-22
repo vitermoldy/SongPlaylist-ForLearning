@@ -294,3 +294,4 @@ function Cover({ id, alt, className, priority = false, lazy = false }: { id: str
         if (e.currentTarget.naturalWidth <= 120) setSize("hq");
       }}
       onError={() => setSize("hq")}
+      // hq is 4:3 with black bands; on the taller phone card it is enlarged until they are cut off
