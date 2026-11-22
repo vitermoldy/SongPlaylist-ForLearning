@@ -172,3 +172,4 @@ export async function expandPlaylist(list: string): Promise<string[]> {
       window.clearInterval(poll);
       window.clearTimeout(timer);
       try {
+        player.destroy();
