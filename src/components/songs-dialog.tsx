@@ -37,3 +37,5 @@ export function SongsDialog({ open, onClose, songs, active, playing, savedAs, on
     >
       <div className="border-b border-[#111318]/10 px-5 pb-3 sm:px-6">
         <AddSongForm onAdd={onAdd} />
+      </div>
+
