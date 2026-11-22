@@ -90,6 +90,7 @@ src/lib/cloud.ts                    recovery code and the two API calls
 server/index.js                     Express: /api, dist/ after a build, waits for MySQL
 server/app.js                       the API and its checks
 server/db.js                        creates the database and the six tables
+server/config.js                    reads .env
 src/lib/youtube.ts                  link parsing, oEmbed, IFrame API loader, playlist reading
 src/lib/add-link.ts                 a pasted link into songs, with a sentence saying what happened
 src/lib/playlist.ts                 Song and SavedPlaylist types, sample songs, localStorage
