@@ -316,3 +316,4 @@ export default function App() {
                   Buka playlist tersimpan
                 </button>
               )}
+              <button type="button" onClick={restoreSeeds} className={headerButton}>
