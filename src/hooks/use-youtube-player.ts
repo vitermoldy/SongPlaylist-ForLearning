@@ -237,3 +237,4 @@ export function useYouTubePlayer(slot: RefObject<HTMLDivElement | null>, options
     [setTime],
   );
 
+  const fullscreen = useCallback(() => {
