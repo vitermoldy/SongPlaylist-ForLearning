@@ -94,3 +94,4 @@ export function PlaylistsDialog({ open, onClose, playlists, songs, linked, saved
                   onClick={() => {
                     onUpdate(linked.id);
                     setDone(`${linked.name} diperbarui.`);
+                  }}
