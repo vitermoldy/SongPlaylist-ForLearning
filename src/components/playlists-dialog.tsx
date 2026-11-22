@@ -23,6 +23,7 @@ type Props = {
   onDelete: (id: string) => void;
   onClearAll: () => void;
   /** The account and the local server's copy of the lists. */
+  server: { auth: AuthState; status: SyncStatus; checkedAt: number | null; flush: () => Promise<boolean> };
 };
 
 /** "22 Nov", with the year only when it is not this year. */
