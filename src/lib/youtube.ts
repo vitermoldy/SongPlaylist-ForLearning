@@ -46,3 +46,4 @@ export function parseYouTube(raw: string): YouTubeLink | null {
 export const watchUrl = (id: string) => `https://www.youtube.com/watch?v=${id}`;
 
 /** maxres is 1280x720 but missing on some videos; hq (480x360) always exists, letterboxed to 4:3. */
+export const thumbUrl = (id: string, size: "maxres" | "hq" | "mq") =>
