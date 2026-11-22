@@ -83,3 +83,4 @@ export default function App() {
     (index: number, autoplay: boolean) => {
       const target = live.current.songs[index];
       if (!target) return;
+      setActiveId(target.id);
