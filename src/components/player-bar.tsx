@@ -151,3 +151,4 @@ export function PlayerBar(p: Props) {
               max={100}
               step={5}
               value={p.muted ? 0 : p.volume}
+              onChange={(e) => p.onVolume(Number(e.target.value))}
