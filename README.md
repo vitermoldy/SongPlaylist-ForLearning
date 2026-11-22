@@ -72,3 +72,4 @@ added without rewriting its imports.
 - Some videos refuse to play outside YouTube (the owner turned embedding off). They are caught when
   added, or skipped with a message when YouTube refuses them at play time.
 - YouTube's own mixes (links with `list=RD...`), Watch later and Liked videos cannot be read as
+  playlists outside YouTube.
