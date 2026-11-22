@@ -177,3 +177,4 @@ export function PlaylistsDialog({ open, onClose, playlists, songs, linked, saved
                       text={`Daftar putar sekarang (${songs.length} lagu) belum disimpan dan akan diganti dengan ${p.name}.`}
                       confirmLabel="Ganti dan putar"
                       onConfirm={() => {
+                        setAsk(null);
