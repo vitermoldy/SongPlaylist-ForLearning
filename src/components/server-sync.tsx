@@ -42,3 +42,5 @@ export function ServerSync({ code, status, checkedAt, onSwitch }: Props) {
     } catch {
       setResult({ ok: false, text: "Browser tidak mengizinkan menyalin. Pilih kodenya lalu salin manual." });
     }
+  }
+
