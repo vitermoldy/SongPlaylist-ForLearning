@@ -138,3 +138,4 @@ export default function App() {
     }
   }, [songs]); // only a change of the list moves the page
 
+  const add: AddSong = useCallback(
