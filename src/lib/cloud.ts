@@ -81,6 +81,7 @@ async function call<T>(path: string, init?: RequestInit): Promise<T> {
   if (!body) throw new ServerError(res.status, "offline", "Server lokal tidak menjawab.");
   if (res.status === 503) throw new ServerError(503, "nodb", body.error ?? "MySQL belum terhubung.");
   // the session ran out or was signed out elsewhere: ask for the password again
+  if (res.status === 401 && !path.startsWith("/auth/") && auth.status === "signed-in") setAuth({ status: "signed-out", account: null, entry: null });
   throw new ServerError(res.status, "http", body.error ?? `HTTP ${res.status}`, body.updatedAt);
 }
 
