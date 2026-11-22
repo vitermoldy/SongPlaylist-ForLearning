@@ -55,3 +55,4 @@ function IconButton({ label, onClick, disabled, children }: { label: string; onC
 
 function Progress({ time, duration, onSeek, className }: { time: number; duration: number; onSeek: (s: number) => void; className?: string }) {
   const fill = duration ? Math.min(100, (time / duration) * 100) : 0;
+  return (
