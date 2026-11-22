@@ -111,3 +111,4 @@ export default function App() {
     else goTo(active - 1, intentRef.current);
   };
   const next = () => {
+    if (active < songs.length - 1) goTo(active + 1, intentRef.current);
