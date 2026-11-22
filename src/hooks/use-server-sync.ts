@@ -69,3 +69,4 @@ export function useServerSync(snapshot: Saved, apply: (state: Saved) => void) {
       retry.current = window.setTimeout(() => void run(), 10_000);
     } finally {
       busy.current = false;
+      if (again.current) {
