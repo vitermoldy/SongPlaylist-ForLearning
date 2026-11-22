@@ -249,3 +249,5 @@ export default function App() {
         ? { text: "Browser menahan pemutaran otomatis. Ketuk videonya sekali untuk mulai." }
         : notice
           ? { text: notice }
+          : null;
+
