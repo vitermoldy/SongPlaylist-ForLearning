@@ -62,6 +62,7 @@ Database `songplaylist_forlearning` (created on start):
 | Table | Holds |
 | --- | --- |
 | `devices` | one row per recovery code |
+| `songs` | every video any list has held: title, artist, cover colour (shared) |
 
 ## Structure
 
