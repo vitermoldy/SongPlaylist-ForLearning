@@ -130,3 +130,4 @@ export function loadYouTubeApi(): Promise<YTNamespace> {
     const previous = window.onYouTubeIframeAPIReady;
     window.onYouTubeIframeAPIReady = () => {
       previous?.();
+      if (window.YT) resolve(window.YT);
