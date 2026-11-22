@@ -2,3 +2,4 @@
 
 import type { Saved } from "@/lib/playlist";
 
+const CODE_KEY = "songplaylist-forlearning:code";
