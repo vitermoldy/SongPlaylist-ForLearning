@@ -36,3 +36,4 @@ try {
      WHERE u.id IS NULL ORDER BY COALESCE(k.client_updated, 0) DESC, d.last_seen DESC`,
   )
   const device = free[0]?.id ?? Array.from({ length: 12 }, () => ALPHABET[randomInt(ALPHABET.length)]).join('')
+  let moved = 0
