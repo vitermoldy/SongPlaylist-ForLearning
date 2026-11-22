@@ -309,3 +309,4 @@ export default function App() {
           </p>
           <AddSongForm onAdd={add} className="mt-8 max-w-[680px]" />
           {empty && (
+            <div className="mt-4 flex flex-wrap gap-2">
