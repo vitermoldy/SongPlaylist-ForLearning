@@ -153,3 +153,4 @@ export const SongDeck = memo(function SongDeck({
         const instant = !smoothly || reduce;
         window.scrollTo({ top: Math.round(start + at * step), behavior: instant ? "instant" : "smooth" });
         if (instant) {
+          measure();
