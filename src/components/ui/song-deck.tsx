@@ -190,3 +190,4 @@ export const SongDeck = memo(function SongDeck({
             <PlayerCard
               song={current}
               i={active}
+              pos={smooth}
