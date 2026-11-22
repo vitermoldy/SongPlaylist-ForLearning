@@ -23,3 +23,5 @@ export const SEED_SONGS: Song[] = [
   { id: "hLQl3WQQoQ0", title: "Someone Like You", artist: "Adele" },
 ];
 
+const TAG = /\s*[([][^)\]]*\b(official|video|audio|lyrics?|lirik|mv|m\/v|visuali[sz]er|remaster(ed)?|4k|hd)\b[^)\]]*[)\]]/gi;
+
