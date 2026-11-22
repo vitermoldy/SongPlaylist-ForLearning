@@ -90,3 +90,4 @@ export function useYouTubePlayer(slot: RefObject<HTMLDivElement | null>, options
 
   useEffect(() => {
     if (!enabled || !armed) return;
+    const host = slot.current;
