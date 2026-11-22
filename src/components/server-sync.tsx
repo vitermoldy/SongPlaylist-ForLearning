@@ -19,12 +19,7 @@ const joined = (iso: string) => new Date(iso).toLocaleDateString("id-ID", { day:
 /** Where the lists are kept besides this browser, and the account they belong to. */
 export function ServerSync({ auth, status, checkedAt, onFlush }: Props) {
   const titleId = useId();
-  const inputId = useId();
-  const [copied, setCopied] = useState(false);
-  const [entry, setEntry] = useState("");
-  const [asking, setAsking] = useState(false);
-  const [busy, setBusy] = useState(false);
-  const [result, setResult] = useState<SwitchResult | null>(null);
+  const [leaving, setLeaving] = useState(false);
 
   const line: Record<SyncStatus, string> = {
     checking: "Menghubungi server lokal…",
