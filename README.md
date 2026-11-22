@@ -65,6 +65,7 @@ Database `songplaylist_forlearning` (created on start):
 | `songs` | every video any list has held: title, artist, cover colour (shared) |
 | `decks` | per device: current song, volume, mute, the playlist the deck was opened from, the browser's change time |
 | `deck_songs` | the songs on a device's deck, in order |
+| `playlists` | a device's saved playlists |
 
 ## Structure
 
