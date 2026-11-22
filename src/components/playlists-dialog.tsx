@@ -102,3 +102,4 @@ export function PlaylistsDialog({ open, onClose, playlists, songs, linked, saved
               </div>
             )}
             <form onSubmit={save} noValidate>
+              <label htmlFor={nameId} className="mb-2 block text-[15px] font-semibold">
