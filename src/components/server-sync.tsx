@@ -98,3 +98,4 @@ export function ServerSync({ code, status, checkedAt, onSwitch }: Props) {
               Kode dari browser lain
             </label>
             <div className="flex gap-2">
+              <input
