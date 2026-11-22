@@ -118,3 +118,4 @@ export const SongDeck = memo(function SongDeck({
   }, [measure, pos, smooth]);
 
   useEffect(() => {
+    let timer = 0;
