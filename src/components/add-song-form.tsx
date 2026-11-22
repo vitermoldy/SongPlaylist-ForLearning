@@ -43,3 +43,4 @@ export function AddSongForm({ onAdd, className, autoFocus = false }: { onAdd: Ad
           aria-invalid={status.kind === "error"}
           className="h-12 min-w-0 flex-1 rounded-[14px] border border-[#111318]/20 bg-white px-4 text-[16px] text-[#111318] placeholder:text-[#6B707A] hover:border-[#111318]/35 aria-[invalid=true]:border-[#8F1A1A]"
         />
+        <button
