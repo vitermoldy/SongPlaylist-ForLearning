@@ -35,3 +35,4 @@ const luminance = ([r, g, b]: RGB) => {
   return 0.2126 * c[0] + 0.7152 * c[1] + 0.0722 * c[2];
 };
 
+/** Contrast of white against a colour, as WCAG computes it. */
