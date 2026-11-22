@@ -335,3 +335,5 @@ export default function App() {
           Aakash Mehra
         </a>
         . Lagu diputar lewat pemutar YouTube.
+      </footer>
+
