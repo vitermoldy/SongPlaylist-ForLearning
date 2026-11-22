@@ -13,3 +13,4 @@ export function describeInfoError(error: unknown) {
     if (error.status === 404 || error.status === 400) return "Video ini privat, sudah dihapus, atau ID-nya salah.";
     return "YouTube tidak memberi info video ini. Coba lagi sebentar lagi.";
   }
+  return "Tidak bisa menghubungi YouTube. Periksa koneksi internet, lalu coba lagi.";
