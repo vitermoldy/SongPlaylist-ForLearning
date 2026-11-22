@@ -164,3 +164,4 @@ export function PlaylistsDialog({ open, onClose, playlists, songs, linked, saved
                     </button>
                     <button
                       type="button"
+                      onClick={() => setAsk({ kind: "delete", id: p.id })}
