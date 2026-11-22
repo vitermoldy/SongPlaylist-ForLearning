@@ -38,3 +38,4 @@ export default function App() {
     : null;
 
   const deck = useRef<SongDeckHandle>(null);
+  const slot = useRef<HTMLDivElement>(null);
