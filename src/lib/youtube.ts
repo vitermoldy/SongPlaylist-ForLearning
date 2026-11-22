@@ -103,3 +103,4 @@ type YTPlayerOptions = {
   width?: number | string;
   height?: number | string;
   videoId?: string;
+  playerVars?: Record<string, string | number>;
