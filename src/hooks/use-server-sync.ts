@@ -28,7 +28,7 @@ export function useServerSync(snapshot: Saved, apply: (state: Saved) => void) {
   useLayoutEffect(() => {
     snap.current = snapshot;
     applyRef.current = apply;
-    codeRef.current = code;
+    signedIn.current = auth.status === "signed-in";
   });
 
   const busy = useRef(false);
