@@ -65,3 +65,4 @@ try {
       ? `${config.name}: akun ${username} dibuat dan memegang data yang sudah ada: ${deck.n} lagu di daftar putar, ${lists.n} playlist${moved ? ` (${moved} playlist dari browser lain ikut digabung)` : ''}.`
       : `${config.name}: akun ${username} dibuat. Belum ada data sebelumnya.`,
   )
+} catch (err) {
