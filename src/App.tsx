@@ -296,3 +296,4 @@ export default function App() {
 
         <section
           ref={addSection}
+          aria-labelledby="add-title"
