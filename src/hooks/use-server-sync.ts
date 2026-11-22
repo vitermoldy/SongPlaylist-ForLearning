@@ -117,3 +117,4 @@ export function useServerSync(snapshot: Saved, apply: (state: Saved) => void) {
       applyRef.current(remote);
       saveCode(next);
       codeRef.current = next;
+      setCode(next);
