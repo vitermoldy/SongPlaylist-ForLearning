@@ -67,3 +67,4 @@ export async function fetchInfo(id: string): Promise<VideoInfo> {
   const res = await fetch(`https://www.youtube.com/oembed?format=json&url=${encodeURIComponent(watchUrl(id))}`);
   if (!res.ok) throw new InfoError(res.status);
   const data = (await res.json()) as { title?: string; author_name?: string };
+  return { title: data.title ?? "", author: data.author_name ?? "" };
