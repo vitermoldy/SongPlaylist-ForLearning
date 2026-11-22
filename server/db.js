@@ -59,3 +59,4 @@ const TABLES = [
     video_id VARCHAR(16) NOT NULL,
     PRIMARY KEY (device_id, playlist_id, position),
     CONSTRAINT playlist_songs_playlist FOREIGN KEY (device_id, playlist_id) REFERENCES playlists(device_id, id) ON DELETE CASCADE,
+    CONSTRAINT playlist_songs_song FOREIGN KEY (video_id) REFERENCES songs(video_id)
