@@ -27,3 +27,4 @@ export function loadCode(): string {
     return code;
   } catch {
     return newCode();
+  }
