@@ -16,3 +16,4 @@ const num = (key, fallback) => {
 export const config = {
   name: 'SongPlaylist-ForLearning',
   port: num('PORT', 8811),
+  db: {
