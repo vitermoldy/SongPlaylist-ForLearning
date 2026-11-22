@@ -76,3 +76,5 @@ export default function App() {
       }
     },
   });
+  const { load, toggle, seek, intentRef, timeRef } = player;
+
