@@ -135,3 +135,4 @@ export function ServerSync({ code, status, checkedAt, onSwitch }: Props) {
         </div>
       </details>
     </section>
+  );
