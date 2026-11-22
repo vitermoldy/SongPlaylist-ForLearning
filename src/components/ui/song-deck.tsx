@@ -91,3 +91,4 @@ export const SongDeck = memo(function SongDeck({
   className,
   ref,
 }: SongDeckProps) {
+  const deck = useRef<HTMLElement | null>(null);
