@@ -58,3 +58,4 @@ export function PlaylistsDialog({ open, onClose, playlists, songs, linked, saved
   useEffect(() => {
     if (!open) return;
     setName(`Playlist ${count.current + 1}`);
+    setAsk(null);
