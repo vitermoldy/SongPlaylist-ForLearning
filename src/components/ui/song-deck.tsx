@@ -219,3 +219,4 @@ type CardProps = {
 };
 
 function SongCard({ song, i, pos, still, ground, playing, interactive, onToggle }: CardProps) {
+  const m = useCardMotion(i, pos);
