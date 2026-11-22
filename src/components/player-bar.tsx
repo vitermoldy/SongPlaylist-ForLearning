@@ -150,3 +150,4 @@ export function PlayerBar(p: Props) {
               min={0}
               max={100}
               step={5}
+              value={p.muted ? 0 : p.volume}
