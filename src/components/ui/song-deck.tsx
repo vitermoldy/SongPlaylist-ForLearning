@@ -145,3 +145,4 @@ export const SongDeck = memo(function SongDeck({
     () => ({
       scrollToSong(index, smoothly = true) {
         const el = deck.current;
+        if (!el || count === 0) return;
