@@ -164,3 +164,5 @@ export default function App() {
       changeSongs(rest, "remove", replacement?.id ?? null);
     },
     [changeSongs, load, intentRef],
+  );
+
