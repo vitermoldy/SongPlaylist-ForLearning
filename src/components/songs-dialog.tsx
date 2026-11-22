@@ -29,3 +29,4 @@ export function SongsDialog({ open, onClose, songs, active, playing, savedAs, on
   return (
     <Sheet
       open={open}
+      onClose={() => {
