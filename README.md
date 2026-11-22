@@ -26,3 +26,4 @@ Player API. No server and no API key: everything is kept in the browser's localS
   the current list was never saved), update the one that was opened, save as new, delete one, or
   delete all. Emptying the list never deletes saved playlists, and deleting playlists never empties
   the list.
+- Each card's play button takes its colour from the song's cover, deepened until the white icon
