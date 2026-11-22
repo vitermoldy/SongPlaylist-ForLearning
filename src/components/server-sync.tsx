@@ -22,3 +22,5 @@ export function ServerSync({ code, status, checkedAt, onSwitch }: Props) {
   const [entry, setEntry] = useState("");
   const [asking, setAsking] = useState(false);
   const [busy, setBusy] = useState(false);
+  const [result, setResult] = useState<SwitchResult | null>(null);
+
