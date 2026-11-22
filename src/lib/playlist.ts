@@ -35,3 +35,5 @@ export function splitTitle(raw: string, channel: string) {
   if (pair) return { artist: pair[1].trim(), title: pair[2].trim() };
   const artist = channel.replace(/\s*-\s*Topic$/i, "").replace(/VEVO$/i, "").trim();
   return { title: cleaned || raw, artist: artist || channel };
+}
+
