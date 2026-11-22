@@ -75,3 +75,4 @@ export function ServerSync({ code, status, checkedAt, onSwitch }: Props) {
           <ChevronDown aria-hidden className="size-4 transition-transform duration-200 group-open:rotate-180 motion-reduce:transition-none" />
           Kode pemulihan dan pindah browser
         </summary>
+        <div className="space-y-4 pb-1">
