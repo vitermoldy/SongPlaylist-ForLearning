@@ -245,3 +245,4 @@ function SongCard({ song, i, pos, still, ground, playing, interactive, onToggle 
 function PlayerCard({ song, i, pos, still, ground, playing, interactive, onToggle, showVideo, slot }: CardProps & {
   showVideo: boolean;
   slot: RefObject<HTMLDivElement | null>;
+}) {
