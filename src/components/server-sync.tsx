@@ -3,3 +3,5 @@ import { ChevronDown, Database } from "lucide-react";
 import { cn } from "@/lib/utils";
 import { Confirm } from "@/components/sheet";
 import { formatCode } from "@/lib/cloud";
+import type { SwitchResult, SyncStatus } from "@/hooks/use-server-sync";
+
