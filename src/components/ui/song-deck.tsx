@@ -210,3 +210,4 @@ type CardProps = {
   song: Song;
   i: number;
   pos: MotionValue<number>;
+  still: boolean;
