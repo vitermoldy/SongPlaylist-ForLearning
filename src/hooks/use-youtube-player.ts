@@ -3,3 +3,5 @@
 // playback going from one song to the next even in a background tab.
 
 import { useCallback, useEffect, useLayoutEffect, useRef, useState, type RefObject } from "react";
+import { YOUTUBE_HOST, loadYouTubeApi, type YTPlayer } from "@/lib/youtube";
+
