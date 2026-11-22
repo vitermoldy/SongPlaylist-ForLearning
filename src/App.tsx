@@ -386,3 +386,4 @@ export default function App() {
       <PlaylistsDialog
         open={playlistsOpen}
         onClose={() => setPlaylistsOpen(false)}
+        playlists={playlists}
