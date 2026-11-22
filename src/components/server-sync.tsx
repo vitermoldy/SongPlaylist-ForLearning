@@ -3,6 +3,7 @@ import { Database } from "lucide-react";
 import { cn } from "@/lib/utils";
 import { checkAccount, signOut, type AuthState } from "@/lib/cloud";
 import { forgetSaved } from "@/lib/playlist";
+import type { SyncStatus } from "@/hooks/use-server-sync";
 
 type Props = {
   code: string;
