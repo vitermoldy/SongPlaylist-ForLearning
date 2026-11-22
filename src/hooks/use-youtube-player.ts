@@ -110,3 +110,4 @@ export function useYouTubePlayer(slot: RefObject<HTMLDivElement | null>, options
             onReady: (event) => {
               if (cancelled) return;
               player.current = event.target;
+              setStatus("ready");
