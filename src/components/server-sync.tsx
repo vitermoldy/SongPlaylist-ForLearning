@@ -74,6 +74,7 @@ export function ServerSync({ auth, status, checkedAt, onFlush }: Props) {
           <p className="w-full text-[13px] leading-snug text-[#3B3F48]">Keluar menghapus daftar putar dari browser ini. Isinya tetap tersimpan di akunmu.</p>
         </div>
       ) : (
+        <div id="account-out-of" className="mt-2">
         </div>
       </details>
     </section>
