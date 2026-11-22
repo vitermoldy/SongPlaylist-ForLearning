@@ -239,3 +239,4 @@ export default function App() {
     return () => window.clearTimeout(timer);
   }, [notice]);
 
+  const note =
