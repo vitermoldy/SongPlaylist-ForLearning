@@ -179,3 +179,4 @@ export function AccountGate({ auth }: { auth: AuthState }) {
 
       {offline && (
         <div id="gate-offline">
+          <p className="mt-3 text-[15px] leading-snug">
