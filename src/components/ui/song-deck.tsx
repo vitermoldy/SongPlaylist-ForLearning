@@ -99,3 +99,4 @@ export const SongDeck = memo(function SongDeck({
   const smooth = useSpring(pos, { stiffness: 380, damping: 48, mass: 0.35 });
   const [top, setTop] = useState(0);
   const settle = useRef(onSettle);
+  useLayoutEffect(() => {
