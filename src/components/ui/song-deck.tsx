@@ -218,3 +218,4 @@ type CardProps = {
   onToggle: (index: number) => void;
 };
 
+function SongCard({ song, i, pos, still, ground, playing, interactive, onToggle }: CardProps) {
