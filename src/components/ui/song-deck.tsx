@@ -200,3 +200,4 @@ export const SongDeck = memo(function SongDeck({
               onToggle={onToggle}
             />
           )}
+        </div>
