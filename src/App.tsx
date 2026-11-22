@@ -227,3 +227,4 @@ export default function App() {
   const asked = useRef(new Set<string>());
   useEffect(() => {
     for (const s of songs) {
+      if (s.accent || asked.current.has(s.id)) continue;
