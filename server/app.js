@@ -123,10 +123,7 @@ export function createApi(getPool) {
 
   api.use((_req, res, next) => (getPool() ? next() : res.status(503).json({ error: 'The database is not connected yet.' })))
 
-  api.param('code', (req, res, next, code) => {
-    const clean = String(code).toUpperCase().replace(/[^A-Z0-9]/g, '')
-    if (!CODE.test(clean)) return res.status(400).json({ error: 'A recovery code has 12 letters and digits.' })
-    req.code = clean
+  const auth = createAuth({ getPool, cookie: 'songplaylist_forlearning_session', lang: 'id', deviceCode: CODE, newDevice: newCode })
     next()
   })
 
