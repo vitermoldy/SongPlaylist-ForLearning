@@ -373,3 +373,4 @@ export default function App() {
         onPick={(index) => {
           setListOpen(false);
           goTo(index, true);
+        }}
