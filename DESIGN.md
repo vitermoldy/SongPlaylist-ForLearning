@@ -18,3 +18,5 @@ direction; everything added around it follows it.
 Light only: the covers and videos carry the colour, and the deck's corner cut-outs depend on the
 light ground.
 
+## Type
+
