@@ -52,3 +52,4 @@ export default function App() {
     volume,
     muted,
     onEnded: () => {
+      const { songs: list, active: at } = live.current;
