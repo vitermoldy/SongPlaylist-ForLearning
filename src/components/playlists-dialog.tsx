@@ -123,3 +123,4 @@ export function PlaylistsDialog({ open, onClose, playlists, songs, linked, saved
                       ? "border border-[#111318]/15 bg-white text-[#111318] hover:border-[#111318]/30 active:bg-[#F3F4F5]"
                       : "bg-[#111318] text-white hover:bg-[#2A2E37] active:bg-black"
                   }`}
+                >
