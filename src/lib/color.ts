@@ -7,3 +7,4 @@ export const FALLBACK_ACCENT = "#2B2F38";
 type RGB = [number, number, number];
 
 function rgbToHsl([r, g, b]: RGB): RGB {
+  const rn = r / 255, gn = g / 255, bn = b / 255;
