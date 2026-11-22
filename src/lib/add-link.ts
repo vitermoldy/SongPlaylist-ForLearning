@@ -61,3 +61,4 @@ export async function addLink(raw: string, existing: string[], onProgress?: (tex
   const found = await mapLimit(fresh, 6, async (id) => {
     try {
       return toSong(id, await fetchInfo(id));
+    } catch {
