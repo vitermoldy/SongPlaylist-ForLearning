@@ -316,3 +316,4 @@ function Corner({ song, i, ground, playing, onToggle }: { song: Song; i: number;
       <button
         type="button"
         onClick={() => onToggle(i)}
+        aria-label={playing ? `Jeda ${song.title}` : `Putar ${song.title} oleh ${song.artist}`}
