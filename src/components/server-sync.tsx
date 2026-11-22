@@ -49,3 +49,5 @@ export function ServerSync({ code, status, checkedAt, onSwitch }: Props) {
     setResult(null);
     if (!entry.trim()) return setResult({ ok: false, text: "Ketik kode dari browser lain dulu." });
     setAsking(true);
+  }
+
