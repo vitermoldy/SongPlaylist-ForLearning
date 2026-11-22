@@ -109,3 +109,4 @@ export function SongsDialog({ open, onClose, songs, active, playing, savedAs, on
               onCancel={() => setConfirmClear(false)}
             />
           ) : (
+            <div className="flex flex-wrap gap-2">
