@@ -125,3 +125,4 @@ export function createApi(getPool) {
     next()
   })
 
+  api.get('/state/:code', async (req, res) => {
