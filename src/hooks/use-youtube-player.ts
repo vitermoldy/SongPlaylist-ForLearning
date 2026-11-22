@@ -220,3 +220,4 @@ export function useYouTubePlayer(slot: RefObject<HTMLDivElement | null>, options
   }, [setIntent, watchStart]);
 
   const pause = useCallback(() => {
+    starting.current = false;
