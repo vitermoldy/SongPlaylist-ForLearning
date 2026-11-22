@@ -27,3 +27,4 @@ function sameOriginWrites(req, res, next) {
 }
 
 /** At most `limit` writes per minute per address, enough for a busy tab and not for a script. */
+function rateLimit(limit) {
