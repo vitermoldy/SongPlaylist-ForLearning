@@ -70,3 +70,4 @@ function cleanState(body) {
   const seen = new Set()
   for (const raw of body.songs) {
     const s = cleanSong(raw)
+    if (s && !seen.has(s.id)) {
