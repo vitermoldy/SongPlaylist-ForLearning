@@ -61,3 +61,4 @@ export function useYouTubePlayer(slot: RefObject<HTMLDivElement | null>, options
   }, []);
 
   // Some browsers (iOS Safari above all) refuse to start sound that a page asks for; the video
+  // then waits for a tap of its own, so it is shown and the bar says so.
