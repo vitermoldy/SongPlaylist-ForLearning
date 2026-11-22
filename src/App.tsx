@@ -154,3 +154,4 @@ export default function App() {
 
   const remove = useCallback(
     (id: string) => {
+      const { songs: list, active: at } = live.current;
