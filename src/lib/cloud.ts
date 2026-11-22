@@ -119,6 +119,7 @@ export const signUp = (username: string, password: string) => enter("/auth/regis
 export async function signOut() {
   await call("/auth/logout", { method: "POST", body: "{}" }).catch(() => undefined);
   try {
+    localStorage.removeItem(CODE_KEY);
   if (!body.saved) return null;
   const { saved: _, ...state } = body;
   return state as Saved;
