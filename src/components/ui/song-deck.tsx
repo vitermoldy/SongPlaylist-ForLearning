@@ -123,3 +123,4 @@ export const SongDeck = memo(function SongDeck({
       measure();
       window.clearTimeout(timer);
       timer = window.setTimeout(() => {
+        const raw = measure();
