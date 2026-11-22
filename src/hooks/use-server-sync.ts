@@ -14,3 +14,4 @@ export type SwitchResult = { ok: boolean; text: string };
  * the server's copy is compared with this one: a newer copy there is taken, an older one replaced.
  * With the server off the page goes on alone and tries again every 10 seconds.
  */
+export function useServerSync(snapshot: Saved, apply: (state: Saved) => void) {
