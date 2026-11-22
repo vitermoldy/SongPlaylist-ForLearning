@@ -228,3 +228,4 @@ export default function App() {
   useEffect(() => {
     for (const s of songs) {
       if (s.accent || asked.current.has(s.id)) continue;
+      asked.current.add(s.id);
