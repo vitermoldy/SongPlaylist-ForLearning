@@ -135,3 +135,4 @@ export function AccountGate({ auth }: { auth: AuthState }) {
                 onChange={(e) => setPassword(e.target.value)}
                 autoComplete={mode === "in" ? "current-password" : "new-password"}
                 maxLength={128}
+                aria-invalid={invalid === "pass" ? true : undefined}
