@@ -33,3 +33,4 @@ export type SongDeckProps = {
   playerSlot: RefObject<HTMLDivElement | null>;
   /** The scroll came to rest with card `index` on top. */
   onSettle: (index: number) => void;
+  /** The play button in a card's corner. */
