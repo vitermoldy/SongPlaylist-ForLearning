@@ -16,3 +16,4 @@ type Props = {
   volume: number;
   muted: boolean;
   canFullscreen: boolean;
+  note: { text: string; action?: { label: string; run: () => void } } | null;
