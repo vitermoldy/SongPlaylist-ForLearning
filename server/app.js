@@ -171,3 +171,4 @@ export function createApi(getPool) {
       const catalogue = new Map()
       for (const s of [...state.songs, ...state.playlists.flatMap((p) => p.songs)]) catalogue.set(s.id, s)
       if (catalogue.size) {
+        await conn.query(
