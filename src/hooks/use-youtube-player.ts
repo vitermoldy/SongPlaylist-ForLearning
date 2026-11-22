@@ -94,3 +94,5 @@ export function useYouTubePlayer(slot: RefObject<HTMLDivElement | null>, options
     if (!host) return;
     let cancelled = false;
     let created: YTPlayer | null = null;
+    setStatus("loading");
+
