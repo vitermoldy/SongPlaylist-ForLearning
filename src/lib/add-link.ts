@@ -69,3 +69,4 @@ export async function addLink(raw: string, existing: string[], onProgress?: (tex
   const skipped = fresh.length - songs.length;
 
   const parts = [songs.length ? `${songs.length} lagu ditambahkan` : "Tidak ada lagu baru yang ditambahkan"];
+  if (already) parts.push(`${already} sudah ada di daftar`);
