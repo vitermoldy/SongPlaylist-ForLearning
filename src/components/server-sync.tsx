@@ -32,6 +32,7 @@ export function ServerSync({ auth, status, checkedAt, onFlush }: Props) {
     error: "Server lokal menolak data ini. Perubahan tetap tersimpan di browser ini.",
   };
   const trouble = status === "offline" || status === "nodb" || status === "error";
+  const account = auth.status === "signed-in" ? auth.account : null;
 
   async function copy() {
     try {
