@@ -47,3 +47,4 @@ export function AccountGate({ auth }: { auth: AuthState }) {
       if (signedOut) userRef.current?.focus();
       else if (offline) retryRef.current?.focus();
     }
+    shown.current = d.open ? auth.status : null;
