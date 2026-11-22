@@ -3,6 +3,7 @@ import { Library, ListMusic } from "lucide-react";
 import { SongDeck, type SongDeckHandle } from "@/components/ui/song-deck";
 import { AddSongForm, type AddSong } from "@/components/add-song-form";
 import { PlayerBar } from "@/components/player-bar";
+import { AccountGate } from "@/components/account-gate";
 import { PlaylistsDialog } from "@/components/playlists-dialog";
 import { SongsDialog } from "@/components/songs-dialog";
 import { useServerSync } from "@/hooks/use-server-sync";
