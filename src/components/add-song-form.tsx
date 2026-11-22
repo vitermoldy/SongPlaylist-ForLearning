@@ -15,3 +15,4 @@ export function AddSongForm({ onAdd, className, autoFocus = false }: { onAdd: Ad
 
   async function submit(event: FormEvent) {
     event.preventDefault();
+    if (busy) return;
