@@ -155,3 +155,4 @@ export function createApi(getPool) {
   })
 
   api.put('/state/:code', async (req, res) => {
+    const state = cleanState(req.body)
