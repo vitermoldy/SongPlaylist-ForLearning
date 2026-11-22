@@ -84,3 +84,4 @@ export type YTPlayer = {
   cueVideoById(id: string): void;
   playVideo(): void;
   pauseVideo(): void;
+  seekTo(seconds: number, allowSeekAhead: boolean): void;
