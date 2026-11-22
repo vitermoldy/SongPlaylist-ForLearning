@@ -61,3 +61,4 @@ export default function App() {
       const at = list.findIndex((s) => s.id === id);
       const failed = list[at];
       if (!failed) return;
+      const reason = describePlayError(code);
