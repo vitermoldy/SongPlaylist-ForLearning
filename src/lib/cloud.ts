@@ -4,3 +4,4 @@ import type { Saved } from "@/lib/playlist";
 
 const CODE_KEY = "songplaylist-forlearning:code";
 // no I, O, 0 or 1, so a code read aloud or typed from a phone is not misread
+const ALPHABET = "ABCDEFGHJKLMNPQRSTUVWXYZ23456789";
