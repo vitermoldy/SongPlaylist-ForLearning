@@ -212,3 +212,4 @@ type CardProps = {
   pos: MotionValue<number>;
   still: boolean;
   ground: string;
+  playing: boolean;
