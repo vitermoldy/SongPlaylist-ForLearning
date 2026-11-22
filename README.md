@@ -52,3 +52,4 @@ src/components/player-bar.tsx       transport under the deck
 src/components/songs-dialog.tsx     "Kelola lagu" panel
 src/components/playlists-dialog.tsx "Playlist" panel
 src/components/sheet.tsx            side panel on <dialog>, and the in-place confirm
+src/components/add-song-form.tsx    the link form, with its busy, error and done states
