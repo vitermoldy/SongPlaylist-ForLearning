@@ -5,3 +5,4 @@ import { AddSongForm, type AddSong } from "@/components/add-song-form";
 import { PlayerBar } from "@/components/player-bar";
 import { PlaylistsDialog } from "@/components/playlists-dialog";
 import { SongsDialog } from "@/components/songs-dialog";
+import { useYouTubePlayer } from "@/hooks/use-youtube-player";
