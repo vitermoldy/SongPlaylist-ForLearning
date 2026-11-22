@@ -46,3 +46,4 @@ function IconButton({ label, onClick, disabled, children }: { label: string; onC
       onClick={onClick}
       disabled={disabled}
       aria-label={label}
+      className="grid size-11 shrink-0 place-items-center rounded-full text-[#111318] hover:bg-[#111318]/[0.07] active:bg-[#111318]/[0.13] disabled:opacity-35 disabled:hover:bg-transparent"
