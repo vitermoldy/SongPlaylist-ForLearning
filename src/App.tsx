@@ -285,3 +285,4 @@ export default function App() {
             ref={deck}
             songs={songs}
             active={active}
+            playing={player.intent}
