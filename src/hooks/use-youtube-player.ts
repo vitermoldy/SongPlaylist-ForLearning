@@ -195,3 +195,4 @@ export function useYouTubePlayer(slot: RefObject<HTMLDivElement | null>, options
       idRef.current = id;
       setIntent(autoplay);
       setStarted(false);
+      setNeedsTap(false);
