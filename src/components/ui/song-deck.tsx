@@ -263,3 +263,4 @@ function PlayerCard({ song, i, pos, still, ground, playing, interactive, onToggl
             style={{ opacity: showVideo ? 1 : 0, pointerEvents: showVideo ? "auto" : "none" }}
           >
             <div ref={slot} className="size-full [&>iframe]:block [&>iframe]:size-full" />
+          </div>
