@@ -288,3 +288,4 @@ export default function App() {
             playing={player.intent}
             showVideo={player.visible}
             playerSlot={slot}
+            onSettle={settle}
