@@ -255,3 +255,4 @@ function PlayerCard({ song, i, pos, still, ground, playing, interactive, onToggl
       style={{ zIndex: i + 1, visibility: m.visibility, ...(still ? { y: m.stillY } : { y: m.y, rotateX: m.rotateX, scale: m.scale, filter: m.filter }) }}
     >
       <div className="relative overflow-hidden rounded-[24px] bg-[#0A0C14]">
+        <div className="relative aspect-[16/9] w-full overflow-hidden max-sm:aspect-[4/5]">
