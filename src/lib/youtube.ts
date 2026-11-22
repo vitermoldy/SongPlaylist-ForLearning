@@ -193,3 +193,4 @@ export async function expandPlaylist(list: string): Promise<string[]> {
             if (ids && ids.length) finish(ids);
           }, 200);
         },
+        onError: () => finish(null),
