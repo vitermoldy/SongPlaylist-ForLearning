@@ -43,3 +43,4 @@ export function saveCode(code: string) {
  * server answered but MySQL is not connected, otherwise the HTTP status.
  */
 export class ServerError extends Error {
+  status: number;
