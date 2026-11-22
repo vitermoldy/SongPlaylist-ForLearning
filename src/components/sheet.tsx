@@ -7,3 +7,4 @@ export function Sheet({ open, onClose, title, children }: { open: boolean; onClo
   const ref = useRef<HTMLDialogElement>(null);
   const titleId = useId();
 
+  useEffect(() => {
