@@ -72,3 +72,4 @@ export function PlaylistsDialog({ open, onClose, playlists, songs, linked, saved
   return (
     <Sheet open={open} onClose={onClose} title="Playlist">
       <div className="border-b border-[#111318]/10 px-5 pb-4 sm:px-6">
+        {songs.length === 0 ? (
