@@ -101,3 +101,4 @@ export function PlayerBar(p: Props) {
                 {p.note.action.label}
               </button>
             )}
+          </div>
