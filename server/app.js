@@ -73,3 +73,4 @@ function cleanState(body) {
     if (s && !seen.has(s.id)) {
       seen.add(s.id)
       songs.push(s)
+    }
