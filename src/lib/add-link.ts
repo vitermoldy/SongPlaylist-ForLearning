@@ -68,3 +68,4 @@ export async function addLink(raw: string, existing: string[], onProgress?: (tex
   const songs = found.filter((s): s is Song => s !== null);
   const skipped = fresh.length - songs.length;
 
+  const parts = [songs.length ? `${songs.length} lagu ditambahkan` : "Tidak ada lagu baru yang ditambahkan"];
