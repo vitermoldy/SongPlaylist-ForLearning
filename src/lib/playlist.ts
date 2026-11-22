@@ -62,3 +62,5 @@ export type Saved = {
 const isSong = (v: unknown): v is Song => {
   const s = v as Song;
   return !!s && typeof s.id === "string" && typeof s.title === "string" && typeof s.artist === "string";
+};
+
