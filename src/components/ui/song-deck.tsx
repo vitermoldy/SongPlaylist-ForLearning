@@ -142,3 +142,4 @@ export const SongDeck = memo(function SongDeck({
 
   useImperativeHandle(
     ref,
+    () => ({
