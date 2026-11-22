@@ -62,3 +62,4 @@ function Progress({ time, duration, onSeek, className }: { time: number; duratio
         type="range"
         className="range min-w-0 flex-1"
         min={0}
+        max={Math.max(1, Math.floor(duration))}
