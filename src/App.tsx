@@ -136,3 +136,5 @@ export default function App() {
       const now = addSection.current?.getBoundingClientRect().top;
       if (now !== undefined) window.scrollBy({ top: now - a.addTop, behavior: "instant" });
     }
+  }, [songs]); // only a change of the list moves the page
+
