@@ -7,3 +7,5 @@ import type { Saved } from "@/lib/playlist";
 
 export type SyncStatus = "checking" | "saving" | "saved" | "offline" | "nodb" | "error";
 
+export type SwitchResult = { ok: boolean; text: string };
+
