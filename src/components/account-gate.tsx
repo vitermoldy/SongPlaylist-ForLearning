@@ -88,3 +88,4 @@ export function AccountGate({ auth }: { auth: AuthState }) {
         // password, and means "Pakai tanpa akun" when the server is down.
         e.preventDefault();
         if (offline) setSkipped(true);
+      }}
