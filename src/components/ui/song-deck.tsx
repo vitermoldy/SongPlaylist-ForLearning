@@ -235,3 +235,4 @@ function SongCard({ song, i, pos, still, ground, playing, interactive, onToggle 
         <motion.div aria-hidden className="pointer-events-none absolute inset-0 bg-[#0A0C14]" style={{ opacity: still ? 0 : m.dim }} />
       </div>
     </motion.article>
+  );
