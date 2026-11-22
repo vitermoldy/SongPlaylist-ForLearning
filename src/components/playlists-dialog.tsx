@@ -49,3 +49,5 @@ export function PlaylistsDialog({ open, onClose, playlists, songs, linked, saved
   const [name, setName] = useState("");
   const [ask, setAsk] = useState<Ask>(null);
   const [done, setDone] = useState<string | null>(null);
+  const unsaved = songs.length > 0 && !savedAs;
+
