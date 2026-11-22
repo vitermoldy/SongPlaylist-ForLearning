@@ -75,3 +75,4 @@ export function accentFromThumb(id: string): Promise<string> {
     img.onload = () => {
       try {
         const canvas = document.createElement("canvas");
+        canvas.width = 48;
