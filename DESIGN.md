@@ -31,3 +31,4 @@ is kept from the original demo footer.
 
 ## Motion
 
+- The card deal is the one big motion: it marks a song change. Spring-smoothed, no overshoot.
