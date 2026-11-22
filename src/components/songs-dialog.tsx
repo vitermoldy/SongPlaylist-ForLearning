@@ -110,3 +110,4 @@ export function SongsDialog({ open, onClose, songs, active, playing, savedAs, on
             />
           ) : (
             <div className="flex flex-wrap gap-2">
+              <button
