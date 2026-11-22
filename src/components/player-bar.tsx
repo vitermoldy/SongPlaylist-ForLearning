@@ -118,3 +118,4 @@ export function PlayerBar(p: Props) {
               <SkipBack aria-hidden className="size-5" fill="currentColor" />
             </IconButton>
             <button
+              type="button"
