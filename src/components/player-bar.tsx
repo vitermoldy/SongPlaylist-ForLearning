@@ -94,3 +94,4 @@ export function PlayerBar(p: Props) {
             </p>
             {p.note.action && (
               <button
+                type="button"
