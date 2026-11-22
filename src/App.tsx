@@ -353,3 +353,4 @@ export default function App() {
           onToggle={toggle}
           onPrev={prev}
           onNext={next}
+          onSeek={seek}
