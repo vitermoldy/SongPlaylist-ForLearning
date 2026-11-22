@@ -75,3 +75,4 @@ export function AccountGate({ auth }: { auth: AuthState }) {
     }
   }
 
+  const input =
