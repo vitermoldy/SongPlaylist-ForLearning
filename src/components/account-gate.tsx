@@ -52,3 +52,4 @@ export function AccountGate({ auth }: { auth: AuthState }) {
 
   async function submit(event: FormEvent) {
     event.preventDefault();
+    if (busy) return;
