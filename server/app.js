@@ -164,3 +164,4 @@ export function createApi(getPool) {
       const [[held]] = await conn.query('SELECT client_updated FROM decks WHERE device_id = ? FOR UPDATE', [req.code])
       if (held && Number(held.client_updated) > state.updatedAt) {
         await conn.rollback()
+        return res.status(409).json({ error: 'The server holds a newer copy.', updatedAt: Number(held.client_updated) })
