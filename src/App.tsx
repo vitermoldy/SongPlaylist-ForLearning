@@ -271,3 +271,4 @@ export default function App() {
               <span className="sm:hidden">Lagu</span>
               <span className="hidden sm:inline">Kelola lagu</span>
             </button>
+            <button type="button" onClick={() => setPlaylistsOpen(true)} aria-haspopup="dialog" className={headerButton}>
