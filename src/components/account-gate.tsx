@@ -10,3 +10,4 @@ import { checkAccount, signIn, signUp, type AuthState } from "@/lib/cloud";
 export function AccountGate({ auth }: { auth: AuthState }) {
   const ref = useRef<HTMLDialogElement>(null);
   const userRef = useRef<HTMLInputElement>(null);
+  const retryRef = useRef<HTMLButtonElement>(null);
