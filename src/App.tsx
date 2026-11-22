@@ -11,3 +11,5 @@ import { accentFromThumb } from "@/lib/color";
 import { SEED_SONGS, loadSaved, newPlaylistId, sameSongs, saveState, type SavedPlaylist, type Song } from "@/lib/playlist";
 import { describePlayError } from "@/lib/youtube";
 
+const GROUND = "#E7E8EA";
+
