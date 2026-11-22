@@ -138,3 +138,4 @@ export function loadYouTubeApi(): Promise<YTNamespace> {
     script.onerror = () => {
       apiPromise = null;
       reject(new Error("The YouTube player script did not load."));
+    };
