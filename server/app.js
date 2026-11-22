@@ -165,3 +165,5 @@ export function createApi(getPool) {
       if (held && Number(held.client_updated) > state.updatedAt) {
         await conn.rollback()
         return res.status(409).json({ error: 'The server holds a newer copy.', updatedAt: Number(held.client_updated) })
+      }
+
