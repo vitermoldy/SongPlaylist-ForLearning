@@ -91,6 +91,7 @@ type EntryBody = { user: Account; device: string };
 export async function checkAccount() {
   setAuth({ ...auth, status: "checking" });
   try {
+    const body = await call<EntryBody>("/auth/me");
   if (!body.saved) return null;
   const { saved: _, ...state } = body;
   return state as Saved;
