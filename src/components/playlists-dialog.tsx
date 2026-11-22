@@ -207,3 +207,4 @@ export function PlaylistsDialog({ open, onClose, playlists, songs, linked, saved
           {ask?.kind === "clear" ? (
             <Confirm
               text={`${
+                playlists.length === 1 ? `Hapus playlist ${playlists[0].name}?` : `Hapus semua ${playlists.length} playlist?`
