@@ -106,3 +106,4 @@ export function PlaylistsDialog({ open, onClose, playlists, songs, linked, saved
                 {linked ? "Atau simpan sebagai playlist baru" : `Simpan daftar putar sekarang (${songs.length} lagu)`}
               </label>
               <div className="flex gap-2">
+                <input
