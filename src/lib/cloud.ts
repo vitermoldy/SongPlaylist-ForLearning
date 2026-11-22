@@ -44,3 +44,4 @@ export function saveCode(code: string) {
  */
 export class ServerError extends Error {
   status: number;
+  kind: "offline" | "nodb" | "http";
