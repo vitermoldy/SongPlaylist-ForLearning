@@ -390,3 +390,4 @@ export default function App() {
         songs={songs}
         linked={linkedPlaylist}
         savedAs={savedAs}
+        onSave={savePlaylist}
