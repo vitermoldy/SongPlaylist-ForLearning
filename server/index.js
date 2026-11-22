@@ -31,3 +31,5 @@ async function connectLoop() {
     console.error(`${config.name}: database not reachable yet (${err.code ?? err.message}), trying again in 5 seconds`)
     setTimeout(connectLoop, 5000)
   }
+}
+
