@@ -92,3 +92,4 @@ export function PlayerBar(p: Props) {
             <p role="status" className="text-[14px] leading-snug text-[#111318]">
               {p.note.text}
             </p>
+            {p.note.action && (
