@@ -51,6 +51,7 @@ export function useServerSync(snapshot: Saved, apply: (state: Saved) => void) {
     try {
       const local = snap.current;
       const remote = await getState();
+      if (remote && (preferServer || remote.updatedAt > local.updatedAt)) {
         agreed.current = remote.updatedAt;
         applyRef.current(remote);
       } else if (!remote || remote.updatedAt < local.updatedAt) {
