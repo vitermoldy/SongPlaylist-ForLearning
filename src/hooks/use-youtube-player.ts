@@ -100,3 +100,4 @@ export function useYouTubePlayer(slot: RefObject<HTMLDivElement | null>, options
       .then((YT) => {
         if (cancelled) return;
         const el = document.createElement("div");
+        host.replaceChildren(el);
