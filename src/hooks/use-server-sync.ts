@@ -40,3 +40,4 @@ export function useServerSync(snapshot: Saved, apply: (state: Saved) => void) {
       again.current = true;
       return;
     }
+    busy.current = true;
