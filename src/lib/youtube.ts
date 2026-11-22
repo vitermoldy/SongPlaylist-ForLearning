@@ -180,3 +180,4 @@ export async function expandPlaylist(list: string): Promise<string[]> {
       if (ids && ids.length) resolve(ids);
       else reject(new Error("The playlist could not be read."));
     };
+    const timer = window.setTimeout(() => finish(null), 12000);
