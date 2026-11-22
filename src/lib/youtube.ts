@@ -51,3 +51,4 @@ export const thumbUrl = (id: string, size: "maxres" | "hq" | "mq") =>
 
 export type VideoInfo = { title: string; author: string };
 
+export class InfoError extends Error {
