@@ -107,3 +107,4 @@ export function useServerSync(snapshot: Saved, apply: (state: Saved) => void) {
 
   /** Takes over the data saved under another browser's code; this browser then uses that code. */
   const switchCode = useCallback(async (raw: string): Promise<SwitchResult> => {
+    const next = cleanCode(raw);
