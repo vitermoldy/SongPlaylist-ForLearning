@@ -270,3 +270,4 @@ function PlayerCard({ song, i, pos, still, ground, playing, interactive, onToggl
             alt={`Sampul video ${song.title}`}
             className={cn("pointer-events-none absolute inset-0 size-full object-cover transition-opacity duration-300", showVideo && "opacity-0")}
           />
+        </div>
