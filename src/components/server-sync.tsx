@@ -61,3 +61,4 @@ export function ServerSync({ code, status, checkedAt, onSwitch }: Props) {
   }
 
   return (
+    <section aria-labelledby={titleId}>
