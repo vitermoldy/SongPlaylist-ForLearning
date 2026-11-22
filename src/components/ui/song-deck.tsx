@@ -283,3 +283,4 @@ function Cover({ id, alt, className, priority = false, lazy = false }: { id: str
   const [size, setSize] = useState<"maxres" | "hq">("maxres");
   return (
     <img
+      src={thumbUrl(id, size)}
