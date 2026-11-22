@@ -106,3 +106,4 @@ type YTPlayerOptions = {
   playerVars?: Record<string, string | number>;
   events?: {
     onReady?: (event: YTEvent) => void;
+    onStateChange?: (event: YTEvent) => void;
