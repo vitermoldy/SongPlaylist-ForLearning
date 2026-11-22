@@ -71,3 +71,4 @@ export function Confirm({
         >
           {confirmLabel}
         </button>
+        <button
