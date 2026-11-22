@@ -33,3 +33,4 @@ export async function addLink(raw: string, existing: string[], onProgress?: (tex
   if (!raw.trim()) return fail("Tempel link YouTube dulu.");
   const link = parseYouTube(raw);
   if (!link) return fail("Itu bukan link video atau playlist YouTube.");
+  if (link.kind === "mix") {
