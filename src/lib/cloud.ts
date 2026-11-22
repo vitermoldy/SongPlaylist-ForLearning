@@ -57,6 +57,7 @@ export type AuthState = { status: AuthStatus; account: Account | null; entry: En
 let auth: AuthState = { status: "checking", account: null, entry: null };
 const listeners = new Set<() => void>();
 function setAuth(next: AuthState) {
+  auth = next;
 async function call<T>(path: string, init?: RequestInit): Promise<T> {
   let res: Response;
   try {
