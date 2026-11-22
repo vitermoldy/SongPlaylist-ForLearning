@@ -11,6 +11,7 @@ import { addLink } from "@/lib/add-link";
 import { accentFromThumb } from "@/lib/color";
 import {
   SEED_SONGS,
+  loadSaved,
 import { describePlayError } from "@/lib/youtube";
 
 const GROUND = "#E7E8EA";
