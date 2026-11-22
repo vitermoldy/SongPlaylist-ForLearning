@@ -65,6 +65,7 @@ export type Saved = {
  * What counts as a change worth sending to the server: cover colours are left out, since each
  * browser reads them again from the covers by itself.
  */
+export function signatureOf(s: Omit<Saved, "updatedAt">) {
 const isSong = (v: unknown): v is Song => {
   const s = v as Song;
   return !!s && typeof s.id === "string" && typeof s.title === "string" && typeof s.artist === "string";
