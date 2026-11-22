@@ -67,3 +67,4 @@ function useCardMotion(i: number, pos: MotionValue<number>) {
     return Math.min(3, n);
   };
   return {
+    y: useTransform(pos, (v) => `${(1 - arrived(i, v)) * 108 - above(v) * 5}svh`), // covered cards lift so their edges show
