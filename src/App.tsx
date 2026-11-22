@@ -241,3 +241,4 @@ export default function App() {
 
   const note =
     player.status === "error"
+      ? {
