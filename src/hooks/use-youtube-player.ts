@@ -7,3 +7,4 @@ import { YOUTUBE_HOST, loadYouTubeApi, type YTPlayer } from "@/lib/youtube";
 
 const UNSTARTED = -1;
 const ENDED = 0;
+const PLAYING = 1;
