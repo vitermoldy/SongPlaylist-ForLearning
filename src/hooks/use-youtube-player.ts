@@ -45,3 +45,4 @@ export function useYouTubePlayer(slot: RefObject<HTMLDivElement | null>, options
   const [status, setStatus] = useState<PlayerStatus>("idle");
   const [state, setState] = useState(UNSTARTED);
   const [intent, setIntentState] = useState(false);
+  const [started, setStarted] = useState(false);
