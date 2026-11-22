@@ -205,3 +205,4 @@ export function useYouTubePlayer(slot: RefObject<HTMLDivElement | null>, options
     [setIntent, setTime, start],
   );
 
+  const play = useCallback(() => {
