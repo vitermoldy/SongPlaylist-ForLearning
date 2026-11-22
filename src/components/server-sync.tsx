@@ -102,3 +102,4 @@ export function ServerSync({ code, status, checkedAt, onSwitch }: Props) {
                 id={inputId}
                 type="text"
                 value={entry}
+                autoComplete="off"
