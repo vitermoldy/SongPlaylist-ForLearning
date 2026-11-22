@@ -101,3 +101,4 @@ export function ServerSync({ code, status, checkedAt, onSwitch }: Props) {
               <input
                 id={inputId}
                 type="text"
+                value={entry}
