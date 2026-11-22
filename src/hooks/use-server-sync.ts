@@ -95,3 +95,4 @@ export function useServerSync(snapshot: Saved, apply: (state: Saved) => void) {
   // back to the tab, or back online: another browser may have saved meanwhile
   useEffect(() => {
     const look = () => {
+      if (document.visibilityState === "visible") void sync();
