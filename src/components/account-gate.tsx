@@ -148,3 +148,4 @@ export function AccountGate({ auth }: { auth: AuthState }) {
               <p id="gate-error" role="alert" className="text-[14px] leading-snug text-[#8F1A1A]">
                 {error}
               </p>
+            )}
