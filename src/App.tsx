@@ -247,6 +247,7 @@ export default function App() {
   }, [songs, current, volume, muted, playlists, linked, updatedAt]);
 
   /** Another browser's newer copy, from the server, replaces what this one holds. */
+  const applyRemote = useCallback(
 
   // each card's play button takes its colour from the song's cover, read once and remembered
   const asked = useRef(new Set<string>());
