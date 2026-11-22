@@ -51,3 +51,4 @@ export function PlaylistsDialog({ open, onClose, playlists, songs, linked, saved
   const [done, setDone] = useState<string | null>(null);
   const unsaved = songs.length > 0 && !savedAs;
 
+  // each time the menu opens: a fresh suggested name, no question left over (only on opening, so
