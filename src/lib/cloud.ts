@@ -50,3 +50,4 @@ export class ServerError extends Error {
     super(message);
     this.status = status;
     this.kind = kind;
+    this.updatedAt = updatedAt;
