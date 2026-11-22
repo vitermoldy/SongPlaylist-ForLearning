@@ -77,3 +77,5 @@ function useCardMotion(i: number, pos: MotionValue<number>) {
     // cards far below the window or buried under the stack are not painted at all
     visibility: useTransform(pos, (v) => (i > v + 1.6 || i < v - 4 ? "hidden" : "visible")),
   };
+}
+
