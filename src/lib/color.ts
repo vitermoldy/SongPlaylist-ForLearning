@@ -46,3 +46,4 @@ const toHex = (rgb: RGB) => `#${rgb.map((v) => v.toString(16).padStart(2, "0")).
  */
 export function pickAccent(pixels: Uint8ClampedArray): string {
   const buckets = Array.from({ length: 12 }, () => ({ weight: 0, r: 0, g: 0, b: 0 }));
+  let counted = 0;
