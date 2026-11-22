@@ -27,3 +27,4 @@ export function SongsDialog({ open, onClose, songs, active, playing, savedAs, on
   const [confirmClear, setConfirmClear] = useState(false);
 
   return (
+    <Sheet
