@@ -117,3 +117,4 @@ export const SongDeck = memo(function SongDeck({
     smooth.jump(pos.get());
   }, [measure, pos, smooth]);
 
+  useEffect(() => {
