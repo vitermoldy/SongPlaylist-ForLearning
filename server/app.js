@@ -131,3 +131,4 @@ export function createApi(getPool) {
     // a new browser asks before it has saved anything: an answer, not an error
     if (!deck) return res.json({ saved: false })
     await pool.query('UPDATE devices SET last_seen = CURRENT_TIMESTAMP WHERE id = ?', [req.code])
+    const [deckSongs] = await pool.query(
