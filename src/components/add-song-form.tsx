@@ -39,3 +39,4 @@ export function AddSongForm({ onAdd, className, autoFocus = false }: { onAdd: Ad
           value={value}
           onChange={(e) => setValue(e.target.value)}
           placeholder="https://youtu.be/..."
+          aria-describedby={`${id}-hint ${id}-status`}
