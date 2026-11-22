@@ -85,7 +85,7 @@ export function useServerSync(snapshot: Saved, apply: (state: Saved) => void) {
     return ok;
   }, []);
 
-  // on opening the page, and when the code changes
+  // on opening the page, and whenever someone signs in
   useEffect(() => {
     void sync();
     return () => window.clearTimeout(retry.current);
