@@ -248,3 +248,4 @@ function PlayerCard({ song, i, pos, still, ground, playing, interactive, onToggl
 }) {
   const m = useCardMotion(i, pos);
   return (
+    <motion.article
