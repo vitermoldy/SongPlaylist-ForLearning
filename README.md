@@ -53,9 +53,7 @@ sends its copy once the server answers (it tries every 10 seconds). On opening t
 back to the tab and after each change, the newer copy wins: a newer one on the server replaces the
 browser's, an older one is replaced.
 
-There are no accounts. Each browser gets a 12-character recovery code, shown under Playlist, Server
-lokal. Typed into another browser, it brings the list and the saved playlists there, and that browser
-then shares the code. Anyone who knows a code can read and replace its data.
+While the server runs, the page asks for an account first (username and password, at least 6 characters).
 
 Database `songplaylist_forlearning` (created on start):
 
