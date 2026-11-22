@@ -219,3 +219,4 @@ export default function App() {
     deck.current?.scrollToSong(active, false);
   }, []);
 
+  useEffect(() => {
