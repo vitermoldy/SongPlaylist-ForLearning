@@ -107,3 +107,4 @@ type YTPlayerOptions = {
   events?: {
     onReady?: (event: YTEvent) => void;
     onStateChange?: (event: YTEvent) => void;
+    onError?: (event: YTEvent) => void;
