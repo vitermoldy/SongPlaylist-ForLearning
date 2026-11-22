@@ -105,3 +105,4 @@ export function PlayerBar(p: Props) {
         )}
 
         <div className="flex items-center gap-2 pt-0.5 sm:gap-4">
+          <div className="min-w-0 flex-1 px-1 sm:w-[200px] sm:flex-none">
