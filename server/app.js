@@ -78,3 +78,4 @@ function cleanState(body) {
   const playlists = []
   const ids = new Set()
   for (const p of body.playlists) {
+    if (!p || !PLAYLIST_ID.test(p.id ?? '') || ids.has(p.id) || !Array.isArray(p.songs) || p.songs.length > MAX_SONGS) continue
