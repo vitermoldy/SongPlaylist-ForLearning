@@ -186,3 +186,4 @@ export async function expandPlaylist(list: string): Promise<string[]> {
       width: 320,
       height: 180,
       playerVars: { listType: "playlist", list, autoplay: 0, origin: window.location.origin },
+      events: {
