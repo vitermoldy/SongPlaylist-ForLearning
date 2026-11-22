@@ -20,6 +20,7 @@ const joined = (iso: string) => new Date(iso).toLocaleDateString("id-ID", { day:
 export function ServerSync({ auth, status, checkedAt, onFlush }: Props) {
   const titleId = useId();
   const [leaving, setLeaving] = useState(false);
+  const [error, setError] = useState("");
 
   const line: Record<SyncStatus, string> = {
     checking: "Menghubungi server lokal…",
