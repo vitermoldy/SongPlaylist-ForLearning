@@ -28,3 +28,4 @@ export function useYouTubePlayer(slot: RefObject<HTMLDivElement | null>, options
   const { enabled, volume, muted } = options;
   const handlers = useRef(options);
   useLayoutEffect(() => {
+    handlers.current = options;
