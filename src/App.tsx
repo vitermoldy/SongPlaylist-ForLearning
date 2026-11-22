@@ -342,3 +342,4 @@ export default function App() {
           song={song}
           index={active}
           count={songs.length}
+          status={player.status}
