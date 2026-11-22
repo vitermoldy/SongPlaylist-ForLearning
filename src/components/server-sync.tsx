@@ -115,3 +115,4 @@ export function ServerSync({ code, status, checkedAt, onSwitch }: Props) {
                 className="h-11 shrink-0 rounded-[12px] bg-[#111318] px-4 text-[14px] font-semibold text-white hover:bg-[#2A2E37] active:bg-black disabled:opacity-60"
               >
                 {busy ? "Mengambil…" : "Pakai kode"}
+              </button>
