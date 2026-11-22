@@ -137,3 +137,4 @@ export function PlaylistsDialog({ open, onClose, playlists, songs, linked, saved
           <p className="px-2 py-5 text-[15px] leading-snug text-[#3B3F48]">
             Belum ada playlist. Simpan daftar putar sekarang di atas untuk membuat yang pertama.
           </p>
+        ) : (
