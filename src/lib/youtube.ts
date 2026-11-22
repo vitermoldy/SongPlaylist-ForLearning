@@ -96,3 +96,5 @@ export type YTPlayer = {
   destroy(): void;
 };
 
+type YTEvent = { target: YTPlayer; data: number };
+
