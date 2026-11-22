@@ -185,3 +185,4 @@ export const SongDeck = memo(function SongDeck({
               interactive={i === top && i !== active}
               onToggle={onToggle}
             />
+          ))}
