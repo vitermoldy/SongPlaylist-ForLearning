@@ -50,3 +50,4 @@ export async function addLink(raw: string, existing: string[], onProgress?: (tex
 
   let ids: string[];
   try {
+    ids = [...new Set(await expandPlaylist(link.list))];
