@@ -181,3 +181,4 @@ export function PlaylistsDialog({ open, onClose, playlists, songs, linked, saved
                         onOpen(p.id);
                       }}
                       onCancel={() => setAsk(null)}
+                    />
