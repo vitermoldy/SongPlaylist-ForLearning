@@ -53,6 +53,7 @@ sends its copy once the server answers (it tries every 10 seconds). On opening t
 back to the tab and after each change, the newer copy wins: a newer one on the server replaces the
 browser's, an older one is replaced.
 
+There are no accounts. Each browser gets a 12-character recovery code, shown under Playlist, Server
 
 ## Structure
 
