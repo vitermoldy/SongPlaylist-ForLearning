@@ -212,3 +212,4 @@ export function PlaylistsDialog({ open, onClose, playlists, songs, linked, saved
               confirmLabel="Ya, hapus semua"
               onConfirm={() => {
                 setAsk(null);
+                onClearAll();
