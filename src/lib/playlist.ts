@@ -64,3 +64,4 @@ const isSong = (v: unknown): v is Song => {
   return !!s && typeof s.id === "string" && typeof s.title === "string" && typeof s.artist === "string";
 };
 
+const isPlaylist = (v: unknown): v is SavedPlaylist => {
