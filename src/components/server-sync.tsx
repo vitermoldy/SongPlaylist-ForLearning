@@ -111,3 +111,4 @@ export function ServerSync({ code, status, checkedAt, onSwitch }: Props) {
               />
               <button
                 type="submit"
+                disabled={busy}
