@@ -69,6 +69,7 @@ Database `songplaylist_forlearning` (created on start):
 | `playlist_songs` | the songs of each saved playlist, in order |
 
 API: `GET /api/health`, `GET /api/state/:code`, `PUT /api/state/:code` (refused with 409 when the
+server already holds a newer copy). Writes must be JSON from the same origin, at most 120 a minute.
 
 ## Structure
 
