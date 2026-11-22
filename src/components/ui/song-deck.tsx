@@ -330,3 +330,4 @@ function Corner({ song, i, ground, playing, onToggle }: { song: Song; i: number;
           className="grid size-11 shrink-0 place-items-center rounded-full text-white transition-transform duration-200 ease-out group-hover:scale-[1.06] group-active:scale-90 group-focus-visible:outline-2 group-focus-visible:outline-offset-2 sm:size-[52px]"
           style={{ background: accent, outlineColor: accent }}
         >
+          {playing ? (
