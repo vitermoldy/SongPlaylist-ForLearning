@@ -378,3 +378,4 @@ export default function App() {
         onAdd={add}
         onSaveAsPlaylist={() => {
           setListOpen(false);
+          setPlaylistsOpen(true);
