@@ -20,3 +20,4 @@ const TABLES = [
   `CREATE TABLE IF NOT EXISTS songs (
     video_id VARCHAR(16) PRIMARY KEY,
     title VARCHAR(200) NOT NULL,
+    artist VARCHAR(200) NOT NULL,
