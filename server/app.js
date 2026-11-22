@@ -15,3 +15,5 @@ const VIDEO = /^[\w-]{11}$/
 const PLAYLIST_ID = /^pl-[a-z0-9-]{1,36}$/
 const ACCENT = /^#[0-9A-F]{6}$/i
 const MAX_SONGS = 1000
+const MAX_PLAYLISTS = 200
+
