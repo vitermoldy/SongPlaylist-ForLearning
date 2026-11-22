@@ -121,3 +121,4 @@ export default function App() {
     const addTop = addSection.current?.getBoundingClientRect().top ?? Infinity;
     // the first songs into an empty list: show their deck from the top
     if (kind === "first") anchor.current = "deck";
+    else anchor.current = addTop < window.innerHeight ? { addTop } : kind === "remove" ? "deck" : null;
