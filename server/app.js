@@ -178,3 +178,4 @@ export function createApi(getPool) {
         )
       }
 
+      await conn.query(
