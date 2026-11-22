@@ -192,3 +192,4 @@ export function createApi(getPool) {
       await conn.query('DELETE FROM playlists WHERE device_id = ?', [req.code])
       if (state.playlists.length) {
         await conn.query('INSERT INTO playlists (device_id, id, position, name, saved_at) VALUES ?', [
+          state.playlists.map((p, i) => [req.code, p.id, i, p.name, new Date(p.savedAt)]),
