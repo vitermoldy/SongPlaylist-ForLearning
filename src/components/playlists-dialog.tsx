@@ -173,3 +173,4 @@ export function PlaylistsDialog({ open, onClose, playlists, songs, linked, saved
                   </div>
                   {asking === "open" && (
                     <Confirm
+                      className="mt-2"
