@@ -231,3 +231,5 @@ export default function App() {
       asked.current.add(s.id);
       void accentFromThumb(s.id).then((accent) => setSongs((all) => all.map((x) => (x.id === s.id ? { ...x, accent } : x))));
     }
+  }, [songs]);
+
