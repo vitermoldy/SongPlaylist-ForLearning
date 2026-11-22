@@ -28,3 +28,4 @@ const TAG = /\s*[([][^)\]]*\b(official|video|audio|lyrics?|lirik|mv|m\/v|visuali
 /**
  * "TULUS - Hati-Hati di Jalan (Official Music Video)" becomes the title "Hati-Hati di Jalan" by
  * "TULUS". A title without "Artist - Song" keeps the whole title and takes the channel as artist.
+ */
