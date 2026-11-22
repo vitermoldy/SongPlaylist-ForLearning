@@ -54,6 +54,7 @@ export type AuthStatus = "checking" | "signed-in" | "signed-out" | "unavailable"
 export type Entry = "session" | "login" | "register";
 export type AuthState = { status: AuthStatus; account: Account | null; entry: Entry | null };
 
+let auth: AuthState = { status: "checking", account: null, entry: null };
 async function call<T>(path: string, init?: RequestInit): Promise<T> {
   let res: Response;
   try {
