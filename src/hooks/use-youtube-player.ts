@@ -238,3 +238,4 @@ export function useYouTubePlayer(slot: RefObject<HTMLDivElement | null>, options
   );
 
   const fullscreen = useCallback(() => {
+    player.current?.getIframe().requestFullscreen?.().catch(() => {});
