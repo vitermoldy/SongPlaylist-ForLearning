@@ -29,3 +29,4 @@ export function Sheet({ open, onClose, title, children }: { open: boolean; onClo
           <h2 id={titleId} className="text-[20px] font-semibold tracking-[-0.02em]">
             {title}
           </h2>
+          <button
