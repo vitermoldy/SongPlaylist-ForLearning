@@ -183,3 +183,4 @@ export function createApi(getPool) {
          ON DUPLICATE KEY UPDATE current_video = VALUES(current_video), volume = VALUES(volume), muted = VALUES(muted),
            linked_playlist = VALUES(linked_playlist), client_updated = VALUES(client_updated)`,
         [req.code, state.current, state.volume, state.muted, state.linked, state.updatedAt],
+      )
