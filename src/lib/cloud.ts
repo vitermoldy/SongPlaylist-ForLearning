@@ -74,3 +74,4 @@ export const getState = async (code: string) => {
   const body = await call<({ saved: true } & Saved) | { saved: false }>(`/state/${code}`);
   if (!body.saved) return null;
   const { saved: _, ...state } = body;
+  return state as Saved;
