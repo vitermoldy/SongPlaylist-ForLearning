@@ -91,3 +91,4 @@ export type YTPlayer = {
   setVolume(volume: number): void;
   mute(): void;
   unMute(): void;
+  getIframe(): HTMLIFrameElement;
