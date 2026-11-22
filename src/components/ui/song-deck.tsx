@@ -143,3 +143,4 @@ export const SongDeck = memo(function SongDeck({
   useImperativeHandle(
     ref,
     () => ({
+      scrollToSong(index, smoothly = true) {
