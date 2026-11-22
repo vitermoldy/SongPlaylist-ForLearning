@@ -371,3 +371,4 @@ export default function App() {
         playing={player.intent}
         savedAs={savedAs}
         onPick={(index) => {
+          setListOpen(false);
