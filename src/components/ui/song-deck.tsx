@@ -80,3 +80,4 @@ function useCardMotion(i: number, pos: MotionValue<number>) {
 }
 
 export const SongDeck = memo(function SongDeck({
+  songs,
