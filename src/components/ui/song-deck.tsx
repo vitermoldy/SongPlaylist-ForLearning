@@ -22,3 +22,4 @@ export type SongDeckHandle = {
   scrollToSong: (index: number, smooth?: boolean) => void;
 };
 
+export type SongDeckProps = {
