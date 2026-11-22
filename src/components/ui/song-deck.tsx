@@ -307,3 +307,4 @@ function Corner({ song, i, ground, playing, onToggle }: { song: Song; i: number;
   const corner = (
     <svg aria-hidden width={R} height={R} viewBox={`0 0 ${R} ${R}`} className="block">
       <path d={`M${R} 0 V${R} H0 A${R} ${R} 0 0 0 ${R} 0 Z`} fill={ground} />
+    </svg>
