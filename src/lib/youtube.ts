@@ -82,3 +82,4 @@ export function describePlayError(code: number) {
 export type YTPlayer = {
   loadVideoById(id: string): void;
   cueVideoById(id: string): void;
+  playVideo(): void;
