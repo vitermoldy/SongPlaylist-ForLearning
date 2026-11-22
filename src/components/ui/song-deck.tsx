@@ -326,3 +326,4 @@ function Corner({ song, i, ground, playing, onToggle }: { song: Song; i: number;
             {song.problem ? "Tidak bisa diputar di sini" : song.artist}
           </span>
         </span>
+        <span
