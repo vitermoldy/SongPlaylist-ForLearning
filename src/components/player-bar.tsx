@@ -23,3 +23,4 @@ type Props = {
   onSeek: (seconds: number) => void;
   onVolume: (volume: number) => void;
   onMute: () => void;
+  onFullscreen: () => void;
