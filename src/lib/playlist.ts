@@ -87,3 +87,5 @@ export function loadSaved(): Saved {
   } catch {
     return fallback;
   }
+}
+
