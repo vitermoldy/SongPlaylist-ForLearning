@@ -35,3 +35,4 @@ export function SongsDialog({ open, onClose, songs, active, playing, savedAs, on
       }}
       title="Lagu di daftar putar"
     >
+      <div className="border-b border-[#111318]/10 px-5 pb-3 sm:px-6">
