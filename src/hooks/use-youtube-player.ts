@@ -19,3 +19,4 @@ type Options = {
   enabled: boolean;
   initialId: string | null;
   volume: number;
+  muted: boolean;
