@@ -213,3 +213,4 @@ export default function App() {
     setLinked(null);
   };
 
+  // open on the song that was playing last time, without dealing every card on the way
