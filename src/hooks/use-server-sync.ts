@@ -18,7 +18,7 @@ export const useAuth = () => useSyncExternalStore(onAuth, authState);
  * signed in. With the server off the page goes on alone and tries again every 10 seconds.
  */
 export function useServerSync(snapshot: Saved, apply: (state: Saved) => void) {
-  const [code, setCode] = useState(loadCode);
+  const auth = useAuth();
   const [status, setStatus] = useState<SyncStatus>("checking");
   const [checkedAt, setCheckedAt] = useState<number | null>(null);
 
