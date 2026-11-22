@@ -165,3 +165,4 @@ export const SongDeck = memo(function SongDeck({
 
   return (
     <MotionConfig reducedMotion="user">
+      {/* one screen of scroll per song; the stage stays pinned while the cards are dealt onto it */}
