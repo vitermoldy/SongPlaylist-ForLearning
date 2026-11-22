@@ -38,3 +38,4 @@ export function Sheet({ open, onClose, title, children }: { open: boolean; onClo
             <X aria-hidden className="size-5" />
           </button>
         </div>
+        {children}
