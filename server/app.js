@@ -136,3 +136,4 @@ export function createApi(getPool) {
       [req.code],
     )
     const [lists] = await pool.query('SELECT id, name, saved_at FROM playlists WHERE device_id = ? ORDER BY position', [req.code])
+    const [listSongs] = await pool.query(
