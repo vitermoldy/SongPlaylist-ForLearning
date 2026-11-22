@@ -160,3 +160,4 @@ export async function expandPlaylist(list: string): Promise<string[]> {
     const box = document.createElement("div");
     box.setAttribute("aria-hidden", "true");
     box.style.cssText = "position:fixed;left:-10000px;top:0;width:320px;height:180px;pointer-events:none;";
+    const el = document.createElement("div");
