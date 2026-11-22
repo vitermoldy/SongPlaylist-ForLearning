@@ -339,3 +339,4 @@ export default function App() {
 
       {!empty && (
         <PlayerBar
+          song={song}
