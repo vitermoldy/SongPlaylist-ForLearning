@@ -66,3 +66,4 @@ export function AccountGate({ auth }: { auth: AuthState }) {
     try {
       if (mode === "in") await signIn(name, password);
       else await signUp(name, password);
+      setPassword("");
