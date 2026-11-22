@@ -68,3 +68,4 @@ export default function App() {
       const next = list[at + 1];
       if (wasPlaying && next) {
         setNotice(`${failed.title} dilewati: ${reason}.`);
+        window.setTimeout(() => {
