@@ -187,3 +187,5 @@ export function createApi(getPool) {
       await conn.query('DELETE FROM deck_songs WHERE device_id = ?', [req.code])
       if (state.songs.length) {
         await conn.query('INSERT INTO deck_songs (device_id, position, video_id) VALUES ?', [state.songs.map((s, i) => [req.code, i, s.id])])
+      }
+
