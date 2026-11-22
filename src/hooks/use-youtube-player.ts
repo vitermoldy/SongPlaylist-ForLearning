@@ -31,3 +31,4 @@ export function useYouTubePlayer(slot: RefObject<HTMLDivElement | null>, options
     handlers.current = options;
   });
 
+  const player = useRef<YTPlayer | null>(null);
