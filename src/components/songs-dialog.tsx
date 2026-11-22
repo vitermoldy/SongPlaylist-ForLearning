@@ -44,3 +44,4 @@ export function SongsDialog({ open, onClose, songs, active, playing, savedAs, on
       ) : (
         <ol className="flex-1 overflow-y-auto px-3 py-3 sm:px-4">
           {songs.map((s, i) => {
+            const current = i === active;
