@@ -181,3 +181,4 @@ export function AccountGate({ auth }: { auth: AuthState }) {
         <div id="gate-offline">
           <p className="mt-3 text-[15px] leading-snug">
             Server lokal belum bisa dihubungi, jadi akun belum bisa dipakai. Jalankan{" "}
+            <code className="rounded-[6px] bg-white px-1.5 py-0.5 font-mono text-[14px]">npm run server</code>, lalu coba lagi.
