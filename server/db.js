@@ -29,3 +29,4 @@ const TABLES = [
     device_id CHAR(12) PRIMARY KEY,
     current_video VARCHAR(16) NULL,
     volume TINYINT UNSIGNED NOT NULL DEFAULT 80,
+    muted BOOLEAN NOT NULL DEFAULT FALSE,
