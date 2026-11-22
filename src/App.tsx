@@ -442,6 +442,7 @@ export default function App() {
         onOpen={openPlaylist}
         onDelete={deletePlaylist}
         onClearAll={clearPlaylists}
+        server={server}
       />
     </>
   );
