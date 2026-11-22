@@ -63,3 +63,4 @@ export function ServerSync({ code, status, checkedAt, onSwitch }: Props) {
   return (
     <section aria-labelledby={titleId}>
       <h3 id={titleId} className="flex items-center gap-2 text-[15px] font-semibold">
+        <Database aria-hidden className="size-4" />
