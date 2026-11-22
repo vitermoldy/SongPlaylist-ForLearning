@@ -314,3 +314,4 @@ export default function App() {
                 <button type="button" onClick={() => setPlaylistsOpen(true)} aria-haspopup="dialog" className={headerButton}>
                   <Library aria-hidden className="size-[18px]" />
                   Buka playlist tersimpan
+                </button>
