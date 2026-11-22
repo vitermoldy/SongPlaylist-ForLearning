@@ -140,3 +140,4 @@ export function loadYouTubeApi(): Promise<YTNamespace> {
       reject(new Error("The YouTube player script did not load."));
     };
     document.head.append(script);
+    window.setTimeout(() => {
