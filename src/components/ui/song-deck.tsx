@@ -42,3 +42,4 @@ export type SongDeckProps = {
 };
 
 const easeOut = (t: number) => 1 - (1 - t) ** 3;
+const clamp01 = (v: number) => Math.min(1, Math.max(0, v));
