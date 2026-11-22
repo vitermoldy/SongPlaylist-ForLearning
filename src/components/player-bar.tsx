@@ -135,3 +135,4 @@ export function PlayerBar(p: Props) {
             </button>
             <IconButton label="Lagu berikutnya" onClick={p.onNext} disabled={p.index >= p.count - 1}>
               <SkipForward aria-hidden className="size-5" fill="currentColor" />
+            </IconButton>
