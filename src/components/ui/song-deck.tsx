@@ -265,3 +265,4 @@ function PlayerCard({ song, i, pos, still, ground, playing, interactive, onToggl
             <div ref={slot} className="size-full [&>iframe]:block [&>iframe]:size-full" />
           </div>
           <Cover
+            key={song.id}
