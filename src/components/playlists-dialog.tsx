@@ -110,3 +110,4 @@ export function PlaylistsDialog({ open, onClose, playlists, songs, linked, saved
                   ref={nameInput}
                   id={nameId}
                   type="text"
+                  value={name}
