@@ -135,3 +135,4 @@ export function PlaylistsDialog({ open, onClose, playlists, songs, linked, saved
       <div className="flex-1 overflow-y-auto px-3 py-3 sm:px-4">
         {playlists.length === 0 ? (
           <p className="px-2 py-5 text-[15px] leading-snug text-[#3B3F48]">
+            Belum ada playlist. Simpan daftar putar sekarang di atas untuk membuat yang pertama.
