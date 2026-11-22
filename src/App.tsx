@@ -152,3 +152,4 @@ export default function App() {
     [changeSongs, load],
   );
 
+  const remove = useCallback(
