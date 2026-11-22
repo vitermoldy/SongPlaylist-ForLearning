@@ -84,3 +84,4 @@ export function AccountGate({ auth }: { auth: AuthState }) {
       id="auth-gate"
       aria-labelledby={titleId}
       onCancel={(e) => {
+        // A required sign-in has no "close": Escape does nothing while the server waits for a
