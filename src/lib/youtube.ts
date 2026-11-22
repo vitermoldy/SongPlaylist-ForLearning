@@ -182,3 +182,4 @@ export async function expandPlaylist(list: string): Promise<string[]> {
     };
     const timer = window.setTimeout(() => finish(null), 12000);
     const player = new YT.Player(el, {
+      host: YOUTUBE_HOST,
