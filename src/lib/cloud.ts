@@ -121,6 +121,7 @@ export async function signOut() {
   try {
     localStorage.removeItem(CODE_KEY);
   } catch {
+    // blocked storage: nothing was kept either
   if (!body.saved) return null;
   const { saved: _, ...state } = body;
   return state as Saved;
