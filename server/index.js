@@ -28,3 +28,4 @@ async function connectLoop() {
     pool = await connect(config.db)
     console.log(`${config.name}: database ${config.db.database} connected`)
   } catch (err) {
+    console.error(`${config.name}: database not reachable yet (${err.code ?? err.message}), trying again in 5 seconds`)
