@@ -71,3 +71,4 @@ export function SongsDialog({ open, onClose, songs, active, playing, savedAs, on
                 <a
                   href={watchUrl(s.id)}
                   target="_blank"
+                  rel="noopener noreferrer"
