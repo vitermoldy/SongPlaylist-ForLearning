@@ -92,3 +92,4 @@ export type YTPlayer = {
   mute(): void;
   unMute(): void;
   getIframe(): HTMLIFrameElement;
+  getPlaylist?(): string[] | null;
