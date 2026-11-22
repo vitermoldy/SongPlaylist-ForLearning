@@ -22,3 +22,4 @@ type Props = {
   onClear: () => void;
 };
 
+/** The songs in the deck: add a link, jump to a song, open it on YouTube, take it out, or empty the deck. */
