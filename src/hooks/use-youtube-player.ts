@@ -227,3 +227,5 @@ export function useYouTubePlayer(slot: RefObject<HTMLDivElement | null>, options
     player.current?.pauseVideo();
   }, [setIntent]);
 
+  const toggle = useCallback(() => (intentRef.current ? pause() : play()), [pause, play]);
+
