@@ -23,3 +23,5 @@ export function AccountGate({ auth }: { auth: AuthState }) {
   const shown = useRef<string | null>(null);
 
   const offline = auth.status === "unavailable";
+  const signedOut = auth.status === "signed-out";
+
