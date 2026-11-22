@@ -64,6 +64,7 @@ export const authState = () => auth;
 export function onAuth(fn: () => void) {
   listeners.add(fn);
   return () => {
+    listeners.delete(fn);
 async function call<T>(path: string, init?: RequestInit): Promise<T> {
   let res: Response;
   try {
