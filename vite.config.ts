@@ -22,4 +22,5 @@ export default defineConfig(({ mode }) => {
       dedupe: ["react", "react-dom"],
     },
     server: { port: 5195, strictPort: true, proxy: api },
+    preview: { port: 5195, strictPort: true, proxy: api },
 });
