@@ -132,3 +132,4 @@ export function loadYouTubeApi(): Promise<YTNamespace> {
       previous?.();
       if (window.YT) resolve(window.YT);
     };
+    const script = document.createElement("script");
