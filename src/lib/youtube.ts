@@ -87,3 +87,4 @@ export type YTPlayer = {
   seekTo(seconds: number, allowSeekAhead: boolean): void;
   getCurrentTime(): number;
   getDuration(): number;
+  getPlayerState(): number;
