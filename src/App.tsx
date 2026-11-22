@@ -333,3 +333,4 @@ export default function App() {
           className="font-semibold text-[#111318] underline-offset-4 hover:underline"
         >
           Aakash Mehra
+        </a>
