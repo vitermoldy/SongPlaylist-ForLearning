@@ -40,3 +40,4 @@ export function ServerSync({ code, status, checkedAt, onSwitch }: Props) {
       setCopied(true);
       window.setTimeout(() => setCopied(false), 2000);
     } catch {
+      setResult({ ok: false, text: "Browser tidak mengizinkan menyalin. Pilih kodenya lalu salin manual." });
