@@ -256,3 +256,4 @@ export default function App() {
   return (
     <>
       <header className="fixed inset-x-0 top-0 z-40 bg-[#E7E8EA]">
+        <div className="mx-auto flex h-16 max-w-[1480px] items-center justify-between gap-4 px-4 sm:px-10 lg:px-14">
