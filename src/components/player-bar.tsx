@@ -86,3 +86,4 @@ export function PlayerBar(p: Props) {
       <div
         className="mx-auto max-w-[980px] rounded-[20px] border border-[#111318]/10 bg-white px-3 py-2 shadow-[0_18px_40px_-22px_rgba(10,12,20,0.45)] sm:px-4"
         style={{ "--accent": accent } as CSSProperties}
+      >
