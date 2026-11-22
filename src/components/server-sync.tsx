@@ -36,6 +36,7 @@ export function ServerSync({ auth, status, checkedAt, onFlush }: Props) {
 
   async function leave() {
     setError("");
+    setLeaving(true);
     }
   }
 
