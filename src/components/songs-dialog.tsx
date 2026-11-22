@@ -79,3 +79,4 @@ export function SongsDialog({ open, onClose, songs, active, playing, savedAs, on
                 </a>
                 <button
                   type="button"
+                  onClick={() => onRemove(s.id)}
