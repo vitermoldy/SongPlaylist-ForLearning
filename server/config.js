@@ -17,3 +17,4 @@ export const config = {
   name: 'SongPlaylist-ForLearning',
   port: num('PORT', 8811),
   db: {
+    host: str('DB_HOST', '127.0.0.1'),
