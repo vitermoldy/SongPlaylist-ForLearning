@@ -64,3 +64,4 @@ export class InfoError extends Error {
  * the owner turned embedding off; a 404 a private or removed video.
  */
 export async function fetchInfo(id: string): Promise<VideoInfo> {
+  const res = await fetch(`https://www.youtube.com/oembed?format=json&url=${encodeURIComponent(watchUrl(id))}`);
