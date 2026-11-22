@@ -300,3 +300,4 @@ export default function App() {
           className={empty ? "mx-auto max-w-[1180px] px-4 pt-[22vh] sm:px-8" : "mx-auto max-w-[1180px] px-4 pt-[12vh] sm:px-8"}
         >
           <h2 id="add-title" className="m-0 text-[clamp(40px,7vw,104px)] leading-[0.95] font-semibold tracking-[-0.045em] text-[#141414]">
+            {empty ? "Daftar putarnya masih kosong." : "Tambah lagu berikutnya."}
