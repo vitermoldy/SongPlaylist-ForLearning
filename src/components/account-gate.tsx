@@ -114,3 +114,4 @@ export function AccountGate({ auth }: { auth: AuthState }) {
                 id="gate-user"
                 className={input}
                 value={username}
+                onChange={(e) => setUsername(e.target.value)}
