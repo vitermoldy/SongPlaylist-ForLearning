@@ -64,3 +64,4 @@ export function AccountGate({ auth }: { auth: AuthState }) {
     setError("");
     setInvalid(null);
     try {
+      if (mode === "in") await signIn(name, password);
