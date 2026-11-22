@@ -119,3 +119,4 @@ export function SongsDialog({ open, onClose, songs, active, playing, savedAs, on
                 {savedAs ? "Lihat playlist" : "Simpan jadi playlist"}
               </button>
               <button
+                type="button"
