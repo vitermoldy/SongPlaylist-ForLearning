@@ -127,3 +127,4 @@ export default function App() {
   }, []);
 
   useLayoutEffect(() => {
+    const a = anchor.current;
