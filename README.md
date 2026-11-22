@@ -7,3 +7,4 @@ then flattens and sharpens as it lands, while the cards beneath lean back and di
 scroll on a card picks that song.
 
 The card motion comes from "Project Deck" by Aakash Mehra (`scroll-stacking-cards`, a 21st.dev
+component, integrated from `prompt.txt`). The original component is kept as given in
