@@ -66,6 +66,8 @@ Database `songplaylist_forlearning` (created on start):
 | `decks` | per device: current song, volume, mute, the playlist the deck was opened from, the browser's change time |
 | `deck_songs` | the songs on a device's deck, in order |
 | `playlists` | a device's saved playlists |
+| `playlist_songs` | the songs of each saved playlist, in order |
+
 
 ## Structure
 
