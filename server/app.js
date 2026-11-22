@@ -64,3 +64,5 @@ function cleanState(body) {
   const updatedAt = Number(body.updatedAt)
   if (!Number.isFinite(updatedAt) || updatedAt < 0 || updatedAt > Date.now() + 86_400_000) return 'updatedAt is not a time.'
   if (!Array.isArray(body.songs) || body.songs.length > MAX_SONGS) return `songs must be a list of at most ${MAX_SONGS}.`
+  if (!Array.isArray(body.playlists) || body.playlists.length > MAX_PLAYLISTS) return `playlists must be a list of at most ${MAX_PLAYLISTS}.`
+
