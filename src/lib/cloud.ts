@@ -52,6 +52,8 @@ export type Account = { username: string; createdAt: string };
 export type AuthStatus = "checking" | "signed-in" | "signed-out" | "unavailable";
 /** How the account was entered: the sync takes the account's copy first after `login`. */
 export type Entry = "session" | "login" | "register";
+export type AuthState = { status: AuthStatus; account: Account | null; entry: Entry | null };
+
 async function call<T>(path: string, init?: RequestInit): Promise<T> {
   let res: Response;
   try {
