@@ -9,3 +9,4 @@ const fail = (text: string): AddResult => ({ ok: false, text, songs: [] });
 
 export function describeInfoError(error: unknown) {
   if (error instanceof InfoError) {
+    if (error.status === 401 || error.status === 403) return "Pemilik video ini tidak mengizinkannya diputar di situs lain.";
