@@ -64,3 +64,4 @@ export default function App() {
       const reason = describePlayError(code);
       if (code === 100 || code === 101 || code === 150) {
         setSongs((all) => all.map((s) => (s.id === failed.id ? { ...s, problem: reason } : s)));
+      }
