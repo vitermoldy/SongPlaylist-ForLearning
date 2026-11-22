@@ -9,8 +9,7 @@ import { createAuth } from './auth.js'
  *   GET /api/state               the account's deck and saved playlists ({ saved: false } before its first save)
  *   PUT /api/state               replace them with the browser's copy (refused with 409 when the
  *                                server already holds a newer one)
- * There are no accounts: a device is its 12-character recovery code. Anyone who knows a code can
- * read and replace its data, so the page shows the code only to its owner.
+ * The state routes need a signed-in account. Each account files its data under one
  */
 
 const CODE = /^[A-HJ-NP-Z2-9]{12}$/
