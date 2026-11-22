@@ -281,3 +281,4 @@ function PlayerCard({ song, i, pos, still, ground, playing, interactive, onToggl
 /** A YouTube cover; when the 1280px one is missing YouTube sends a 120px grey stand-in, so drop to hq. */
 function Cover({ id, alt, className, priority = false, lazy = false }: { id: string; alt: string; className?: string; priority?: boolean; lazy?: boolean }) {
   const [size, setSize] = useState<"maxres" | "hq">("maxres");
+  return (
