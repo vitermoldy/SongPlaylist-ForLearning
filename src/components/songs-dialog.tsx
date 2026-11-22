@@ -33,3 +33,4 @@ export function SongsDialog({ open, onClose, songs, active, playing, savedAs, on
         setConfirmClear(false);
         onClose();
       }}
+      title="Lagu di daftar putar"
