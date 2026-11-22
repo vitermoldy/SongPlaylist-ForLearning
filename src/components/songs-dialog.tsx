@@ -57,3 +57,4 @@ export function SongsDialog({ open, onClose, songs, active, playing, savedAs, on
                   )}
                 >
                   <span className="grid w-6 shrink-0 place-items-center text-[13px] text-[#3B3F48] tabular-nums">
+                    {current ? <AudioLines aria-hidden className="size-4" style={{ color: s.accent ?? FALLBACK_ACCENT }} strokeWidth={2.4} /> : i + 1}
