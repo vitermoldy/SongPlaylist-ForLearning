@@ -149,3 +149,4 @@ export default function App() {
       }
       return result;
     },
+    [changeSongs, load],
