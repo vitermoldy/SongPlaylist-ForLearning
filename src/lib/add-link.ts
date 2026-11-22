@@ -37,3 +37,4 @@ export async function addLink(raw: string, existing: string[], onProgress?: (tex
     return fail("Mix buatan YouTube, Tonton Nanti dan Video yang Disukai hanya bisa diputar di YouTube. Tempel link lagunya, atau link playlist biasa.");
   }
 
+  if (link.kind === "video") {
