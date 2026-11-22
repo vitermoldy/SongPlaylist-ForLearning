@@ -80,3 +80,4 @@ export function AccountGate({ auth }: { auth: AuthState }) {
 
   return (
     <dialog
+      ref={ref}
