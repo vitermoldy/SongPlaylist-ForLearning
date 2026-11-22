@@ -191,3 +191,4 @@ export const SongDeck = memo(function SongDeck({
               song={current}
               i={active}
               pos={smooth}
+              still={reduce}
