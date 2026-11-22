@@ -300,3 +300,4 @@ function Cover({ id, alt, className, priority = false, lazy = false }: { id: str
   );
 }
 
+/** The play button, set into a corner cut out of the card. */
