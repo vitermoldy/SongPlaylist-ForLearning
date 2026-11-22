@@ -161,3 +161,4 @@ export default function App() {
       if (id !== list[at]?.id) return changeSongs(rest, "remove");
       const replacement = rest[Math.min(index, rest.length - 1)] ?? null;
       if (replacement) load(replacement.id, intentRef.current);
+      changeSongs(rest, "remove", replacement?.id ?? null);
