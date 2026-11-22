@@ -44,6 +44,7 @@ export function ServerSync({ auth, status, checkedAt, onFlush }: Props) {
     }
     await signOut();
     forgetSaved();
+    window.location.reload();
   }
 
   return (
