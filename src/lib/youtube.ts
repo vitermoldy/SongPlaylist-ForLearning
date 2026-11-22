@@ -156,3 +156,4 @@ export function loadYouTubeApi(): Promise<YTNamespace> {
  */
 export async function expandPlaylist(list: string): Promise<string[]> {
   const YT = await loadYouTubeApi();
+  return new Promise<string[]>((resolve, reject) => {
