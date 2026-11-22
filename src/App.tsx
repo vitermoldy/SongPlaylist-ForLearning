@@ -207,3 +207,4 @@ export default function App() {
     if (linked === id) setLinked(null);
   };
 
+  // "Hapus semua playlist": every saved list goes, the deck keeps playing what it holds
