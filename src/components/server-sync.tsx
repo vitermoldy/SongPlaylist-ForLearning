@@ -16,8 +16,7 @@ type Props = {
 const clock = (ms: number) => new Date(ms).toLocaleTimeString("id-ID", { hour: "2-digit", minute: "2-digit" });
 const joined = (iso: string) => new Date(iso).toLocaleDateString("id-ID", { day: "numeric", month: "long", year: "numeric" });
 
-/** Where the lists are kept besides this browser, the recovery code, and taking over another browser's data. */
-export function ServerSync({ code, status, checkedAt, onSwitch }: Props) {
+/** Where the lists are kept besides this browser, and the account they belong to. */
   const titleId = useId();
   const inputId = useId();
   const [copied, setCopied] = useState(false);
