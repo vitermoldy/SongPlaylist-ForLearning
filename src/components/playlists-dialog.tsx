@@ -208,7 +208,7 @@ export function PlaylistsDialog({ open, onClose, playlists, songs, linked, saved
       </div>
 
       <div className="space-y-3 border-t border-[#111318]/10 px-5 py-3 pb-[max(12px,env(safe-area-inset-bottom))] sm:px-6">
-        <ServerSync code={server.code} status={server.status} checkedAt={server.checkedAt} onSwitch={server.switchCode} />
+        <ServerSync auth={server.auth} status={server.status} checkedAt={server.checkedAt} onFlush={server.flush} />
         {playlists.length > 0 &&
           (ask?.kind === "clear" ? (
             <Confirm
