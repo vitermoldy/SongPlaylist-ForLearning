@@ -21,3 +21,4 @@ const MAX_PLAYLISTS = 200
 function sameOriginWrites(req, res, next) {
   if (req.method === 'GET' || req.method === 'HEAD') return next()
   if (!req.is('application/json')) return res.status(415).json({ error: 'Send the data as JSON.' })
+  const origin = req.headers.origin
