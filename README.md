@@ -56,3 +56,4 @@ src/components/add-song-form.tsx    the link form, with its busy, error and done
 src/hooks/use-youtube-player.ts     one IFrame player, loaded on the first play
 src/lib/youtube.ts                  link parsing, oEmbed, IFrame API loader, playlist reading
 src/lib/add-link.ts                 a pasted link into songs, with a sentence saying what happened
+src/lib/playlist.ts                 Song and SavedPlaylist types, sample songs, localStorage
