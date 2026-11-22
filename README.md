@@ -67,3 +67,5 @@ other through `@/components/ui/...` and `@/lib/utils`. Keeping that folder and t
 `components.json`, `tsconfig.json` and `vite.config.ts`) means another component can be pasted or
 added without rewriting its imports.
 
+## Notes
+
