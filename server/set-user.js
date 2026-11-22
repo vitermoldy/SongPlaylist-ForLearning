@@ -61,3 +61,4 @@ try {
   const [[deck]] = await pool.query('SELECT COUNT(*) AS n FROM deck_songs WHERE device_id = ?', [device])
   const [[lists]] = await pool.query('SELECT COUNT(*) AS n FROM playlists WHERE device_id = ?', [device])
   console.log(
+    free.length
