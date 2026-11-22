@@ -341,3 +341,4 @@ export default function App() {
         <PlayerBar
           song={song}
           index={active}
+          count={songs.length}
