@@ -319,3 +319,4 @@ export default function App() {
               <button type="button" onClick={restoreSeeds} className={headerButton}>
                 Pakai lagi {SEED_SONGS.length} lagu contoh
               </button>
+            </div>
