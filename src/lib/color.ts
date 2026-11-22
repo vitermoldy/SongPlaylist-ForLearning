@@ -52,3 +52,4 @@ export function pickAccent(pixels: Uint8ClampedArray): string {
     const [h, s, l] = rgbToHsl(rgb);
     counted++;
     if (s < 0.22 || l < 0.1 || l > 0.9) continue;
+    const weight = s * (1 - Math.abs(l - 0.5) * 1.4);
