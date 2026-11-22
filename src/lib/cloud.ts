@@ -13,3 +13,4 @@ export const formatCode = (code: string) => code.match(/.{1,4}/g)?.join(" ") ?? 
 
 /** 12 random characters; 32 letters divide 256 evenly, so every character is equally likely. */
 function newCode() {
+  const bytes = crypto.getRandomValues(new Uint8Array(12));
