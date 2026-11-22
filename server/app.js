@@ -60,3 +60,4 @@ function cleanSong(s) {
 
 /** The browser's copy, checked field by field; a string says what is wrong with it. */
 function cleanState(body) {
+  if (!body || typeof body !== 'object') return 'The data is empty.'
