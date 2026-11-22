@@ -45,3 +45,4 @@ function rateLimit(limit) {
 const text = (value, max) => (typeof value === 'string' ? value.trim().slice(0, max) : '')
 
 /** A song from the browser, or null when it is not one. */
+function cleanSong(s) {
