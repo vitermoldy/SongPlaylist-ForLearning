@@ -60,3 +60,4 @@ export default function App() {
       const { songs: list } = live.current;
       const at = list.findIndex((s) => s.id === id);
       const failed = list[at];
+      if (!failed) return;
