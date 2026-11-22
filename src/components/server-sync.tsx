@@ -104,3 +104,4 @@ export function ServerSync({ code, status, checkedAt, onSwitch }: Props) {
                 value={entry}
                 autoComplete="off"
                 spellCheck={false}
+                maxLength={20}
