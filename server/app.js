@@ -75,3 +75,4 @@ function cleanState(body) {
       songs.push(s)
     }
   }
+  const playlists = []
