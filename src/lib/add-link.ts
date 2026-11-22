@@ -46,3 +46,5 @@ export async function addLink(raw: string, existing: string[], onProgress?: (tex
     } catch (error) {
       return fail(describeInfoError(error));
     }
+  }
+
