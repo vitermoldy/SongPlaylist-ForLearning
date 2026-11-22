@@ -59,3 +59,4 @@ export class InfoError extends Error {
   }
 }
 
+/**
