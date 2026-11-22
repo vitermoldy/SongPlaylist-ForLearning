@@ -37,3 +37,4 @@ try {
   )
   const device = free[0]?.id ?? Array.from({ length: 12 }, () => ALPHABET[randomInt(ALPHABET.length)]).join('')
   let moved = 0
+  for (const { id: other } of free.slice(1)) {
