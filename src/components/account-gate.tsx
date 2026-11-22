@@ -73,3 +73,5 @@ export function AccountGate({ auth }: { auth: AuthState }) {
     } finally {
       setBusy(false);
     }
+  }
+
