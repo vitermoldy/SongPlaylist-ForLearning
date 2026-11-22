@@ -71,3 +71,4 @@ export function useYouTubePlayer(slot: RefObject<HTMLDivElement | null>, options
   }, []);
 
   const start = useCallback(
+    (id: string, autoplay: boolean) => {
