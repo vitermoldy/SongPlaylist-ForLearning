@@ -16,3 +16,4 @@ export type Song = {
 /** Official videos, checked on 2026-11-22 to play outside YouTube. */
 export const SEED_SONGS: Song[] = [
   { id: "9II3OGZETo4", title: "Hati-Hati di Jalan", artist: "Tulus" },
+  { id: "dGcGbF4ex5o", title: "Dan", artist: "Sheila on 7" },
