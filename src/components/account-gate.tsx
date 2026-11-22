@@ -155,3 +155,4 @@ export function AccountGate({ auth }: { auth: AuthState }) {
               disabled={busy}
               className="h-12 rounded-[12px] bg-[#111318] px-4 text-[15px] font-semibold text-white hover:bg-[#2A2E37] active:bg-black disabled:cursor-not-allowed disabled:opacity-60"
             >
+              {busy ? (mode === "in" ? "Memeriksa…" : "Membuat akun…") : mode === "in" ? "Masuk" : "Buat akun"}
