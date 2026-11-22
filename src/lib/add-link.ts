@@ -44,3 +44,4 @@ export async function addLink(raw: string, existing: string[], onProgress?: (tex
       const song = toSong(link.id, await fetchInfo(link.id));
       return { ok: true, text: `Ditambahkan: ${song.title}.`, songs: [song] };
     } catch (error) {
+      return fail(describeInfoError(error));
