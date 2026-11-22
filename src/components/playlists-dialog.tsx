@@ -156,3 +156,4 @@ export function PlaylistsDialog({ open, onClose, playlists, songs, linked, saved
                       type="button"
                       disabled={p.songs.length === 0}
                       onClick={() => (unsaved ? setAsk({ kind: "open", id: p.id }) : onOpen(p.id))}
+                      aria-label={`Putar playlist ${p.name}`}
