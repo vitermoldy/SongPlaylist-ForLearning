@@ -105,3 +105,4 @@ export function ServerSync({ code, status, checkedAt, onSwitch }: Props) {
                 autoComplete="off"
                 spellCheck={false}
                 maxLength={20}
+                onChange={(e) => setEntry(e.target.value)}
