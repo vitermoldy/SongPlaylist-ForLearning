@@ -81,3 +81,4 @@ export default function App() {
   /** Moves to song `index`: its card is dealt onto the deck while the player loads it. */
   const goTo = useCallback(
     (index: number, autoplay: boolean) => {
+      const target = live.current.songs[index];
