@@ -46,3 +46,4 @@ const text = (value, max) => (typeof value === 'string' ? value.trim().slice(0, 
 
 /** A song from the browser, or null when it is not one. */
 function cleanSong(s) {
+  if (!s || !VIDEO.test(s.id ?? '')) return null
