@@ -26,3 +26,4 @@ type Props = {
   onFullscreen: () => void;
 };
 
+const clock = (seconds: number) => {
