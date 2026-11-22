@@ -92,3 +92,4 @@ export function useYouTubePlayer(slot: RefObject<HTMLDivElement | null>, options
     if (!enabled || !armed) return;
     const host = slot.current;
     if (!host) return;
+    let cancelled = false;
