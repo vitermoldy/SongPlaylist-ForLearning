@@ -27,3 +27,4 @@ type Options = {
 export function useYouTubePlayer(slot: RefObject<HTMLDivElement | null>, options: Options) {
   const { enabled, volume, muted } = options;
   const handlers = useRef(options);
+  useLayoutEffect(() => {
