@@ -380,3 +380,4 @@ export default function App() {
           setListOpen(false);
           setPlaylistsOpen(true);
         }}
+        onClear={clearSongs}
