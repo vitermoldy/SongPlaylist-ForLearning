@@ -52,3 +52,4 @@ try {
       moved++
     }
   }
+  if (moved) {
