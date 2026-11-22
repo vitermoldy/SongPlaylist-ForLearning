@@ -8,3 +8,4 @@ import type { SavedPlaylist, Song } from "@/lib/playlist";
 import { thumbUrl, watchUrl } from "@/lib/youtube";
 
 type Props = {
+  open: boolean;
