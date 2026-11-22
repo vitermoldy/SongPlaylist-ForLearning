@@ -56,3 +56,4 @@ function arrived(j: number, pos: number) {
 /** The card lying on top of the deck at `pos`. */
 const topCard = (pos: number, count: number) => Math.min(count - 1, Math.max(0, Math.floor(pos + 1 - HALF_IN)));
 
+const CARD =
