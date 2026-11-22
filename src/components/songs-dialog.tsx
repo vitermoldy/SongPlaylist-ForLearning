@@ -59,3 +59,4 @@ export function SongsDialog({ open, onClose, songs, active, playing, savedAs, on
                   <span className="grid w-6 shrink-0 place-items-center text-[13px] text-[#3B3F48] tabular-nums">
                     {current ? <AudioLines aria-hidden className="size-4" style={{ color: s.accent ?? FALLBACK_ACCENT }} strokeWidth={2.4} /> : i + 1}
                   </span>
+                  <img src={thumbUrl(s.id, "mq")} alt="" width={64} height={36} loading="lazy" className="h-9 w-16 shrink-0 rounded-[6px] bg-[#D5D7DB] object-cover" />
