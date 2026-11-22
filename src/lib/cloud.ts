@@ -89,6 +89,7 @@ type EntryBody = { user: Account; device: string };
 
 /** Asks the server who is signed in on this browser. */
 export async function checkAccount() {
+  setAuth({ ...auth, status: "checking" });
   if (!body.saved) return null;
   const { saved: _, ...state } = body;
   return state as Saved;
