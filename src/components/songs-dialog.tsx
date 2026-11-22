@@ -97,3 +97,4 @@ export function SongsDialog({ open, onClose, songs, active, playing, savedAs, on
             <Confirm
               text={
                 <>
+                  Keluarkan semua {songs.length} lagu dari daftar putar?{" "}
