@@ -179,3 +179,4 @@ export function createApi(getPool) {
       }
 
       await conn.query(
+        `INSERT INTO decks (device_id, current_video, volume, muted, linked_playlist, client_updated) VALUES (?, ?, ?, ?, ?, ?)
