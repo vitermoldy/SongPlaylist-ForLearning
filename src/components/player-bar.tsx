@@ -108,3 +108,4 @@ export function PlayerBar(p: Props) {
           <div className="min-w-0 flex-1 px-1 sm:w-[200px] sm:flex-none">
             <p className="truncate text-[15px] leading-tight font-semibold text-[#111318]">{p.song?.title}</p>
             <p className="truncate text-[13px] leading-tight text-[#3B3F48]">
+              {p.song?.artist}
