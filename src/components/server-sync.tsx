@@ -66,3 +66,4 @@ export function ServerSync({ code, status, checkedAt, onSwitch }: Props) {
         <Database aria-hidden className="size-4" />
         Server lokal
       </h3>
+      <p role="status" className={cn("mt-1 text-[14px] leading-snug", trouble ? "text-[#8F1A1A]" : "text-[#3B3F48]")}>
