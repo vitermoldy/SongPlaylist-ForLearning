@@ -39,3 +39,5 @@ export type SongDeckProps = {
   ground?: string;
   className?: string;
   ref?: Ref<SongDeckHandle>;
+};
+
