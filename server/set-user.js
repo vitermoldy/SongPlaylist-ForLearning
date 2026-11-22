@@ -68,3 +68,4 @@ try {
 } catch (err) {
   await conn.rollback()
   throw err
+} finally {
