@@ -69,3 +69,4 @@ const isPlaylist = (v: unknown): v is SavedPlaylist => {
   return !!p && typeof p.id === "string" && typeof p.name === "string" && Array.isArray(p.songs) && typeof p.savedAt === "number";
 };
 
+export function loadSaved(): Saved {
