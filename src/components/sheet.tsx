@@ -53,3 +53,4 @@ export function Confirm({
   className,
 }: {
   text: ReactNode;
+  confirmLabel: string;
