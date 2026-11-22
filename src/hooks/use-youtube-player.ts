@@ -159,3 +159,4 @@ export function useYouTubePlayer(slot: RefObject<HTMLDivElement | null>, options
       }
       player.current = null;
       host.replaceChildren();
+      setStatus("idle");
