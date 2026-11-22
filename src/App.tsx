@@ -25,3 +25,4 @@ export default function App() {
   const [playlists, setPlaylists] = useState<SavedPlaylist[]>(initial.playlists);
   const [linked, setLinked] = useState<string | null>(initial.linked);
   const [notice, setNotice] = useState<string | null>(null);
+  const [listOpen, setListOpen] = useState(false);
