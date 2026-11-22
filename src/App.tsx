@@ -7,3 +7,4 @@ import { PlaylistsDialog } from "@/components/playlists-dialog";
 import { SongsDialog } from "@/components/songs-dialog";
 import { useYouTubePlayer } from "@/hooks/use-youtube-player";
 import { addLink } from "@/lib/add-link";
+import { accentFromThumb } from "@/lib/color";
