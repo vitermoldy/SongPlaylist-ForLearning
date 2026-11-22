@@ -46,3 +46,4 @@ export function SongsDialog({ open, onClose, songs, active, playing, savedAs, on
           {songs.map((s, i) => {
             const current = i === active;
             return (
+              <li key={s.id} className="flex items-center gap-1">
