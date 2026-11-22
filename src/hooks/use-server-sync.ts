@@ -24,3 +24,4 @@ export function useServerSync(snapshot: Saved, apply: (state: Saved) => void) {
   const codeRef = useRef(code);
   useLayoutEffect(() => {
     snap.current = snapshot;
+    applyRef.current = apply;
