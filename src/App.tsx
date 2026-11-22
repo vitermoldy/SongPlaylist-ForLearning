@@ -354,3 +354,4 @@ export default function App() {
           onPrev={prev}
           onNext={next}
           onSeek={seek}
+          onVolume={(v) => {
