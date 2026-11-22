@@ -99,3 +99,4 @@ export type YTPlayer = {
 type YTEvent = { target: YTPlayer; data: number };
 
 type YTPlayerOptions = {
+  host?: string;
