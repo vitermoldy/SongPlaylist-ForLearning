@@ -116,3 +116,4 @@ export function PlayerBar(p: Props) {
           <div className="flex shrink-0 items-center gap-0.5">
             <IconButton label="Lagu sebelumnya" onClick={p.onPrev}>
               <SkipBack aria-hidden className="size-5" fill="currentColor" />
+            </IconButton>
