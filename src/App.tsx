@@ -167,3 +167,4 @@ export default function App() {
   );
 
   const restoreSeeds = () => {
+    changeSongs(SEED_SONGS, "first", SEED_SONGS[0].id);
