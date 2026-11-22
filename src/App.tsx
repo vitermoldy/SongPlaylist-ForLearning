@@ -37,3 +37,4 @@ export default function App() {
     ? (linkedPlaylist && sameSongs(linkedPlaylist.songs, songs) ? linkedPlaylist : playlists.find((p) => sameSongs(p.songs, songs))) ?? null
     : null;
 
+  const deck = useRef<SongDeckHandle>(null);
