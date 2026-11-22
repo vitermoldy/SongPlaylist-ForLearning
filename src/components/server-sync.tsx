@@ -35,6 +35,7 @@ export function ServerSync({ auth, status, checkedAt, onFlush }: Props) {
   const account = auth.status === "signed-in" ? auth.account : null;
 
   async function leave() {
+    setError("");
     }
   }
 
