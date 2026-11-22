@@ -31,3 +31,4 @@ const TAG = /\s*[([][^)\]]*\b(official|video|audio|lyrics?|lirik|mv|m\/v|visuali
  */
 export function splitTitle(raw: string, channel: string) {
   const cleaned = raw.replace(TAG, "").replace(/\s{2,}/g, " ").trim();
+  const pair = cleaned.match(/^(.+?)\s+[-\u2013\u2014|]\s+(.+)$/);
