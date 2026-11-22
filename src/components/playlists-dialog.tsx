@@ -117,3 +117,4 @@ export function PlaylistsDialog({ open, onClose, playlists, songs, linked, saved
                   className="h-12 min-w-0 flex-1 rounded-[14px] border border-[#111318]/20 bg-white px-4 text-[16px] hover:border-[#111318]/35"
                 />
                 <button
+                  type="submit"
