@@ -10,6 +10,7 @@ type Props = {
   status: SyncStatus;
   checkedAt: number | null;
   /** Sends the latest lists now; false when the server could not take them. */
+  onFlush: () => Promise<boolean>;
 };
 
 const clock = (ms: number) => new Date(ms).toLocaleTimeString("id-ID", { hour: "2-digit", minute: "2-digit" });
