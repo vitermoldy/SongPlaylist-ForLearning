@@ -199,3 +199,4 @@ export function useYouTubePlayer(slot: RefObject<HTMLDivElement | null>, options
       setTime(0);
       setDuration(0);
       window.clearTimeout(tapTimer.current);
+      if (autoplay) setArmed(true);
