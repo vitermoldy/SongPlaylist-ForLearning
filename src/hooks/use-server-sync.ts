@@ -120,6 +120,7 @@ export function useServerSync(snapshot: Saved, apply: (state: Saved) => void) {
   }, [sync]);
 
   /** Sends this browser's latest copy now; false when the server could not take it. */
+  const flush = useCallback(() => sync(), [sync]);
 
   return { code, status, checkedAt, switchCode };
 }
