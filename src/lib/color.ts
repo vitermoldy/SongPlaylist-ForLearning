@@ -83,3 +83,4 @@ export function accentFromThumb(id: string): Promise<string> {
         resolve(pickAccent(ctx.getImageData(0, 0, 48, 27).data));
       } catch {
         resolve(FALLBACK_ACCENT);
+      }
