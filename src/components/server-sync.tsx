@@ -43,6 +43,7 @@ export function ServerSync({ auth, status, checkedAt, onFlush }: Props) {
       return;
     }
     await signOut();
+    forgetSaved();
   }
 
   return (
