@@ -284,3 +284,4 @@ export default function App() {
           <SongDeck
             ref={deck}
             songs={songs}
+            active={active}
