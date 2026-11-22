@@ -10,3 +10,4 @@ The card motion comes from "Project Deck" by Aakash Mehra (`scroll-stacking-card
 component, integrated from `prompt.txt`). The original component is kept as given in
 `src/components/ui/scroll-stacking-cards.tsx`; the playlist version is `song-deck.tsx`.
 
+Stack: Vite, React 19, TypeScript, Tailwind CSS v4, `motion`, `lucide-react`, the YouTube IFrame
