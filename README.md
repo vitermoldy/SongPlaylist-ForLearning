@@ -21,3 +21,4 @@ Player API. No server and no API key: everything is kept in the browser's localS
 - Player bar: previous (or back to the start after 3 seconds), play or pause, next, position,
   volume, full screen. A song that ends moves on to the next card by itself.
 - Kelola lagu: add a link, jump to a song, open it on YouTube, remove it, save the list as a
+  playlist, or empty the list.
