@@ -36,3 +36,4 @@ export function useYouTubePlayer(slot: RefObject<HTMLDivElement | null>, options
   const pending = useRef<{ id: string; autoplay: boolean } | null>(null);
   const intentRef = useRef(false);
   const timeRef = useRef(0);
+  const tapTimer = useRef(0);
