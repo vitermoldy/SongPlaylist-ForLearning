@@ -58,3 +58,4 @@ export function useServerSync(snapshot: Saved, apply: (state: Saved) => void) {
           if (error instanceof ServerError && error.status === 409) again.current = true;
           else throw error;
         }
+      } else {
