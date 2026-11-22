@@ -96,3 +96,4 @@ export function useServerSync(snapshot: Saved, apply: (state: Saved) => void) {
   useEffect(() => {
     const look = () => {
       if (document.visibilityState === "visible") void sync();
+    };
