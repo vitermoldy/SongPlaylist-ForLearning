@@ -48,3 +48,4 @@ export function Sheet({ open, onClose, title, children }: { open: boolean; onClo
 export function Confirm({
   text,
   confirmLabel,
+  onConfirm,
