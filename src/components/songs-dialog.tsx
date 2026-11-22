@@ -16,3 +16,4 @@ type Props = {
   /** The saved playlist holding exactly these songs, if any. */
   savedAs: SavedPlaylist | null;
   onPick: (index: number) => void;
+  onRemove: (id: string) => void;
