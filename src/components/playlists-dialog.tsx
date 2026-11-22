@@ -179,3 +179,4 @@ export function PlaylistsDialog({ open, onClose, playlists, songs, linked, saved
                       onConfirm={() => {
                         setAsk(null);
                         onOpen(p.id);
+                      }}
