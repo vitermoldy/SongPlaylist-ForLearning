@@ -7,6 +7,7 @@ import { createAuth } from './auth.js'
  *   GET /api/health              is the server up, and is MySQL connected
  *   /api/auth/...                register, login, logout, me (see auth.js)
  *   GET /api/state               the account's deck and saved playlists ({ saved: false } before its first save)
+ *   PUT /api/state               replace them with the browser's copy (refused with 409 when the
  *                                server already holds a newer one)
  * There are no accounts: a device is its 12-character recovery code. Anyone who knows a code can
  * read and replace its data, so the page shows the code only to its owner.
