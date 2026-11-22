@@ -21,3 +21,4 @@ export default function App() {
   const [songs, setSongs] = useState<Song[]>(initial.songs);
   const [activeId, setActiveId] = useState<string | null>(initial.current);
   const [volume, setVolume] = useState(initial.volume);
+  const [muted, setMuted] = useState(initial.muted);
