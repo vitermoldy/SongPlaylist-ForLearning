@@ -48,6 +48,7 @@ browser's own storage.
 ## Server and database
 
 The browser saves every change in its localStorage first, then sends a copy to the server, which
+keeps it in MySQL. With the server off the page works as before, says so in the Playlist panel, and
 
 ## Structure
 
