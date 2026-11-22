@@ -38,3 +38,4 @@ export type SongDeckProps = {
   /** The page ground; the cut-out corner that holds the play button is filled with it. */
   ground?: string;
   className?: string;
+  ref?: Ref<SongDeckHandle>;
