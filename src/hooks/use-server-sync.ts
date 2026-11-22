@@ -52,3 +52,4 @@ export function useServerSync(snapshot: Saved, apply: (state: Saved) => void) {
         setStatus("saving");
         try {
           await putState(codeRef.current, local);
+          agreed.current = local.updatedAt;
