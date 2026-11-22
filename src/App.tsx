@@ -375,3 +375,4 @@ export default function App() {
           goTo(index, true);
         }}
         onRemove={remove}
+        onAdd={add}
