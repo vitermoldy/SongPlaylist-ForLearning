@@ -19,3 +19,4 @@
   button:not(:disabled),
   summary,
   label[for],
+  input[type="range"]:not(:disabled) {
