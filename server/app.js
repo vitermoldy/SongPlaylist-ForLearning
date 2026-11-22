@@ -52,3 +52,4 @@ function cleanSong(s) {
   return {
     id: s.id,
     title,
+    artist: text(s.artist, 200),
