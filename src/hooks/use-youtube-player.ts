@@ -173,3 +173,4 @@ export function useYouTubePlayer(slot: RefObject<HTMLDivElement | null>, options
     else p.unMute();
   }, [status, volume, muted]);
 
+  useEffect(() => {
