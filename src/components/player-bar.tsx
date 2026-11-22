@@ -9,3 +9,4 @@ type Props = {
   song: Song | null;
   index: number;
   count: number;
+  status: PlayerStatus;
