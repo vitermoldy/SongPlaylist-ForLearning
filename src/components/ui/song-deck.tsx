@@ -113,3 +113,4 @@ export const SongDeck = memo(function SongDeck({
   }, [count, pos]);
 
   useLayoutEffect(() => {
+    measure();
