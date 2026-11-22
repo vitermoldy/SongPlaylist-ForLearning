@@ -7,3 +7,4 @@ export const ROOT = fileURLToPath(new URL('..', import.meta.url))
 // .env is optional: the variables can also be set in the shell.
 if (existsSync(ROOT + '.env')) process.loadEnvFile(ROOT + '.env')
 
+const str = (key, fallback) => process.env[key] || fallback
