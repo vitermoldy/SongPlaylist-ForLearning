@@ -23,3 +23,4 @@ export function parseYouTube(raw: string): YouTubeLink | null {
   if (VIDEO_ID.test(text)) return { kind: "video", id: text };
 
   let url: URL;
+  try {
