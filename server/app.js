@@ -132,3 +132,4 @@ export function createApi(getPool) {
     if (!deck) return res.json({ saved: false })
     await pool.query('UPDATE devices SET last_seen = CURRENT_TIMESTAMP WHERE id = ?', [req.code])
     const [deckSongs] = await pool.query(
+      'SELECT s.* FROM deck_songs d JOIN songs s ON s.video_id = d.video_id WHERE d.device_id = ? ORDER BY d.position',
