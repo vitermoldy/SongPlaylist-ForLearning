@@ -56,3 +56,4 @@ export function PlaylistsDialog({ open, onClose, playlists, songs, linked, saved
   const count = useRef(playlists.length);
   count.current = playlists.length;
   useEffect(() => {
+    if (!open) return;
