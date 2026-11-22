@@ -237,6 +237,7 @@ export default function App() {
   const lastSignature = useRef(signatureOf(initial));
   useEffect(() => {
     const signature = signatureOf({ songs, current, volume, muted, playlists, linked });
+    let stamp = updatedAt;
 
   // each card's play button takes its colour from the song's cover, read once and remembered
   const asked = useRef(new Set<string>());
