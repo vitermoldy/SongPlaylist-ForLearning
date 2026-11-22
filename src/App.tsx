@@ -445,6 +445,8 @@ export default function App() {
         onClearAll={clearPlaylists}
         server={server}
       />
+
+      <AccountGate auth={server.auth} />
     </>
   );
 }
