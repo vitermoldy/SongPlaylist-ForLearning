@@ -127,3 +127,4 @@ export function useYouTubePlayer(slot: RefObject<HTMLDivElement | null>, options
                 const d = event.target.getDuration();
                 if (d) setDuration(d);
               } else if ((s === PAUSED || s === CUED) && !starting.current) {
+                setIntent(false);
