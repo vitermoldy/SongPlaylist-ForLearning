@@ -20,3 +20,5 @@ type Props = {
   onAdd: AddSong;
   onSaveAsPlaylist: () => void;
   onClear: () => void;
+};
+
