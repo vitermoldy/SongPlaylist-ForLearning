@@ -7,3 +7,4 @@
     background: #e7e8ea;
     color: #141414;
     /* App.tsx keeps the view in place itself when the deck grows or shrinks */
+    overflow-anchor: none;
