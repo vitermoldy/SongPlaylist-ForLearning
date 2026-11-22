@@ -71,6 +71,7 @@ export function ServerSync({ auth, status, checkedAt, onFlush }: Props) {
           >
             {leaving ? "Keluar…" : "Keluar"}
           </button>
+          <p className="w-full text-[13px] leading-snug text-[#3B3F48]">Keluar menghapus daftar putar dari browser ini. Isinya tetap tersimpan di akunmu.</p>
         </div>
       </details>
     </section>
