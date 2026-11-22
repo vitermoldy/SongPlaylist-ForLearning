@@ -17,3 +17,4 @@ function newCode() {
   return Array.from(bytes, (b) => ALPHABET[b % 32]).join("");
 }
 
+/** This browser's recovery code, made on the first visit. */
