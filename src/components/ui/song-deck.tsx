@@ -312,3 +312,4 @@ function Corner({ song, i, ground, playing, onToggle }: { song: Song; i: number;
   return (
     <div className="absolute right-0 bottom-0 z-10">
       <div className="absolute right-0 bottom-full">{corner}</div>
+      <div className="absolute right-full bottom-0">{corner}</div>
