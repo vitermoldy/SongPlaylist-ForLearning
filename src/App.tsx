@@ -97,3 +97,4 @@ export default function App() {
       if (index === at || !list[index]) return;
       setActiveId(list[index].id);
       load(list[index].id, intentRef.current);
+    },
