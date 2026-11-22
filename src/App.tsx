@@ -229,3 +229,4 @@ export default function App() {
     for (const s of songs) {
       if (s.accent || asked.current.has(s.id)) continue;
       asked.current.add(s.id);
+      void accentFromThumb(s.id).then((accent) => setSongs((all) => all.map((x) => (x.id === s.id ? { ...x, accent } : x))));
