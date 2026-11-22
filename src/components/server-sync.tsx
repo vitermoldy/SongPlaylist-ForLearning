@@ -123,3 +123,4 @@ export function ServerSync({ code, status, checkedAt, onSwitch }: Props) {
             <Confirm
               text="Daftar putar dan playlist di browser ini akan diganti dengan data dari kode itu, dan browser ini ikut memakai kode itu."
               confirmLabel="Ganti data"
+              onConfirm={take}
