@@ -54,6 +54,7 @@ back to the tab and after each change, the newer copy wins: a newer one on the s
 browser's, an older one is replaced.
 
 There are no accounts. Each browser gets a 12-character recovery code, shown under Playlist, Server
+lokal. Typed into another browser, it brings the list and the saved playlists there, and that browser
 
 ## Structure
 
