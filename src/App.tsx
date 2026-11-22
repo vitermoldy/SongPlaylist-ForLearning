@@ -170,3 +170,5 @@ export default function App() {
     changeSongs(SEED_SONGS, "first", SEED_SONGS[0].id);
     setLinked(null);
     load(SEED_SONGS[0].id, false);
+  };
+
