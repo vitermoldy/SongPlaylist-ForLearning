@@ -19,3 +19,4 @@ export type YouTubeLink =
  * whole list. YouTube's own mixes, Watch later and Liked videos never play outside YouTube.
  */
 export function parseYouTube(raw: string): YouTubeLink | null {
+  const text = raw.trim();
