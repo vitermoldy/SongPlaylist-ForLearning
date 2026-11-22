@@ -172,3 +172,4 @@ export function createApi(getPool) {
       for (const s of [...state.songs, ...state.playlists.flatMap((p) => p.songs)]) catalogue.set(s.id, s)
       if (catalogue.size) {
         await conn.query(
+          `INSERT INTO songs (video_id, title, artist, accent, problem) VALUES ?
