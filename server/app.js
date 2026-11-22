@@ -23,3 +23,4 @@ function sameOriginWrites(req, res, next) {
   if (!req.is('application/json')) return res.status(415).json({ error: 'Send the data as JSON.' })
   const origin = req.headers.origin
   if (origin && req.headers.host && new URL(origin).host !== req.headers.host) return res.status(403).json({ error: 'Unknown request origin.' })
+  next()
