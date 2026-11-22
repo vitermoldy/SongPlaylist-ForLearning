@@ -30,3 +30,4 @@ export function AccountGate({ auth }: { auth: AuthState }) {
     void checkAccount();
   }, []);
 
+  // Asking to sign in again (from the playlist panel) lifts "Pakai tanpa akun".
