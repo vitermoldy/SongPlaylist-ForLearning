@@ -5,3 +5,4 @@ const LIST_ID = /^[\w-]{12,}$/;
 const HOSTS = new Set(["youtube.com", "youtu.be", "youtube-nocookie.com"]);
 
 export const YOUTUBE_HOST = "https://www.youtube-nocookie.com";
+/** A playlist link brings at most this many songs, so the deck stays scrollable. */
