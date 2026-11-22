@@ -344,3 +344,4 @@ export default function App() {
           count={songs.length}
           status={player.status}
           playing={player.intent}
+          time={player.time}
