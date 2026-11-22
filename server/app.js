@@ -130,3 +130,4 @@ export function createApi(getPool) {
     const [[deck]] = await pool.query('SELECT * FROM decks WHERE device_id = ?', [req.code])
     // a new browser asks before it has saved anything: an answer, not an error
     if (!deck) return res.json({ saved: false })
+    await pool.query('UPDATE devices SET last_seen = CURRENT_TIMESTAMP WHERE id = ?', [req.code])
