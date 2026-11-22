@@ -91,3 +91,4 @@ export function loadSaved(): Saved {
 
 export function saveState(state: Saved) {
   try {
+    localStorage.setItem(KEY, JSON.stringify(state));
