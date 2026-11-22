@@ -125,6 +125,7 @@ export function createApi(getPool) {
 
   const auth = createAuth({ getPool, cookie: 'songplaylist_forlearning_session', lang: 'id', deviceCode: CODE, newDevice: newCode })
   api.use('/auth', auth.router)
+  api.use(auth.requireUser)
     next()
   })
 
