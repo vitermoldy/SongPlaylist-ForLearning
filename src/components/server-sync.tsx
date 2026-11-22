@@ -100,3 +100,4 @@ export function ServerSync({ code, status, checkedAt, onSwitch }: Props) {
             <div className="flex gap-2">
               <input
                 id={inputId}
+                type="text"
