@@ -120,3 +120,4 @@ export function AccountGate({ auth }: { auth: AuthState }) {
                 spellCheck={false}
                 maxLength={24}
                 aria-invalid={invalid === "user" ? true : undefined}
+                aria-describedby={error ? "gate-error" : undefined}
