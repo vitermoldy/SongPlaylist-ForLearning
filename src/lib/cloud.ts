@@ -25,3 +25,4 @@ export function loadCode(): string {
     const code = newCode();
     localStorage.setItem(CODE_KEY, code);
     return code;
+  } catch {
