@@ -14,3 +14,4 @@ type Props = {
   linked: SavedPlaylist | null;
   /** The playlist holding exactly the deck's songs, if any. */
   savedAs: SavedPlaylist | null;
+  onSave: (name: string) => void;
