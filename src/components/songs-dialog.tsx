@@ -86,3 +86,4 @@ export function SongsDialog({ open, onClose, songs, active, playing, savedAs, on
                   <Trash2 aria-hidden className="size-[18px]" />
                 </button>
               </li>
+            );
