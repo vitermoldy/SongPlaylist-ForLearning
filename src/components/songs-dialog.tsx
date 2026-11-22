@@ -7,3 +7,4 @@ import { FALLBACK_ACCENT } from "@/lib/color";
 import type { SavedPlaylist, Song } from "@/lib/playlist";
 import { thumbUrl, watchUrl } from "@/lib/youtube";
 
+type Props = {
