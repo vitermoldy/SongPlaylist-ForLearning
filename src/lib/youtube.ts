@@ -17,3 +17,4 @@ export type YouTubeLink =
  * What a pasted link points at. A link that names a video adds that video alone, even when it was
  * opened from a playlist; only a link without a video (youtube.com/playlist?list=...) brings the
  * whole list. YouTube's own mixes, Watch later and Liked videos never play outside YouTube.
+ */
