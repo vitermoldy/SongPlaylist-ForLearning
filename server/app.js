@@ -141,3 +141,4 @@ export function createApi(getPool) {
       [req.code],
     )
     const byList = new Map(lists.map((l) => [l.id, []]))
+    for (const r of listSongs) byList.get(r.playlist_id)?.push(toSong(r))
