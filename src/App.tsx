@@ -172,3 +172,4 @@ export default function App() {
     load(SEED_SONGS[0].id, false);
   };
 
+  // "Kosongkan daftar": the deck is emptied, saved playlists stay as they are
