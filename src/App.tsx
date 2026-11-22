@@ -217,3 +217,5 @@ export default function App() {
   useLayoutEffect(() => {
     if ("scrollRestoration" in history) history.scrollRestoration = "manual";
     deck.current?.scrollToSong(active, false);
+  }, []);
+
