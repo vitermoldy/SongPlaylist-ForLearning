@@ -8,3 +8,4 @@ type Props = {
   open: boolean;
   onClose: () => void;
   playlists: SavedPlaylist[];
+  /** The deck as it is now. */
