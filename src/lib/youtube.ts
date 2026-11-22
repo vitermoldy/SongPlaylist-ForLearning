@@ -28,3 +28,4 @@ export function parseYouTube(raw: string): YouTubeLink | null {
   } catch {
     return null;
   }
+  const host = url.hostname.toLowerCase().replace(/^(www|m|music)\./, "");
