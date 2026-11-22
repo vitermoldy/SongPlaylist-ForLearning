@@ -175,3 +175,4 @@ export function createApi(getPool) {
           `INSERT INTO songs (video_id, title, artist, accent, problem) VALUES ?
            ON DUPLICATE KEY UPDATE title = VALUES(title), artist = VALUES(artist), accent = COALESCE(VALUES(accent), accent), problem = VALUES(problem)`,
           [[...catalogue.values()].map((s) => [s.id, s.title, s.artist, s.accent, s.problem])],
+        )
