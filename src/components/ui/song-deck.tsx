@@ -243,3 +243,4 @@ function SongCard({ song, i, pos, still, ground, playing, interactive, onToggle 
  * YouTube iframe, so moving to another song only changes which card it rides on.
  */
 function PlayerCard({ song, i, pos, still, ground, playing, interactive, onToggle, showVideo, slot }: CardProps & {
+  showVideo: boolean;
