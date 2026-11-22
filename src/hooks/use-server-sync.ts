@@ -119,27 +119,7 @@ export function useServerSync(snapshot: Saved, apply: (state: Saved) => void) {
     };
   }, [sync]);
 
-  /** Takes over the data saved under another browser's code; this browser then uses that code. */
-  const switchCode = useCallback(async (raw: string): Promise<SwitchResult> => {
-    const next = cleanCode(raw);
-    if (!isCode(next)) return { ok: false, text: "Kode pemulihan terdiri dari 12 huruf dan angka." };
-    if (next === codeRef.current) return { ok: false, text: "Itu kode browser ini sendiri." };
-    try {
-      const remote = await getState(next);
-      if (!remote) return { ok: false, text: "Belum ada data tersimpan dengan kode ini." };
-      agreed.current = remote.updatedAt;
-      applyRef.current(remote);
-      saveCode(next);
-      codeRef.current = next;
-      setCode(next);
-      setStatus("saved");
-      setCheckedAt(Date.now());
-      return { ok: true, text: `Data dari kode ini dipakai: ${remote.songs.length} lagu di daftar putar, ${remote.playlists.length} playlist.` };
-    } catch (error) {
-      if (error instanceof ServerError && error.kind === "nodb") return { ok: false, text: "Server lokal menyala, tapi MySQL belum terhubung." };
-      return { ok: false, text: "Server lokal tidak menyala. Jalankan npm run server, lalu coba lagi." };
-    }
-  }, []);
+  /** Sends this browser's latest copy now; false when the server could not take it. */
 
   return { code, status, checkedAt, switchCode };
 }
