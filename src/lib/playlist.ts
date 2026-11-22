@@ -86,3 +86,4 @@ export function loadSaved(): Saved {
     return { songs, current, volume, muted: data.muted === true, playlists, linked };
   } catch {
     return fallback;
+  }
