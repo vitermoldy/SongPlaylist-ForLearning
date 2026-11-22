@@ -104,3 +104,4 @@ export function SongsDialog({ open, onClose, songs, active, playing, savedAs, on
               confirmLabel="Ya, kosongkan"
               onConfirm={() => {
                 setConfirmClear(false);
+                onClear();
