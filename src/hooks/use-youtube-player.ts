@@ -80,3 +80,4 @@ export function useYouTubePlayer(slot: RefObject<HTMLDivElement | null>, options
       starting.current = autoplay;
       if (autoplay) {
         p.loadVideoById(id);
+        watchStart();
