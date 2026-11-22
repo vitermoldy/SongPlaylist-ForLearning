@@ -284,3 +284,4 @@ function Cover({ id, alt, className, priority = false, lazy = false }: { id: str
   return (
     <img
       src={thumbUrl(id, size)}
+      alt={alt}
