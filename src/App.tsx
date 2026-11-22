@@ -98,3 +98,4 @@ export default function App() {
       setActiveId(list[index].id);
       load(list[index].id, intentRef.current);
     },
+    [load, intentRef],
