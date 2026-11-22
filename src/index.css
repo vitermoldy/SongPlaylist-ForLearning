@@ -49,3 +49,4 @@
   background: linear-gradient(to right, var(--accent-fill) var(--fill, 0%), #a3a7af var(--fill, 0%));
 }
 
+.range::-webkit-slider-thumb {
