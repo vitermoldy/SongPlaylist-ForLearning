@@ -73,3 +73,4 @@ export default function App() {
         }, 1400);
       } else {
         setNotice(`${failed.title} tidak bisa diputar: ${reason}.`);
+      }
