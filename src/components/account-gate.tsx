@@ -103,3 +103,4 @@ export function AccountGate({ auth }: { auth: AuthState }) {
             {mode === "in"
               ? "Daftar putar dan playlist-mu tersimpan di akunmu, jadi bisa dibuka dari browser mana pun."
               : "Daftar putar dan playlist yang sudah ada di browser ini ikut masuk ke akun barumu."}
+          </p>
