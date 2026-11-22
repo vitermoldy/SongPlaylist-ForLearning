@@ -163,3 +163,5 @@ export function useYouTubePlayer(slot: RefObject<HTMLDivElement | null>, options
       setState(UNSTARTED);
       setStarted(false);
     };
+  }, [enabled, armed, slot, start, setIntent]);
+
