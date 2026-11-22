@@ -40,3 +40,4 @@ export function SongsDialog({ open, onClose, songs, active, playing, savedAs, on
       </div>
 
       {songs.length === 0 ? (
+        <p className="flex-1 px-5 py-8 text-[15px] text-[#3B3F48] sm:px-6">Belum ada lagu. Tempel link YouTube di atas untuk menambah yang pertama.</p>
