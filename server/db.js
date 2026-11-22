@@ -51,3 +51,4 @@ const TABLES = [
     saved_at DATETIME NOT NULL,
     PRIMARY KEY (device_id, id),
     CONSTRAINT playlists_device FOREIGN KEY (device_id) REFERENCES devices(id) ON DELETE CASCADE
+  ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci`,
