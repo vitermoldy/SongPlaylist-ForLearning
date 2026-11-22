@@ -15,3 +15,5 @@ export const formatCode = (code: string) => code.match(/.{1,4}/g)?.join(" ") ?? 
 function newCode() {
   const bytes = crypto.getRandomValues(new Uint8Array(12));
   return Array.from(bytes, (b) => ALPHABET[b % 32]).join("");
+}
+
