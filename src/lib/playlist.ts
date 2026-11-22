@@ -26,3 +26,4 @@ export const SEED_SONGS: Song[] = [
 const TAG = /\s*[([][^)\]]*\b(official|video|audio|lyrics?|lirik|mv|m\/v|visuali[sz]er|remaster(ed)?|4k|hd)\b[^)\]]*[)\]]/gi;
 
 /**
+ * "TULUS - Hati-Hati di Jalan (Official Music Video)" becomes the title "Hati-Hati di Jalan" by
