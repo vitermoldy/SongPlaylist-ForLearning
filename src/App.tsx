@@ -110,3 +110,4 @@ export default function App() {
     if (timeRef.current > 3 || active === 0) seek(0);
     else goTo(active - 1, intentRef.current);
   };
+  const next = () => {
