@@ -127,3 +127,4 @@ export function forgetSaved() {
   } catch {
     // blocked storage: nothing was kept either
   }
+}
