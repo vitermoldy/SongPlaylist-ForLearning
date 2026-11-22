@@ -44,3 +44,4 @@ try {
       const [[taken]] = await conn.query('SELECT 1 AS x FROM playlists WHERE device_id = ? AND id = ?', [device, list.id])
       if (taken) continue
       const [[{ next }]] = await conn.query('SELECT COALESCE(MAX(position) + 1, 0) AS next FROM playlists WHERE device_id = ?', [device])
+      await conn.query('INSERT INTO playlists (device_id, id, position, name, saved_at) VALUES (?, ?, ?, ?, ?)', [device, list.id, next, list.name, list.saved_at])
