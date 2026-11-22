@@ -8,3 +8,5 @@ scroll on a card picks that song.
 
 The card motion comes from "Project Deck" by Aakash Mehra (`scroll-stacking-cards`, a 21st.dev
 component, integrated from `prompt.txt`). The original component is kept as given in
+`src/components/ui/scroll-stacking-cards.tsx`; the playlist version is `song-deck.tsx`.
+
