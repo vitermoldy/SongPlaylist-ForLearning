@@ -209,3 +209,4 @@ export function useYouTubePlayer(slot: RefObject<HTMLDivElement | null>, options
     setIntent(true);
     setNeedsTap(false);
     const p = player.current;
+    if (!p) {
