@@ -51,3 +51,4 @@ function cleanSong(s) {
   if (!title) return null
   return {
     id: s.id,
+    title,
