@@ -370,3 +370,4 @@ export default function App() {
         active={active}
         playing={player.intent}
         savedAs={savedAs}
+        onPick={(index) => {
