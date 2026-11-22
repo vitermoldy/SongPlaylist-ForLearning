@@ -109,3 +109,4 @@ export function PlayerBar(p: Props) {
             <p className="truncate text-[15px] leading-tight font-semibold text-[#111318]">{p.song?.title}</p>
             <p className="truncate text-[13px] leading-tight text-[#3B3F48]">
               {p.song?.artist}
+              <span className="sr-only">, lagu {p.index + 1} dari {p.count}</span>
