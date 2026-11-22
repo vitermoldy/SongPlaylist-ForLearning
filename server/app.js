@@ -37,3 +37,4 @@ function rateLimit(limit) {
     recent.push(now)
     hits.set(key, recent)
     if (hits.size > 5000) hits.clear()
+    if (recent.length > limit) return res.status(429).json({ error: 'Too many requests. Try again in a moment.' })
