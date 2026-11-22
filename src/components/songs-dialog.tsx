@@ -98,3 +98,4 @@ export function SongsDialog({ open, onClose, songs, active, playing, savedAs, on
               text={
                 <>
                   Keluarkan semua {songs.length} lagu dari daftar putar?{" "}
+                  {savedAs ? `Lagunya tetap tersimpan di playlist ${savedAs.name}.` : "Daftar ini belum disimpan sebagai playlist."}
