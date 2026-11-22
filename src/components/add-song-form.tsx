@@ -45,3 +45,4 @@ export function AddSongForm({ onAdd, className, autoFocus = false }: { onAdd: Ad
         />
         <button
           type="submit"
+          disabled={busy}
