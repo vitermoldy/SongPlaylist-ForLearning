@@ -33,3 +33,4 @@ export function parseYouTube(raw: string): YouTubeLink | null {
 
   let id: string | null = null;
   if (host === "youtu.be") id = url.pathname.split("/")[1] ?? null;
+  else if (url.pathname === "/watch") id = url.searchParams.get("v");
