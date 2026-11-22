@@ -255,6 +255,7 @@ export default function App() {
       const before = live.current.songs[live.current.active]?.id ?? null;
       changeSongs(remote.songs, "first", nextActive);
       setVolume(remote.volume);
+      setMuted(remote.muted);
 
   // each card's play button takes its colour from the song's cover, read once and remembered
   const asked = useRef(new Set<string>());
