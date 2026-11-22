@@ -65,3 +65,4 @@ async function call<T>(path: string, init?: RequestInit): Promise<T> {
   if (res.ok && body) return body;
   // with the server off, Vite's dev proxy answers by itself with an empty 5xx page
   if (!body) throw new ServerError(res.status, "offline", "No answer from the server.");
+  if (res.status === 503) throw new ServerError(503, "nodb", body.error ?? "The database is not connected.");
