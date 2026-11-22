@@ -93,3 +93,4 @@ export function useYouTubePlayer(slot: RefObject<HTMLDivElement | null>, options
     const host = slot.current;
     if (!host) return;
     let cancelled = false;
+    let created: YTPlayer | null = null;
