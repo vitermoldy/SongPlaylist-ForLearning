@@ -138,3 +138,4 @@ export function AccountGate({ auth }: { auth: AuthState }) {
                 aria-invalid={invalid === "pass" ? true : undefined}
                 aria-describedby={[mode === "up" ? "gate-pass-hint" : "", error ? "gate-error" : ""].filter(Boolean).join(" ") || undefined}
               />
+              {mode === "up" && (
