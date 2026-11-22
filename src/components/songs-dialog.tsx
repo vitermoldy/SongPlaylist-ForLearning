@@ -117,3 +117,4 @@ export function SongsDialog({ open, onClose, songs, active, playing, savedAs, on
               >
                 <ListPlus aria-hidden className="size-[18px]" />
                 {savedAs ? "Lihat playlist" : "Simpan jadi playlist"}
+              </button>
