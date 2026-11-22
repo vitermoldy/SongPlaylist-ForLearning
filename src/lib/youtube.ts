@@ -71,3 +71,4 @@ export async function fetchInfo(id: string): Promise<VideoInfo> {
 }
 
 /** Why a video was refused, from the IFrame API error code, to follow "dilewati: ". */
+export function describePlayError(code: number) {
