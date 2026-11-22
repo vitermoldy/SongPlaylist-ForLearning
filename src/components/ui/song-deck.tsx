@@ -236,3 +236,5 @@ function SongCard({ song, i, pos, still, ground, playing, interactive, onToggle 
       </div>
     </motion.article>
   );
+}
+
