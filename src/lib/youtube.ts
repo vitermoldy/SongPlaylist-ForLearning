@@ -9,3 +9,4 @@ export const YOUTUBE_HOST = "https://www.youtube-nocookie.com";
 export const PLAYLIST_LIMIT = 50;
 
 export type YouTubeLink =
+  | { kind: "video"; id: string }
