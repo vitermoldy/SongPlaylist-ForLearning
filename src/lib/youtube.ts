@@ -124,3 +124,4 @@ let apiPromise: Promise<YTNamespace> | null = null;
 
 /** The IFrame API script, fetched on the first play rather than on page load. */
 export function loadYouTubeApi(): Promise<YTNamespace> {
+  if (window.YT?.Player) return Promise.resolve(window.YT);
