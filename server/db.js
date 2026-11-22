@@ -39,3 +39,4 @@ const TABLES = [
     device_id CHAR(12) NOT NULL,
     position SMALLINT UNSIGNED NOT NULL,
     video_id VARCHAR(16) NOT NULL,
+    PRIMARY KEY (device_id, position),
