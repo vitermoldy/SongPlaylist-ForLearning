@@ -155,3 +155,4 @@ export const SongDeck = memo(function SongDeck({
         if (instant) {
           measure();
           smooth.jump(pos.get());
+        }
