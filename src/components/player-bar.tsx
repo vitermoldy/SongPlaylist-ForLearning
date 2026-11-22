@@ -70,3 +70,4 @@ function Progress({ time, duration, onSeek, className }: { time: number; duratio
         aria-label="Posisi lagu"
         aria-valuetext={`${spoken(time)} dari ${spoken(duration)}`}
         style={{ "--fill": `${fill}%` } as CSSProperties}
+      />
