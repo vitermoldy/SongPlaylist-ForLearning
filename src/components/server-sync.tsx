@@ -44,3 +44,4 @@ export function ServerSync({ code, status, checkedAt, onSwitch }: Props) {
     }
   }
 
+  function ask(event: FormEvent) {
