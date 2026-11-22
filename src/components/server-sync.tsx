@@ -27,3 +27,4 @@ export function ServerSync({ code, status, checkedAt, onSwitch }: Props) {
   const line: Record<SyncStatus, string> = {
     checking: "Menghubungi server lokal…",
     saving: "Menyimpan ke server lokal…",
+    saved: checkedAt ? `Tersimpan juga di server lokal (MySQL), dicek pukul ${clock(checkedAt)}.` : "Tersimpan juga di server lokal (MySQL).",
