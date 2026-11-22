@@ -28,3 +28,4 @@ const TABLES = [
   `CREATE TABLE IF NOT EXISTS decks (
     device_id CHAR(12) PRIMARY KEY,
     current_video VARCHAR(16) NULL,
+    volume TINYINT UNSIGNED NOT NULL DEFAULT 80,
