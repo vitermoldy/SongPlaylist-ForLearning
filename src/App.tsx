@@ -270,3 +270,4 @@ export default function App() {
               <ListMusic aria-hidden className="size-[18px]" />
               <span className="sm:hidden">Lagu</span>
               <span className="hidden sm:inline">Kelola lagu</span>
+            </button>
