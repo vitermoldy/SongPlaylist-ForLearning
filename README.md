@@ -47,3 +47,4 @@ npm run preview   # serve dist/ on port 5195
 components.json                     shadcn config: @/components, @/components/ui, @/lib/utils
 src/App.tsx                         state: songs, active song, saved playlists, what the page keeps in view
 src/components/ui/song-deck.tsx     the playlist deck: card motion, scroll-to-pick, the card the player rides on
+src/components/ui/scroll-stacking-cards.tsx   the original Project Deck, unchanged
