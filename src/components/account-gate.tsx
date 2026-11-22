@@ -12,3 +12,4 @@ export function AccountGate({ auth }: { auth: AuthState }) {
   const userRef = useRef<HTMLInputElement>(null);
   const retryRef = useRef<HTMLButtonElement>(null);
   const titleId = useId();
+  const [mode, setMode] = useState<"in" | "up">("in");
