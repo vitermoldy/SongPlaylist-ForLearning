@@ -44,3 +44,4 @@ npm run preview   # serve dist/ on port 5195
 ## Structure
 
 ```
+components.json                     shadcn config: @/components, @/components/ui, @/lib/utils
