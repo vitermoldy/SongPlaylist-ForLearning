@@ -112,3 +112,5 @@ export function createApi(getPool) {
   const api = express.Router()
   api.use(express.json({ limit: '2mb' }))
   api.use(sameOriginWrites)
+  api.use(rateLimit(120))
+
