@@ -163,3 +163,4 @@ export function AccountGate({ auth }: { auth: AuthState }) {
             <button
               id="gate-switch"
               type="button"
+              onClick={() => {
