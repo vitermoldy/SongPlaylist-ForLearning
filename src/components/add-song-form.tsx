@@ -13,3 +13,4 @@ export function AddSongForm({ onAdd, className, autoFocus = false }: { onAdd: Ad
   const [status, setStatus] = useState<Status>({ kind: "idle" });
   const busy = status.kind === "busy";
 
+  async function submit(event: FormEvent) {
