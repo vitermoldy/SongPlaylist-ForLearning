@@ -83,3 +83,4 @@ export function loadSaved(): Saved {
       ? data.playlists.filter(isPlaylist).map((p) => ({ ...p, songs: p.songs.filter(isSong) }))
       : [];
     const linked = typeof data.linked === "string" && playlists.some((p) => p.id === data.linked) ? data.linked : null;
+    return { songs, current, volume, muted: data.muted === true, playlists, linked };
