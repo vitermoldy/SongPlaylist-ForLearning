@@ -20,4 +20,5 @@ export default defineConfig(({ mode }) => {
     resolve: {
       alias: { "@": `${root}src` },
       dedupe: ["react", "react-dom"],
+    },
 });
