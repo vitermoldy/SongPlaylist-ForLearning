@@ -10,3 +10,4 @@ import express from 'express'
  * read and replace its data, so the page shows the code only to its owner.
  */
 
+const CODE = /^[A-HJ-NP-Z2-9]{12}$/
