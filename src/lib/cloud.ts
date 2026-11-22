@@ -36,3 +36,5 @@ export function saveCode(code: string) {
   } catch {
     // without storage the code lasts as long as the tab
   }
+}
+
