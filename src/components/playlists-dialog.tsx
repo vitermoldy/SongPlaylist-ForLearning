@@ -174,3 +174,4 @@ export function PlaylistsDialog({ open, onClose, playlists, songs, linked, saved
                   {asking === "open" && (
                     <Confirm
                       className="mt-2"
+                      text={`Daftar putar sekarang (${songs.length} lagu) belum disimpan dan akan diganti dengan ${p.name}.`}
