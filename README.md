@@ -22,3 +22,4 @@ Player API. No server and no API key: everything is kept in the browser's localS
   volume, full screen. A song that ends moves on to the next card by itself.
 - Kelola lagu: add a link, jump to a song, open it on YouTube, remove it, save the list as a
   playlist, or empty the list.
+- Playlist: saved lists under a name. Play one (it replaces the list, with a question first when
