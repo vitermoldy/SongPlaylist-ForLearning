@@ -16,3 +16,4 @@ export default defineConfig({
     dedupe: ["react", "react-dom"],
   },
   // the deck ships its screenshots as base64 inside the JS (about 370 kB), so the one chunk is large on purpose
+  build: { chunkSizeWarningLimit: 900 },
