@@ -37,3 +37,4 @@ is kept from the original demo footer.
 
 ## Copy
 
+Indonesian, plain sentences. No middle-dot separators: label and value are laid out, or joined with a comma.
