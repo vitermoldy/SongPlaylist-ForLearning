@@ -53,3 +53,4 @@ try {
     }
   }
   if (moved) {
+    // The browser shows the newest copy, so the merged playlists count as a change made now.
