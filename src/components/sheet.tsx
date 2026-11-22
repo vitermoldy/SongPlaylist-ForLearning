@@ -73,3 +73,4 @@ export function Confirm({
         </button>
         <button
           ref={cancel}
+          type="button"
