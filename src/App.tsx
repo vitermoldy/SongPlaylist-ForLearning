@@ -367,3 +367,4 @@ export default function App() {
         open={listOpen}
         onClose={() => setListOpen(false)}
         songs={songs}
+        active={active}
