@@ -288,3 +288,4 @@ function Cover({ id, alt, className, priority = false, lazy = false }: { id: str
       width={1280}
       height={720}
       loading={lazy ? "lazy" : "eager"}
+      fetchPriority={priority ? "high" : "auto"}
