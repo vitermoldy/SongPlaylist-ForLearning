@@ -149,3 +149,4 @@ export const SongDeck = memo(function SongDeck({
         const step = el.offsetHeight / count;
         const start = el.getBoundingClientRect().top + window.scrollY;
         // land in the middle of the card's resting stretch, clear of the next card's arrival
+        const at = index <= 0 ? 0 : index - REST;
