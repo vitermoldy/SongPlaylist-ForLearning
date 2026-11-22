@@ -94,3 +94,5 @@ export type YTPlayer = {
   getIframe(): HTMLIFrameElement;
   getPlaylist?(): string[] | null;
   destroy(): void;
+};
+
