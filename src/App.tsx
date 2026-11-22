@@ -332,3 +332,4 @@ export default function App() {
           rel="noopener noreferrer"
           className="font-semibold text-[#111318] underline-offset-4 hover:underline"
         >
+          Aakash Mehra
