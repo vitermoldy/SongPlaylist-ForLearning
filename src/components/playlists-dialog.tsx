@@ -165,3 +165,4 @@ export function PlaylistsDialog({ open, onClose, playlists, songs, linked, saved
                     <button
                       type="button"
                       onClick={() => setAsk({ kind: "delete", id: p.id })}
+                      aria-label={`Hapus playlist ${p.name}`}
