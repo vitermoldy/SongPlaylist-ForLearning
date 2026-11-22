@@ -36,3 +36,4 @@ export function AccountGate({ auth }: { auth: AuthState }) {
   }, [auth.status]);
 
   useEffect(() => {
+    const d = ref.current;
