@@ -47,3 +47,4 @@ const ENTER = 0.72; // share of each card's screen spent arriving; the rest it r
 const HALF_IN = ENTER * (1 - Math.cbrt(0.5)); // how far into its screen a card is half arrived
 const REST = (1 - ENTER) / 2; // from the middle of a card's resting stretch to its end
 
+/** How far card `j` has arrived (0 below the window, 1 landed) with the deck at `pos` cards. */
