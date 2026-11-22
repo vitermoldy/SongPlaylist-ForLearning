@@ -177,3 +177,4 @@ export function useYouTubePlayer(slot: RefObject<HTMLDivElement | null>, options
     const p = player.current;
     if (!p) return;
     // before a video has loaded the player answers with undefined, not a number
+    const read = () => {
