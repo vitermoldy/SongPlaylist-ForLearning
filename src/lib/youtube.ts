@@ -176,3 +176,4 @@ export async function expandPlaylist(list: string): Promise<string[]> {
       } catch {
         // the iframe never finished loading
       }
+      box.remove();
