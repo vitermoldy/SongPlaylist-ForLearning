@@ -82,6 +82,7 @@ export function useServerSync(snapshot: Saved, apply: (state: Saved) => void) {
         void run();
       }
     }
+    return ok;
   }, []);
 
   // on opening the page, and when the code changes
