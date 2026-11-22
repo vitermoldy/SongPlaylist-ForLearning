@@ -89,3 +89,4 @@ export function loadSaved(): Saved {
   }
 }
 
+export function saveState(state: Saved) {
