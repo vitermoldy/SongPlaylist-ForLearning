@@ -63,3 +63,4 @@ export function PlaylistsDialog({ open, onClose, playlists, songs, linked, saved
   }, [open]);
 
   function save(event: FormEvent) {
+    event.preventDefault();
