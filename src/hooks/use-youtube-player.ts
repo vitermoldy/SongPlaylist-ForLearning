@@ -129,3 +129,4 @@ export function useYouTubePlayer(slot: RefObject<HTMLDivElement | null>, options
               } else if ((s === PAUSED || s === CUED) && !starting.current) {
                 setIntent(false);
               } else if (s === ENDED) {
+                starting.current = false;
