@@ -8,3 +8,4 @@ export type AddResult = { ok: boolean; text: string; songs: Song[] };
 const fail = (text: string): AddResult => ({ ok: false, text, songs: [] });
 
 export function describeInfoError(error: unknown) {
+  if (error instanceof InfoError) {
