@@ -255,3 +255,4 @@ export default function App() {
 
   return (
     <>
+      <header className="fixed inset-x-0 top-0 z-40 bg-[#E7E8EA]">
