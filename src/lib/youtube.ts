@@ -181,3 +181,4 @@ export async function expandPlaylist(list: string): Promise<string[]> {
       else reject(new Error("The playlist could not be read."));
     };
     const timer = window.setTimeout(() => finish(null), 12000);
+    const player = new YT.Player(el, {
