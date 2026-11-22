@@ -5,3 +5,4 @@
 import { useCallback, useEffect, useLayoutEffect, useRef, useState, type RefObject } from "react";
 import { YOUTUBE_HOST, loadYouTubeApi, type YTPlayer } from "@/lib/youtube";
 
+const UNSTARTED = -1;
