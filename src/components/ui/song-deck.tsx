@@ -232,3 +232,4 @@ function SongCard({ song, i, pos, still, ground, playing, interactive, onToggle 
           <Cover id={song.id} alt={`Sampul video ${song.title}`} priority={i === 0} lazy={i > 1} className="absolute inset-0 size-full object-cover" />
         </div>
         <Corner song={song} i={i} ground={ground} playing={playing} onToggle={onToggle} />
+        <motion.div aria-hidden className="pointer-events-none absolute inset-0 bg-[#0A0C14]" style={{ opacity: still ? 0 : m.dim }} />
