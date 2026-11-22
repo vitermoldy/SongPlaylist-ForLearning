@@ -124,3 +124,4 @@ export const SongDeck = memo(function SongDeck({
       window.clearTimeout(timer);
       timer = window.setTimeout(() => {
         const raw = measure();
+        // reading the section below the deck is not choosing a song
