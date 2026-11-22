@@ -186,3 +186,4 @@ export function PlaylistsDialog({ open, onClose, playlists, songs, linked, saved
                   {asking === "delete" && (
                     <Confirm
                       className="mt-2"
+                      text={`Hapus playlist ${p.name}? Daftar putar yang sedang terbuka tidak ikut terhapus.`}
