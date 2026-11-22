@@ -195,3 +195,4 @@ export default function App() {
   const openPlaylist = (id: string) => {
     const chosen = playlists.find((p) => p.id === id);
     const first = chosen?.songs[0];
+    if (!chosen || !first) return;
