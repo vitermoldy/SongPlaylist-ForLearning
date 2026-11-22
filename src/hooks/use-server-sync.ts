@@ -33,3 +33,5 @@ export function useServerSync(snapshot: Saved, apply: (state: Saved) => void) {
   const retry = useRef(0);
   const debounce = useRef(0);
   // the change time the server is known to agree with; a snapshot at this time needs no call
+  const agreed = useRef<number | null>(null);
+
