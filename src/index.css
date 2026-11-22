@@ -45,3 +45,4 @@
 
 .range::-webkit-slider-runnable-track {
   height: 4px;
+  border-radius: 999px;
