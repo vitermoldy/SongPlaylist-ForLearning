@@ -22,3 +22,4 @@ const TABLES = [
     title VARCHAR(200) NOT NULL,
     artist VARCHAR(200) NOT NULL,
     accent CHAR(7) NULL,
+    problem VARCHAR(200) NULL,
