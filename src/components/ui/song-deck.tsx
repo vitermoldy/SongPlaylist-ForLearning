@@ -267,3 +267,4 @@ function PlayerCard({ song, i, pos, still, ground, playing, interactive, onToggl
           <Cover
             key={song.id}
             id={song.id}
+            alt={`Sampul video ${song.title}`}
