@@ -52,3 +52,4 @@ export function Confirm({
   onCancel,
   className,
 }: {
+  text: ReactNode;
