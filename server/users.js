@@ -26,3 +26,4 @@ if (rows.length === 0) {
       'kali masuk': r.login_count,
       'lagu di daftar putar': Number(r.deck),
       playlist: Number(r.playlists),
+    })),
