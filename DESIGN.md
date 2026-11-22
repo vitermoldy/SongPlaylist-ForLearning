@@ -29,3 +29,5 @@ is kept from the original demo footer.
 - Cards 24px radius, corner button 20px, panels and inputs 14px, small buttons 12px, play buttons round.
 - Shadow only on the cards (they are a physical stack) and the player bar (it floats over the deck).
 
+## Motion
+
