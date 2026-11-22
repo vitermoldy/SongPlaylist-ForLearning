@@ -49,3 +49,5 @@ export const watchUrl = (id: string) => `https://www.youtube.com/watch?v=${id}`;
 export const thumbUrl = (id: string, size: "maxres" | "hq" | "mq") =>
   `https://i.ytimg.com/vi/${id}/${size}default.jpg`;
 
+export type VideoInfo = { title: string; author: string };
+
