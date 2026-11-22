@@ -107,3 +107,4 @@ export const SongDeck = memo(function SongDeck({
   const measure = useCallback(() => {
     const el = deck.current;
     if (!el || count === 0) return 0;
+    const raw = -el.getBoundingClientRect().top / (el.offsetHeight / count);
