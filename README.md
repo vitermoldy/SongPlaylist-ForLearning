@@ -85,6 +85,7 @@ src/components/sheet.tsx            side panel on <dialog>, and the in-place con
 src/components/add-song-form.tsx    the link form, with its busy, error and done states
 src/hooks/use-youtube-player.ts     one IFrame player, loaded on the first play
 src/hooks/use-server-sync.ts        keeps the server's copy in step, newer copy wins
+src/components/server-sync.tsx      "Server lokal" in the Playlist panel: status, recovery code, switch code
 src/lib/youtube.ts                  link parsing, oEmbed, IFrame API loader, playlist reading
 src/lib/add-link.ts                 a pasted link into songs, with a sentence saying what happened
 src/lib/playlist.ts                 Song and SavedPlaylist types, sample songs, localStorage
