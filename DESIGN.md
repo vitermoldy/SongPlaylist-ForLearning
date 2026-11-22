@@ -9,3 +9,4 @@ direction; everything added around it follows it.
 | Role | Value | Why |
 | --- | --- | --- |
 | Ground | `#E7E8EA` | The deck's page ground; the cut-out corner is filled with it, so the button sits "in" the card. |
+| Ink | `#111318` / `#141414` | Titles, buttons. |
