@@ -51,3 +51,4 @@ src/components/ui/scroll-stacking-cards.tsx   the original Project Deck, unchang
 src/components/player-bar.tsx       transport under the deck
 src/components/songs-dialog.tsx     "Kelola lagu" panel
 src/components/playlists-dialog.tsx "Playlist" panel
+src/components/sheet.tsx            side panel on <dialog>, and the in-place confirm
