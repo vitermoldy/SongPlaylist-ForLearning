@@ -184,3 +184,4 @@ export function createApi(getPool) {
            linked_playlist = VALUES(linked_playlist), client_updated = VALUES(client_updated)`,
         [req.code, state.current, state.volume, state.muted, state.linked, state.updatedAt],
       )
+      await conn.query('DELETE FROM deck_songs WHERE device_id = ?', [req.code])
