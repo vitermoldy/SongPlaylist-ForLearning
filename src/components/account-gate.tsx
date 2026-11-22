@@ -108,3 +108,4 @@ export function AccountGate({ auth }: { auth: AuthState }) {
             <div>
               <label htmlFor="gate-user" className="mb-2 block text-[14px] font-semibold">
                 Username
+              </label>
