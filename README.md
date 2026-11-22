@@ -12,6 +12,7 @@ component, integrated from `prompt.txt`). The original component is kept as give
 
 Stack: Vite, React 19, TypeScript, Tailwind CSS v4, `motion`, `lucide-react`, the YouTube IFrame
 Player API, and a small local server (Express 5 and MySQL 8) that keeps a copy of the lists. No
+YouTube API key is needed.
 
 ## What it does
 
