@@ -21,3 +21,4 @@ type Props = {
   onClearAll: () => void;
 };
 
+/** "22 Nov", with the year only when it is not this year. */
