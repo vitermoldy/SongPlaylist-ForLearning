@@ -74,3 +74,4 @@ export function PlaylistsDialog({ open, onClose, playlists, songs, linked, saved
       <div className="border-b border-[#111318]/10 px-5 pb-4 sm:px-6">
         {songs.length === 0 ? (
           <p className="text-[15px] leading-snug text-[#3B3F48]">Daftar putar sekarang kosong, jadi belum ada yang bisa disimpan.</p>
+        ) : savedAs ? (
