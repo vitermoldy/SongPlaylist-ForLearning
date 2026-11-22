@@ -295,3 +295,4 @@ function Cover({ id, alt, className, priority = false, lazy = false }: { id: str
       }}
       onError={() => setSize("hq")}
       // hq is 4:3 with black bands; on the taller phone card it is enlarged until they are cut off
+      className={cn(className, size === "hq" && "max-sm:scale-[1.34]")}
