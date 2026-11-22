@@ -79,6 +79,7 @@ export function ServerSync({ auth, status, checkedAt, onFlush }: Props) {
             id="account-enter"
             type="button"
             onClick={() => void checkAccount()}
+            className="h-11 rounded-[12px] bg-[#111318] px-4 text-[14px] font-semibold text-white hover:bg-[#2A2E37] active:bg-black"
         </div>
       </details>
     </section>
