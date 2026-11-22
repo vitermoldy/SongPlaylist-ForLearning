@@ -60,3 +60,4 @@ export function Confirm({
 }) {
   const cancel = useRef<HTMLButtonElement>(null);
   useEffect(() => cancel.current?.focus(), []);
+  return (
