@@ -10,3 +10,5 @@ const ENDED = 0;
 const PLAYING = 1;
 const PAUSED = 2;
 const BUFFERING = 3;
+const CUED = 5;
+
