@@ -184,3 +184,4 @@ export function useYouTubePlayer(slot: RefObject<HTMLDivElement | null>, options
       if (Number.isFinite(d) && d > 0) setDuration(d);
     };
     read();
+    if (state !== PLAYING) return;
