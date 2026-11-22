@@ -161,3 +161,5 @@ export const SongDeck = memo(function SongDeck({
     [count, reduce, measure, pos, smooth],
   );
 
+  const current = songs[active];
+
