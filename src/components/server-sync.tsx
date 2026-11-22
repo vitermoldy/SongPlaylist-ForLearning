@@ -132,3 +132,4 @@ export function ServerSync({ code, status, checkedAt, onSwitch }: Props) {
               {result.text}
             </p>
           )}
+        </div>
