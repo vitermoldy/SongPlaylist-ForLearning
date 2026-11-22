@@ -117,3 +117,4 @@ export default function App() {
   // Adding or removing a song changes the deck's height. Keep the add section where the eye is
   // when it is on screen; otherwise, after a removal, put the playing song's card back on top.
   const anchor = useRef<{ addTop: number } | "deck" | null>(null);
+  const changeSongs = useCallback((nextSongs: Song[], kind: "first" | "add" | "remove", nextActive?: string | null) => {
