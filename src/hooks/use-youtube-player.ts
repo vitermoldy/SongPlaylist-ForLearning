@@ -185,3 +185,4 @@ export function useYouTubePlayer(slot: RefObject<HTMLDivElement | null>, options
     };
     read();
     if (state !== PLAYING) return;
+    const timer = window.setInterval(read, 250);
