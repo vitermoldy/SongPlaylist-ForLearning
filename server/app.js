@@ -149,3 +149,4 @@ export function createApi(getPool) {
       volume: deck.volume,
       muted: Boolean(deck.muted),
       linked: deck.linked_playlist,
+      songs: deckSongs.map(toSong),
