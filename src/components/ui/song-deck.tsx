@@ -29,3 +29,4 @@ export type SongDeckProps = {
   playing: boolean;
   /** True once the active song has frames to show; until then its cover stays up. */
   showVideo: boolean;
+  /** Where the YouTube player builds its iframe: an empty element on the active card. */
