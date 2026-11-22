@@ -61,3 +61,4 @@ export function AccountGate({ auth }: { auth: AuthState }) {
       return;
     }
     setBusy(true);
+    setError("");
