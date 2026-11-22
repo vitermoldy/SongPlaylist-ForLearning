@@ -233,3 +233,4 @@ function SongCard({ song, i, pos, still, ground, playing, interactive, onToggle 
         </div>
         <Corner song={song} i={i} ground={ground} playing={playing} onToggle={onToggle} />
         <motion.div aria-hidden className="pointer-events-none absolute inset-0 bg-[#0A0C14]" style={{ opacity: still ? 0 : m.dim }} />
+      </div>
