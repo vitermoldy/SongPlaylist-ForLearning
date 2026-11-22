@@ -65,3 +65,4 @@ export function ServerSync({ code, status, checkedAt, onSwitch }: Props) {
       <h3 id={titleId} className="flex items-center gap-2 text-[15px] font-semibold">
         <Database aria-hidden className="size-4" />
         Server lokal
+      </h3>
