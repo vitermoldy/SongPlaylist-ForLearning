@@ -71,3 +71,4 @@ const isPlaylist = (v: unknown): v is SavedPlaylist => {
 
 export function loadSaved(): Saved {
   const fallback: Saved = { songs: SEED_SONGS, current: SEED_SONGS[0].id, volume: 80, muted: false, playlists: [], linked: null };
+  try {
