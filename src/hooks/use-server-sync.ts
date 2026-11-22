@@ -26,3 +26,5 @@ export function useServerSync(snapshot: Saved, apply: (state: Saved) => void) {
     snap.current = snapshot;
     applyRef.current = apply;
     codeRef.current = code;
+  });
+
