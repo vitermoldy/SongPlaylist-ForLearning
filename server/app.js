@@ -72,3 +72,4 @@ function cleanState(body) {
     const s = cleanSong(raw)
     if (s && !seen.has(s.id)) {
       seen.add(s.id)
+      songs.push(s)
