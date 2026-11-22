@@ -96,3 +96,4 @@ export function useYouTubePlayer(slot: RefObject<HTMLDivElement | null>, options
     let created: YTPlayer | null = null;
     setStatus("loading");
 
+    loadYouTubeApi()
