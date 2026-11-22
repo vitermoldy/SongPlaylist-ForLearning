@@ -155,3 +155,4 @@ export function PlayerBar(p: Props) {
               aria-label="Volume"
               aria-valuetext={`${p.muted ? 0 : p.volume} persen`}
               style={{ "--fill": `${p.muted ? 0 : p.volume}%` } as CSSProperties}
+            />
