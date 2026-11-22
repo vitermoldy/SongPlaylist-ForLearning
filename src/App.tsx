@@ -392,3 +392,4 @@ export default function App() {
         savedAs={savedAs}
         onSave={savePlaylist}
         onUpdate={updatePlaylist}
+        onOpen={openPlaylist}
