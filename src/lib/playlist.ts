@@ -74,3 +74,4 @@ export function loadSaved(): Saved {
   try {
     const raw = localStorage.getItem(KEY);
     if (!raw) return fallback;
+    const data = JSON.parse(raw) as Partial<Saved>;
