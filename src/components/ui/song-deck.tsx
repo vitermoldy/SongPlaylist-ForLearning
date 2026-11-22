@@ -298,3 +298,5 @@ function Cover({ id, alt, className, priority = false, lazy = false }: { id: str
       className={cn(className, size === "hq" && "max-sm:scale-[1.34]")}
     />
   );
+}
+
