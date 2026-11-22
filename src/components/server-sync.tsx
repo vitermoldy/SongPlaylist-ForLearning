@@ -72,3 +72,4 @@ export function ServerSync({ code, status, checkedAt, onSwitch }: Props) {
 
       <details className="group mt-1">
         <summary className="inline-flex h-11 list-none items-center gap-1.5 text-[14px] font-medium text-[#111318] underline-offset-4 hover:underline [&::-webkit-details-marker]:hidden">
+          <ChevronDown aria-hidden className="size-4 transition-transform duration-200 group-open:rotate-180 motion-reduce:transition-none" />
