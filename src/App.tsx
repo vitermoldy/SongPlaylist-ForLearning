@@ -383,3 +383,4 @@ export default function App() {
         onClear={clearSongs}
       />
 
+      <PlaylistsDialog
