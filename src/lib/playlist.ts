@@ -37,3 +37,5 @@ export function splitTitle(raw: string, channel: string) {
   return { title: cleaned || raw, artist: artist || channel };
 }
 
+export const toSong = (id: string, info: VideoInfo): Song => ({ id, ...splitTitle(info.title, info.author) });
+
