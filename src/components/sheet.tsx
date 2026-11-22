@@ -39,3 +39,4 @@ export function Sheet({ open, onClose, title, children }: { open: boolean; onClo
           </button>
         </div>
         {children}
+      </div>
