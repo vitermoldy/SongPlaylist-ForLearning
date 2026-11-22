@@ -95,3 +95,4 @@ export function saveState(state: Saved) {
   } catch {
     // private mode or full storage: the list just is not remembered
   }
+}
