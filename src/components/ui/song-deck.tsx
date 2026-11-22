@@ -195,3 +195,4 @@ export const SongDeck = memo(function SongDeck({
               ground={ground}
               playing={playing}
               showVideo={showVideo}
+              slot={playerSlot}
