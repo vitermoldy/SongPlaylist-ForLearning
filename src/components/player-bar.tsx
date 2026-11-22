@@ -122,3 +122,4 @@ export function PlayerBar(p: Props) {
               onClick={p.onToggle}
               aria-label={loading ? "Memuat pemutar YouTube" : p.playing ? "Jeda" : "Putar"}
               aria-busy={loading}
+              className="grid size-12 shrink-0 place-items-center rounded-full text-white transition-transform duration-150 hover:scale-[1.05] active:scale-95 focus-visible:outline-2 focus-visible:outline-offset-2"
