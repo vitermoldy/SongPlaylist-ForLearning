@@ -91,3 +91,4 @@ function cleanState(body) {
         list.push(s)
       }
     }
+    playlists.push({ id: p.id, name: text(p.name, 60) || 'Playlist', savedAt, songs: list })
