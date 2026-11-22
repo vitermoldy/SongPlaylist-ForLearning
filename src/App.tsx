@@ -95,3 +95,4 @@ export default function App() {
     (index: number) => {
       const { songs: list, active: at } = live.current;
       if (index === at || !list[index]) return;
+      setActiveId(list[index].id);
