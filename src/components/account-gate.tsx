@@ -76,3 +76,5 @@ export function AccountGate({ auth }: { auth: AuthState }) {
   }
 
   const input =
+    "h-12 w-full min-w-0 rounded-[14px] border border-[#111318]/20 bg-white px-3 text-[16px] text-[#111318] hover:border-[#111318]/35 aria-[invalid=true]:border-[#8F1A1A]";
+
