@@ -31,3 +31,4 @@ const savedDate = (ms: number) => {
 /** Up to four covers of the playlist's first songs, as one 16:9 tile. */
 function Mosaic({ songs }: { songs: Song[] }) {
   const four = songs.length >= 4 ? songs.slice(0, 4) : songs.slice(0, 1);
+  return (
