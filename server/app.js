@@ -11,3 +11,4 @@ import express from 'express'
  */
 
 const CODE = /^[A-HJ-NP-Z2-9]{12}$/
+const VIDEO = /^[\w-]{11}$/
