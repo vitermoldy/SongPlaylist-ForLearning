@@ -122,3 +122,4 @@ export function useServerSync(snapshot: Saved, apply: (state: Saved) => void) {
       setCheckedAt(Date.now());
       return { ok: true, text: `Data dari kode ini dipakai: ${remote.songs.length} lagu di daftar putar, ${remote.playlists.length} playlist.` };
     } catch (error) {
+      if (error instanceof ServerError && error.kind === "nodb") return { ok: false, text: "Server lokal menyala, tapi MySQL belum terhubung." };
