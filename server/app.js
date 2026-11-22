@@ -85,3 +85,4 @@ function cleanState(body) {
     const list = []
     const inList = new Set()
     for (const raw of p.songs) {
+      const s = cleanSong(raw)
