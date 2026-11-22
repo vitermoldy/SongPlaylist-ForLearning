@@ -9,3 +9,4 @@ import mysql from 'mysql2/promise'
  * - deck_songs: the songs on a device's deck, in order;
  * - playlists: a device's saved playlists;
  * - playlist_songs: the songs of each saved playlist, in order.
+ * Deleting a device removes everything of it (ON DELETE CASCADE); songs stay as a shared catalogue.
