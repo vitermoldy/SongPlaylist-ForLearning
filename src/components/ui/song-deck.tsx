@@ -251,3 +251,4 @@ function PlayerCard({ song, i, pos, still, ground, playing, interactive, onToggl
     <motion.article
       aria-label={`Lagu yang dipilih: ${song.title} oleh ${song.artist}`}
       inert={!interactive}
+      className={CARD}
