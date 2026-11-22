@@ -93,3 +93,5 @@ export function AccountGate({ auth }: { auth: AuthState }) {
     >
       <h2 id={titleId} className="text-[20px] font-semibold tracking-[-0.02em]">
         {mode === "in" ? "Masuk ke Daftar putar" : "Buat akun Daftar putar"}
+      </h2>
+
