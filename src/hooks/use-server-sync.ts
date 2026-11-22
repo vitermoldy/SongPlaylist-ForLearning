@@ -94,7 +94,7 @@ export function useServerSync(snapshot: Saved, apply: (state: Saved) => void) {
     }
     void sync(auth.entry === "login");
     return () => window.clearTimeout(retry.current);
-  }, [code, sync]);
+  }, [auth.status, auth.entry, auth.account?.username, sync]);
 
   // after a change, once the listener pauses
   useEffect(() => {
