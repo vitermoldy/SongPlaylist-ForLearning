@@ -21,3 +21,4 @@ export function ServerSync({ code, status, checkedAt, onSwitch }: Props) {
   const [copied, setCopied] = useState(false);
   const [entry, setEntry] = useState("");
   const [asking, setAsking] = useState(false);
+  const [busy, setBusy] = useState(false);
