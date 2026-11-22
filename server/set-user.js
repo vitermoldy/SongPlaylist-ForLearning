@@ -43,3 +43,4 @@ try {
     for (const list of lists) {
       const [[taken]] = await conn.query('SELECT 1 AS x FROM playlists WHERE device_id = ? AND id = ?', [device, list.id])
       if (taken) continue
+      const [[{ next }]] = await conn.query('SELECT COALESCE(MAX(position) + 1, 0) AS next FROM playlists WHERE device_id = ?', [device])
