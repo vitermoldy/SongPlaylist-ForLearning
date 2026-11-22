@@ -192,3 +192,4 @@ export default function App() {
   };
 
   /** A saved playlist replaces the deck, and its first song starts playing. */
+  const openPlaylist = (id: string) => {
