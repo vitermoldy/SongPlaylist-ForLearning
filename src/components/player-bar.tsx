@@ -95,3 +95,4 @@ export function PlayerBar(p: Props) {
             {p.note.action && (
               <button
                 type="button"
+                onClick={p.note.action.run}
