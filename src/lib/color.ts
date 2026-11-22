@@ -59,3 +59,4 @@ export function pickAccent(pixels: Uint8ClampedArray): string {
     bucket.g += rgb[1] * weight;
     bucket.b += rgb[2] * weight;
   }
+  const best = buckets.reduce((a, b) => (b.weight > a.weight ? b : a));
