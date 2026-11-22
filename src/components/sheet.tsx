@@ -31,3 +31,4 @@ export function Sheet({ open, onClose, title, children }: { open: boolean; onClo
           </h2>
           <button
             type="button"
+            onClick={onClose}
