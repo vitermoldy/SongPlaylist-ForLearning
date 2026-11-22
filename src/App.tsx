@@ -252,6 +252,7 @@ export default function App() {
       const nextActive = remote.current && remote.songs.some((s) => s.id === remote.current) ? remote.current : (remote.songs[0]?.id ?? null);
       lastSignature.current = signatureOf({ ...remote, current: nextActive });
       setUpdatedAt(remote.updatedAt);
+      const before = live.current.songs[live.current.active]?.id ?? null;
 
   // each card's play button takes its colour from the song's cover, read once and remembered
   const asked = useRef(new Set<string>());
