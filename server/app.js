@@ -148,3 +148,4 @@ export function createApi(getPool) {
       current: deck.current_video,
       volume: deck.volume,
       muted: Boolean(deck.muted),
+      linked: deck.linked_playlist,
