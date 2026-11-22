@@ -37,3 +37,4 @@ export function AddSongForm({ onAdd, className, autoFocus = false }: { onAdd: Ad
           spellCheck={false}
           autoFocus={autoFocus}
           value={value}
+          onChange={(e) => setValue(e.target.value)}
