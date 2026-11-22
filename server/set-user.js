@@ -31,3 +31,4 @@ if (found) {
 const conn = await pool.getConnection()
 try {
   await conn.beginTransaction()
+  const [free] = await conn.query(
