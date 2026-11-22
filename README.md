@@ -29,7 +29,7 @@ YouTube API key is needed.
   the list.
 - Each card's play button takes its colour from the song's cover, deepened until the white icon
   on it reads at 4.5:1 or better.
-- Server lokal: a copy of everything in MySQL, and a recovery code to carry it to another browser.
+- Akun: sign in with a username and password; the lists are kept with the account in MySQL.
 - Reduced motion: cards appear in place, no travel or blur.
 
 ## Run it
