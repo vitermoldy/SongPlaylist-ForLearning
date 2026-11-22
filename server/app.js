@@ -77,3 +77,4 @@ function cleanState(body) {
   }
   const playlists = []
   const ids = new Set()
+  for (const p of body.playlists) {
