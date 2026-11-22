@@ -164,3 +164,4 @@ export const SongDeck = memo(function SongDeck({
   const current = songs[active];
 
   return (
+    <MotionConfig reducedMotion="user">
