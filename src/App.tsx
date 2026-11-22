@@ -5,6 +5,7 @@ import { AddSongForm, type AddSong } from "@/components/add-song-form";
 import { PlayerBar } from "@/components/player-bar";
 import { PlaylistsDialog } from "@/components/playlists-dialog";
 import { SongsDialog } from "@/components/songs-dialog";
+import { useServerSync } from "@/hooks/use-server-sync";
 import { useYouTubePlayer } from "@/hooks/use-youtube-player";
 import { addLink } from "@/lib/add-link";
 import { accentFromThumb } from "@/lib/color";
