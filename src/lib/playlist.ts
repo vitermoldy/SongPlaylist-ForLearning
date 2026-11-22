@@ -75,3 +75,4 @@ export function loadSaved(): Saved {
     const raw = localStorage.getItem(KEY);
     if (!raw) return fallback;
     const data = JSON.parse(raw) as Partial<Saved>;
+    if (!Array.isArray(data.songs)) return fallback;
