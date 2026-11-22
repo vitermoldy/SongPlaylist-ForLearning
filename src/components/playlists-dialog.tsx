@@ -16,3 +16,4 @@ type Props = {
   savedAs: SavedPlaylist | null;
   onSave: (name: string) => void;
   onUpdate: (id: string) => void;
+  onOpen: (id: string) => void;
