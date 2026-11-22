@@ -18,3 +18,4 @@ export function Sheet({ open, onClose, title, children }: { open: boolean; onClo
     <dialog
       ref={ref}
       aria-labelledby={titleId}
+      onClose={onClose}
