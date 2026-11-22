@@ -19,3 +19,4 @@ const TABLES = [
   ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci`,
   `CREATE TABLE IF NOT EXISTS songs (
     video_id VARCHAR(16) PRIMARY KEY,
+    title VARCHAR(200) NOT NULL,
