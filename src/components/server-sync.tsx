@@ -19,3 +19,4 @@ export function ServerSync({ code, status, checkedAt, onSwitch }: Props) {
   const titleId = useId();
   const inputId = useId();
   const [copied, setCopied] = useState(false);
+  const [entry, setEntry] = useState("");
