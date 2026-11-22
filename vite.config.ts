@@ -5,3 +5,5 @@ import tailwindcss from "@tailwindcss/vite";
 
 // On this machine the working folder can arrive as c:\ or C:\; Vite then loads React twice
 // (a blank page). Pinning the root with an upper-case drive letter keeps one copy.
+const root = fileURLToPath(new URL(".", import.meta.url)).replace(/^[a-z]:/, (d) => d.toUpperCase());
+
