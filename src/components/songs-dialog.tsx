@@ -116,3 +116,4 @@ export function SongsDialog({ open, onClose, songs, active, playing, savedAs, on
                 className="inline-flex h-11 items-center gap-2 rounded-[12px] bg-[#111318] px-4 text-[14px] font-semibold text-white hover:bg-[#2A2E37] active:bg-black"
               >
                 <ListPlus aria-hidden className="size-[18px]" />
+                {savedAs ? "Lihat playlist" : "Simpan jadi playlist"}
