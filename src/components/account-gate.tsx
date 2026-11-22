@@ -178,3 +178,4 @@ export function AccountGate({ auth }: { auth: AuthState }) {
       )}
 
       {offline && (
+        <div id="gate-offline">
