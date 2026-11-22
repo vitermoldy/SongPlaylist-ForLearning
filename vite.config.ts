@@ -15,4 +15,5 @@ export default defineConfig(({ mode }) => {
 
   return {
     root,
+    base: "./",
 });
