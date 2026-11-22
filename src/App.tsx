@@ -211,3 +211,5 @@ export default function App() {
   const clearPlaylists = () => {
     setPlaylists([]);
     setLinked(null);
+  };
+
