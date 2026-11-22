@@ -126,3 +126,4 @@ export function createApi(getPool) {
   })
 
   api.get('/state/:code', async (req, res) => {
+    const pool = getPool()
