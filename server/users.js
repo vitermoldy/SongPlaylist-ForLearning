@@ -28,3 +28,4 @@ if (rows.length === 0) {
       playlist: Number(r.playlists),
     })),
   )
+}
