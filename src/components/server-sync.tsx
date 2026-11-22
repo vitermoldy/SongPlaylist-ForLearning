@@ -51,7 +51,7 @@ export function ServerSync({ auth, status, checkedAt, onFlush }: Props) {
     <section aria-labelledby={titleId}>
       <h3 id={titleId} className="flex items-center gap-2 text-[15px] font-semibold">
         <Database aria-hidden className="size-4" />
-        Server lokal
+        Akun dan server lokal
       </h3>
       <p role="status" className={cn("mt-1 text-[14px] leading-snug", trouble ? "text-[#8F1A1A]" : "text-[#3B3F48]")}>
         {line[status]}
