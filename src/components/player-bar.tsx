@@ -121,3 +121,4 @@ export function PlayerBar(p: Props) {
               type="button"
               onClick={p.onToggle}
               aria-label={loading ? "Memuat pemutar YouTube" : p.playing ? "Jeda" : "Putar"}
+              aria-busy={loading}
