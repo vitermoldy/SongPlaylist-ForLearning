@@ -329,3 +329,4 @@ export default function App() {
         <a
           href="https://aakashmehra.com/ref/projectdeck"
           target="_blank"
+          rel="noopener noreferrer"
