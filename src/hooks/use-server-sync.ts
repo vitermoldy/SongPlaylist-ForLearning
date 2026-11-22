@@ -88,6 +88,7 @@ export function useServerSync(snapshot: Saved, apply: (state: Saved) => void) {
   // on opening the page, and whenever someone signs in
   useEffect(() => {
     if (auth.status !== "signed-in") {
+      window.clearTimeout(retry.current);
     return () => window.clearTimeout(retry.current);
   }, [code, sync]);
 
