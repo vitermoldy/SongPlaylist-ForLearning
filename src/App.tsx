@@ -135,3 +135,4 @@ export default function App() {
     } else if (a) {
       const now = addSection.current?.getBoundingClientRect().top;
       if (now !== undefined) window.scrollBy({ top: now - a.addTop, behavior: "instant" });
+    }
