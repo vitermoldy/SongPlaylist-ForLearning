@@ -120,6 +120,7 @@ export async function signOut() {
   await call("/auth/logout", { method: "POST", body: "{}" }).catch(() => undefined);
   try {
     localStorage.removeItem(CODE_KEY);
+  } catch {
   if (!body.saved) return null;
   const { saved: _, ...state } = body;
   return state as Saved;
