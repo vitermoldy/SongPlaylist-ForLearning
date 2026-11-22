@@ -158,3 +158,4 @@ export function AccountGate({ auth }: { auth: AuthState }) {
               {busy ? (mode === "in" ? "Memeriksa…" : "Membuat akun…") : mode === "in" ? "Masuk" : "Buat akun"}
             </button>
           </form>
+          <p className="mt-2 flex flex-wrap items-center gap-x-1 text-[14px] text-[#3B3F48]">
