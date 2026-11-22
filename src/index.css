@@ -97,3 +97,4 @@
 }
 
 @media (prefers-reduced-motion: reduce) {
+  .range::-webkit-slider-thumb {
