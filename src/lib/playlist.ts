@@ -124,3 +124,4 @@ export function forgetSaved() {
   forgotten = true;
   try {
     localStorage.removeItem(KEY);
+  } catch {
