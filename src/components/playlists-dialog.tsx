@@ -141,3 +141,4 @@ export function PlaylistsDialog({ open, onClose, playlists, songs, linked, saved
           <ul>
             {playlists.map((p) => {
               const asking = ask && ask.kind !== "clear" && ask.id === p.id ? ask.kind : null;
+              const isOpen = savedAs?.id === p.id;
