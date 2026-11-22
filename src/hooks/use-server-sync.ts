@@ -20,3 +20,4 @@ export function useServerSync(snapshot: Saved, apply: (state: Saved) => void) {
   const [checkedAt, setCheckedAt] = useState<number | null>(null);
 
   const snap = useRef(snapshot);
+  const applyRef = useRef(apply);
