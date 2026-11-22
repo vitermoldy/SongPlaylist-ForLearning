@@ -32,3 +32,4 @@ export function parseYouTube(raw: string): YouTubeLink | null {
   if (!HOSTS.has(host)) return null;
 
   let id: string | null = null;
+  if (host === "youtu.be") id = url.pathname.split("/")[1] ?? null;
