@@ -49,3 +49,4 @@ export const newPlaylistId = () => `pl-${Date.now().toString(36)}-${Math.random(
 
 const KEY = "songplaylist-forlearning:v1";
 
+export type Saved = {
