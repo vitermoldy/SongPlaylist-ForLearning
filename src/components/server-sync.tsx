@@ -63,6 +63,7 @@ export function ServerSync({ auth, status, checkedAt, onFlush }: Props) {
             Masuk sebagai <strong id="account-name">{account.username}</strong>, bergabung {joined(account.createdAt)}.
           </p>
           <button
+            id="account-leave"
         </div>
       </details>
     </section>
