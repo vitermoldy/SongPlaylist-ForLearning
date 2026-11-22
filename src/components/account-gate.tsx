@@ -115,3 +115,4 @@ export function AccountGate({ auth }: { auth: AuthState }) {
                 className={input}
                 value={username}
                 onChange={(e) => setUsername(e.target.value)}
+                autoComplete="username"
