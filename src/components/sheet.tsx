@@ -79,3 +79,4 @@ export function Confirm({
         >
           Batal
         </button>
+      </div>
