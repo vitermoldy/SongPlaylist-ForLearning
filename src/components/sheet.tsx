@@ -65,3 +65,4 @@ export function Confirm({
       <p className="text-[14px] leading-snug text-[#111318]">{text}</p>
       <div className="mt-3 flex flex-wrap gap-2">
         <button
+          type="button"
