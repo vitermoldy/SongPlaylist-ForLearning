@@ -164,3 +164,4 @@ export function AccountGate({ auth }: { auth: AuthState }) {
               id="gate-switch"
               type="button"
               onClick={() => {
+                setMode(mode === "in" ? "up" : "in");
