@@ -42,3 +42,5 @@ function rateLimit(limit) {
   }
 }
 
+const text = (value, max) => (typeof value === 'string' ? value.trim().slice(0, max) : '')
+
