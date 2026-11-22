@@ -241,3 +241,5 @@ export function useYouTubePlayer(slot: RefObject<HTMLDivElement | null>, options
     player.current?.getIframe().requestFullscreen?.().catch(() => {});
   }, []);
 
+  const visible = (started && state !== ENDED && state !== CUED && state !== UNSTARTED) || needsTap;
+
