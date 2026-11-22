@@ -301,3 +301,4 @@ export default function App() {
         >
           <h2 id="add-title" className="m-0 text-[clamp(40px,7vw,104px)] leading-[0.95] font-semibold tracking-[-0.045em] text-[#141414]">
             {empty ? "Daftar putarnya masih kosong." : "Tambah lagu berikutnya."}
+          </h2>
