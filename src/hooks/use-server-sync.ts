@@ -54,3 +54,4 @@ export function useServerSync(snapshot: Saved, apply: (state: Saved) => void) {
           await putState(codeRef.current, local);
           agreed.current = local.updatedAt;
         } catch (error) {
+          // another browser with this code saved in between: look again and take its copy
