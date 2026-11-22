@@ -53,3 +53,4 @@ export function PlaylistsDialog({ open, onClose, playlists, songs, linked, saved
 
   // each time the menu opens: a fresh suggested name, no question left over (only on opening, so
   // saving inside the menu does not rewrite the name under the listener's eyes)
+  const count = useRef(playlists.length);
