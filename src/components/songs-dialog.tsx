@@ -72,3 +72,4 @@ export function SongsDialog({ open, onClose, songs, active, playing, savedAs, on
                   href={watchUrl(s.id)}
                   target="_blank"
                   rel="noopener noreferrer"
+                  aria-label={`Buka ${s.title} di YouTube (tab baru)`}
