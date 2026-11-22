@@ -123,3 +123,5 @@ export function createApi(getPool) {
     if (!CODE.test(clean)) return res.status(400).json({ error: 'A recovery code has 12 letters and digits.' })
     req.code = clean
     next()
+  })
+
