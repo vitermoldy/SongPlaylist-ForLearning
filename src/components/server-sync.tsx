@@ -34,13 +34,7 @@ export function ServerSync({ auth, status, checkedAt, onFlush }: Props) {
   const trouble = status === "offline" || status === "nodb" || status === "error";
   const account = auth.status === "signed-in" ? auth.account : null;
 
-  async function copy() {
-    try {
-      await navigator.clipboard.writeText(code);
-      setCopied(true);
-      window.setTimeout(() => setCopied(false), 2000);
-    } catch {
-      setResult({ ok: false, text: "Browser tidak mengizinkan menyalin. Pilih kodenya lalu salin manual." });
+  async function leave() {
     }
   }
 
