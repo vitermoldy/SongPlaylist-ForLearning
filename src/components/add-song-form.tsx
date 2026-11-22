@@ -23,3 +23,4 @@ export function AddSongForm({ onAdd, className, autoFocus = false }: { onAdd: Ad
     if (result.ok) setValue("");
   }
 
+  return (
