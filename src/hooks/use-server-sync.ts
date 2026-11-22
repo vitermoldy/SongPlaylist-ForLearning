@@ -29,3 +29,4 @@ export function useServerSync(snapshot: Saved, apply: (state: Saved) => void) {
   });
 
   const busy = useRef(false);
+  const again = useRef(false);
