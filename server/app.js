@@ -50,3 +50,4 @@ function cleanSong(s) {
   const title = text(s.title, 200)
   if (!title) return null
   return {
+    id: s.id,
