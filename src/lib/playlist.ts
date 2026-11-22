@@ -74,6 +74,8 @@ export function signatureOf(s: Omit<Saved, "updatedAt">) {
     s.playlists.map((p) => [p.id, p.name, p.savedAt, p.songs.map((x) => x.id)]),
     s.linked,
   ]);
+}
+
 const isSong = (v: unknown): v is Song => {
   const s = v as Song;
   return !!s && typeof s.id === "string" && typeof s.title === "string" && typeof s.artist === "string";
