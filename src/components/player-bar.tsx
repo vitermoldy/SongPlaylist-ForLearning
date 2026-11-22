@@ -68,3 +68,4 @@ function Progress({ time, duration, onSeek, className }: { time: number; duratio
         disabled={!duration}
         onChange={(e) => onSeek(Number(e.target.value))}
         aria-label="Posisi lagu"
+        aria-valuetext={`${spoken(time)} dari ${spoken(duration)}`}
