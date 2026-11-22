@@ -33,3 +33,4 @@ export function AddSongForm({ onAdd, className, autoFocus = false }: { onAdd: Ad
           id={id}
           type="text"
           inputMode="url"
+          autoComplete="off"
