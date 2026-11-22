@@ -57,3 +57,5 @@ function arrived(j: number, pos: number) {
 const topCard = (pos: number, count: number) => Math.min(count - 1, Math.max(0, Math.floor(pos + 1 - HALF_IN)));
 
 const CARD =
+  "col-start-1 row-start-1 origin-[50%_25%] will-change-[transform,filter] w-[min(100%,calc((90svh-152px)*16/9),1400px)] max-sm:w-[min(100%,calc((93svh-204px)*4/5))]";
+
