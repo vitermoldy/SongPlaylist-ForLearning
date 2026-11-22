@@ -67,6 +67,7 @@ export function ServerSync({ auth, status, checkedAt, onFlush }: Props) {
             type="button"
             onClick={leave}
             disabled={leaving}
+            className="h-11 rounded-[12px] border border-[#111318]/15 bg-white px-4 text-[14px] font-medium text-[#111318] hover:border-[#111318]/30 active:bg-[#F3F4F5] disabled:cursor-not-allowed disabled:opacity-60"
         </div>
       </details>
     </section>
