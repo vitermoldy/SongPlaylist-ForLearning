@@ -325,3 +325,4 @@ function Corner({ song, i, ground, playing, onToggle }: { song: Song; i: number;
           <span className={cn("max-w-[10.5rem] truncate text-[13px] sm:max-w-[18rem] sm:text-[15px]", song.problem ? "text-[#8F1A1A]" : "text-[#3B3F48]")}>
             {song.problem ? "Tidak bisa diputar di sini" : song.artist}
           </span>
+        </span>
