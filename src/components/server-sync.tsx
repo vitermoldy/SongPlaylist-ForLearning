@@ -81,3 +81,4 @@ export function ServerSync({ code, status, checkedAt, onSwitch }: Props) {
               Kode browser ini. Ketik di browser lain untuk membawa daftar putar dan playlist ke sana.
             </p>
             <div className="mt-2 flex items-center gap-2">
+              {/* monospace keeps look-alike characters apart in a code someone copies by hand */}
