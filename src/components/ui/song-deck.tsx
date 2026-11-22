@@ -197,3 +197,4 @@ export const SongDeck = memo(function SongDeck({
               showVideo={showVideo}
               slot={playerSlot}
               interactive={active === top}
+              onToggle={onToggle}
