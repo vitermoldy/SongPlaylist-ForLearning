@@ -44,3 +44,5 @@ export default function App() {
   const live = useRef({ songs, active });
   useLayoutEffect(() => {
     live.current = { songs, active };
+  });
+
