@@ -85,9 +85,8 @@ async function call<T>(path: string, init?: RequestInit): Promise<T> {
   throw new ServerError(res.status, "http", body.error ?? `HTTP ${res.status}`, body.updatedAt);
 }
 
-/** The copy saved under `code`, or null when that code has saved nothing yet. */
-export const getState = async (code: string) => {
-  const body = await call<({ saved: true } & Saved) | { saved: false }>(`/state/${code}`);
+type EntryBody = { user: Account; device: string };
+
   if (!body.saved) return null;
   const { saved: _, ...state } = body;
   return state as Saved;
