@@ -42,6 +42,7 @@ npm run dev            # http://localhost:5195; /api is forwarded to the server
 ```
 
 After `npm run build`, `npm start` serves `dist/` and the API on one port (8811). `dist/` uses
+relative paths, so it can also go on a static host as is; without the server the page works on the
 
 ## Structure
 
