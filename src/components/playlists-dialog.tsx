@@ -47,7 +47,7 @@ function Mosaic({ songs }: { songs: Song[] }) {
 type Ask = { kind: "open" | "delete"; id: string } | { kind: "clear" } | null;
 
 /** The Playlist menu: save the deck under a name, play a saved list, delete one or all of them. */
-export function PlaylistsDialog({ open, onClose, playlists, songs, linked, savedAs, onSave, onUpdate, onOpen, onDelete, onClearAll }: Props) {
+export function PlaylistsDialog({ open, onClose, playlists, songs, linked, savedAs, onSave, onUpdate, onOpen, onDelete, onClearAll, server }: Props) {
   const nameId = useId();
   const nameInput = useRef<HTMLInputElement>(null);
   const [name, setName] = useState("");
