@@ -84,3 +84,4 @@ export function ServerSync({ code, status, checkedAt, onSwitch }: Props) {
               {/* monospace keeps look-alike characters apart in a code someone copies by hand */}
               <code className="rounded-[10px] bg-white px-3 py-2 font-mono text-[16px] tracking-[0.08em] text-[#111318]">{formatCode(code)}</code>
               <button
+                type="button"
