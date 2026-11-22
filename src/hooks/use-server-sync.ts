@@ -103,3 +103,5 @@ export function useServerSync(snapshot: Saved, apply: (state: Saved) => void) {
       document.removeEventListener("visibilitychange", look);
       window.removeEventListener("online", look);
     };
+  }, [sync]);
+
