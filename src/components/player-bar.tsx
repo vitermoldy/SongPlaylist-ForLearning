@@ -5,3 +5,4 @@ import { FALLBACK_ACCENT } from "@/lib/color";
 import type { Song } from "@/lib/playlist";
 import type { PlayerStatus } from "@/hooks/use-youtube-player";
 
+type Props = {
