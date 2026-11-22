@@ -80,3 +80,4 @@ export function SongsDialog({ open, onClose, songs, active, playing, savedAs, on
                 <button
                   type="button"
                   onClick={() => onRemove(s.id)}
+                  aria-label={`Hapus ${s.title} dari daftar`}
