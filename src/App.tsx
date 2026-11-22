@@ -182,3 +182,4 @@ export default function App() {
 
   /** The deck as it is now, kept under a name in the Playlist menu. */
   const savePlaylist = (name: string) => {
+    const saved: SavedPlaylist = { id: newPlaylistId(), name, songs, savedAt: Date.now() };
