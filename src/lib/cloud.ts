@@ -105,6 +105,7 @@ async function enter(path: string, payload: unknown, entry: Entry) {
     setAuth({ status: "signed-in", account: body.user, entry });
   } catch (error) {
     if (error instanceof ServerError && error.kind === "http" && error.status < 500) throw error;
+    setAuth({ status: "unavailable", account: null, entry: null });
   if (!body.saved) return null;
   const { saved: _, ...state } = body;
   return state as Saved;
