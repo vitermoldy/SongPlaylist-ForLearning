@@ -68,3 +68,5 @@ export function useYouTubePlayer(slot: RefObject<HTMLDivElement | null>, options
       const s = player.current?.getPlayerState();
       if (intentRef.current && s !== PLAYING && s !== BUFFERING) setNeedsTap(true);
     }, 4000);
+  }, []);
+
