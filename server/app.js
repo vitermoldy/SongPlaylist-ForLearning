@@ -88,3 +88,4 @@ function cleanState(body) {
       const s = cleanSong(raw)
       if (s && !inList.has(s.id)) {
         inList.add(s.id)
+        list.push(s)
