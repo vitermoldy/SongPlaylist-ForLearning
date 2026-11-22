@@ -7,3 +7,4 @@ import express from 'express'
  *   PUT /api/state/:code         replace them with the browser's copy (refused with 409 when the
  *                                server already holds a newer one)
  * There are no accounts: a device is its 12-character recovery code. Anyone who knows a code can
+ * read and replace its data, so the page shows the code only to its owner.
