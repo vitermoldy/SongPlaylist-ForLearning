@@ -135,3 +135,4 @@ export const SongDeck = memo(function SongDeck({
       window.clearTimeout(timer);
       window.removeEventListener("scroll", onScroll);
       window.removeEventListener("resize", onResize);
+    };
