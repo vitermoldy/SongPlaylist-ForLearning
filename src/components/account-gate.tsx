@@ -113,3 +113,4 @@ export function AccountGate({ auth }: { auth: AuthState }) {
                 ref={userRef}
                 id="gate-user"
                 className={input}
+                value={username}
