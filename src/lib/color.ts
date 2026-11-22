@@ -49,3 +49,4 @@ export function pickAccent(pixels: Uint8ClampedArray): string {
   let counted = 0;
   for (let i = 0; i < pixels.length; i += 4) {
     const rgb: RGB = [pixels[i], pixels[i + 1], pixels[i + 2]];
+    const [h, s, l] = rgbToHsl(rgb);
