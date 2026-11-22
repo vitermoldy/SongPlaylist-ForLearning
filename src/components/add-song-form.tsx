@@ -62,3 +62,4 @@ export function AddSongForm({ onAdd, className, autoFocus = false }: { onAdd: Ad
           "mt-2 min-h-[1.4em] text-[14px] leading-snug",
           status.kind === "error" ? "text-[#8F1A1A]" : status.kind === "done" ? "text-[#1D5A3A]" : "text-[#3B3F48]",
         )}
+      >
