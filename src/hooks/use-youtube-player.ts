@@ -126,3 +126,4 @@ export function useYouTubePlayer(slot: RefObject<HTMLDivElement | null>, options
                 window.clearTimeout(tapTimer.current);
                 const d = event.target.getDuration();
                 if (d) setDuration(d);
+              } else if ((s === PAUSED || s === CUED) && !starting.current) {
