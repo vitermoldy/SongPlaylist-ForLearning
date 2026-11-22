@@ -42,3 +42,4 @@ export const toSong = (id: string, info: VideoInfo): Song => ({ id, ...splitTitl
 /** A list kept under a name in the Playlist menu: a copy of the deck at the moment it was saved. */
 export type SavedPlaylist = { id: string; name: string; songs: Song[]; savedAt: number };
 
+/** Same songs in the same order. */
