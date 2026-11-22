@@ -307,3 +307,4 @@ export default function App() {
               ? "Tempel link YouTube untuk lagu pertama. Tiap lagu jadi satu kartu, dan kartunya naik ke atas tumpukan saat lagunya diputar."
               : "Tiap link jadi satu kartu baru di ujung tumpukan."}
           </p>
+          <AddSongForm onAdd={add} className="mt-8 max-w-[680px]" />
