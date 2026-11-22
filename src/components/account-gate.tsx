@@ -149,3 +149,4 @@ export function AccountGate({ auth }: { auth: AuthState }) {
                 {error}
               </p>
             )}
+            <button
