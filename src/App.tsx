@@ -156,3 +156,4 @@ export default function App() {
     (id: string) => {
       const { songs: list, active: at } = live.current;
       const index = list.findIndex((s) => s.id === id);
+      if (index < 0) return;
