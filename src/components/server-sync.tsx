@@ -62,6 +62,7 @@ export function ServerSync({ auth, status, checkedAt, onFlush }: Props) {
           <p className="text-[14px] leading-snug text-[#111318]">
             Masuk sebagai <strong id="account-name">{account.username}</strong>, bergabung {joined(account.createdAt)}.
           </p>
+          <button
         </div>
       </details>
     </section>
