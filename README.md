@@ -37,6 +37,7 @@ YouTube API key is needed.
 ```bash
 npm install
 cp .env.example .env   # fill in DB_USER and DB_PASSWORD of your MySQL account
+npm run server         # API on http://localhost:8811; creates the database and its tables
 ```
 
 `dist/` uses relative paths, so it can go on any static host as is.
