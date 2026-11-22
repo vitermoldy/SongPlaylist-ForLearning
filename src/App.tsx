@@ -289,3 +289,4 @@ export default function App() {
             showVideo={player.visible}
             playerSlot={slot}
             onSettle={settle}
+            onToggle={toggleCard}
