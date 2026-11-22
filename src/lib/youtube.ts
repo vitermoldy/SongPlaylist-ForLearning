@@ -189,3 +189,4 @@ export async function expandPlaylist(list: string): Promise<string[]> {
       events: {
         onReady: (event) => {
           poll = window.setInterval(() => {
+            const ids = event.target.getPlaylist?.();
