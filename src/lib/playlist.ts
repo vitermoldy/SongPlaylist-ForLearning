@@ -112,6 +112,7 @@ export function loadSaved(): Saved {
 let forgotten = false;
 
 export function saveState(state: Saved) {
+  if (forgotten) return;
   try {
     localStorage.setItem(KEY, JSON.stringify(state));
   } catch {
