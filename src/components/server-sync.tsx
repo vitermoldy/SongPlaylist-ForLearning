@@ -93,3 +93,4 @@ export function ServerSync({ code, status, checkedAt, onSwitch }: Props) {
             </div>
           </div>
 
+          <form onSubmit={ask} noValidate>
