@@ -14,3 +14,4 @@ export function AccountGate({ auth }: { auth: AuthState }) {
   const titleId = useId();
   const [mode, setMode] = useState<"in" | "up">("in");
   const [username, setUsername] = useState("");
+  const [password, setPassword] = useState("");
