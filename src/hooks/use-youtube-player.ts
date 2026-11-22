@@ -115,3 +115,4 @@ export function useYouTubePlayer(slot: RefObject<HTMLDivElement | null>, options
               pending.current = null;
               if (first) start(first.id, first.autoplay);
             },
+            onStateChange: (event) => {
