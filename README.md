@@ -39,3 +39,5 @@ npm run build     # type check, then a static site in dist/
 npm run preview   # serve dist/ on port 5195
 ```
 
+`dist/` uses relative paths, so it can go on any static host as is.
+
