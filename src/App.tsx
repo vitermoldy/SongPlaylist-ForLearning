@@ -216,3 +216,4 @@ export default function App() {
   // open on the song that was playing last time, without dealing every card on the way
   useLayoutEffect(() => {
     if ("scrollRestoration" in history) history.scrollRestoration = "manual";
+    deck.current?.scrollToSong(active, false);
