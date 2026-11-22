@@ -119,3 +119,4 @@ export default function App() {
   const anchor = useRef<{ addTop: number } | "deck" | null>(null);
   const changeSongs = useCallback((nextSongs: Song[], kind: "first" | "add" | "remove", nextActive?: string | null) => {
     const addTop = addSection.current?.getBoundingClientRect().top ?? Infinity;
+    // the first songs into an empty list: show their deck from the top
