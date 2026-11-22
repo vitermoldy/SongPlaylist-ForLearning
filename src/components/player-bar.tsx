@@ -20,3 +20,4 @@ type Props = {
   onToggle: () => void;
   onPrev: () => void;
   onNext: () => void;
+  onSeek: (seconds: number) => void;
