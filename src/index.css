@@ -73,3 +73,4 @@
 
 .range::-moz-range-progress {
   height: 4px;
+  border-radius: 999px;
