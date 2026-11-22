@@ -58,6 +58,7 @@ export function ServerSync({ auth, status, checkedAt, onFlush }: Props) {
       </p>
 
       {account ? (
+        <div id="account-in" className="mt-2 flex flex-wrap items-center justify-between gap-x-4 gap-y-1">
         </div>
       </details>
     </section>
