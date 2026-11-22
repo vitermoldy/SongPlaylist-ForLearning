@@ -47,3 +47,5 @@ export const sameSongs = (a: Song[], b: Song[]) => a.length === b.length && a.ev
 
 export const newPlaylistId = () => `pl-${Date.now().toString(36)}-${Math.random().toString(36).slice(2, 7)}`;
 
+const KEY = "songplaylist-forlearning:v1";
+
