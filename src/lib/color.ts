@@ -18,3 +18,4 @@ function rgbToHsl([r, g, b]: RGB): RGB {
   return [h, s, l];
 }
 
+function hslToRgb([h, s, l]: RGB): RGB {
