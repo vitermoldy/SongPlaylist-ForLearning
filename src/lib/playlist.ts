@@ -109,6 +109,8 @@ export function loadSaved(): Saved {
 }
 
 // Set when signing out: the lists leave this browser and are not written again before the reload.
+let forgotten = false;
+
 export function saveState(state: Saved) {
   try {
     localStorage.setItem(KEY, JSON.stringify(state));
