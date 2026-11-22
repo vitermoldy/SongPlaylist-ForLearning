@@ -190,3 +190,4 @@ export function PlaylistsDialog({ open, onClose, playlists, songs, linked, saved
                       confirmLabel="Hapus playlist"
                       onConfirm={() => {
                         setAsk(null);
+                        onDelete(p.id);
