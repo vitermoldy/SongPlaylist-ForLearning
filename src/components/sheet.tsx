@@ -61,3 +61,4 @@ export function Confirm({
   const cancel = useRef<HTMLButtonElement>(null);
   useEffect(() => cancel.current?.focus(), []);
   return (
+    <div role="group" aria-label="Konfirmasi" className={cn("rounded-[14px] border border-[#8F1A1A]/25 bg-white p-3", className)}>
