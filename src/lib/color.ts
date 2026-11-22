@@ -40,3 +40,4 @@ export const contrastWithWhite = (rgb: RGB) => 1.05 / (luminance(rgb) + 0.05);
 
 const toHex = (rgb: RGB) => `#${rgb.map((v) => v.toString(16).padStart(2, "0")).join("")}`.toUpperCase();
 
+/**
