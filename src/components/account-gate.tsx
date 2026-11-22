@@ -58,3 +58,4 @@ export function AccountGate({ auth }: { auth: AuthState }) {
       setInvalid(!name ? "user" : "pass");
       setError(!name ? "Isi username dulu." : "Isi kata sandi dulu.");
       (!name ? userRef.current : document.getElementById("gate-pass"))?.focus();
+      return;
