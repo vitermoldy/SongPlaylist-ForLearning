@@ -29,3 +29,4 @@ async function mapLimit<T, R>(items: T[], limit: number, run: (item: T) => Promi
   return out;
 }
 
+export async function addLink(raw: string, existing: string[], onProgress?: (text: string) => void): Promise<AddResult> {
