@@ -21,3 +21,4 @@ function rgbToHsl([r, g, b]: RGB): RGB {
 function hslToRgb([h, s, l]: RGB): RGB {
   const f = (n: number) => {
     const k = (n + h * 12) % 12;
+    const a = s * Math.min(l, 1 - l);
