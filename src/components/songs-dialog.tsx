@@ -126,3 +126,4 @@ export function SongsDialog({ open, onClose, songs, active, playing, savedAs, on
                 <ListX aria-hidden className="size-[18px]" />
                 Kosongkan daftar
               </button>
+            </div>
