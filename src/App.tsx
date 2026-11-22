@@ -99,3 +99,5 @@ export default function App() {
       load(list[index].id, intentRef.current);
     },
     [load, intentRef],
+  );
+
