@@ -134,3 +134,4 @@ export default function App() {
       else window.scrollTo({ top: 0, behavior: "instant" }); // the deck is gone: the empty page starts at the top
     } else if (a) {
       const now = addSection.current?.getBoundingClientRect().top;
+      if (now !== undefined) window.scrollBy({ top: now - a.addTop, behavior: "instant" });
