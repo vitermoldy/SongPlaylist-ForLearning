@@ -70,3 +70,4 @@ export async function addLink(raw: string, existing: string[], onProgress?: (tex
 
   const parts = [songs.length ? `${songs.length} lagu ditambahkan` : "Tidak ada lagu baru yang ditambahkan"];
   if (already) parts.push(`${already} sudah ada di daftar`);
+  if (skipped) parts.push(`${skipped} dilewati karena privat, dihapus, atau tidak boleh diputar di situs lain`);
