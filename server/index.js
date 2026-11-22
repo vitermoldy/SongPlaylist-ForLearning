@@ -10,3 +10,4 @@ import { connect } from './db.js'
  * localStorage and sends its copy once the server answers again.
  */
 let pool = null
+const app = express()
