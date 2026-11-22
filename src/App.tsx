@@ -351,3 +351,4 @@ export default function App() {
           canFullscreen={player.visible}
           note={note}
           onToggle={toggle}
+          onPrev={prev}
