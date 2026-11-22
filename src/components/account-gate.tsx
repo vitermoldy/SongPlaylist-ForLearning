@@ -208,3 +208,4 @@ export function AccountGate({ auth }: { auth: AuthState }) {
         </div>
       )}
     </dialog>
+  );
