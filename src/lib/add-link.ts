@@ -39,3 +39,4 @@ export async function addLink(raw: string, existing: string[], onProgress?: (tex
 
   if (link.kind === "video") {
     const at = existing.indexOf(link.id);
+    if (at >= 0) return fail(`Lagu ini sudah ada di daftar, nomor ${at + 1}.`);
