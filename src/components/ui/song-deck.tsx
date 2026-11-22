@@ -252,3 +252,4 @@ function PlayerCard({ song, i, pos, still, ground, playing, interactive, onToggl
       aria-label={`Lagu yang dipilih: ${song.title} oleh ${song.artist}`}
       inert={!interactive}
       className={CARD}
+      style={{ zIndex: i + 1, visibility: m.visibility, ...(still ? { y: m.stillY } : { y: m.y, rotateX: m.rotateX, scale: m.scale, filter: m.filter }) }}
