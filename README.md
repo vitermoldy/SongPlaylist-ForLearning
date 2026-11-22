@@ -60,3 +60,5 @@ src/lib/playlist.ts                 Song and SavedPlaylist types, sample songs, 
 src/lib/color.ts                    accent colour from a cover
 ```
 
+## Why `components/ui`
+
