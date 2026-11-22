@@ -139,3 +139,4 @@ export function AccountGate({ auth }: { auth: AuthState }) {
                 aria-describedby={[mode === "up" ? "gate-pass-hint" : "", error ? "gate-error" : ""].filter(Boolean).join(" ") || undefined}
               />
               {mode === "up" && (
+                <p id="gate-pass-hint" className="mt-2 text-[14px] leading-snug text-[#3B3F48]">
