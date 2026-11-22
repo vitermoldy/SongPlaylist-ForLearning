@@ -61,6 +61,7 @@ Database `songplaylist_forlearning` (created on start):
 
 | Table | Holds |
 | --- | --- |
+| `devices` | one row per recovery code |
 
 ## Structure
 
