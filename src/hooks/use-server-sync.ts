@@ -16,3 +16,4 @@ export type SwitchResult = { ok: boolean; text: string };
  */
 export function useServerSync(snapshot: Saved, apply: (state: Saved) => void) {
   const [code, setCode] = useState(loadCode);
+  const [status, setStatus] = useState<SyncStatus>("checking");
