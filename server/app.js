@@ -109,3 +109,4 @@ const toSong = (r) => ({
 
 /** The pool appears once MySQL answers; until then the API says so instead of hanging. */
 export function createApi(getPool) {
+  const api = express.Router()
