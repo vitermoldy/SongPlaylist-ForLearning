@@ -19,3 +19,4 @@ type Props = {
   onRemove: (id: string) => void;
   onAdd: AddSong;
   onSaveAsPlaylist: () => void;
+  onClear: () => void;
