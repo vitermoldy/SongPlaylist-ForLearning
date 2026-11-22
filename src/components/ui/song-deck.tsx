@@ -95,3 +95,4 @@ export const SongDeck = memo(function SongDeck({
   const reduce = useReducedMotion() ?? false;
   const count = songs.length;
   const pos = useMotionValue(0);
+  // a light, critically damped smoothing: it follows the wheel closely and never overshoots
