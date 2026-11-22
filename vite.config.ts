@@ -13,4 +13,5 @@ export default defineConfig(({ mode }) => {
   const port = Number(loadEnv(mode, root, "").PORT) || 8811;
   const api = { "/api": { target: `http://localhost:${port}` } };
 
+  return {
 });
