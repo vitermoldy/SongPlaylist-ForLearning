@@ -166,3 +166,4 @@ export function AccountGate({ auth }: { auth: AuthState }) {
               onClick={() => {
                 setMode(mode === "in" ? "up" : "in");
                 setError("");
+                setInvalid(null);
