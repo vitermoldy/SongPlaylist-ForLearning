@@ -35,3 +35,4 @@ export function useServerSync(snapshot: Saved, apply: (state: Saved) => void) {
   // the change time the server is known to agree with; a snapshot at this time needs no call
   const agreed = useRef<number | null>(null);
 
+  const sync = useCallback(async function run() {
