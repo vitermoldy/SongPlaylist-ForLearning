@@ -38,3 +38,4 @@ export function parseYouTube(raw: string): YouTubeLink | null {
   if (id && VIDEO_ID.test(id)) return { kind: "video", id };
 
   const list = url.searchParams.get("list");
+  if (list && /^(RD|WL$|LL$|LM$)/.test(list)) return { kind: "mix" };
