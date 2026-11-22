@@ -106,6 +106,7 @@ async function enter(path: string, payload: unknown, entry: Entry) {
   } catch (error) {
     if (error instanceof ServerError && error.kind === "http" && error.status < 500) throw error;
     setAuth({ status: "unavailable", account: null, entry: null });
+    throw new ServerError(0, "offline", "Server lokal tidak menyala. Jalankan npm run server, lalu coba lagi.");
   if (!body.saved) return null;
   const { saved: _, ...state } = body;
   return state as Saved;
