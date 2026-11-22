@@ -243,3 +243,4 @@ export function useYouTubePlayer(slot: RefObject<HTMLDivElement | null>, options
 
   const visible = (started && state !== ENDED && state !== CUED && state !== UNSTARTED) || needsTap;
 
+  return { status, intent, intentRef, timeRef, time, duration, visible, needsTap, load, play, pause, toggle, seek, fullscreen };
