@@ -156,3 +156,4 @@ export function useYouTubePlayer(slot: RefObject<HTMLDivElement | null>, options
         created?.destroy();
       } catch {
         // the iframe is already gone
+      }
