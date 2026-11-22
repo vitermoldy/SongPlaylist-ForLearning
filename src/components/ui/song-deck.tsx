@@ -225,3 +225,4 @@ function SongCard({ song, i, pos, still, ground, playing, interactive, onToggle 
       aria-label={`${song.title} oleh ${song.artist}`}
       inert={!interactive}
       className={CARD}
+      style={{ zIndex: i + 1, visibility: m.visibility, ...(still ? { y: m.stillY } : { y: m.y, rotateX: m.rotateX, scale: m.scale, filter: m.filter }) }}
