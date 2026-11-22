@@ -64,3 +64,4 @@ export function SongsDialog({ open, onClose, songs, active, playing, savedAs, on
                     <span className="block truncate text-[15px] font-medium">{s.title}</span>
                     <span className={cn("block truncate text-[13px]", s.problem ? "text-[#8F1A1A]" : "text-[#3B3F48]")}>
                       {s.problem ? `Tidak bisa diputar: ${s.problem}` : s.artist}
+                    </span>
