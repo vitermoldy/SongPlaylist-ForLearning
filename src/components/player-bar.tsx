@@ -98,3 +98,4 @@ export function PlayerBar(p: Props) {
                 onClick={p.note.action.run}
                 className="h-11 shrink-0 rounded-[12px] bg-[#111318] px-4 text-[14px] font-semibold text-white hover:bg-[#2A2E37]"
               >
+                {p.note.action.label}
