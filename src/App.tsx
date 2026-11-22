@@ -114,3 +114,4 @@ export default function App() {
     if (active < songs.length - 1) goTo(active + 1, intentRef.current);
   };
 
+  // Adding or removing a song changes the deck's height. Keep the add section where the eye is
