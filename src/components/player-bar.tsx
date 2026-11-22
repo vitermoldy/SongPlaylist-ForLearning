@@ -117,3 +117,4 @@ export function PlayerBar(p: Props) {
             <IconButton label="Lagu sebelumnya" onClick={p.onPrev}>
               <SkipBack aria-hidden className="size-5" fill="currentColor" />
             </IconButton>
+            <button
