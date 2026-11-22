@@ -41,3 +41,5 @@ export function parseYouTube(raw: string): YouTubeLink | null {
   if (list && /^(RD|WL$|LL$|LM$)/.test(list)) return { kind: "mix" };
   if (list && LIST_ID.test(list)) return { kind: "playlist", list };
   return null;
+}
+
