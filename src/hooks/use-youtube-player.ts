@@ -54,3 +54,4 @@ export function useYouTubePlayer(slot: RefObject<HTMLDivElement | null>, options
   const setIntent = useCallback((value: boolean) => {
     intentRef.current = value;
     setIntentState(value);
+  }, []);
