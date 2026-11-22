@@ -208,3 +208,4 @@ export function useYouTubePlayer(slot: RefObject<HTMLDivElement | null>, options
   const play = useCallback(() => {
     setIntent(true);
     setNeedsTap(false);
+    const p = player.current;
