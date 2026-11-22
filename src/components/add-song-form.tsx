@@ -20,3 +20,4 @@ export function AddSongForm({ onAdd, className, autoFocus = false }: { onAdd: Ad
     setStatus({ kind: "busy", text: playlist ? "Mengambil isi playlist…" : "Mencari lagunya…" });
     const result = await onAdd(value, (text) => setStatus({ kind: "busy", text }));
     setStatus({ kind: result.ok ? "done" : "error", text: result.text });
+    if (result.ok) setValue("");
