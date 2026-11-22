@@ -352,3 +352,4 @@ export default function App() {
           note={note}
           onToggle={toggle}
           onPrev={prev}
+          onNext={next}
