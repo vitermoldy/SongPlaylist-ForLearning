@@ -234,3 +234,4 @@ export default function App() {
   }, [songs]);
 
   useEffect(() => {
+    if (!notice) return;
