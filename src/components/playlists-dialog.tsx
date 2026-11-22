@@ -124,3 +124,4 @@ export function PlaylistsDialog({ open, onClose, playlists, songs, linked, saved
                       : "bg-[#111318] text-white hover:bg-[#2A2E37] active:bg-black"
                   }`}
                 >
+                  Simpan
