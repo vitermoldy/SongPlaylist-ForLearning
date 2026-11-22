@@ -106,3 +106,4 @@ export const SongDeck = memo(function SongDeck({
   /** Where the page is in the deck, in cards; past count - 1 the page is below the deck. */
   const measure = useCallback(() => {
     const el = deck.current;
+    if (!el || count === 0) return 0;
