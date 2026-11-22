@@ -160,3 +160,4 @@ export function createApi(getPool) {
     const conn = await getPool().getConnection()
     try {
       await conn.beginTransaction()
+      await conn.query('INSERT INTO devices (id) VALUES (?) ON DUPLICATE KEY UPDATE last_seen = CURRENT_TIMESTAMP', [req.code])
