@@ -153,3 +153,4 @@ export function PlayerBar(p: Props) {
               value={p.muted ? 0 : p.volume}
               onChange={(e) => p.onVolume(Number(e.target.value))}
               aria-label="Volume"
+              aria-valuetext={`${p.muted ? 0 : p.volume} persen`}
