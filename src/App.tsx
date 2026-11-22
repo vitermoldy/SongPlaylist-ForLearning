@@ -275,3 +275,4 @@ export default function App() {
               <Library aria-hidden className="size-[18px]" />
               Playlist
             </button>
+          </div>
