@@ -169,3 +169,4 @@ export const SongDeck = memo(function SongDeck({
       <section
         ref={deck}
         className={cn("relative w-full", className)}
+        style={{ height: `${Math.max(1, count) * 100}svh` }}
