@@ -66,3 +66,4 @@ function useCardMotion(i: number, pos: MotionValue<number>) {
     for (let j = i + 1; j <= Math.floor(v) + 1; j++) n += arrived(j, v);
     return Math.min(3, n);
   };
+  return {
