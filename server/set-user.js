@@ -32,3 +32,4 @@ const conn = await pool.getConnection()
 try {
   await conn.beginTransaction()
   const [free] = await conn.query(
+    `SELECT d.id FROM devices d LEFT JOIN users u ON u.device_id = d.id LEFT JOIN decks k ON k.device_id = d.id
