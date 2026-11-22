@@ -23,3 +23,4 @@ export function loadCode(): string {
     const saved = localStorage.getItem(CODE_KEY);
     if (saved && isCode(saved)) return saved;
     const code = newCode();
+    localStorage.setItem(CODE_KEY, code);
