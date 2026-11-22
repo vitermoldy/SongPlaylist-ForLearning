@@ -24,3 +24,4 @@ export function ServerSync({ code, status, checkedAt, onSwitch }: Props) {
   const [busy, setBusy] = useState(false);
   const [result, setResult] = useState<SwitchResult | null>(null);
 
+  const line: Record<SyncStatus, string> = {
