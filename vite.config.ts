@@ -7,16 +7,5 @@ import tailwindcss from "@tailwindcss/vite";
 // (a blank page). Pinning the root with an upper-case drive letter keeps one copy.
 const root = fileURLToPath(new URL(".", import.meta.url)).replace(/^[a-z]:/, (d) => d.toUpperCase());
 
-export default defineConfig({
-  root,
-  base: "./",
-  plugins: [react(), tailwindcss()],
-  resolve: {
-    alias: { "@": `${root}src` },
-    dedupe: ["react", "react-dom"],
-  },
-  // the deck ships its screenshots as base64 inside the JS (about 370 kB), so the one chunk is large on purpose
-  build: { chunkSizeWarningLimit: 900 },
-  server: { port: 5195, strictPort: true },
-  preview: { port: 5195, strictPort: true },
+export default defineConfig(({ mode }) => {
 });
