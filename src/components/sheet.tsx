@@ -72,3 +72,4 @@ export function Confirm({
           {confirmLabel}
         </button>
         <button
+          ref={cancel}
