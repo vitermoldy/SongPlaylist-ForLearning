@@ -118,3 +118,4 @@ export function useYouTubePlayer(slot: RefObject<HTMLDivElement | null>, options
             onStateChange: (event) => {
               const s = event.data;
               setState(s);
+              if (s === PLAYING) {
