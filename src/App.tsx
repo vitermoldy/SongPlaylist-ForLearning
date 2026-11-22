@@ -327,3 +327,4 @@ export default function App() {
       <footer className="mx-auto max-w-[1180px] px-4 pt-20 pb-[200px] text-[14px] text-[#3B3F48] sm:px-8">
         Transisi kartunya dari Project Deck karya{" "}
         <a
+          href="https://aakashmehra.com/ref/projectdeck"
