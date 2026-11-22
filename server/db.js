@@ -50,3 +50,4 @@ const TABLES = [
     name VARCHAR(60) NOT NULL,
     saved_at DATETIME NOT NULL,
     PRIMARY KEY (device_id, id),
+    CONSTRAINT playlists_device FOREIGN KEY (device_id) REFERENCES devices(id) ON DELETE CASCADE
