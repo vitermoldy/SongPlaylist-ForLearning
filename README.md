@@ -68,6 +68,7 @@ Database `songplaylist_forlearning` (created on start):
 | `playlists` | a device's saved playlists |
 | `playlist_songs` | the songs of each saved playlist, in order |
 
+API: `GET /api/health`, `GET /api/state/:code`, `PUT /api/state/:code` (refused with 409 when the
 
 ## Structure
 
