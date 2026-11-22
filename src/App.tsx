@@ -187,3 +187,4 @@ export default function App() {
     setLinked(saved.id);
   };
 
+  const updatePlaylist = (id: string) => {
