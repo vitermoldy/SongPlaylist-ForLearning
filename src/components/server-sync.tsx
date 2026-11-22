@@ -71,3 +71,4 @@ export function ServerSync({ code, status, checkedAt, onSwitch }: Props) {
       </p>
 
       <details className="group mt-1">
+        <summary className="inline-flex h-11 list-none items-center gap-1.5 text-[14px] font-medium text-[#111318] underline-offset-4 hover:underline [&::-webkit-details-marker]:hidden">
