@@ -39,3 +39,4 @@ export function splitTitle(raw: string, channel: string) {
 
 export const toSong = (id: string, info: VideoInfo): Song => ({ id, ...splitTitle(info.title, info.author) });
 
+/** A list kept under a name in the Playlist menu: a copy of the deck at the moment it was saved. */
