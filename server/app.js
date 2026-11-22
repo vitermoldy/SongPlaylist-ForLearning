@@ -74,3 +74,4 @@ function cleanState(body) {
       seen.add(s.id)
       songs.push(s)
     }
+  }
