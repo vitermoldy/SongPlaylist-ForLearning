@@ -10,3 +10,5 @@ type Props = {
   status: SyncStatus;
   checkedAt: number | null;
   onSwitch: (code: string) => Promise<SwitchResult>;
+};
+
