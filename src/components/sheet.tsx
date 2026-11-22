@@ -56,3 +56,4 @@ export function Confirm({
   confirmLabel: string;
   onConfirm: () => void;
   onCancel: () => void;
+  className?: string;
