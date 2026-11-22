@@ -68,3 +68,4 @@ export function AccountGate({ auth }: { auth: AuthState }) {
       else await signUp(name, password);
       setPassword("");
     } catch (e) {
+      setError(e instanceof Error ? e.message : "Belum bisa masuk. Coba lagi.");
