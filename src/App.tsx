@@ -58,3 +58,4 @@ export default function App() {
     },
     onError: (code, id, wasPlaying) => {
       const { songs: list } = live.current;
+      const at = list.findIndex((s) => s.id === id);
