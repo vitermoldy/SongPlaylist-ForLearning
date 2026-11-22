@@ -6,3 +6,4 @@ import { useCallback, useEffect, useLayoutEffect, useRef, useState, type RefObje
 import { YOUTUBE_HOST, loadYouTubeApi, type YTPlayer } from "@/lib/youtube";
 
 const UNSTARTED = -1;
+const ENDED = 0;
