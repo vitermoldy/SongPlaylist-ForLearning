@@ -14,3 +14,4 @@ export type YouTubeLink =
   | { kind: "mix" };
 
 /**
+ * What a pasted link points at. A link that names a video adds that video alone, even when it was
