@@ -126,3 +126,4 @@ export function PlayerBar(p: Props) {
               style={{ background: accent, outlineColor: accent }}
             >
               {loading ? (
+                <Loader2 aria-hidden className="size-5 motion-safe:animate-spin" />
