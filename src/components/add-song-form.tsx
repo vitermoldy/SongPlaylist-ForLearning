@@ -36,3 +36,4 @@ export function AddSongForm({ onAdd, className, autoFocus = false }: { onAdd: Ad
           autoComplete="off"
           spellCheck={false}
           autoFocus={autoFocus}
+          value={value}
