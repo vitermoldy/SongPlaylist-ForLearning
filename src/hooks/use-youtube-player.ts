@@ -99,3 +99,4 @@ export function useYouTubePlayer(slot: RefObject<HTMLDivElement | null>, options
     loadYouTubeApi()
       .then((YT) => {
         if (cancelled) return;
+        const el = document.createElement("div");
