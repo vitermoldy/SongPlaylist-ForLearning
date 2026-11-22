@@ -198,3 +198,4 @@ export function AccountGate({ auth }: { auth: AuthState }) {
             </button>
             <button
               id="gate-skip"
+              type="button"
