@@ -106,3 +106,4 @@ export function ServerSync({ code, status, checkedAt, onSwitch }: Props) {
                 spellCheck={false}
                 maxLength={20}
                 onChange={(e) => setEntry(e.target.value)}
+                placeholder="ABCD EFGH JKLM"
