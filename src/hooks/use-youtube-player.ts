@@ -174,3 +174,4 @@ export function useYouTubePlayer(slot: RefObject<HTMLDivElement | null>, options
   }, [status, volume, muted]);
 
   useEffect(() => {
+    const p = player.current;
