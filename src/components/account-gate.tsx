@@ -128,3 +128,4 @@ export function AccountGate({ auth }: { auth: AuthState }) {
                 Kata sandi
               </label>
               <input
+                id="gate-pass"
