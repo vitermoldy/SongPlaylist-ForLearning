@@ -85,3 +85,4 @@ export default function App() {
       if (!target) return;
       setActiveId(target.id);
       load(target.id, autoplay);
+      deck.current?.scrollToSong(index);
