@@ -292,3 +292,5 @@ export default function App() {
             onToggle={toggleCard}
             ground={GROUND}
           />
+        )}
+
