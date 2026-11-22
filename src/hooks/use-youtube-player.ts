@@ -56,3 +56,4 @@ export function useYouTubePlayer(slot: RefObject<HTMLDivElement | null>, options
     setIntentState(value);
   }, []);
   const setTime = useCallback((value: number) => {
+    timeRef.current = value;
