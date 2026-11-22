@@ -83,3 +83,4 @@ function cleanState(body) {
     if (!Number.isFinite(savedAt)) continue
     ids.add(p.id)
     const list = []
+    const inList = new Set()
