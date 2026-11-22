@@ -346,3 +346,4 @@ export default function App() {
           playing={player.intent}
           time={player.time}
           duration={player.duration}
+          volume={volume}
