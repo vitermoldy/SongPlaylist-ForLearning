@@ -82,3 +82,4 @@ export default function App() {
   const goTo = useCallback(
     (index: number, autoplay: boolean) => {
       const target = live.current.songs[index];
+      if (!target) return;
