@@ -350,3 +350,4 @@ export default function App() {
           muted={muted}
           canFullscreen={player.visible}
           note={note}
+          onToggle={toggle}
