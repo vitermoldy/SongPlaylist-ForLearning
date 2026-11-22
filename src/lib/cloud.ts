@@ -71,3 +71,4 @@ async function call<T>(path: string, init?: RequestInit): Promise<T> {
 
 /** The copy saved under `code`, or null when that code has saved nothing yet. */
 export const getState = async (code: string) => {
+  const body = await call<({ saved: true } & Saved) | { saved: false }>(`/state/${code}`);
