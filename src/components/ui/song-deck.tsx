@@ -34,3 +34,4 @@ export type SongDeckProps = {
   /** The scroll came to rest with card `index` on top. */
   onSettle: (index: number) => void;
   /** The play button in a card's corner. */
+  onToggle: (index: number) => void;
