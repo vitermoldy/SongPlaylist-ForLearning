@@ -88,3 +88,4 @@ export const SongDeck = memo(function SongDeck({
   onSettle,
   onToggle,
   ground = "#E7E8EA",
+  className,
