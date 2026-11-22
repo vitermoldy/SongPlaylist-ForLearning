@@ -111,3 +111,4 @@ export function PlaylistsDialog({ open, onClose, playlists, songs, linked, saved
                   id={nameId}
                   type="text"
                   value={name}
+                  maxLength={60}
