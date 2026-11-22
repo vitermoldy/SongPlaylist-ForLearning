@@ -283,3 +283,4 @@ export default function App() {
         {!empty && (
           <SongDeck
             ref={deck}
+            songs={songs}
