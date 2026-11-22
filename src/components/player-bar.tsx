@@ -43,3 +43,4 @@ function IconButton({ label, onClick, disabled, children }: { label: string; onC
   return (
     <button
       type="button"
+      onClick={onClick}
