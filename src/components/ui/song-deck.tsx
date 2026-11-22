@@ -37,3 +37,4 @@ export type SongDeckProps = {
   onToggle: (index: number) => void;
   /** The page ground; the cut-out corner that holds the play button is filled with it. */
   ground?: string;
+  className?: string;
