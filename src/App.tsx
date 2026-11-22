@@ -191,3 +191,4 @@ export default function App() {
     setPlaylists((all) => all.map((p) => (p.id === id ? { ...p, songs, savedAt: Date.now() } : p)));
   };
 
+  /** A saved playlist replaces the deck, and its first song starts playing. */
