@@ -125,3 +125,4 @@ export function AccountGate({ auth }: { auth: AuthState }) {
             </div>
             <div>
               <label htmlFor="gate-pass" className="mb-2 block text-[14px] font-semibold">
+                Kata sandi
