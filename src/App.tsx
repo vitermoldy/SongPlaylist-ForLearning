@@ -56,3 +56,4 @@ export default function App() {
       if (at < list.length - 1) goTo(at + 1, true);
       else setNotice("Daftar putar selesai.");
     },
+    onError: (code, id, wasPlaying) => {
