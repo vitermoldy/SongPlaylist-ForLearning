@@ -66,3 +66,4 @@
 }
 
 .range::-moz-range-track {
+  height: 4px;
