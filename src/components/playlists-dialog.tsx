@@ -45,3 +45,4 @@ type Ask = { kind: "open" | "delete"; id: string } | { kind: "clear" } | null;
 /** The Playlist menu: save the deck under a name, play a saved list, delete one or all of them. */
 export function PlaylistsDialog({ open, onClose, playlists, songs, linked, savedAs, onSave, onUpdate, onOpen, onDelete, onClearAll }: Props) {
   const nameId = useId();
+  const nameInput = useRef<HTMLInputElement>(null);
