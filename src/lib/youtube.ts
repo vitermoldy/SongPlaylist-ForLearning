@@ -37,3 +37,4 @@ export function parseYouTube(raw: string): YouTubeLink | null {
   else id = url.pathname.match(/^\/(?:shorts|embed|live|v)\/([\w-]{11})/)?.[1] ?? null;
   if (id && VIDEO_ID.test(id)) return { kind: "video", id };
 
+  const list = url.searchParams.get("list");
