@@ -119,3 +119,4 @@ export function ServerSync({ code, status, checkedAt, onSwitch }: Props) {
             </div>
           </form>
 
+          {asking && (
