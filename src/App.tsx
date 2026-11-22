@@ -298,3 +298,4 @@ export default function App() {
           ref={addSection}
           aria-labelledby="add-title"
           className={empty ? "mx-auto max-w-[1180px] px-4 pt-[22vh] sm:px-8" : "mx-auto max-w-[1180px] px-4 pt-[12vh] sm:px-8"}
+        >
