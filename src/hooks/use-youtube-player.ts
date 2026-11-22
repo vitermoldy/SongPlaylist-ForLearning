@@ -170,3 +170,4 @@ export function useYouTubePlayer(slot: RefObject<HTMLDivElement | null>, options
     if (status !== "ready" || !p) return;
     p.setVolume(volume);
     if (muted) p.mute();
+    else p.unMute();
