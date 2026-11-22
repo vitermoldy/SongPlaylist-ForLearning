@@ -210,3 +210,4 @@ export default function App() {
   // "Hapus semua playlist": every saved list goes, the deck keeps playing what it holds
   const clearPlaylists = () => {
     setPlaylists([]);
+    setLinked(null);
