@@ -185,3 +185,4 @@ export function createApi(getPool) {
         [req.code, state.current, state.volume, state.muted, state.linked, state.updatedAt],
       )
       await conn.query('DELETE FROM deck_songs WHERE device_id = ?', [req.code])
+      if (state.songs.length) {
