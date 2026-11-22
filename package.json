@@ -9,7 +9,9 @@
     "preview": "vite preview",
     "typecheck": "tsc -b",
     "server": "node --watch server/index.js",
-    "start": "node server/index.js"
+    "start": "node server/index.js",
+    "users": "node server/users.js",
+    "set-user": "node server/set-user.js"
   },
   "dependencies": {
     "clsx": "^2.1.1",
