@@ -162,3 +162,4 @@ export function AccountGate({ auth }: { auth: AuthState }) {
             <span>{mode === "in" ? "Belum punya akun?" : "Sudah punya akun?"}</span>
             <button
               id="gate-switch"
+              type="button"
