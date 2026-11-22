@@ -50,6 +50,7 @@ browser's own storage.
 The browser saves every change in its localStorage first, then sends a copy to the server, which
 keeps it in MySQL. With the server off the page works as before, says so in the Playlist panel, and
 sends its copy once the server answers (it tries every 10 seconds). On opening the page, on coming
+back to the tab and after each change, the newer copy wins: a newer one on the server replaces the
 
 ## Structure
 
