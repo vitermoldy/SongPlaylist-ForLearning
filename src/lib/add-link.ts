@@ -31,3 +31,4 @@ async function mapLimit<T, R>(items: T[], limit: number, run: (item: T) => Promi
 
 export async function addLink(raw: string, existing: string[], onProgress?: (text: string) => void): Promise<AddResult> {
   if (!raw.trim()) return fail("Tempel link YouTube dulu.");
+  const link = parseYouTube(raw);
