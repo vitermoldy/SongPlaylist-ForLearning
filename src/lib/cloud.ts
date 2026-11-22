@@ -49,6 +49,7 @@ export class ServerError extends Error {
 
 export type Account = { username: string; createdAt: string };
 /** checking: asking the server. unavailable: the server or MySQL cannot be reached. */
+export type AuthStatus = "checking" | "signed-in" | "signed-out" | "unavailable";
 async function call<T>(path: string, init?: RequestInit): Promise<T> {
   let res: Response;
   try {
