@@ -65,3 +65,4 @@ export function useServerSync(snapshot: Saved, apply: (state: Saved) => void) {
       setCheckedAt(Date.now());
     } catch (error) {
       const kind = error instanceof ServerError ? error.kind : "offline";
+      setStatus(kind === "http" ? "error" : kind);
