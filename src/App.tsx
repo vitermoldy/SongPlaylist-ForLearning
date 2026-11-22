@@ -368,3 +368,4 @@ export default function App() {
         onClose={() => setListOpen(false)}
         songs={songs}
         active={active}
+        playing={player.intent}
