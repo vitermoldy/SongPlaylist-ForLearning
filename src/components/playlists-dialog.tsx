@@ -203,3 +203,4 @@ export function PlaylistsDialog({ open, onClose, playlists, songs, linked, saved
       </div>
 
       {playlists.length > 0 && (
+        <div className="border-t border-[#111318]/10 px-5 py-3 pb-[max(12px,env(safe-area-inset-bottom))] sm:px-6">
