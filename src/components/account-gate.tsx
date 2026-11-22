@@ -143,3 +143,4 @@ export function AccountGate({ auth }: { auth: AuthState }) {
                   Minimal 6 karakter. Username boleh berisi huruf, angka, titik, garis bawah, dan tanda minus.
                 </p>
               )}
+            </div>
