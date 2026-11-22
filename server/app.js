@@ -189,3 +189,4 @@ export function createApi(getPool) {
         await conn.query('INSERT INTO deck_songs (device_id, position, video_id) VALUES ?', [state.songs.map((s, i) => [req.code, i, s.id])])
       }
 
+      await conn.query('DELETE FROM playlists WHERE device_id = ?', [req.code])
