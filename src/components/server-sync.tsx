@@ -38,6 +38,7 @@ export function ServerSync({ auth, status, checkedAt, onFlush }: Props) {
     setError("");
     setLeaving(true);
     if (!(await onFlush())) {
+      setError("Perubahan terakhir belum terkirim ke server. Coba lagi sebentar lagi.");
     }
   }
 
