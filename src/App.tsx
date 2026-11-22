@@ -122,3 +122,4 @@ export default function App() {
     // the first songs into an empty list: show their deck from the top
     if (kind === "first") anchor.current = "deck";
     else anchor.current = addTop < window.innerHeight ? { addTop } : kind === "remove" ? "deck" : null;
+    setSongs(nextSongs);
