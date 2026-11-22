@@ -257,6 +257,7 @@ export default function App() {
       setVolume(remote.volume);
       setMuted(remote.muted);
       setPlaylists(remote.playlists);
+      setLinked(remote.linked);
 
   // each card's play button takes its colour from the song's cover, read once and remembered
   const asked = useRef(new Set<string>());
