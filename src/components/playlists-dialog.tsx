@@ -38,3 +38,5 @@ function Mosaic({ songs }: { songs: Song[] }) {
       ))}
     </span>
   );
+}
+
