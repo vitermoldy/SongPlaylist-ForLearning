@@ -8,3 +8,4 @@ import mysql from 'mysql2/promise'
  *   and `client_updated`, the browser's time of its last change (the newer copy wins);
  * - deck_songs: the songs on a device's deck, in order;
  * - playlists: a device's saved playlists;
+ * - playlist_songs: the songs of each saved playlist, in order.
