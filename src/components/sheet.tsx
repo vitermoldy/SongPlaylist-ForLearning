@@ -23,3 +23,4 @@ export function Sheet({ open, onClose, title, children }: { open: boolean; onClo
         if (e.target === ref.current) onClose(); // a click on the dimmed page outside the panel
       }}
       className="fixed inset-y-0 right-0 left-auto m-0 h-dvh max-h-dvh w-full max-w-[460px] bg-[#F3F4F5] p-0 text-[#111318] backdrop:bg-[#0A0C14]/45"
+    >
