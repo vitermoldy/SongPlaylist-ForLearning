@@ -116,3 +116,4 @@ export function ServerSync({ code, status, checkedAt, onSwitch }: Props) {
               >
                 {busy ? "Mengambil…" : "Pakai kode"}
               </button>
+            </div>
