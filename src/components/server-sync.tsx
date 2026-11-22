@@ -65,6 +65,7 @@ export function ServerSync({ auth, status, checkedAt, onFlush }: Props) {
           <button
             id="account-leave"
             type="button"
+            onClick={leave}
         </div>
       </details>
     </section>
