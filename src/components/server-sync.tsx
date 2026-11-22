@@ -28,3 +28,4 @@ export function ServerSync({ code, status, checkedAt, onSwitch }: Props) {
     checking: "Menghubungi server lokal…",
     saving: "Menyimpan ke server lokal…",
     saved: checkedAt ? `Tersimpan juga di server lokal (MySQL), dicek pukul ${clock(checkedAt)}.` : "Tersimpan juga di server lokal (MySQL).",
+    offline: "Server lokal tidak menyala. Semuanya tetap tersimpan di browser ini dan dikirim begitu server jalan (npm run server).",
