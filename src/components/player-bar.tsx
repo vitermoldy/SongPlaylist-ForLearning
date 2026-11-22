@@ -145,3 +145,4 @@ export function PlayerBar(p: Props) {
               {p.muted || p.volume === 0 ? <VolumeX aria-hidden className="size-5" /> : <Volume2 aria-hidden className="size-5" />}
             </IconButton>
             <input
+              type="range"
