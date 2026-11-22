@@ -65,3 +65,4 @@ export function useYouTubePlayer(slot: RefObject<HTMLDivElement | null>, options
   const watchStart = useCallback(() => {
     window.clearTimeout(tapTimer.current);
     tapTimer.current = window.setTimeout(() => {
+      const s = player.current?.getPlayerState();
