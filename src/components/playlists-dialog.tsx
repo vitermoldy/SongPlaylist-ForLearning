@@ -9,3 +9,4 @@ type Props = {
   onClose: () => void;
   playlists: SavedPlaylist[];
   /** The deck as it is now. */
+  songs: Song[];
