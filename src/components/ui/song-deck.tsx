@@ -31,3 +31,4 @@ export type SongDeckProps = {
   showVideo: boolean;
   /** Where the YouTube player builds its iframe: an empty element on the active card. */
   playerSlot: RefObject<HTMLDivElement | null>;
+  /** The scroll came to rest with card `index` on top. */
