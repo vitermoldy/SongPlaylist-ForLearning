@@ -10,3 +10,4 @@ export const PLAYLIST_LIMIT = 50;
 
 export type YouTubeLink =
   | { kind: "video"; id: string }
+  | { kind: "playlist"; list: string }
