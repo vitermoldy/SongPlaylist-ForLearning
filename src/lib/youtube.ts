@@ -70,3 +70,4 @@ export async function fetchInfo(id: string): Promise<VideoInfo> {
   return { title: data.title ?? "", author: data.author_name ?? "" };
 }
 
+/** Why a video was refused, from the IFrame API error code, to follow "dilewati: ". */
