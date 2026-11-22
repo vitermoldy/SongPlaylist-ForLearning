@@ -54,3 +54,4 @@ export type Saved = {
   current: string | null;
   volume: number;
   muted: boolean;
+  playlists: SavedPlaylist[];
