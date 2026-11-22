@@ -60,3 +60,4 @@ export function useYouTubePlayer(slot: RefObject<HTMLDivElement | null>, options
     setTimeState(value);
   }, []);
 
+  // Some browsers (iOS Safari above all) refuse to start sound that a page asks for; the video
