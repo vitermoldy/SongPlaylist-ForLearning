@@ -99,3 +99,4 @@ function cleanState(body) {
   return { updatedAt, current, volume, muted: body.muted === true, linked, songs, playlists }
 }
 
+const toSong = (r) => ({
