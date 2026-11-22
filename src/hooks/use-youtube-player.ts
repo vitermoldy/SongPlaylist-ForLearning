@@ -14,3 +14,4 @@ const CUED = 5;
 
 export type PlayerStatus = "idle" | "loading" | "ready" | "error";
 
+type Options = {
