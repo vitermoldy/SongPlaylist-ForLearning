@@ -63,3 +63,4 @@ function useCardMotion(i: number, pos: MotionValue<number>) {
   // cards now lying on top of this one, counted smoothly
   const above = (v: number) => {
     let n = 0;
+    for (let j = i + 1; j <= Math.floor(v) + 1; j++) n += arrived(j, v);
