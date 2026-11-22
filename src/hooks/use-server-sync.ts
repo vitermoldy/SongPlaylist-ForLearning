@@ -115,3 +115,4 @@ export function useServerSync(snapshot: Saved, apply: (state: Saved) => void) {
       if (!remote) return { ok: false, text: "Belum ada data tersimpan dengan kode ini." };
       agreed.current = remote.updatedAt;
       applyRef.current(remote);
+      saveCode(next);
