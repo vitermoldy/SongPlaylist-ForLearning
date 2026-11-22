@@ -124,6 +124,7 @@ export function createApi(getPool) {
   api.use((_req, res, next) => (getPool() ? next() : res.status(503).json({ error: 'The database is not connected yet.' })))
 
   const auth = createAuth({ getPool, cookie: 'songplaylist_forlearning_session', lang: 'id', deviceCode: CODE, newDevice: newCode })
+  api.use('/auth', auth.router)
     next()
   })
 
