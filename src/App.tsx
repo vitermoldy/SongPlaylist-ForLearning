@@ -184,3 +184,4 @@ export default function App() {
   const savePlaylist = (name: string) => {
     const saved: SavedPlaylist = { id: newPlaylistId(), name, songs, savedAt: Date.now() };
     setPlaylists((all) => [saved, ...all]);
+    setLinked(saved.id);
