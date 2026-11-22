@@ -141,3 +141,4 @@ export function loadYouTubeApi(): Promise<YTNamespace> {
     };
     document.head.append(script);
     window.setTimeout(() => {
+      if (!window.YT?.Player) {
