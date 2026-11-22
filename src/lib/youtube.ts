@@ -173,3 +173,4 @@ export async function expandPlaylist(list: string): Promise<string[]> {
       window.clearTimeout(timer);
       try {
         player.destroy();
+      } catch {
