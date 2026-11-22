@@ -18,3 +18,4 @@ export function AccountGate({ auth }: { auth: AuthState }) {
   const [error, setError] = useState("");
   const [invalid, setInvalid] = useState<"user" | "pass" | null>(null);
   const [busy, setBusy] = useState(false);
+  // "Pakai tanpa akun" holds until the page reloads or the listener asks to sign in.
