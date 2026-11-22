@@ -7,3 +7,4 @@ type Status = { kind: "idle" } | { kind: "busy"; text: string } | { kind: "done"
 
 export type AddSong = (raw: string, onProgress: (text: string) => void) => Promise<AddResult>;
 
+export function AddSongForm({ onAdd, className, autoFocus = false }: { onAdd: AddSong; className?: string; autoFocus?: boolean }) {
