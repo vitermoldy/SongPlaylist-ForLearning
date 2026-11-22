@@ -42,22 +42,7 @@ export function ServerSync({ auth, status, checkedAt, onFlush }: Props) {
       setLeaving(false);
       return;
     }
-  }
-
-  function ask(event: FormEvent) {
-    event.preventDefault();
-    setResult(null);
-    if (!entry.trim()) return setResult({ ok: false, text: "Ketik kode dari browser lain dulu." });
-    setAsking(true);
-  }
-
-  async function take() {
-    setAsking(false);
-    setBusy(true);
-    const r = await onSwitch(entry);
-    setBusy(false);
-    setResult(r);
-    if (r.ok) setEntry("");
+    await signOut();
   }
 
   return (
