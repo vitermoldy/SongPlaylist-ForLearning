@@ -51,3 +51,4 @@ export function useServerSync(snapshot: Saved, apply: (state: Saved) => void) {
       } else if (!remote || remote.updatedAt < local.updatedAt) {
         setStatus("saving");
         try {
+          await putState(codeRef.current, local);
