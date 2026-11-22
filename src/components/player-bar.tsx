@@ -129,3 +129,4 @@ export function PlayerBar(p: Props) {
                 <Loader2 aria-hidden className="size-5 motion-safe:animate-spin" />
               ) : p.playing ? (
                 <Pause aria-hidden className="size-5" fill="currentColor" />
+              ) : (
