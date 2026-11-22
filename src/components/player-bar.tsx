@@ -81,3 +81,4 @@ export function PlayerBar(p: Props) {
   const accent = p.song?.accent ?? FALLBACK_ACCENT;
   const loading = p.status === "loading";
 
+  return (
