@@ -55,3 +55,4 @@ src/components/sheet.tsx            side panel on <dialog>, and the in-place con
 src/components/add-song-form.tsx    the link form, with its busy, error and done states
 src/hooks/use-youtube-player.ts     one IFrame player, loaded on the first play
 src/lib/youtube.ts                  link parsing, oEmbed, IFrame API loader, playlist reading
+src/lib/add-link.ts                 a pasted link into songs, with a sentence saying what happened
