@@ -7,3 +7,4 @@ import { thumbUrl } from "@/lib/youtube";
 type Props = {
   open: boolean;
   onClose: () => void;
+  playlists: SavedPlaylist[];
