@@ -50,3 +50,4 @@ try {
         [device, other, list.id],
       )
       moved++
+    }
