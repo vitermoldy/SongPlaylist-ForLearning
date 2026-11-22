@@ -184,3 +184,4 @@ export async function expandPlaylist(list: string): Promise<string[]> {
     const player = new YT.Player(el, {
       host: YOUTUBE_HOST,
       width: 320,
+      height: 180,
