@@ -78,3 +78,4 @@ export function SongsDialog({ open, onClose, songs, active, playing, savedAs, on
                   <ExternalLink aria-hidden className="size-[18px]" />
                 </a>
                 <button
+                  type="button"
