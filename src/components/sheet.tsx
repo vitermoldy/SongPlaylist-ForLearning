@@ -50,3 +50,4 @@ export function Confirm({
   confirmLabel,
   onConfirm,
   onCancel,
+  className,
