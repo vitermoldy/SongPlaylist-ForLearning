@@ -61,3 +61,4 @@ const CARD =
 
 function useCardMotion(i: number, pos: MotionValue<number>) {
   // cards now lying on top of this one, counted smoothly
+  const above = (v: number) => {
