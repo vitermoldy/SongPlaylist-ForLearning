@@ -216,3 +216,5 @@ type CardProps = {
   /** Only the card on top takes clicks and focus; the ones beneath are covered. */
   interactive: boolean;
   onToggle: (index: number) => void;
+};
+
