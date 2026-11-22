@@ -51,3 +51,4 @@ export class ServerError extends Error {
     this.status = status;
     this.kind = kind;
     this.updatedAt = updatedAt;
+  }
