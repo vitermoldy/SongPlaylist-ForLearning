@@ -1,5 +1,6 @@
 // Keeps the local server's copy (MySQL) in step with this browser for the signed-in account.
 // The browser stays the first place everything is saved; the server keeps the account's copy
+// and hands it to any browser the account signs in on.
 
 import { useCallback, useEffect, useLayoutEffect, useRef, useState } from "react";
 import { ServerError, cleanCode, getState, isCode, loadCode, putState, saveCode } from "@/lib/cloud";
