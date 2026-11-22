@@ -287,3 +287,4 @@ export default function App() {
             active={active}
             playing={player.intent}
             showVideo={player.visible}
+            playerSlot={slot}
