@@ -78,6 +78,7 @@ export function ServerSync({ auth, status, checkedAt, onFlush }: Props) {
           <button
             id="account-enter"
             type="button"
+            onClick={() => void checkAccount()}
         </div>
       </details>
     </section>
