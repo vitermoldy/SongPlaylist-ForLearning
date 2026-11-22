@@ -22,8 +22,7 @@ type Props = {
   onOpen: (id: string) => void;
   onDelete: (id: string) => void;
   onClearAll: () => void;
-  /** The local server's copy of the lists. */
-  server: { code: string; status: SyncStatus; checkedAt: number | null; switchCode: (code: string) => Promise<SwitchResult> };
+  /** The account and the local server's copy of the lists. */
 };
 
 /** "22 Nov", with the year only when it is not this year. */
