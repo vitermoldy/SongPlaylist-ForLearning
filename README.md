@@ -45,3 +45,4 @@ npm run preview   # serve dist/ on port 5195
 
 ```
 components.json                     shadcn config: @/components, @/components/ui, @/lib/utils
+src/App.tsx                         state: songs, active song, saved playlists, what the page keeps in view
