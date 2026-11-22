@@ -155,3 +155,4 @@ export default function App() {
   const remove = useCallback(
     (id: string) => {
       const { songs: list, active: at } = live.current;
+      const index = list.findIndex((s) => s.id === id);
