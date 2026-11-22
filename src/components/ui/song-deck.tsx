@@ -256,3 +256,4 @@ function PlayerCard({ song, i, pos, still, ground, playing, interactive, onToggl
     >
       <div className="relative overflow-hidden rounded-[24px] bg-[#0A0C14]">
         <div className="relative aspect-[16/9] w-full overflow-hidden max-sm:aspect-[4/5]">
+          {/* on a phone the card is taller than the video: the cover, blurred, fills above and below */}
