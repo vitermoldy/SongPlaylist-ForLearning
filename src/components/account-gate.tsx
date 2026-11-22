@@ -38,3 +38,4 @@ export function AccountGate({ auth }: { auth: AuthState }) {
   useEffect(() => {
     const d = ref.current;
     if (!d) return;
+    // The first check is not shown: a signed-in listener should not see the screen flash by.
