@@ -65,3 +65,4 @@ export default function App() {
       if (code === 100 || code === 101 || code === 150) {
         setSongs((all) => all.map((s) => (s.id === failed.id ? { ...s, problem: reason } : s)));
       }
+      const next = list[at + 1];
