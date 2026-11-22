@@ -320,3 +320,4 @@ function Corner({ song, i, ground, playing, onToggle }: { song: Song; i: number;
         className="group flex items-center gap-4 rounded-tl-[20px] py-3 pr-1 pl-5 text-left text-[#111318] outline-none sm:gap-5 sm:py-4 sm:pl-7"
         style={{ background: ground }}
       >
+        <span className="flex min-w-0 flex-col leading-tight">
