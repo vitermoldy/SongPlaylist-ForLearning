@@ -197,3 +197,4 @@ export default function App() {
     const first = chosen?.songs[0];
     if (!chosen || !first) return;
     setPlaylistsOpen(false);
+    changeSongs(chosen.songs, "first", first.id);
