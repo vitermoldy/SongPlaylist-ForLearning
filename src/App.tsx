@@ -260,3 +260,4 @@ export default function App() {
           <div className="flex min-w-0 items-baseline gap-3">
             <h1 className="shrink-0 text-[18px] font-semibold tracking-[-0.02em] text-[#111318]">Daftar putar</h1>
             {!empty && (
+              <span className="hidden min-w-0 truncate text-[14px] text-[#3B3F48] tabular-nums sm:block">
