@@ -103,3 +103,4 @@ export default function App() {
 
   const toggleCard = useCallback(
     (index: number) => (index === live.current.active ? toggle() : goTo(index, true)),
+    [toggle, goTo],
