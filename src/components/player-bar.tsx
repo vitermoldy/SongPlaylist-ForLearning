@@ -61,3 +61,4 @@ function Progress({ time, duration, onSeek, className }: { time: number; duratio
       <input
         type="range"
         className="range min-w-0 flex-1"
+        min={0}
