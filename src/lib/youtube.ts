@@ -165,3 +165,4 @@ export async function expandPlaylist(list: string): Promise<string[]> {
     document.body.append(box);
 
     let poll = 0;
+    let done = false;
