@@ -193,3 +193,4 @@ export function useYouTubePlayer(slot: RefObject<HTMLDivElement | null>, options
   const load = useCallback(
     (id: string, autoplay: boolean) => {
       idRef.current = id;
+      setIntent(autoplay);
