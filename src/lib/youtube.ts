@@ -105,3 +105,4 @@ type YTPlayerOptions = {
   videoId?: string;
   playerVars?: Record<string, string | number>;
   events?: {
+    onReady?: (event: YTEvent) => void;
