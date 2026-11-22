@@ -63,6 +63,7 @@ function setAuth(next: AuthState) {
 export const authState = () => auth;
 export function onAuth(fn: () => void) {
   listeners.add(fn);
+  return () => {
 async function call<T>(path: string, init?: RequestInit): Promise<T> {
   let res: Response;
   try {
