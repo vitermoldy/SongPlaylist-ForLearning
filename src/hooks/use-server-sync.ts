@@ -127,3 +127,4 @@ export function useServerSync(snapshot: Saved, apply: (state: Saved) => void) {
     }
   }, []);
 
+  return { code, status, checkedAt, switchCode };
