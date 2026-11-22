@@ -64,3 +64,4 @@ export function useYouTubePlayer(slot: RefObject<HTMLDivElement | null>, options
   // then waits for a tap of its own, so it is shown and the bar says so.
   const watchStart = useCallback(() => {
     window.clearTimeout(tapTimer.current);
+    tapTimer.current = window.setTimeout(() => {
