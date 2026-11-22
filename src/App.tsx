@@ -118,3 +118,4 @@ export default function App() {
   // when it is on screen; otherwise, after a removal, put the playing song's card back on top.
   const anchor = useRef<{ addTop: number } | "deck" | null>(null);
   const changeSongs = useCallback((nextSongs: Song[], kind: "first" | "add" | "remove", nextActive?: string | null) => {
+    const addTop = addSection.current?.getBoundingClientRect().top ?? Infinity;
