@@ -57,3 +57,5 @@ export class InfoError extends Error {
     super(`oEmbed ${status}`);
     this.status = status;
   }
+}
+
