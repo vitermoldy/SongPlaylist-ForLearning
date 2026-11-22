@@ -19,3 +19,4 @@ export function Sheet({ open, onClose, title, children }: { open: boolean; onClo
       ref={ref}
       aria-labelledby={titleId}
       onClose={onClose}
+      onClick={(e) => {
