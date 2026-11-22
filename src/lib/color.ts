@@ -76,3 +76,4 @@ export function accentFromThumb(id: string): Promise<string> {
       try {
         const canvas = document.createElement("canvas");
         canvas.width = 48;
+        canvas.height = 27;
