@@ -29,3 +29,4 @@ export function AddSongForm({ onAdd, className, autoFocus = false }: { onAdd: Ad
         Link YouTube
       </label>
       <div className="flex gap-2">
+        <input
