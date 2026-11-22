@@ -158,3 +158,4 @@ export function useYouTubePlayer(slot: RefObject<HTMLDivElement | null>, options
         // the iframe is already gone
       }
       player.current = null;
+      host.replaceChildren();
