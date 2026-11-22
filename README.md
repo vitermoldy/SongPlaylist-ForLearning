@@ -41,7 +41,7 @@ npm run server         # API on http://localhost:8811; creates the database and 
 npm run dev            # http://localhost:5195; /api is forwarded to the server
 ```
 
-`dist/` uses relative paths, so it can go on any static host as is.
+After `npm run build`, `npm start` serves `dist/` and the API on one port (8811). `dist/` uses
 
 ## Structure
 
