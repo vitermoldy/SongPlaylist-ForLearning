@@ -34,3 +34,4 @@ export function ServerSync({ code, status, checkedAt, onSwitch }: Props) {
   };
   const trouble = status === "offline" || status === "nodb" || status === "error";
 
+  async function copy() {
