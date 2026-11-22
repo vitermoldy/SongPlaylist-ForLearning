@@ -84,3 +84,4 @@ export function accentFromThumb(id: string): Promise<string> {
       } catch {
         resolve(FALLBACK_ACCENT);
       }
+    };
