@@ -143,3 +143,4 @@ export function useYouTubePlayer(slot: RefObject<HTMLDivElement | null>, options
               handlers.current.onError(event.data, idRef.current, was);
             },
           },
+        });
