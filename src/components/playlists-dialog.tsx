@@ -62,3 +62,4 @@ export function PlaylistsDialog({ open, onClose, playlists, songs, linked, saved
     setDone(null);
   }, [open]);
 
+  function save(event: FormEvent) {
