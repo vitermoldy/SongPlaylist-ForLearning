@@ -78,3 +78,4 @@ export const getState = async (code: string) => {
 };
 
 export const putState = (code: string, state: Saved) =>
+  call<{ ok: true; updatedAt: number }>(`/state/${code}`, { method: "PUT", body: JSON.stringify(state) });
