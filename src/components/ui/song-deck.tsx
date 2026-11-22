@@ -141,3 +141,4 @@ export const SongDeck = memo(function SongDeck({
   useMotionValueEvent(pos, "change", (v) => setTop(topCard(v, count)));
 
   useImperativeHandle(
+    ref,
