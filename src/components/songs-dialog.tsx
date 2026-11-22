@@ -43,3 +43,4 @@ export function SongsDialog({ open, onClose, songs, active, playing, savedAs, on
         <p className="flex-1 px-5 py-8 text-[15px] text-[#3B3F48] sm:px-6">Belum ada lagu. Tempel link YouTube di atas untuk menambah yang pertama.</p>
       ) : (
         <ol className="flex-1 overflow-y-auto px-3 py-3 sm:px-4">
+          {songs.map((s, i) => {
