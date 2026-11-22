@@ -41,3 +41,4 @@ export async function addLink(raw: string, existing: string[], onProgress?: (tex
     const at = existing.indexOf(link.id);
     if (at >= 0) return fail(`Lagu ini sudah ada di daftar, nomor ${at + 1}.`);
     try {
+      const song = toSong(link.id, await fetchInfo(link.id));
