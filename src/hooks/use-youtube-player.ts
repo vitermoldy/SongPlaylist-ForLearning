@@ -22,3 +22,5 @@ type Options = {
   muted: boolean;
   onEnded: () => void;
   onError: (code: number, id: string | null, wasPlaying: boolean) => void;
+};
+
