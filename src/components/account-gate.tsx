@@ -26,3 +26,4 @@ export function AccountGate({ auth }: { auth: AuthState }) {
   const signedOut = auth.status === "signed-out";
 
   // Once per page: who is signed in on this browser.
+  useEffect(() => {
