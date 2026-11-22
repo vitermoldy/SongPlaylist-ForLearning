@@ -100,3 +100,4 @@ export function AccountGate({ auth }: { auth: AuthState }) {
       {signedOut && (
         <>
           <p className="mt-1 text-[14px] leading-snug text-[#3B3F48]">
+            {mode === "in"
