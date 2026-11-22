@@ -12,3 +12,5 @@ type Props = {
   onSwitch: (code: string) => Promise<SwitchResult>;
 };
 
+const clock = (ms: number) => new Date(ms).toLocaleTimeString("id-ID", { hour: "2-digit", minute: "2-digit" });
+
