@@ -49,3 +49,4 @@ export async function addLink(raw: string, existing: string[], onProgress?: (tex
   }
 
   let ids: string[];
+  try {
