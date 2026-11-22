@@ -276,3 +276,5 @@ function PlayerCard({ song, i, pos, still, ground, playing, interactive, onToggl
       </div>
     </motion.article>
   );
+}
+
