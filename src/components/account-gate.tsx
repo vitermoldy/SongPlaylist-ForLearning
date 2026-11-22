@@ -83,3 +83,4 @@ export function AccountGate({ auth }: { auth: AuthState }) {
       ref={ref}
       id="auth-gate"
       aria-labelledby={titleId}
+      onCancel={(e) => {
