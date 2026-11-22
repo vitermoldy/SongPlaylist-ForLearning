@@ -22,3 +22,4 @@ export function AccountGate({ auth }: { auth: AuthState }) {
   const [skipped, setSkipped] = useState(false);
   const shown = useRef<string | null>(null);
 
+  const offline = auth.status === "unavailable";
