@@ -359,3 +359,4 @@ export default function App() {
             if (v > 0) setMuted(false);
           }}
           onMute={() => setMuted((m) => !m)}
+          onFullscreen={player.fullscreen}
