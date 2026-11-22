@@ -131,3 +131,4 @@ export function AccountGate({ auth }: { auth: AuthState }) {
                 id="gate-pass"
                 type="password"
                 className={input}
+                value={password}
