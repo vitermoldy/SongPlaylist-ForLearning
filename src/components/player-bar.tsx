@@ -35,3 +35,4 @@ const clock = (seconds: number) => {
 };
 
 const spoken = (seconds: number) => {
+  const s = Math.max(0, Math.floor(seconds));
