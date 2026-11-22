@@ -156,3 +156,4 @@ export function createApi(getPool) {
 
   api.put('/state/:code', async (req, res) => {
     const state = cleanState(req.body)
+    if (typeof state === 'string') return res.status(400).json({ error: state })
