@@ -318,3 +318,4 @@ function Corner({ song, i, ground, playing, onToggle }: { song: Song; i: number;
         onClick={() => onToggle(i)}
         aria-label={playing ? `Jeda ${song.title}` : `Putar ${song.title} oleh ${song.artist}`}
         className="group flex items-center gap-4 rounded-tl-[20px] py-3 pr-1 pl-5 text-left text-[#111318] outline-none sm:gap-5 sm:py-4 sm:pl-7"
+        style={{ background: ground }}
