@@ -16,3 +16,4 @@ export type PlayerStatus = "idle" | "loading" | "ready" | "error";
 
 type Options = {
   /** False while the list is empty: the player is taken down. */
+  enabled: boolean;
