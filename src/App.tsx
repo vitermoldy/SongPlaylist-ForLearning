@@ -69,3 +69,4 @@ export default function App() {
       if (wasPlaying && next) {
         setNotice(`${failed.title} dilewati: ${reason}.`);
         window.setTimeout(() => {
+          if (live.current.songs[live.current.active]?.id === failed.id) goTo(live.current.active + 1, true);
