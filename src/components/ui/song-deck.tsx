@@ -49,3 +49,4 @@ const REST = (1 - ENTER) / 2; // from the middle of a card's resting stretch to 
 
 /** How far card `j` has arrived (0 below the window, 1 landed) with the deck at `pos` cards. */
 function arrived(j: number, pos: number) {
+  if (j <= 0) return 1;
