@@ -32,3 +32,4 @@ export function AddSongForm({ onAdd, className, autoFocus = false }: { onAdd: Ad
         <input
           id={id}
           type="text"
+          inputMode="url"
