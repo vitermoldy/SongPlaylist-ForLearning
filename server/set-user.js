@@ -55,3 +55,4 @@ try {
   if (moved) {
     // The browser shows the newest copy, so the merged playlists count as a change made now.
     await conn.query('INSERT INTO decks (device_id, client_updated) VALUES (?, ?) ON DUPLICATE KEY UPDATE client_updated = VALUES(client_updated)', [device, Date.now()])
+  }
