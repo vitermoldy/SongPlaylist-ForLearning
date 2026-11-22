@@ -67,3 +67,4 @@ function Progress({ time, duration, onSeek, className }: { time: number; duratio
         value={Math.min(Math.floor(time), Math.floor(duration))}
         disabled={!duration}
         onChange={(e) => onSeek(Number(e.target.value))}
+        aria-label="Posisi lagu"
