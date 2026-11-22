@@ -146,3 +146,4 @@ export function PlayerBar(p: Props) {
             </IconButton>
             <input
               type="range"
+              className="range w-24"
