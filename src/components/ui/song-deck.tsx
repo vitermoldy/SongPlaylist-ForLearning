@@ -209,3 +209,4 @@ export const SongDeck = memo(function SongDeck({
 type CardProps = {
   song: Song;
   i: number;
+  pos: MotionValue<number>;
