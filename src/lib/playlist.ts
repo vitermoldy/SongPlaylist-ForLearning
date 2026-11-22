@@ -2,3 +2,4 @@
 
 import type { VideoInfo } from "@/lib/youtube";
 
+export type Song = {
