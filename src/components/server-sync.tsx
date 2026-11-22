@@ -8,3 +8,4 @@ import type { SwitchResult, SyncStatus } from "@/hooks/use-server-sync";
 type Props = {
   code: string;
   status: SyncStatus;
+  checkedAt: number | null;
