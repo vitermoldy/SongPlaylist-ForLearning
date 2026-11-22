@@ -5,3 +5,4 @@
  * to rest on a card picks that song. The YouTube player rides on the active card, so the video
  * leans, blurs and sinks with it when the next card arrives.
  *
+ * Same motion as the original (one spring-smoothed value drives every card, a still deck under
