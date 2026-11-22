@@ -4,3 +4,4 @@ import { Confirm, Sheet } from "@/components/sheet";
 import type { SavedPlaylist, Song } from "@/lib/playlist";
 import { thumbUrl } from "@/lib/youtube";
 
+type Props = {
