@@ -78,3 +78,4 @@ export default function App() {
   });
   const { load, toggle, seek, intentRef, timeRef } = player;
 
+  /** Moves to song `index`: its card is dealt onto the deck while the player loads it. */
