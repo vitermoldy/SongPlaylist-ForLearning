@@ -16,3 +16,4 @@ export function AddSongForm({ onAdd, className, autoFocus = false }: { onAdd: Ad
   async function submit(event: FormEvent) {
     event.preventDefault();
     if (busy) return;
+    const playlist = /[?&]list=/.test(value) && !/[?&]v=|youtu\.be\//.test(value);
