@@ -154,3 +154,4 @@ export function PlaylistsDialog({ open, onClose, playlists, songs, linked, saved
                     </span>
                     <button
                       type="button"
+                      disabled={p.songs.length === 0}
