@@ -239,3 +239,4 @@ function SongCard({ song, i, pos, still, ground, playing, interactive, onToggle 
 }
 
 /**
+ * The active song's card, laid exactly over its deck card with the same motion. It holds the one
