@@ -82,3 +82,4 @@ export function useServerSync(snapshot: Saved, apply: (state: Saved) => void) {
     return () => window.clearTimeout(retry.current);
   }, [code, sync]);
 
+  // after a change, once the listener pauses
