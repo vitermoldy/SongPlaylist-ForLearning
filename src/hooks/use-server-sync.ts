@@ -43,3 +43,4 @@ export function useServerSync(snapshot: Saved, apply: (state: Saved) => void) {
     busy.current = true;
     window.clearTimeout(retry.current);
     try {
+      const local = snap.current;
