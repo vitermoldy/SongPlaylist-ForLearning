@@ -221,3 +221,5 @@ export default function App() {
 
   useEffect(() => {
     saveState({ songs, current: song?.id ?? null, volume, muted, playlists, linked });
+  }, [songs, song?.id, volume, muted, playlists, linked]);
+
