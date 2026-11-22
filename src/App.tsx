@@ -236,8 +236,7 @@ export default function App() {
   const current = song?.id ?? null;
   const lastSignature = useRef(signatureOf(initial));
   useEffect(() => {
-    saveState({ songs, current: song?.id ?? null, volume, muted, playlists, linked });
-  }, [songs, song?.id, volume, muted, playlists, linked]);
+    const signature = signatureOf({ songs, current, volume, muted, playlists, linked });
 
   // each card's play button takes its colour from the song's cover, read once and remembered
   const asked = useRef(new Set<string>());
