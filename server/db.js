@@ -12,3 +12,4 @@ import mysql from 'mysql2/promise'
  * Deleting a device removes everything of it (ON DELETE CASCADE); songs stay as a shared catalogue.
  */
 const TABLES = [
+  `CREATE TABLE IF NOT EXISTS devices (
