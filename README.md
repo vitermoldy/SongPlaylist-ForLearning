@@ -57,6 +57,7 @@ While the server runs, the page asks for an account first (username and password
 Signing up keeps the lists already in the browser; signing in elsewhere takes the account's copy; signing out
 (Playlist, Akun dan server lokal) removes the lists from that browser. With the server off the page works as
 before. `npm run users` lists who has an account; `npm run set-user -- <username> <password>` makes an account
+or sets a new password, and a new account takes over the lists saved before accounts existed.
 
 Database `songplaylist_forlearning` (created on start):
 
