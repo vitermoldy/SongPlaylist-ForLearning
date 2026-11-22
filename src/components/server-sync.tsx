@@ -125,3 +125,4 @@ export function ServerSync({ code, status, checkedAt, onSwitch }: Props) {
               confirmLabel="Ganti data"
               onConfirm={take}
               onCancel={() => setAsking(false)}
+            />
