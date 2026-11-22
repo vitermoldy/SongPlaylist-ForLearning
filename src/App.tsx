@@ -243,3 +243,4 @@ export default function App() {
     player.status === "error"
       ? {
           text: "Pemutar YouTube tidak termuat. Periksa koneksi internet, lalu muat ulang halaman.",
+          action: { label: "Muat ulang", run: () => window.location.reload() },
