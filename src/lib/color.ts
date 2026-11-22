@@ -80,3 +80,4 @@ export function accentFromThumb(id: string): Promise<string> {
         const ctx = canvas.getContext("2d", { willReadFrequently: true });
         if (!ctx) return resolve(FALLBACK_ACCENT);
         ctx.drawImage(img, 0, 0, 48, 27);
+        resolve(pickAccent(ctx.getImageData(0, 0, 48, 27).data));
