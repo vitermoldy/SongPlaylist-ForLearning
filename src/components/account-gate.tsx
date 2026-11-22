@@ -102,3 +102,4 @@ export function AccountGate({ auth }: { auth: AuthState }) {
           <p className="mt-1 text-[14px] leading-snug text-[#3B3F48]">
             {mode === "in"
               ? "Daftar putar dan playlist-mu tersimpan di akunmu, jadi bisa dibuka dari browser mana pun."
+              : "Daftar putar dan playlist yang sudah ada di browser ini ikut masuk ke akun barumu."}
