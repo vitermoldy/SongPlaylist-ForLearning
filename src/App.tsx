@@ -23,3 +23,4 @@ export default function App() {
   const [volume, setVolume] = useState(initial.volume);
   const [muted, setMuted] = useState(initial.muted);
   const [playlists, setPlaylists] = useState<SavedPlaylist[]>(initial.playlists);
+  const [linked, setLinked] = useState<string | null>(initial.linked);
