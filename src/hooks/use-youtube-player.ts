@@ -46,3 +46,4 @@ export function useYouTubePlayer(slot: RefObject<HTMLDivElement | null>, options
   const [state, setState] = useState(UNSTARTED);
   const [intent, setIntentState] = useState(false);
   const [started, setStarted] = useState(false);
+  const [needsTap, setNeedsTap] = useState(false);
