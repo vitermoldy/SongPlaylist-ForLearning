@@ -111,3 +111,4 @@ export function useYouTubePlayer(slot: RefObject<HTMLDivElement | null>, options
               if (cancelled) return;
               player.current = event.target;
               setStatus("ready");
+              const first = pending.current ?? (idRef.current ? { id: idRef.current, autoplay: intentRef.current } : null);
