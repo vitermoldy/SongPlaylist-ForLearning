@@ -107,3 +107,4 @@ const toSong = (r) => ({
   ...(r.problem ? { problem: r.problem } : {}),
 })
 
+/** The pool appears once MySQL answers; until then the API says so instead of hanging. */
