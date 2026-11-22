@@ -46,3 +46,4 @@ export default function App() {
     live.current = { songs, active };
   });
 
+  const player = useYouTubePlayer(slot, {
