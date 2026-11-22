@@ -110,3 +110,5 @@ export const SongDeck = memo(function SongDeck({
     const raw = -el.getBoundingClientRect().top / (el.offsetHeight / count);
     pos.set(Math.min(Math.max(0, raw), count - 1));
     return raw;
+  }, [count, pos]);
+
