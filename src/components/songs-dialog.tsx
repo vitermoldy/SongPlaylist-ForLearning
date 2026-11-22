@@ -26,3 +26,4 @@ type Props = {
 export function SongsDialog({ open, onClose, songs, active, playing, savedAs, onPick, onRemove, onAdd, onSaveAsPlaylist, onClear }: Props) {
   const [confirmClear, setConfirmClear] = useState(false);
 
+  return (
