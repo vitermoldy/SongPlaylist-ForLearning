@@ -204,3 +204,4 @@ export function AccountGate({ auth }: { auth: AuthState }) {
             >
               Pakai tanpa akun
             </button>
+          </div>
