@@ -117,3 +117,4 @@ export function AccountGate({ auth }: { auth: AuthState }) {
                 onChange={(e) => setUsername(e.target.value)}
                 autoComplete="username"
                 autoCapitalize="none"
+                spellCheck={false}
