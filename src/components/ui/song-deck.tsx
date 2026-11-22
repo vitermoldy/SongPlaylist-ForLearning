@@ -74,3 +74,4 @@ function useCardMotion(i: number, pos: MotionValue<number>) {
     dim: useTransform(pos, (v) => above(v) * 0.15),
     // reduced motion: no travel, each card simply appears in place when its turn comes
     stillY: useTransform(pos, (v) => (arrived(i, v) >= 0.5 ? "0svh" : "110svh")),
+    // cards far below the window or buried under the stack are not painted at all
