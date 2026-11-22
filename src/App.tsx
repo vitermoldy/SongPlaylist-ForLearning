@@ -189,3 +189,5 @@ export default function App() {
 
   const updatePlaylist = (id: string) => {
     setPlaylists((all) => all.map((p) => (p.id === id ? { ...p, songs, savedAt: Date.now() } : p)));
+  };
+
