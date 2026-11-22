@@ -21,3 +21,4 @@ const TABLES = [
     video_id VARCHAR(16) PRIMARY KEY,
     title VARCHAR(200) NOT NULL,
     artist VARCHAR(200) NOT NULL,
+    accent CHAR(7) NULL,
