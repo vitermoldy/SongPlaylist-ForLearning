@@ -141,3 +141,4 @@ export function PlayerBar(p: Props) {
           <Progress time={p.time} duration={p.duration} onSeek={p.onSeek} className="hidden flex-1 sm:flex" />
 
           <div className="hidden shrink-0 items-center gap-1 md:flex">
+            <IconButton label={p.muted ? "Nyalakan suara" : "Bisukan"} onClick={p.onMute}>
