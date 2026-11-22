@@ -89,3 +89,4 @@ function cleanState(body) {
       if (s && !inList.has(s.id)) {
         inList.add(s.id)
         list.push(s)
+      }
