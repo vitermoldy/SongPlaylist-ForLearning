@@ -187,3 +187,4 @@ export const SongDeck = memo(function SongDeck({
             />
           ))}
           {current && (
+            <PlayerCard
