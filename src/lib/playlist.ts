@@ -6,3 +6,4 @@ export type Song = {
   /** The YouTube video ID; a song appears in the list once. */
   id: string;
   title: string;
+  artist: string;
