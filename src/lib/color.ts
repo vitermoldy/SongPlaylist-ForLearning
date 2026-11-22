@@ -69,3 +69,4 @@ export function pickAccent(pixels: Uint8ClampedArray): string {
 }
 
 export function accentFromThumb(id: string): Promise<string> {
+  return new Promise((resolve) => {
