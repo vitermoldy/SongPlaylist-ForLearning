@@ -145,3 +145,4 @@ export function loadYouTubeApi(): Promise<YTNamespace> {
         apiPromise = null;
         reject(new Error("The YouTube player took too long to load."));
       }
+    }, 15000);
