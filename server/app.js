@@ -104,3 +104,4 @@ const toSong = (r) => ({
   title: r.title,
   artist: r.artist,
   ...(r.accent ? { accent: r.accent } : {}),
+  ...(r.problem ? { problem: r.problem } : {}),
