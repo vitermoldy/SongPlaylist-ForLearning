@@ -83,3 +83,4 @@ export function SongsDialog({ open, onClose, songs, active, playing, savedAs, on
                   aria-label={`Hapus ${s.title} dari daftar`}
                   className="grid size-11 shrink-0 place-items-center rounded-full text-[#3B3F48] hover:bg-white hover:text-[#8F1A1A] active:bg-[#E7E8EA]"
                 >
+                  <Trash2 aria-hidden className="size-[18px]" />
