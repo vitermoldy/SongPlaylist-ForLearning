@@ -56,3 +56,4 @@ export async function addLink(raw: string, existing: string[], onProgress?: (tex
   }
   const notYet = ids.filter((id) => !existing.includes(id));
   const already = ids.length - notYet.length;
+  const fresh = notYet.slice(0, PLAYLIST_LIMIT);
