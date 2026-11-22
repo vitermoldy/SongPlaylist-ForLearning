@@ -213,3 +213,4 @@ type CardProps = {
   still: boolean;
   ground: string;
   playing: boolean;
+  /** Only the card on top takes clicks and focus; the ones beneath are covered. */
