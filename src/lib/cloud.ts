@@ -73,7 +73,7 @@ async function call<T>(path: string, init?: RequestInit): Promise<T> {
   try {
     res = await fetch(`/api${path}`, { ...init, headers: { "Content-Type": "application/json", ...init?.headers } });
   } catch {
-    throw new ServerError(0, "offline", "No answer from the server.");
+    throw new ServerError(0, "offline", "Server lokal tidak menjawab.");
   }
   const body = (await res.json().catch(() => null)) as (T & { error?: string; updatedAt?: number }) | null;
   if (res.ok && body) return body;
