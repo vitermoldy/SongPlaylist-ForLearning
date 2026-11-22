@@ -282,3 +282,4 @@ function PlayerCard({ song, i, pos, still, ground, playing, interactive, onToggl
 function Cover({ id, alt, className, priority = false, lazy = false }: { id: string; alt: string; className?: string; priority?: boolean; lazy?: boolean }) {
   const [size, setSize] = useState<"maxres" | "hq">("maxres");
   return (
+    <img
