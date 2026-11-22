@@ -8,3 +8,4 @@ import { checkAccount, signIn, signUp, type AuthState } from "@/lib/cloud";
  * the page; centred because it comes before everything else.
  */
 export function AccountGate({ auth }: { auth: AuthState }) {
+  const ref = useRef<HTMLDialogElement>(null);
