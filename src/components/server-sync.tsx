@@ -58,3 +58,5 @@ export function ServerSync({ code, status, checkedAt, onSwitch }: Props) {
     setBusy(false);
     setResult(r);
     if (r.ok) setEntry("");
+  }
+
