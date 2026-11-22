@@ -304,3 +304,4 @@ function Cover({ id, alt, className, priority = false, lazy = false }: { id: str
 function Corner({ song, i, ground, playing, onToggle }: { song: Song; i: number; ground: string; playing: boolean; onToggle: (index: number) => void }) {
   const R = 18;
   const accent = song.accent ?? FALLBACK_ACCENT;
+  const corner = (
