@@ -116,3 +116,4 @@ export type YTNamespace = { Player: new (element: HTMLElement, options: YTPlayer
 declare global {
   interface Window {
     YT?: YTNamespace;
+    onYouTubeIframeAPIReady?: () => void;
