@@ -55,3 +55,4 @@ export class ServerError extends Error {
 }
 
 async function call<T>(path: string, init?: RequestInit): Promise<T> {
+  let res: Response;
