@@ -366,3 +366,4 @@ export default function App() {
       <SongsDialog
         open={listOpen}
         onClose={() => setListOpen(false)}
+        songs={songs}
