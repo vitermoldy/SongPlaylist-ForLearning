@@ -258,6 +258,7 @@ export default function App() {
       setMuted(remote.muted);
       setPlaylists(remote.playlists);
       setLinked(remote.linked);
+      // the song from the other browser is put ready, not started
 
   // each card's play button takes its colour from the song's cover, read once and remembered
   const asked = useRef(new Set<string>());
