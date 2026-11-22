@@ -35,3 +35,5 @@ export default function App() {
   // the saved playlist holding exactly what the deck holds now, the opened one first
   const savedAs = songs.length
     ? (linkedPlaylist && sameSongs(linkedPlaylist.songs, songs) ? linkedPlaylist : playlists.find((p) => sameSongs(p.songs, songs))) ?? null
+    : null;
+
