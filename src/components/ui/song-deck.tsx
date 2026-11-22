@@ -253,3 +253,4 @@ function PlayerCard({ song, i, pos, still, ground, playing, interactive, onToggl
       inert={!interactive}
       className={CARD}
       style={{ zIndex: i + 1, visibility: m.visibility, ...(still ? { y: m.stillY } : { y: m.y, rotateX: m.rotateX, scale: m.scale, filter: m.filter }) }}
+    >
