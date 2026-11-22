@@ -147,3 +147,4 @@ export function PlayerBar(p: Props) {
             <input
               type="range"
               className="range w-24"
+              min={0}
