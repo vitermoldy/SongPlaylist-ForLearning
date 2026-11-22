@@ -93,3 +93,4 @@ export function saveState(state: Saved) {
   try {
     localStorage.setItem(KEY, JSON.stringify(state));
   } catch {
+    // private mode or full storage: the list just is not remembered
