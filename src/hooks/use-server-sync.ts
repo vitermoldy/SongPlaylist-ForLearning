@@ -88,3 +88,4 @@ export function useServerSync(snapshot: Saved, apply: (state: Saved) => void) {
     window.clearTimeout(debounce.current);
     debounce.current = window.setTimeout(() => {
       if (snap.current.updatedAt !== agreed.current) void sync();
+    }, 800);
