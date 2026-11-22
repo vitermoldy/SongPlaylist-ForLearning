@@ -206,3 +206,4 @@ export function AccountGate({ auth }: { auth: AuthState }) {
             </button>
           </div>
         </div>
+      )}
