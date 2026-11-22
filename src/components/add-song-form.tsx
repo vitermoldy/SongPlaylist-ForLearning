@@ -48,3 +48,4 @@ export function AddSongForm({ onAdd, className, autoFocus = false }: { onAdd: Ad
           disabled={busy}
           className="inline-flex h-12 shrink-0 items-center gap-2 rounded-[14px] bg-[#111318] px-5 text-[15px] font-semibold text-white transition-colors hover:bg-[#2A2E37] active:bg-[#000] disabled:opacity-60"
         >
+          {busy && <Loader2 aria-hidden className="size-4 motion-safe:animate-spin" />}
