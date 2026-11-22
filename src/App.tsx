@@ -358,3 +358,4 @@ export default function App() {
             setVolume(v);
             if (v > 0) setMuted(false);
           }}
+          onMute={() => setMuted((m) => !m)}
