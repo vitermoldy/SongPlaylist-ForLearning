@@ -77,3 +77,4 @@ export function ServerSync({ code, status, checkedAt, onSwitch }: Props) {
         </summary>
         <div className="space-y-4 pb-1">
           <div>
+            <p className="text-[14px] leading-snug text-[#3B3F48]">
