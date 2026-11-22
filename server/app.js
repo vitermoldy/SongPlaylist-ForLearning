@@ -167,3 +167,4 @@ export function createApi(getPool) {
         return res.status(409).json({ error: 'The server holds a newer copy.', updatedAt: Number(held.client_updated) })
       }
 
+      // every song either list holds, newest title and colour winning
