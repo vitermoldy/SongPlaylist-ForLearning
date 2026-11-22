@@ -9,3 +9,4 @@ export type AddSong = (raw: string, onProgress: (text: string) => void) => Promi
 
 export function AddSongForm({ onAdd, className, autoFocus = false }: { onAdd: AddSong; className?: string; autoFocus?: boolean }) {
   const id = useId();
+  const [value, setValue] = useState("");
