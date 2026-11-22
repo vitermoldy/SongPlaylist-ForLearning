@@ -14,4 +14,5 @@ export default defineConfig(({ mode }) => {
   const api = { "/api": { target: `http://localhost:${port}` } };
 
   return {
+    root,
 });
