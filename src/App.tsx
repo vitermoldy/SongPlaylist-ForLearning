@@ -374,3 +374,4 @@ export default function App() {
           setListOpen(false);
           goTo(index, true);
         }}
+        onRemove={remove}
