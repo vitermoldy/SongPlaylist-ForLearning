@@ -128,6 +128,7 @@ export function createApi(getPool) {
   api.use(auth.requireUser)
   // Everything below is filed under the signed-in account's code.
   api.use((req, _res, next) => {
+    req.code = req.user.device
     next()
   })
 
