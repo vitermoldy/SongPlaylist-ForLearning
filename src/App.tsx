@@ -57,3 +57,4 @@ export default function App() {
       else setNotice("Daftar putar selesai.");
     },
     onError: (code, id, wasPlaying) => {
+      const { songs: list } = live.current;
