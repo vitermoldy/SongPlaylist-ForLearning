@@ -206,3 +206,4 @@ export const SongDeck = memo(function SongDeck({
   );
 });
 
+type CardProps = {
