@@ -202,3 +202,4 @@ export function PlaylistsDialog({ open, onClose, playlists, songs, linked, saved
         )}
       </div>
 
+      {playlists.length > 0 && (
