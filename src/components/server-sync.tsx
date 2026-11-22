@@ -126,3 +126,4 @@ export function ServerSync({ code, status, checkedAt, onSwitch }: Props) {
               onConfirm={take}
               onCancel={() => setAsking(false)}
             />
+          )}
