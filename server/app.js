@@ -147,3 +147,4 @@ export function createApi(getPool) {
       updatedAt: Number(deck.client_updated),
       current: deck.current_video,
       volume: deck.volume,
+      muted: Boolean(deck.muted),
