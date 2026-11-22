@@ -49,3 +49,4 @@ export function Confirm({
   text,
   confirmLabel,
   onConfirm,
+  onCancel,
