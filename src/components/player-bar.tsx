@@ -10,3 +10,4 @@ type Props = {
   index: number;
   count: number;
   status: PlayerStatus;
+  playing: boolean;
