@@ -9,7 +9,7 @@ type Props = {
   auth: AuthState;
   status: SyncStatus;
   checkedAt: number | null;
-  onSwitch: (code: string) => Promise<SwitchResult>;
+  /** Sends the latest lists now; false when the server could not take them. */
 };
 
 const clock = (ms: number) => new Date(ms).toLocaleTimeString("id-ID", { hour: "2-digit", minute: "2-digit" });
