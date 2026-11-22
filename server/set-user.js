@@ -70,3 +70,4 @@ try {
   throw err
 } finally {
   conn.release()
+  await pool.end()
