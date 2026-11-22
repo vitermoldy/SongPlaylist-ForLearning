@@ -356,3 +356,4 @@ export default function App() {
           onSeek={seek}
           onVolume={(v) => {
             setVolume(v);
+            if (v > 0) setMuted(false);
