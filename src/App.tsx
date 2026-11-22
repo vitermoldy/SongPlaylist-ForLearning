@@ -239,6 +239,7 @@ export default function App() {
     const signature = signatureOf({ songs, current, volume, muted, playlists, linked });
     let stamp = updatedAt;
     if (signature !== lastSignature.current) {
+      lastSignature.current = signature;
 
   // each card's play button takes its colour from the song's cover, read once and remembered
   const asked = useRef(new Set<string>());
