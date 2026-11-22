@@ -16,3 +16,4 @@ export function Sheet({ open, onClose, title, children }: { open: boolean; onClo
 
   return (
     <dialog
+      ref={ref}
