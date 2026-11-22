@@ -27,3 +27,4 @@ function hslToRgb([h, s, l]: RGB): RGB {
   return [f(0), f(8), f(4)];
 }
 
+const luminance = ([r, g, b]: RGB) => {
