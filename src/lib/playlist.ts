@@ -30,3 +30,4 @@ const TAG = /\s*[([][^)\]]*\b(official|video|audio|lyrics?|lirik|mv|m\/v|visuali
  * "TULUS". A title without "Artist - Song" keeps the whole title and takes the channel as artist.
  */
 export function splitTitle(raw: string, channel: string) {
+  const cleaned = raw.replace(TAG, "").replace(/\s{2,}/g, " ").trim();
