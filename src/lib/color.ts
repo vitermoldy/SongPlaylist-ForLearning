@@ -66,3 +66,5 @@ export function pickAccent(pixels: Uint8ClampedArray): string {
   let hsl: RGB = [h, Math.min(0.78, Math.max(0.38, s)), Math.min(l, 0.36)];
   while (contrastWithWhite(hslToRgb(hsl)) < 4.5 && hsl[2] > 0.08) hsl = [hsl[0], hsl[1], hsl[2] - 0.02];
   return toHex(hslToRgb(hsl));
+}
+
