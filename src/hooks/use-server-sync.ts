@@ -63,3 +63,4 @@ export function useServerSync(snapshot: Saved, apply: (state: Saved) => void) {
       }
       setStatus("saved");
       setCheckedAt(Date.now());
+    } catch (error) {
