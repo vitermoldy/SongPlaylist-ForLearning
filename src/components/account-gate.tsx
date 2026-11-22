@@ -17,3 +17,4 @@ export function AccountGate({ auth }: { auth: AuthState }) {
   const [password, setPassword] = useState("");
   const [error, setError] = useState("");
   const [invalid, setInvalid] = useState<"user" | "pass" | null>(null);
+  const [busy, setBusy] = useState(false);
