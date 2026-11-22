@@ -25,3 +25,4 @@ export function AccountGate({ auth }: { auth: AuthState }) {
   const offline = auth.status === "unavailable";
   const signedOut = auth.status === "signed-out";
 
+  // Once per page: who is signed in on this browser.
