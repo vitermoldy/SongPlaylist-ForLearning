@@ -56,3 +56,4 @@ export class InfoError extends Error {
   constructor(status: number) {
     super(`oEmbed ${status}`);
     this.status = status;
+  }
