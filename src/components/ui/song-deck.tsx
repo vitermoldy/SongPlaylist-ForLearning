@@ -103,3 +103,4 @@ export const SongDeck = memo(function SongDeck({
     settle.current = onSettle;
   });
 
+  /** Where the page is in the deck, in cards; past count - 1 the page is below the deck. */
