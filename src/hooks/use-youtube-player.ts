@@ -154,3 +154,4 @@ export function useYouTubePlayer(slot: RefObject<HTMLDivElement | null>, options
       window.clearTimeout(tapTimer.current);
       try {
         created?.destroy();
+      } catch {
