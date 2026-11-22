@@ -112,3 +112,4 @@ export const SongDeck = memo(function SongDeck({
     return raw;
   }, [count, pos]);
 
+  useLayoutEffect(() => {
