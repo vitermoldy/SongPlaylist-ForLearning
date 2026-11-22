@@ -59,3 +59,4 @@ export function useServerSync(snapshot: Saved, apply: (state: Saved) => void) {
           else throw error;
         }
       } else {
+        agreed.current = local.updatedAt;
