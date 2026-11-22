@@ -54,3 +54,4 @@ export type VideoInfo = { title: string; author: string };
 export class InfoError extends Error {
   status: number;
   constructor(status: number) {
+    super(`oEmbed ${status}`);
