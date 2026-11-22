@@ -11,3 +11,4 @@ type Props = {
   /** The deck as it is now. */
   songs: Song[];
   /** The playlist the deck was opened from. */
+  linked: SavedPlaylist | null;
