@@ -124,3 +124,4 @@ export function useServerSync(snapshot: Saved, apply: (state: Saved) => void) {
     } catch (error) {
       if (error instanceof ServerError && error.kind === "nodb") return { ok: false, text: "Server lokal menyala, tapi MySQL belum terhubung." };
       return { ok: false, text: "Server lokal tidak menyala. Jalankan npm run server, lalu coba lagi." };
+    }
