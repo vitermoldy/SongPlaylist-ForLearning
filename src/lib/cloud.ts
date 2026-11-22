@@ -96,6 +96,7 @@ export async function checkAccount() {
   } catch (error) {
     const out = error instanceof ServerError && error.status === 401;
     setAuth({ status: out ? "signed-out" : "unavailable", account: null, entry: null });
+  }
   if (!body.saved) return null;
   const { saved: _, ...state } = body;
   return state as Saved;
