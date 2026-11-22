@@ -192,3 +192,4 @@ export function useYouTubePlayer(slot: RefObject<HTMLDivElement | null>, options
   /** Puts a song in the player; with `autoplay` it starts at once, otherwise it waits for play. */
   const load = useCallback(
     (id: string, autoplay: boolean) => {
+      idRef.current = id;
