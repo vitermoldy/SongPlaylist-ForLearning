@@ -46,3 +46,4 @@
 .range::-webkit-slider-runnable-track {
   height: 4px;
   border-radius: 999px;
+  background: linear-gradient(to right, var(--accent-fill) var(--fill, 0%), #a3a7af var(--fill, 0%));
