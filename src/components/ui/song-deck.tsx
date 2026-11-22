@@ -127,3 +127,4 @@ export const SongDeck = memo(function SongDeck({
         // reading the section below the deck is not choosing a song
         if (count > 0 && raw <= count - 1 + 0.4) settle.current(topCard(Math.max(0, raw), count));
       }, 180);
+    };
