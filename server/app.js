@@ -159,3 +159,4 @@ export function createApi(getPool) {
     if (typeof state === 'string') return res.status(400).json({ error: state })
     const conn = await getPool().getConnection()
     try {
+      await conn.beginTransaction()
