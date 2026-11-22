@@ -36,3 +36,5 @@ const luminance = ([r, g, b]: RGB) => {
 };
 
 /** Contrast of white against a colour, as WCAG computes it. */
+export const contrastWithWhite = (rgb: RGB) => 1.05 / (luminance(rgb) + 0.05);
+
