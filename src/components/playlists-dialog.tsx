@@ -34,3 +34,4 @@ function Mosaic({ songs }: { songs: Song[] }) {
   return (
     <span className={`grid h-[45px] w-20 shrink-0 overflow-hidden rounded-[8px] bg-[#D5D7DB] ${four.length === 4 ? "grid-cols-2" : ""}`}>
       {four.map((s) => (
+        <img key={s.id} src={thumbUrl(s.id, "mq")} alt="" width={80} height={45} loading="lazy" className="size-full object-cover" />
