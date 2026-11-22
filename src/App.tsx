@@ -9,7 +9,7 @@ import { useServerSync } from "@/hooks/use-server-sync";
 import { useYouTubePlayer } from "@/hooks/use-youtube-player";
 import { addLink } from "@/lib/add-link";
 import { accentFromThumb } from "@/lib/color";
-import { SEED_SONGS, loadSaved, newPlaylistId, sameSongs, saveState, type SavedPlaylist, type Song } from "@/lib/playlist";
+import {
 import { describePlayError } from "@/lib/youtube";
 
 const GROUND = "#E7E8EA";
