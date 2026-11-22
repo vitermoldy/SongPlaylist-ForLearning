@@ -70,3 +70,4 @@ export function AccountGate({ auth }: { auth: AuthState }) {
     } catch (e) {
       setError(e instanceof Error ? e.message : "Belum bisa masuk. Coba lagi.");
       setInvalid("pass");
+    } finally {
