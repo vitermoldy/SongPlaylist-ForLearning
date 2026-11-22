@@ -121,3 +121,4 @@ export function useYouTubePlayer(slot: RefObject<HTMLDivElement | null>, options
               if (s === PLAYING) {
                 starting.current = false;
                 setStarted(true);
+                setIntent(true);
