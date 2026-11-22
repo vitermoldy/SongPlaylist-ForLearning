@@ -73,3 +73,4 @@ export async function fetchInfo(id: string): Promise<VideoInfo> {
 /** Why a video was refused, from the IFrame API error code, to follow "dilewati: ". */
 export function describePlayError(code: number) {
   if (code === 100) return "videonya privat atau sudah dihapus";
+  if (code === 101 || code === 150) return "pemiliknya tidak mengizinkan video ini diputar di situs lain";
