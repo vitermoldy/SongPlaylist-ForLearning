@@ -33,3 +33,5 @@ export function AccountGate({ auth }: { auth: AuthState }) {
   // Asking to sign in again (from the playlist panel) lifts "Pakai tanpa akun".
   useEffect(() => {
     if (auth.status === "checking") setSkipped(false);
+  }, [auth.status]);
+
