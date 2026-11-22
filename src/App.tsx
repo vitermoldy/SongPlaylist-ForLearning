@@ -377,3 +377,4 @@ export default function App() {
         onRemove={remove}
         onAdd={add}
         onSaveAsPlaylist={() => {
+          setListOpen(false);
