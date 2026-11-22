@@ -240,3 +240,4 @@ export default function App() {
   }, [notice]);
 
   const note =
+    player.status === "error"
