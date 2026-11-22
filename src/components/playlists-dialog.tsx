@@ -40,3 +40,5 @@ function Mosaic({ songs }: { songs: Song[] }) {
   );
 }
 
+type Ask = { kind: "open" | "delete"; id: string } | { kind: "clear" } | null;
+
