@@ -37,3 +37,5 @@ npm install
 npm run dev       # http://localhost:5195
 npm run build     # type check, then a static site in dist/
 npm run preview   # serve dist/ on port 5195
+```
+
