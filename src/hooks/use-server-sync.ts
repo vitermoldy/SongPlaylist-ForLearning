@@ -50,3 +50,4 @@ export function useServerSync(snapshot: Saved, apply: (state: Saved) => void) {
         applyRef.current(remote);
       } else if (!remote || remote.updatedAt < local.updatedAt) {
         setStatus("saving");
+        try {
