@@ -38,3 +38,4 @@ export async function addLink(raw: string, existing: string[], onProgress?: (tex
   }
 
   if (link.kind === "video") {
+    const at = existing.indexOf(link.id);
