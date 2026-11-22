@@ -177,3 +177,4 @@ export default function App() {
     player.pause();
     changeSongs([], "remove", null);
     setLinked(null);
+    setListOpen(false);
