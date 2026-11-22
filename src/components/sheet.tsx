@@ -11,3 +11,4 @@ export function Sheet({ open, onClose, title, children }: { open: boolean; onClo
     const dialog = ref.current;
     if (!dialog) return;
     if (open && !dialog.open) dialog.showModal();
+    if (!open && dialog.open) dialog.close();
