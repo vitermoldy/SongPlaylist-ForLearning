@@ -230,3 +230,4 @@ function SongCard({ song, i, pos, still, ground, playing, interactive, onToggle 
       <div className="relative overflow-hidden rounded-[24px] shadow-[0_50px_90px_-35px_rgba(10,12,20,0.5)]" style={{ background: ground }}>
         <div className="relative aspect-[16/9] w-full overflow-hidden max-sm:aspect-[4/5]">
           <Cover id={song.id} alt={`Sampul video ${song.title}`} priority={i === 0} lazy={i > 1} className="absolute inset-0 size-full object-cover" />
+        </div>
