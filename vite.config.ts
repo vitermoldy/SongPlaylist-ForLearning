@@ -8,4 +8,5 @@ import tailwindcss from "@tailwindcss/vite";
 const root = fileURLToPath(new URL(".", import.meta.url)).replace(/^[a-z]:/, (d) => d.toUpperCase());
 
 export default defineConfig(({ mode }) => {
+  // the server (npm run server) keeps the lists in MySQL; dev and preview forward /api to it.
 });
