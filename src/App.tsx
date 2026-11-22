@@ -234,6 +234,7 @@ export default function App() {
   // Every change is saved in this browser at once and stamped with its time; the stamp tells the
   // server sync which copy is newer. A copy taken from the server keeps the server's stamp.
   const current = song?.id ?? null;
+  const lastSignature = useRef(signatureOf(initial));
   useEffect(() => {
     saveState({ songs, current: song?.id ?? null, volume, muted, playlists, linked });
   }, [songs, song?.id, volume, muted, playlists, linked]);
