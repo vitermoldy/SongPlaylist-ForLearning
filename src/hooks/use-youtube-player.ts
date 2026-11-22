@@ -97,3 +97,4 @@ export function useYouTubePlayer(slot: RefObject<HTMLDivElement | null>, options
     setStatus("loading");
 
     loadYouTubeApi()
+      .then((YT) => {
