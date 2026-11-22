@@ -74,3 +74,4 @@ added without rewriting its imports.
 - YouTube's own mixes (links with `list=RD...`), Watch later and Liked videos cannot be read as
   playlists outside YouTube.
 - On some phones (iOS Safari above all) the first song may need one tap on the video itself; the
+  player bar says so when that happens.
