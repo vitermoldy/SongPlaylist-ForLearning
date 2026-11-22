@@ -60,7 +60,7 @@ export function useServerSync(snapshot: Saved, apply: (state: Saved) => void) {
           await putState(local);
           agreed.current = local.updatedAt;
         } catch (error) {
-          // another browser with this code saved in between: look again and take its copy
+          // another browser of this account saved in between: look again and take its copy
           if (error instanceof ServerError && error.status === 409) again.current = true;
           else throw error;
         }
