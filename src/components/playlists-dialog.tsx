@@ -36,3 +36,4 @@ function Mosaic({ songs }: { songs: Song[] }) {
       {four.map((s) => (
         <img key={s.id} src={thumbUrl(s.id, "mq")} alt="" width={80} height={45} loading="lazy" className="size-full object-cover" />
       ))}
+    </span>
