@@ -54,3 +54,4 @@ export function pickAccent(pixels: Uint8ClampedArray): string {
     if (s < 0.22 || l < 0.1 || l > 0.9) continue;
     const weight = s * (1 - Math.abs(l - 0.5) * 1.4);
     const bucket = buckets[Math.min(11, Math.floor(h * 12))];
+    bucket.weight += weight;
