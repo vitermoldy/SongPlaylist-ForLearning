@@ -33,3 +33,4 @@ export function loadCode(): string {
 export function saveCode(code: string) {
   try {
     localStorage.setItem(CODE_KEY, code);
+  } catch {
