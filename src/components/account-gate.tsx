@@ -105,3 +105,4 @@ export function AccountGate({ auth }: { auth: AuthState }) {
               : "Daftar putar dan playlist yang sudah ada di browser ini ikut masuk ke akun barumu."}
           </p>
           <form className="mt-5 grid gap-4" onSubmit={submit} noValidate>
+            <div>
