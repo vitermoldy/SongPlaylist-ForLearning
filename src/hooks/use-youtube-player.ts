@@ -41,3 +41,4 @@ export function useYouTubePlayer(slot: RefObject<HTMLDivElement | null>, options
   // those are not the listener pausing, so they leave the play button alone
   const starting = useRef(false);
 
+  const [armed, setArmed] = useState(false);
