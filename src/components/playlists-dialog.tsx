@@ -15,3 +15,4 @@ type Props = {
   /** The playlist holding exactly the deck's songs, if any. */
   savedAs: SavedPlaylist | null;
   onSave: (name: string) => void;
+  onUpdate: (id: string) => void;
