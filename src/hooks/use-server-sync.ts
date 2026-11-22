@@ -9,3 +9,4 @@ export type SyncStatus = "checking" | "saving" | "saved" | "offline" | "nodb" | 
 
 export type SwitchResult = { ok: boolean; text: string };
 
+/**
