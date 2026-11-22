@@ -188,3 +188,4 @@ export function AccountGate({ auth }: { auth: AuthState }) {
           </p>
           <div className="mt-5 flex flex-wrap gap-2">
             <button
+              ref={retryRef}
