@@ -200,3 +200,5 @@ export default function App() {
     changeSongs(chosen.songs, "first", first.id);
     setLinked(chosen.id);
     load(first.id, true);
+  };
+
