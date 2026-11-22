@@ -19,3 +19,4 @@ export function AddSongForm({ onAdd, className, autoFocus = false }: { onAdd: Ad
     const playlist = /[?&]list=/.test(value) && !/[?&]v=|youtu\.be\//.test(value);
     setStatus({ kind: "busy", text: playlist ? "Mengambil isi playlist…" : "Mencari lagunya…" });
     const result = await onAdd(value, (text) => setStatus({ kind: "busy", text }));
+    setStatus({ kind: result.ok ? "done" : "error", text: result.text });
