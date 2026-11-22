@@ -48,3 +48,4 @@ const TABLES = [
     id VARCHAR(40) NOT NULL,
     position SMALLINT UNSIGNED NOT NULL,
     name VARCHAR(60) NOT NULL,
+    saved_at DATETIME NOT NULL,
