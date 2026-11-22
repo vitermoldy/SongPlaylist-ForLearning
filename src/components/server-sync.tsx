@@ -76,3 +76,4 @@ export function ServerSync({ code, status, checkedAt, onSwitch }: Props) {
           Kode pemulihan dan pindah browser
         </summary>
         <div className="space-y-4 pb-1">
+          <div>
