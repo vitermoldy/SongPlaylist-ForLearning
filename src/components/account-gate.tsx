@@ -209,3 +209,4 @@ export function AccountGate({ auth }: { auth: AuthState }) {
       )}
     </dialog>
   );
+}
