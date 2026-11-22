@@ -56,3 +56,4 @@ export function AccountGate({ auth }: { auth: AuthState }) {
     const name = username.trim();
     if (!name || !password) {
       setInvalid(!name ? "user" : "pass");
+      setError(!name ? "Isi username dulu." : "Isi kata sandi dulu.");
