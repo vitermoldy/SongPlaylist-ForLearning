@@ -22,3 +22,5 @@ light ground.
 
 The system sans stack, as in the original component. The covers carry the identity; the type stays
 plain so titles read at any length. Big closing headline (`clamp(40px, 7vw, 104px)`, tight tracking)
+is kept from the original demo footer.
+
