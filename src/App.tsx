@@ -147,3 +147,4 @@ export default function App() {
         changeSongs([...before, ...result.songs], before.length === 0 ? "first" : "add", before.length === 0 ? first.id : undefined);
         if (before.length === 0) load(first.id, false);
       }
+      return result;
