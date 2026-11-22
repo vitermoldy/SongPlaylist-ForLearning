@@ -19,3 +19,4 @@ const MAX_PLAYLISTS = 200
 
 /** Writes come as JSON from this site only: no form posts, no other origin. */
 function sameOriginWrites(req, res, next) {
+  if (req.method === 'GET' || req.method === 'HEAD') return next()
