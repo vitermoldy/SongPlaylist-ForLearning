@@ -247,3 +247,4 @@ export default function App() {
         }
       : player.needsTap
         ? { text: "Browser menahan pemutaran otomatis. Ketuk videonya sekali untuk mulai." }
+        : notice
