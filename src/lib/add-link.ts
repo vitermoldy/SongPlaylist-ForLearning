@@ -58,3 +58,4 @@ export async function addLink(raw: string, existing: string[], onProgress?: (tex
   const already = ids.length - notYet.length;
   const fresh = notYet.slice(0, PLAYLIST_LIMIT);
   onProgress?.(`Membaca judul ${fresh.length} lagu…`);
+  const found = await mapLimit(fresh, 6, async (id) => {
