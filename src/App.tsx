@@ -268,6 +268,7 @@ export default function App() {
     () => ({ songs, current, volume, muted, playlists, linked, updatedAt }),
     [songs, current, volume, muted, playlists, linked, updatedAt],
   );
+  const server = useServerSync(snapshot, applyRemote);
 
   // each card's play button takes its colour from the song's cover, read once and remembered
   const asked = useRef(new Set<string>());
