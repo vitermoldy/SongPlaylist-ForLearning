@@ -28,3 +28,4 @@ export default function App() {
   const [listOpen, setListOpen] = useState(false);
   const [playlistsOpen, setPlaylistsOpen] = useState(false);
 
+  const found = songs.findIndex((s) => s.id === activeId);
