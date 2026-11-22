@@ -96,3 +96,4 @@ export function SongsDialog({ open, onClose, songs, active, playing, savedAs, on
           {confirmClear ? (
             <Confirm
               text={
+                <>
