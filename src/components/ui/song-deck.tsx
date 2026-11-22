@@ -305,3 +305,4 @@ function Corner({ song, i, ground, playing, onToggle }: { song: Song; i: number;
   const R = 18;
   const accent = song.accent ?? FALLBACK_ACCENT;
   const corner = (
+    <svg aria-hidden width={R} height={R} viewBox={`0 0 ${R} ${R}`} className="block">
