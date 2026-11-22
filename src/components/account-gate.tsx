@@ -119,3 +119,4 @@ export function AccountGate({ auth }: { auth: AuthState }) {
                 autoCapitalize="none"
                 spellCheck={false}
                 maxLength={24}
+                aria-invalid={invalid === "user" ? true : undefined}
