@@ -10,3 +10,4 @@ direction; everything added around it follows it.
 | --- | --- | --- |
 | Ground | `#E7E8EA` | The deck's page ground; the cut-out corner is filled with it, so the button sits "in" the card. |
 | Ink | `#111318` / `#141414` | Titles, buttons. |
+| Secondary text | `#3B3F48` | Artist lines, hints. 9:1 on the ground. |
