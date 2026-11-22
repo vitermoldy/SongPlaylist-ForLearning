@@ -267,3 +267,4 @@ export default function App() {
           </div>
           <div className="flex shrink-0 gap-2">
             <button type="button" onClick={() => setListOpen(true)} aria-haspopup="dialog" className={headerButton}>
+              <ListMusic aria-hidden className="size-[18px]" />
