@@ -25,3 +25,4 @@
 
   button:disabled,
   input:disabled {
+    cursor: not-allowed;
