@@ -63,7 +63,7 @@ Database `songplaylist_forlearning` (created on start):
 
 | Table | Holds |
 | --- | --- |
-| `devices` | one row per recovery code |
+| `users`, `sessions` | accounts: username, scrypt password hash, joined, last sign-in, sign-in count |
 | `songs` | every video any list has held: title, artist, cover colour (shared) |
 | `decks` | per device: current song, volume, mute, the playlist the deck was opened from, the browser's change time |
 | `deck_songs` | the songs on a device's deck, in order |
