@@ -60,3 +60,4 @@ export type Saved = {
 };
 
 const isSong = (v: unknown): v is Song => {
+  const s = v as Song;
