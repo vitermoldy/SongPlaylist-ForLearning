@@ -53,3 +53,4 @@ function IconButton({ label, onClick, disabled, children }: { label: string; onC
   );
 }
 
+function Progress({ time, duration, onSeek, className }: { time: number; duration: number; onSeek: (s: number) => void; className?: string }) {
