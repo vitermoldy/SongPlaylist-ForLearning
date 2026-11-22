@@ -251,3 +251,5 @@ export default function App() {
           ? { text: notice }
           : null;
 
+  const empty = songs.length === 0;
+
