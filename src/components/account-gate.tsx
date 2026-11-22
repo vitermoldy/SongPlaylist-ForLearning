@@ -153,3 +153,4 @@ export function AccountGate({ auth }: { auth: AuthState }) {
               id="gate-submit"
               type="submit"
               disabled={busy}
+              className="h-12 rounded-[12px] bg-[#111318] px-4 text-[15px] font-semibold text-white hover:bg-[#2A2E37] active:bg-black disabled:cursor-not-allowed disabled:opacity-60"
