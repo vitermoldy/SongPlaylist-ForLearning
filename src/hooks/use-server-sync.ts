@@ -40,6 +40,7 @@ export function useServerSync(snapshot: Saved, apply: (state: Saved) => void) {
 
   /** `preferServer`: right after signing in, the account's copy wins whatever its time. Resolves true once both agree. */
   const sync = useCallback(async function run(preferServer = false): Promise<boolean> {
+    if (!signedIn.current) return false;
     if (busy.current) {
       again.current = true;
       return;
