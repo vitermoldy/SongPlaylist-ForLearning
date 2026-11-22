@@ -20,3 +20,4 @@ light ground.
 
 ## Type
 
+The system sans stack, as in the original component. The covers carry the identity; the type stays
