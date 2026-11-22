@@ -101,3 +101,5 @@ export const SongDeck = memo(function SongDeck({
   const settle = useRef(onSettle);
   useLayoutEffect(() => {
     settle.current = onSettle;
+  });
+
