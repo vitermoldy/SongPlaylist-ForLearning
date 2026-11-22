@@ -140,3 +140,4 @@ export function AccountGate({ auth }: { auth: AuthState }) {
               />
               {mode === "up" && (
                 <p id="gate-pass-hint" className="mt-2 text-[14px] leading-snug text-[#3B3F48]">
+                  Minimal 6 karakter. Username boleh berisi huruf, angka, titik, garis bawah, dan tanda minus.
