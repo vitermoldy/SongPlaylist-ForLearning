@@ -12,3 +12,4 @@ export const isCode = (code: string) => CODE.test(code);
 export const formatCode = (code: string) => code.match(/.{1,4}/g)?.join(" ") ?? code;
 
 /** 12 random characters; 32 letters divide 256 evenly, so every character is equally likely. */
+function newCode() {
