@@ -85,3 +85,4 @@ export const SongDeck = memo(function SongDeck({
   playing,
   showVideo,
   playerSlot,
+  onSettle,
