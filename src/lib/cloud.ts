@@ -75,3 +75,5 @@ export const getState = async (code: string) => {
   if (!body.saved) return null;
   const { saved: _, ...state } = body;
   return state as Saved;
+};
+
