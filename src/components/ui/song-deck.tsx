@@ -204,3 +204,5 @@ export const SongDeck = memo(function SongDeck({
       </section>
     </MotionConfig>
   );
+});
+
