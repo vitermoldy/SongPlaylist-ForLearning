@@ -72,3 +72,4 @@ export default function App() {
           if (live.current.songs[live.current.active]?.id === failed.id) goTo(live.current.active + 1, true);
         }, 1400);
       } else {
+        setNotice(`${failed.title} tidak bisa diputar: ${reason}.`);
