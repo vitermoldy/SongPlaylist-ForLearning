@@ -127,3 +127,4 @@ export function createApi(getPool) {
 
   api.get('/state/:code', async (req, res) => {
     const pool = getPool()
+    const [[deck]] = await pool.query('SELECT * FROM decks WHERE device_id = ?', [req.code])
