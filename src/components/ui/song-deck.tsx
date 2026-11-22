@@ -246,3 +246,4 @@ function PlayerCard({ song, i, pos, still, ground, playing, interactive, onToggl
   showVideo: boolean;
   slot: RefObject<HTMLDivElement | null>;
 }) {
+  const m = useCardMotion(i, pos);
