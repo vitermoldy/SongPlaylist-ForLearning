@@ -197,3 +197,4 @@ export function useYouTubePlayer(slot: RefObject<HTMLDivElement | null>, options
       setStarted(false);
       setNeedsTap(false);
       setTime(0);
+      setDuration(0);
