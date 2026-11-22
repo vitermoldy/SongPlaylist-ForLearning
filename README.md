@@ -62,3 +62,4 @@ src/lib/color.ts                    accent colour from a cover
 
 ## Why `components/ui`
 
+shadcn's CLI (`npx shadcn add ...`) and components copied from shadcn-style libraries import each
