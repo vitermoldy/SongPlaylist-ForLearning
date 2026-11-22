@@ -17,3 +17,4 @@ import { FALLBACK_ACCENT } from "@/lib/color";
 import type { Song } from "@/lib/playlist";
 import { thumbUrl } from "@/lib/youtube";
 
+export type SongDeckHandle = {
