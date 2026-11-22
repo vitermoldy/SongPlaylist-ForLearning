@@ -163,3 +163,4 @@ export default function App() {
       if (replacement) load(replacement.id, intentRef.current);
       changeSongs(rest, "remove", replacement?.id ?? null);
     },
+    [changeSongs, load, intentRef],
