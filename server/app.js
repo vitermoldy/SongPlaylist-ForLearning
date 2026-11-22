@@ -168,3 +168,4 @@ export function createApi(getPool) {
       }
 
       // every song either list holds, newest title and colour winning
+      const catalogue = new Map()
