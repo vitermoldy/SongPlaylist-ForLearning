@@ -337,3 +337,4 @@ function Corner({ song, i, ground, playing, onToggle }: { song: Song; i: number;
           )}
         </span>
       </button>
+    </div>
