@@ -15,3 +15,4 @@ type Props = {
   playing: boolean;
   /** The saved playlist holding exactly these songs, if any. */
   savedAs: SavedPlaylist | null;
+  onPick: (index: number) => void;
