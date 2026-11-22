@@ -34,3 +34,4 @@ const clock = (seconds: number) => {
   return h ? `${h}:${String(m).padStart(2, "0")}:${rest}` : `${m}:${rest}`;
 };
 
+const spoken = (seconds: number) => {
