@@ -214,3 +214,4 @@ export function createApi(getPool) {
     res.status(500).json({ error: 'Server error.' })
   })
   return api
+}
