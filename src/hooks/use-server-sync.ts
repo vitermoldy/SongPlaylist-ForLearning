@@ -44,3 +44,4 @@ export function useServerSync(snapshot: Saved, apply: (state: Saved) => void) {
     window.clearTimeout(retry.current);
     try {
       const local = snap.current;
+      const remote = await getState(codeRef.current);
