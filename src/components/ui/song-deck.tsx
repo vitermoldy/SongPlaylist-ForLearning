@@ -286,3 +286,4 @@ function Cover({ id, alt, className, priority = false, lazy = false }: { id: str
       src={thumbUrl(id, size)}
       alt={alt}
       width={1280}
+      height={720}
