@@ -176,3 +176,4 @@ export const SongDeck = memo(function SongDeck({
           {songs.map((s, i) => (
             <SongCard
               key={s.id}
+              song={s}
