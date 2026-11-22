@@ -51,3 +51,4 @@ export default function App() {
     initialId: song?.id ?? null,
     volume,
     muted,
+    onEnded: () => {
