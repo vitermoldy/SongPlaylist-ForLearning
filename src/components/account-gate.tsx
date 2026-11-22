@@ -129,3 +129,4 @@ export function AccountGate({ auth }: { auth: AuthState }) {
               </label>
               <input
                 id="gate-pass"
+                type="password"
