@@ -99,3 +99,4 @@
 @media (prefers-reduced-motion: reduce) {
   .range::-webkit-slider-thumb {
     transition: none;
+  }
