@@ -91,3 +91,5 @@ export function ServerSync({ code, status, checkedAt, onSwitch }: Props) {
                 {copied ? "Tersalin" : "Salin"}
               </button>
             </div>
+          </div>
+
