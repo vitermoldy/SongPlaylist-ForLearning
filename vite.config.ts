@@ -23,4 +23,5 @@ export default defineConfig(({ mode }) => {
     },
     server: { port: 5195, strictPort: true, proxy: api },
     preview: { port: 5195, strictPort: true, proxy: api },
+  };
 });
