@@ -163,3 +163,4 @@ export function createApi(getPool) {
       await conn.query('INSERT INTO devices (id) VALUES (?) ON DUPLICATE KEY UPDATE last_seen = CURRENT_TIMESTAMP', [req.code])
       const [[held]] = await conn.query('SELECT client_updated FROM decks WHERE device_id = ? FOR UPDATE', [req.code])
       if (held && Number(held.client_updated) > state.updatedAt) {
+        await conn.rollback()
