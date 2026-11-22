@@ -119,3 +119,4 @@ export function PlayerBar(p: Props) {
             </IconButton>
             <button
               type="button"
+              onClick={p.onToggle}
