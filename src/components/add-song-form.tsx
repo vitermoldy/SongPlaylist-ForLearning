@@ -17,3 +17,4 @@ export function AddSongForm({ onAdd, className, autoFocus = false }: { onAdd: Ad
     event.preventDefault();
     if (busy) return;
     const playlist = /[?&]list=/.test(value) && !/[?&]v=|youtu\.be\//.test(value);
+    setStatus({ kind: "busy", text: playlist ? "Mengambil isi playlist…" : "Mencari lagunya…" });
