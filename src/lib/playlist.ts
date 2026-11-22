@@ -20,3 +20,4 @@ export const SEED_SONGS: Song[] = [
   { id: "wnAKxtEi78c", title: "Secukupnya", artist: "Hindia" },
   { id: "viW0M5R2BLo", title: "Akad", artist: "Payung Teduh" },
   { id: "yKNxeF4KMsY", title: "Yellow", artist: "Coldplay" },
+  { id: "hLQl3WQQoQ0", title: "Someone Like You", artist: "Adele" },
