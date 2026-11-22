@@ -26,3 +26,5 @@ export default function App() {
   const [linked, setLinked] = useState<string | null>(initial.linked);
   const [notice, setNotice] = useState<string | null>(null);
   const [listOpen, setListOpen] = useState(false);
+  const [playlistsOpen, setPlaylistsOpen] = useState(false);
+
