@@ -291,3 +291,4 @@ export default function App() {
             onSettle={settle}
             onToggle={toggleCard}
             ground={GROUND}
+          />
