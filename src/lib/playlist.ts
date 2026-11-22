@@ -78,3 +78,4 @@ export function loadSaved(): Saved {
     if (!Array.isArray(data.songs)) return fallback;
     const songs = data.songs.filter(isSong);
     const current = typeof data.current === "string" && songs.some((s) => s.id === data.current) ? data.current : (songs[0]?.id ?? null);
+    const volume = typeof data.volume === "number" && data.volume >= 0 && data.volume <= 100 ? data.volume : 80;
