@@ -84,7 +84,7 @@ export function ServerSync({ auth, status, checkedAt, onFlush }: Props) {
             Masuk atau daftar
           </button>
         </div>
-      </details>
+      )}
     </section>
   );
 }
