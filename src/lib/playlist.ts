@@ -77,3 +77,4 @@ export function loadSaved(): Saved {
     const data = JSON.parse(raw) as Partial<Saved>;
     if (!Array.isArray(data.songs)) return fallback;
     const songs = data.songs.filter(isSong);
+    const current = typeof data.current === "string" && songs.some((s) => s.id === data.current) ? data.current : (songs[0]?.id ?? null);
