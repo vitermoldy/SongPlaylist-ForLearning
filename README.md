@@ -32,3 +32,4 @@ Player API. No server and no API key: everything is kept in the browser's localS
 
 ## Run it
 
+```bash
