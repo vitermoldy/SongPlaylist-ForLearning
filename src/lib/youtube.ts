@@ -158,3 +158,4 @@ export async function expandPlaylist(list: string): Promise<string[]> {
   const YT = await loadYouTubeApi();
   return new Promise<string[]>((resolve, reject) => {
     const box = document.createElement("div");
+    box.setAttribute("aria-hidden", "true");
