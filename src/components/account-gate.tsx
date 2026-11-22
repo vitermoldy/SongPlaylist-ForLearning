@@ -20,3 +20,5 @@ export function AccountGate({ auth }: { auth: AuthState }) {
   const [busy, setBusy] = useState(false);
   // "Pakai tanpa akun" holds until the page reloads or the listener asks to sign in.
   const [skipped, setSkipped] = useState(false);
+  const shown = useRef<string | null>(null);
+
