@@ -174,3 +174,4 @@ export default function App() {
 
   // "Kosongkan daftar": the deck is emptied, saved playlists stay as they are
   const clearSongs = () => {
+    player.pause();
