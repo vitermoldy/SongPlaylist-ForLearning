@@ -56,3 +56,4 @@ function IconButton({ label, onClick, disabled, children }: { label: string; onC
 function Progress({ time, duration, onSeek, className }: { time: number; duration: number; onSeek: (s: number) => void; className?: string }) {
   const fill = duration ? Math.min(100, (time / duration) * 100) : 0;
   return (
+    <div className={cn("min-w-0 items-center gap-3", className)}>
