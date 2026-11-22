@@ -90,6 +90,7 @@ export function useServerSync(snapshot: Saved, apply: (state: Saved) => void) {
     if (auth.status !== "signed-in") {
       window.clearTimeout(retry.current);
       setStatus(auth.status === "unavailable" ? "offline" : auth.status === "checking" ? "checking" : "signed-out");
+      return;
     return () => window.clearTimeout(retry.current);
   }, [code, sync]);
 
