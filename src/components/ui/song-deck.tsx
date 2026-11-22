@@ -152,3 +152,4 @@ export const SongDeck = memo(function SongDeck({
         const at = index <= 0 ? 0 : index - REST;
         const instant = !smoothly || reduce;
         window.scrollTo({ top: Math.round(start + at * step), behavior: instant ? "instant" : "smooth" });
+        if (instant) {
