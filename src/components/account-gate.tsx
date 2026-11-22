@@ -28,3 +28,5 @@ export function AccountGate({ auth }: { auth: AuthState }) {
   // Once per page: who is signed in on this browser.
   useEffect(() => {
     void checkAccount();
+  }, []);
+
