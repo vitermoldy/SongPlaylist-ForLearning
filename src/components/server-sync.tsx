@@ -14,3 +14,4 @@ type Props = {
 
 const clock = (ms: number) => new Date(ms).toLocaleTimeString("id-ID", { hour: "2-digit", minute: "2-digit" });
 
+/** Where the lists are kept besides this browser, the recovery code, and taking over another browser's data. */
