@@ -217,3 +217,5 @@ export function useYouTubePlayer(slot: RefObject<HTMLDivElement | null>, options
     if (p.getPlayerState() === ENDED) p.seekTo(0, true);
     p.playVideo();
     watchStart();
+  }, [setIntent, watchStart]);
+
