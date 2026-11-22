@@ -115,3 +115,4 @@ export default function App() {
   };
 
   // Adding or removing a song changes the deck's height. Keep the add section where the eye is
+  // when it is on screen; otherwise, after a removal, put the playing song's card back on top.
