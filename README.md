@@ -55,6 +55,7 @@ browser's, an older one is replaced.
 
 While the server runs, the page asks for an account first (username and password, at least 6 characters).
 Signing up keeps the lists already in the browser; signing in elsewhere takes the account's copy; signing out
+(Playlist, Akun dan server lokal) removes the lists from that browser. With the server off the page works as
 
 Database `songplaylist_forlearning` (created on start):
 
