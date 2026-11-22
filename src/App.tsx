@@ -176,3 +176,4 @@ export default function App() {
   const clearSongs = () => {
     player.pause();
     changeSongs([], "remove", null);
+    setLinked(null);
