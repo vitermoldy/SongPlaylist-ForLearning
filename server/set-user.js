@@ -34,3 +34,4 @@ try {
   const [free] = await conn.query(
     `SELECT d.id FROM devices d LEFT JOIN users u ON u.device_id = d.id LEFT JOIN decks k ON k.device_id = d.id
      WHERE u.id IS NULL ORDER BY COALESCE(k.client_updated, 0) DESC, d.last_seen DESC`,
+  )
