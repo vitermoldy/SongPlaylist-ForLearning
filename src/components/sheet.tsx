@@ -33,3 +33,4 @@ export function Sheet({ open, onClose, title, children }: { open: boolean; onClo
             type="button"
             onClick={onClose}
             aria-label="Tutup"
+            className="grid size-11 place-items-center rounded-full hover:bg-[#111318]/[0.07] active:bg-[#111318]/[0.12]"
