@@ -68,3 +68,4 @@ function cleanState(body) {
 
   const songs = []
   const seen = new Set()
+  for (const raw of body.songs) {
