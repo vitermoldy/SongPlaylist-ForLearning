@@ -101,3 +101,4 @@ function cleanState(body) {
 
 const toSong = (r) => ({
   id: r.video_id,
+  title: r.title,
