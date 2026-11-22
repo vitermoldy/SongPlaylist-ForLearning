@@ -75,6 +75,7 @@ export function ServerSync({ auth, status, checkedAt, onFlush }: Props) {
         </div>
       ) : (
         <div id="account-out-of" className="mt-2">
+          <button
         </div>
       </details>
     </section>
