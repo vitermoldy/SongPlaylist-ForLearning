@@ -50,3 +50,4 @@ export function AccountGate({ auth }: { auth: AuthState }) {
     shown.current = d.open ? auth.status : null;
   }, [auth.status, signedOut, offline, skipped]);
 
+  async function submit(event: FormEvent) {
