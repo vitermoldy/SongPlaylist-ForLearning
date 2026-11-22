@@ -88,3 +88,5 @@ export default function App() {
       deck.current?.scrollToSong(index);
     },
     [load],
+  );
+
