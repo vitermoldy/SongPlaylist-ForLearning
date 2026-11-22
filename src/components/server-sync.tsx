@@ -25,3 +25,4 @@ export function ServerSync({ code, status, checkedAt, onSwitch }: Props) {
   const [result, setResult] = useState<SwitchResult | null>(null);
 
   const line: Record<SyncStatus, string> = {
+    checking: "Menghubungi server lokal…",
