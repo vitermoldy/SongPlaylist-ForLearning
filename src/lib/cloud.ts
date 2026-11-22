@@ -34,3 +34,4 @@ export function saveCode(code: string) {
   try {
     localStorage.setItem(CODE_KEY, code);
   } catch {
+    // without storage the code lasts as long as the tab
