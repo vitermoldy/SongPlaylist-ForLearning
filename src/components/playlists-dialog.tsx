@@ -47,3 +47,4 @@ export function PlaylistsDialog({ open, onClose, playlists, songs, linked, saved
   const nameId = useId();
   const nameInput = useRef<HTMLInputElement>(null);
   const [name, setName] = useState("");
+  const [ask, setAsk] = useState<Ask>(null);
