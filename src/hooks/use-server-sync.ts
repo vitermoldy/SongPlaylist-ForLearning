@@ -41,3 +41,4 @@ export function useServerSync(snapshot: Saved, apply: (state: Saved) => void) {
       return;
     }
     busy.current = true;
+    window.clearTimeout(retry.current);
