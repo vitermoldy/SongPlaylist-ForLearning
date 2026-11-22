@@ -98,3 +98,4 @@ export function AccountGate({ auth }: { auth: AuthState }) {
       {auth.status === "checking" && <p className="mt-3 text-[14px] text-[#3B3F48]">Menghubungi server lokal…</p>}
 
       {signedOut && (
+        <>
