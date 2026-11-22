@@ -124,3 +124,5 @@ export default function App() {
     else anchor.current = addTop < window.innerHeight ? { addTop } : kind === "remove" ? "deck" : null;
     setSongs(nextSongs);
     if (nextActive !== undefined) setActiveId(nextActive);
+  }, []);
+
