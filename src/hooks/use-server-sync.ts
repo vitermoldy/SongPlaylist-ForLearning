@@ -9,6 +9,7 @@ import type { Saved } from "@/lib/playlist";
 export type SyncStatus = "signed-out" | "checking" | "saving" | "saved" | "offline" | "nodb" | "error";
 
 /** Who is signed in, re-rendering whenever it changes. */
+export const useAuth = () => useSyncExternalStore(onAuth, authState);
 
 /**
  * After a change (once the listener pauses), on opening the page and on coming back to the tab,
