@@ -20,3 +20,4 @@ type Options = {
   initialId: string | null;
   volume: number;
   muted: boolean;
+  onEnded: () => void;
