@@ -54,3 +54,4 @@ export function AccountGate({ auth }: { auth: AuthState }) {
     event.preventDefault();
     if (busy) return;
     const name = username.trim();
+    if (!name || !password) {
