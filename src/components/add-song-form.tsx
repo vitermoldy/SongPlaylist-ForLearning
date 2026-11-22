@@ -21,3 +21,5 @@ export function AddSongForm({ onAdd, className, autoFocus = false }: { onAdd: Ad
     const result = await onAdd(value, (text) => setStatus({ kind: "busy", text }));
     setStatus({ kind: result.ok ? "done" : "error", text: result.text });
     if (result.ok) setValue("");
+  }
+
