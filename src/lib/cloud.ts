@@ -41,3 +41,4 @@ export function saveCode(code: string) {
 /**
  * Why a call failed: `offline` when nothing answered (the server is not running), `nodb` when the
  * server answered but MySQL is not connected, otherwise the HTTP status.
+ */
