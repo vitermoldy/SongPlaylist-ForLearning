@@ -224,3 +224,4 @@ export function PlaylistsDialog({ open, onClose, playlists, songs, linked, saved
             >
               <Trash2 aria-hidden className="size-[18px]" />
               Hapus semua playlist
+            </button>
