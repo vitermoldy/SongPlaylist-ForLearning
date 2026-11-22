@@ -144,3 +144,4 @@ export function PlayerBar(p: Props) {
             <IconButton label={p.muted ? "Nyalakan suara" : "Bisukan"} onClick={p.onMute}>
               {p.muted || p.volume === 0 ? <VolumeX aria-hidden className="size-5" /> : <Volume2 aria-hidden className="size-5" />}
             </IconButton>
+            <input
