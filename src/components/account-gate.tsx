@@ -123,3 +123,4 @@ export function AccountGate({ auth }: { auth: AuthState }) {
                 aria-describedby={error ? "gate-error" : undefined}
               />
             </div>
+            <div>
