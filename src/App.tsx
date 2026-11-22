@@ -19,6 +19,7 @@ import {
   type Saved,
   type SavedPlaylist,
   type Song,
+} from "@/lib/playlist";
 import { describePlayError } from "@/lib/youtube";
 
 const GROUND = "#E7E8EA";
