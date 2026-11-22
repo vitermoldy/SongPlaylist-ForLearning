@@ -10,3 +10,4 @@ export type SyncStatus = "checking" | "saving" | "saved" | "offline" | "nodb" | 
 export type SwitchResult = { ok: boolean; text: string };
 
 /**
+ * After a change (once the listener pauses), on opening the page and on coming back to the tab,
