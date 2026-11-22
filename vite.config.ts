@@ -10,3 +10,4 @@ const root = fileURLToPath(new URL(".", import.meta.url)).replace(/^[a-z]:/, (d)
 export default defineConfig({
   root,
   base: "./",
+  plugins: [react(), tailwindcss()],
