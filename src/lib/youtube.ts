@@ -191,3 +191,4 @@ export async function expandPlaylist(list: string): Promise<string[]> {
           poll = window.setInterval(() => {
             const ids = event.target.getPlaylist?.();
             if (ids && ids.length) finish(ids);
+          }, 200);
