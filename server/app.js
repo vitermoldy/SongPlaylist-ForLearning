@@ -103,3 +103,4 @@ const toSong = (r) => ({
   id: r.video_id,
   title: r.title,
   artist: r.artist,
+  ...(r.accent ? { accent: r.accent } : {}),
