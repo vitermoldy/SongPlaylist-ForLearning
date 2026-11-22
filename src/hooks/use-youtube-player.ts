@@ -198,3 +198,4 @@ export function useYouTubePlayer(slot: RefObject<HTMLDivElement | null>, options
       setNeedsTap(false);
       setTime(0);
       setDuration(0);
+      window.clearTimeout(tapTimer.current);
