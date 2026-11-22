@@ -40,3 +40,4 @@ export function Sheet({ open, onClose, title, children }: { open: boolean; onClo
         </div>
         {children}
       </div>
+    </dialog>
