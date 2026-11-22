@@ -59,3 +59,4 @@ function Progress({ time, duration, onSeek, className }: { time: number; duratio
     <div className={cn("min-w-0 items-center gap-3", className)}>
       <span className="w-10 shrink-0 text-right text-[12px] text-[#3B3F48] tabular-nums">{clock(time)}</span>
       <input
+        type="range"
