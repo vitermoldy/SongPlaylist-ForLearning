@@ -17,3 +17,4 @@ const headerButton =
   "inline-flex h-11 shrink-0 items-center gap-2 rounded-[14px] border border-[#111318]/15 bg-white px-3.5 text-[15px] font-medium text-[#111318] hover:border-[#111318]/30 active:bg-[#F3F4F5] sm:px-4";
 
 export default function App() {
+  const [initial] = useState(loadSaved);
