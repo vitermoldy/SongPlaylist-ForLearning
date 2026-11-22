@@ -6,3 +6,4 @@
  * leans, blurs and sinks with it when the next card arrives.
  *
  * Same motion as the original (one spring-smoothed value drives every card, a still deck under
+ * prefers-reduced-motion), measured in cards rather than in page progress, so adding or removing a
