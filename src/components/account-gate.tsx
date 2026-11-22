@@ -95,3 +95,5 @@ export function AccountGate({ auth }: { auth: AuthState }) {
         {mode === "in" ? "Masuk ke Daftar putar" : "Buat akun Daftar putar"}
       </h2>
 
+      {auth.status === "checking" && <p className="mt-3 text-[14px] text-[#3B3F48]">Menghubungi server lokal…</p>}
+
