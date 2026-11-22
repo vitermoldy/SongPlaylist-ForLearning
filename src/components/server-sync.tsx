@@ -57,68 +57,7 @@ export function ServerSync({ auth, status, checkedAt, onFlush }: Props) {
         {line[status]}
       </p>
 
-      <details className="group mt-1">
-        <summary className="inline-flex h-11 list-none items-center gap-1.5 text-[14px] font-medium text-[#111318] underline-offset-4 hover:underline [&::-webkit-details-marker]:hidden">
-          <ChevronDown aria-hidden className="size-4 transition-transform duration-200 group-open:rotate-180 motion-reduce:transition-none" />
-          Kode pemulihan dan pindah browser
-        </summary>
-        <div className="space-y-4 pb-1">
-          <div>
-            <p className="text-[14px] leading-snug text-[#3B3F48]">
-              Kode browser ini. Ketik di browser lain untuk membawa daftar putar dan playlist ke sana.
-            </p>
-            <div className="mt-2 flex items-center gap-2">
-              {/* monospace keeps look-alike characters apart in a code someone copies by hand */}
-              <code className="rounded-[10px] bg-white px-3 py-2 font-mono text-[16px] tracking-[0.08em] text-[#111318]">{formatCode(code)}</code>
-              <button
-                type="button"
-                onClick={copy}
-                className="h-11 rounded-[12px] border border-[#111318]/15 bg-white px-4 text-[14px] font-medium text-[#111318] hover:border-[#111318]/30 active:bg-[#F3F4F5]"
-              >
-                {copied ? "Tersalin" : "Salin"}
-              </button>
-            </div>
-          </div>
-
-          <form onSubmit={ask} noValidate>
-            <label htmlFor={inputId} className="mb-2 block text-[14px] font-semibold">
-              Kode dari browser lain
-            </label>
-            <div className="flex gap-2">
-              <input
-                id={inputId}
-                type="text"
-                value={entry}
-                autoComplete="off"
-                spellCheck={false}
-                maxLength={20}
-                onChange={(e) => setEntry(e.target.value)}
-                placeholder="ABCD EFGH JKLM"
-                className="h-11 min-w-0 flex-1 rounded-[12px] border border-[#111318]/20 bg-white px-3 font-mono text-[16px] tracking-[0.06em] uppercase placeholder:text-[#6B707A] hover:border-[#111318]/35"
-              />
-              <button
-                type="submit"
-                disabled={busy}
-                className="h-11 shrink-0 rounded-[12px] bg-[#111318] px-4 text-[14px] font-semibold text-white hover:bg-[#2A2E37] active:bg-black disabled:opacity-60"
-              >
-                {busy ? "Mengambil…" : "Pakai kode"}
-              </button>
-            </div>
-          </form>
-
-          {asking && (
-            <Confirm
-              text="Daftar putar dan playlist di browser ini akan diganti dengan data dari kode itu, dan browser ini ikut memakai kode itu."
-              confirmLabel="Ganti data"
-              onConfirm={take}
-              onCancel={() => setAsking(false)}
-            />
-          )}
-          {result && (
-            <p role="status" className={cn("text-[14px] leading-snug", result.ok ? "text-[#1D5A3A]" : "text-[#8F1A1A]")}>
-              {result.text}
-            </p>
-          )}
+      {account ? (
         </div>
       </details>
     </section>
