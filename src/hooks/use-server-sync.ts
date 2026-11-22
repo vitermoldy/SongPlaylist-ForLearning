@@ -71,6 +71,7 @@ export function useServerSync(snapshot: Saved, apply: (state: Saved) => void) {
       setCheckedAt(Date.now());
       ok = !again.current;
     } catch (error) {
+      if (!signedIn.current) return false;
       const kind = error instanceof ServerError ? error.kind : "offline";
       setStatus(kind === "http" ? "error" : kind);
       retry.current = window.setTimeout(() => void run(), 10_000);
