@@ -52,3 +52,4 @@ export function SongsDialog({ open, onClose, songs, active, playing, savedAs, on
                   onClick={() => onPick(i)}
                   aria-current={current ? "true" : undefined}
                   className={cn(
+                    "flex min-w-0 flex-1 items-center gap-3 rounded-[12px] p-2 text-left hover:bg-white active:bg-[#E7E8EA]",
