@@ -81,3 +81,4 @@ export function loadSaved(): Saved {
     const volume = typeof data.volume === "number" && data.volume >= 0 && data.volume <= 100 ? data.volume : 80;
     const playlists = Array.isArray(data.playlists)
       ? data.playlists.filter(isPlaylist).map((p) => ({ ...p, songs: p.songs.filter(isSong) }))
+      : [];
