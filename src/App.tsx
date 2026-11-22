@@ -280,3 +280,4 @@ export default function App() {
       </header>
 
       <main className="min-h-dvh w-full bg-[#E7E8EA] text-[#141414]">
+        {!empty && (
