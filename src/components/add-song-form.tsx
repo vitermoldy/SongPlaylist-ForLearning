@@ -5,3 +5,5 @@ import type { AddResult } from "@/lib/add-link";
 
 type Status = { kind: "idle" } | { kind: "busy"; text: string } | { kind: "done" | "error"; text: string };
 
+export type AddSong = (raw: string, onProgress: (text: string) => void) => Promise<AddResult>;
+
