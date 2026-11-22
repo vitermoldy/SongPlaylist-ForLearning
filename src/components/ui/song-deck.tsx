@@ -151,3 +151,4 @@ export const SongDeck = memo(function SongDeck({
         // land in the middle of the card's resting stretch, clear of the next card's arrival
         const at = index <= 0 ? 0 : index - REST;
         const instant = !smoothly || reduce;
+        window.scrollTo({ top: Math.round(start + at * step), behavior: instant ? "instant" : "smooth" });
