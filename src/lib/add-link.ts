@@ -64,3 +64,4 @@ export async function addLink(raw: string, existing: string[], onProgress?: (tex
     } catch {
       return null;
     }
+  });
