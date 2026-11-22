@@ -39,6 +39,7 @@ export function useServerSync(snapshot: Saved, apply: (state: Saved) => void) {
   const agreed = useRef<number | null>(null);
 
   /** `preferServer`: right after signing in, the account's copy wins whatever its time. Resolves true once both agree. */
+  const sync = useCallback(async function run(preferServer = false): Promise<boolean> {
     if (busy.current) {
       again.current = true;
       return;
