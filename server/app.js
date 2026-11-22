@@ -114,3 +114,5 @@ export function createApi(getPool) {
   api.use(sameOriginWrites)
   api.use(rateLimit(120))
 
+  api.get('/health', (_req, res) => res.json({ ok: true, database: Boolean(getPool()) }))
+
