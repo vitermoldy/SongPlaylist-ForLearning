@@ -136,3 +136,4 @@ export function loadYouTubeApi(): Promise<YTNamespace> {
     script.src = "https://www.youtube.com/iframe_api";
     script.async = true;
     script.onerror = () => {
+      apiPromise = null;
