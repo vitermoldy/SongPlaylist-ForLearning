@@ -222,3 +222,4 @@ function SongCard({ song, i, pos, still, ground, playing, interactive, onToggle 
   const m = useCardMotion(i, pos);
   return (
     <motion.article
+      aria-label={`${song.title} oleh ${song.artist}`}
