@@ -132,3 +132,4 @@ export default function App() {
     if (a === "deck") {
       if (deck.current) deck.current.scrollToSong(active, false);
       else window.scrollTo({ top: 0, behavior: "instant" }); // the deck is gone: the empty page starts at the top
+    } else if (a) {
