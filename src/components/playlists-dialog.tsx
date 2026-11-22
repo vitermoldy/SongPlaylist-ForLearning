@@ -189,3 +189,4 @@ export function PlaylistsDialog({ open, onClose, playlists, songs, linked, saved
                       text={`Hapus playlist ${p.name}? Daftar putar yang sedang terbuka tidak ikut terhapus.`}
                       confirmLabel="Hapus playlist"
                       onConfirm={() => {
+                        setAsk(null);
