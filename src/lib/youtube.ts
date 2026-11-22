@@ -102,3 +102,4 @@ type YTPlayerOptions = {
   host?: string;
   width?: number | string;
   height?: number | string;
+  videoId?: string;
