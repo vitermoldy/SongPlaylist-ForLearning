@@ -11,3 +11,4 @@ import mysql from 'mysql2/promise'
  * - playlist_songs: the songs of each saved playlist, in order.
  * Deleting a device removes everything of it (ON DELETE CASCADE); songs stay as a shared catalogue.
  */
+const TABLES = [
