@@ -57,3 +57,4 @@ export function useYouTubePlayer(slot: RefObject<HTMLDivElement | null>, options
   }, []);
   const setTime = useCallback((value: number) => {
     timeRef.current = value;
+    setTimeState(value);
