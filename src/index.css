@@ -65,3 +65,4 @@
   transform: scale(1.2);
 }
 
+.range::-moz-range-track {
