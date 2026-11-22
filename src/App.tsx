@@ -41,3 +41,4 @@ export default function App() {
   const slot = useRef<HTMLDivElement>(null);
   const addSection = useRef<HTMLElement>(null);
   // the latest list for callbacks that YouTube or a timer calls later
+  const live = useRef({ songs, active });
