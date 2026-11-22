@@ -101,6 +101,7 @@ export async function checkAccount() {
 
 async function enter(path: string, payload: unknown, entry: Entry) {
   try {
+    const body = await call<EntryBody>(path, { method: "POST", body: JSON.stringify(payload) });
   if (!body.saved) return null;
   const { saved: _, ...state } = body;
   return state as Saved;
