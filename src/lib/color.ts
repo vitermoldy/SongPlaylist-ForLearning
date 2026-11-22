@@ -60,3 +60,5 @@ export function pickAccent(pixels: Uint8ClampedArray): string {
     bucket.b += rgb[2] * weight;
   }
   const best = buckets.reduce((a, b) => (b.weight > a.weight ? b : a));
+  if (!counted || best.weight < counted * 0.03) return FALLBACK_ACCENT;
+
