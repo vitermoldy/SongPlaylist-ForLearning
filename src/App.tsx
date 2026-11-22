@@ -142,3 +142,4 @@ export default function App() {
     async (raw, onProgress) => {
       const result = await addLink(raw, live.current.songs.map((s) => s.id), onProgress);
       if (result.songs.length) {
+        const before = live.current.songs;
