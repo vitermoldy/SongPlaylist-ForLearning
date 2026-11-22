@@ -51,3 +51,5 @@ const REST = (1 - ENTER) / 2; // from the middle of a card's resting stretch to 
 function arrived(j: number, pos: number) {
   if (j <= 0) return 1;
   return easeOut(clamp01((pos - (j - 1)) / ENTER));
+}
+
