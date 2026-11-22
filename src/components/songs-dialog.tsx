@@ -62,3 +62,4 @@ export function SongsDialog({ open, onClose, songs, active, playing, savedAs, on
                   <img src={thumbUrl(s.id, "mq")} alt="" width={64} height={36} loading="lazy" className="h-9 w-16 shrink-0 rounded-[6px] bg-[#D5D7DB] object-cover" />
                   <span className="min-w-0 flex-1">
                     <span className="block truncate text-[15px] font-medium">{s.title}</span>
+                    <span className={cn("block truncate text-[13px]", s.problem ? "text-[#8F1A1A]" : "text-[#3B3F48]")}>
