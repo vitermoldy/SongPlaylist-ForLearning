@@ -76,3 +76,4 @@ function Progress({ time, duration, onSeek, className }: { time: number; duratio
   );
 }
 
+/** The transport under the deck: what is playing, back, play or pause, next, position and volume. */
