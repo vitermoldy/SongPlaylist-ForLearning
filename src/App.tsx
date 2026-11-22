@@ -13,3 +13,4 @@ import { describePlayError } from "@/lib/youtube";
 
 const GROUND = "#E7E8EA";
 
+const headerButton =
