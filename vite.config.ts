@@ -7,3 +7,4 @@ import tailwindcss from "@tailwindcss/vite";
 // (a blank page). Pinning the root with an upper-case drive letter keeps one copy.
 const root = fileURLToPath(new URL(".", import.meta.url)).replace(/^[a-z]:/, (d) => d.toUpperCase());
 
+export default defineConfig({
