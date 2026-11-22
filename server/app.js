@@ -90,3 +90,4 @@ function cleanState(body) {
         inList.add(s.id)
         list.push(s)
       }
+    }
