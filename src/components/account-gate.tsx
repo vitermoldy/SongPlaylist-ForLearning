@@ -144,3 +144,4 @@ export function AccountGate({ auth }: { auth: AuthState }) {
                 </p>
               )}
             </div>
+            {error && (
