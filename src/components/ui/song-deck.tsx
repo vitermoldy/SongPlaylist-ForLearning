@@ -13,3 +13,4 @@ import { memo, useCallback, useEffect, useImperativeHandle, useLayoutEffect, use
 import { MotionConfig, motion, useMotionValue, useMotionValueEvent, useReducedMotion, useSpring, useTransform, type MotionValue } from "motion/react";
 import { Pause, Play } from "lucide-react";
 import { cn } from "@/lib/utils";
+import { FALLBACK_ACCENT } from "@/lib/color";
