@@ -86,3 +86,4 @@ function cleanState(body) {
     const inList = new Set()
     for (const raw of p.songs) {
       const s = cleanSong(raw)
+      if (s && !inList.has(s.id)) {
