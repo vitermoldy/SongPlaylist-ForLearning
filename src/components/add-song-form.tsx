@@ -11,3 +11,5 @@ export function AddSongForm({ onAdd, className, autoFocus = false }: { onAdd: Ad
   const id = useId();
   const [value, setValue] = useState("");
   const [status, setStatus] = useState<Status>({ kind: "idle" });
+  const busy = status.kind === "busy";
+
