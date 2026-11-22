@@ -47,3 +47,4 @@ const TABLES = [
     device_id CHAR(12) NOT NULL,
     id VARCHAR(40) NOT NULL,
     position SMALLINT UNSIGNED NOT NULL,
+    name VARCHAR(60) NOT NULL,
