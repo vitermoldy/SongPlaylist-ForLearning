@@ -387,3 +387,4 @@ export default function App() {
         open={playlistsOpen}
         onClose={() => setPlaylistsOpen(false)}
         playlists={playlists}
+        songs={songs}
