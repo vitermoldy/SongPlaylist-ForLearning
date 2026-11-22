@@ -88,6 +88,7 @@ async function call<T>(path: string, init?: RequestInit): Promise<T> {
 type EntryBody = { user: Account; device: string };
 
 /** Asks the server who is signed in on this browser. */
+export async function checkAccount() {
   if (!body.saved) return null;
   const { saved: _, ...state } = body;
   return state as Saved;
