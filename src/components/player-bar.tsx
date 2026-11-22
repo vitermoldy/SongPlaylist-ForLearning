@@ -102,3 +102,5 @@ export function PlayerBar(p: Props) {
               </button>
             )}
           </div>
+        )}
+
