@@ -2,7 +2,7 @@ import { useEffect, useId, useRef, useState, type FormEvent } from "react";
 import { Play, Trash2 } from "lucide-react";
 import { ServerSync } from "@/components/server-sync";
 import { Confirm, Sheet } from "@/components/sheet";
-import type { SwitchResult, SyncStatus } from "@/hooks/use-server-sync";
+import type { SyncStatus } from "@/hooks/use-server-sync";
 import type { SavedPlaylist, Song } from "@/lib/playlist";
 import { thumbUrl } from "@/lib/youtube";
 
