@@ -31,3 +31,4 @@ export function useServerSync(snapshot: Saved, apply: (state: Saved) => void) {
   const busy = useRef(false);
   const again = useRef(false);
   const retry = useRef(0);
+  const debounce = useRef(0);
