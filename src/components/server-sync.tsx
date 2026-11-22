@@ -23,6 +23,7 @@ export function ServerSync({ auth, status, checkedAt, onFlush }: Props) {
   const [error, setError] = useState("");
 
   const line: Record<SyncStatus, string> = {
+    "signed-out": "Belum masuk. Daftar putar dan playlist hanya tersimpan di browser ini.",
     checking: "Menghubungi server lokal…",
     saving: "Menyimpan ke server lokal…",
     saved: checkedAt ? `Tersimpan juga di server lokal (MySQL), dicek pukul ${clock(checkedAt)}.` : "Tersimpan juga di server lokal (MySQL).",
