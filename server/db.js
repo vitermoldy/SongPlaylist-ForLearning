@@ -46,3 +46,4 @@ const TABLES = [
   `CREATE TABLE IF NOT EXISTS playlists (
     device_id CHAR(12) NOT NULL,
     id VARCHAR(40) NOT NULL,
+    position SMALLINT UNSIGNED NOT NULL,
