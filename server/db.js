@@ -37,3 +37,4 @@ const TABLES = [
   ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci`,
   `CREATE TABLE IF NOT EXISTS deck_songs (
     device_id CHAR(12) NOT NULL,
+    position SMALLINT UNSIGNED NOT NULL,
