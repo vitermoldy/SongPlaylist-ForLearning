@@ -49,3 +49,4 @@ export function SongsDialog({ open, onClose, songs, active, playing, savedAs, on
               <li key={s.id} className="flex items-center gap-1">
                 <button
                   type="button"
+                  onClick={() => onPick(i)}
