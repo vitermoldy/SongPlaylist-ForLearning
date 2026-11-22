@@ -201,3 +201,4 @@ export function createApi(getPool) {
       res.json({ ok: true, updatedAt: state.updatedAt, songs: state.songs.length, playlists: state.playlists.length })
     } catch (err) {
       await conn.rollback().catch(() => {})
+      throw err
