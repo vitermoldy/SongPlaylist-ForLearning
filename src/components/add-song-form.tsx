@@ -57,3 +57,4 @@ export function AddSongForm({ onAdd, className, autoFocus = false }: { onAdd: Ad
       </p>
       <p
         id={`${id}-status`}
+        role="status"
