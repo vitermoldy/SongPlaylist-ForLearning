@@ -41,3 +41,4 @@ try {
     // Playlist ids are unique per browser; one that already exists under the account keeps the account's copy.
     const [lists] = await conn.query('SELECT id, name, saved_at FROM playlists WHERE device_id = ? ORDER BY position', [other])
     for (const list of lists) {
+      const [[taken]] = await conn.query('SELECT 1 AS x FROM playlists WHERE device_id = ? AND id = ?', [device, list.id])
