@@ -54,3 +54,4 @@ export function Confirm({
 }: {
   text: ReactNode;
   confirmLabel: string;
+  onConfirm: () => void;
