@@ -188,3 +188,4 @@ export async function expandPlaylist(list: string): Promise<string[]> {
       playerVars: { listType: "playlist", list, autoplay: 0, origin: window.location.origin },
       events: {
         onReady: (event) => {
+          poll = window.setInterval(() => {
