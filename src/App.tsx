@@ -198,3 +198,4 @@ export default function App() {
     if (!chosen || !first) return;
     setPlaylistsOpen(false);
     changeSongs(chosen.songs, "first", first.id);
+    setLinked(chosen.id);
