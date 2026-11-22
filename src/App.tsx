@@ -242,3 +242,4 @@ export default function App() {
   const note =
     player.status === "error"
       ? {
+          text: "Pemutar YouTube tidak termuat. Periksa koneksi internet, lalu muat ulang halaman.",
