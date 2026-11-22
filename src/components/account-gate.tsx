@@ -170,3 +170,4 @@ export function AccountGate({ auth }: { auth: AuthState }) {
                 userRef.current?.focus();
               }}
               className="h-11 px-1 font-semibold text-[#111318] underline underline-offset-4 decoration-[#111318]/30 hover:decoration-[#111318] active:text-black"
+            >
