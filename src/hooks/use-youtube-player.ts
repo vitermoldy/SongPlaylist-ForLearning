@@ -32,3 +32,4 @@ export function useYouTubePlayer(slot: RefObject<HTMLDivElement | null>, options
   });
 
   const player = useRef<YTPlayer | null>(null);
+  const idRef = useRef(options.initialId);
