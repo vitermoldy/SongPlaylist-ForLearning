@@ -49,3 +49,4 @@ export class ServerError extends Error {
   constructor(status: number, kind: ServerError["kind"], message: string, updatedAt?: number) {
     super(message);
     this.status = status;
+    this.kind = kind;
