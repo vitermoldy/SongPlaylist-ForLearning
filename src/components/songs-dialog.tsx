@@ -87,3 +87,4 @@ export function SongsDialog({ open, onClose, songs, active, playing, savedAs, on
                 </button>
               </li>
             );
+          })}
