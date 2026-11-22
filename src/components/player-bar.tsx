@@ -66,3 +66,4 @@ function Progress({ time, duration, onSeek, className }: { time: number; duratio
         step={1}
         value={Math.min(Math.floor(time), Math.floor(duration))}
         disabled={!duration}
+        onChange={(e) => onSeek(Number(e.target.value))}
