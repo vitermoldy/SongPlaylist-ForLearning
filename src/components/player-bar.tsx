@@ -88,3 +88,4 @@ export function PlayerBar(p: Props) {
         style={{ "--accent": accent } as CSSProperties}
       >
         {p.note && (
+          <div className="flex items-center justify-between gap-3 border-b border-[#111318]/10 px-1 pt-0.5 pb-2">
