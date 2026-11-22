@@ -71,3 +71,4 @@ function Progress({ time, duration, onSeek, className }: { time: number; duratio
         aria-valuetext={`${spoken(time)} dari ${spoken(duration)}`}
         style={{ "--fill": `${fill}%` } as CSSProperties}
       />
+      <span className="w-10 shrink-0 text-[12px] text-[#3B3F48] tabular-nums">{duration ? clock(duration) : "0:00"}</span>
