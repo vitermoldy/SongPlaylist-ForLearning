@@ -21,3 +21,4 @@ export const config = {
     port: num('DB_PORT', 3306),
     user: str('DB_USER', 'root'),
     password: process.env.DB_PASSWORD ?? '',
+    database: str('DB_NAME', 'songplaylist_forlearning'),
