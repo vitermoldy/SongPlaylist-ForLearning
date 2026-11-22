@@ -111,3 +111,5 @@ export function PlayerBar(p: Props) {
               {p.song?.artist}
               <span className="sr-only">, lagu {p.index + 1} dari {p.count}</span>
             </p>
+          </div>
+
