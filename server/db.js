@@ -49,3 +49,4 @@ const TABLES = [
     position SMALLINT UNSIGNED NOT NULL,
     name VARCHAR(60) NOT NULL,
     saved_at DATETIME NOT NULL,
+    PRIMARY KEY (device_id, id),
