@@ -179,3 +179,4 @@ export async function expandPlaylist(list: string): Promise<string[]> {
       box.remove();
       if (ids && ids.length) resolve(ids);
       else reject(new Error("The playlist could not be read."));
+    };
