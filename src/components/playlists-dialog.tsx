@@ -103,3 +103,4 @@ export function PlaylistsDialog({ open, onClose, playlists, songs, linked, saved
             )}
             <form onSubmit={save} noValidate>
               <label htmlFor={nameId} className="mb-2 block text-[15px] font-semibold">
+                {linked ? "Atau simpan sebagai playlist baru" : `Simpan daftar putar sekarang (${songs.length} lagu)`}
