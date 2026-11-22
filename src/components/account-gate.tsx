@@ -167,3 +167,4 @@ export function AccountGate({ auth }: { auth: AuthState }) {
                 setMode(mode === "in" ? "up" : "in");
                 setError("");
                 setInvalid(null);
+                userRef.current?.focus();
