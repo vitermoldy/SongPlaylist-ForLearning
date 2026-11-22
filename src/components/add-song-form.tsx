@@ -38,3 +38,4 @@ export function AddSongForm({ onAdd, className, autoFocus = false }: { onAdd: Ad
           autoFocus={autoFocus}
           value={value}
           onChange={(e) => setValue(e.target.value)}
+          placeholder="https://youtu.be/..."
