@@ -167,3 +167,4 @@ export function PlayerBar(p: Props) {
       </div>
     </section>
   );
+}
