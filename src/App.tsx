@@ -349,3 +349,4 @@ export default function App() {
           volume={volume}
           muted={muted}
           canFullscreen={player.visible}
+          note={note}
