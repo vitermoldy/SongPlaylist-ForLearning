@@ -26,3 +26,4 @@ export function loadCode(): string {
     localStorage.setItem(CODE_KEY, code);
     return code;
   } catch {
+    return newCode();
