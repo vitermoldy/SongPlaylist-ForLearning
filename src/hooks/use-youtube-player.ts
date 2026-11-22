@@ -189,3 +189,4 @@ export function useYouTubePlayer(slot: RefObject<HTMLDivElement | null>, options
     return () => window.clearInterval(timer);
   }, [state, setTime]);
 
+  /** Puts a song in the player; with `autoplay` it starts at once, otherwise it waits for play. */
