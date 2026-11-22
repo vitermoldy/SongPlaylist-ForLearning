@@ -17,3 +17,4 @@ type Props = {
   onSave: (name: string) => void;
   onUpdate: (id: string) => void;
   onOpen: (id: string) => void;
+  onDelete: (id: string) => void;
