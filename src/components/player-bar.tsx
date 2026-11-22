@@ -13,3 +13,4 @@ type Props = {
   playing: boolean;
   time: number;
   duration: number;
+  volume: number;
