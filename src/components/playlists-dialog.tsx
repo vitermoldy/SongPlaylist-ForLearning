@@ -108,3 +108,4 @@ export function PlaylistsDialog({ open, onClose, playlists, songs, linked, saved
               <div className="flex gap-2">
                 <input
                   ref={nameInput}
+                  id={nameId}
