@@ -46,3 +46,4 @@ export class ServerError extends Error {
   status: number;
   kind: "offline" | "nodb" | "http";
   updatedAt?: number;
+  constructor(status: number, kind: ServerError["kind"], message: string, updatedAt?: number) {
