@@ -328,3 +328,4 @@ export default function App() {
         Transisi kartunya dari Project Deck karya{" "}
         <a
           href="https://aakashmehra.com/ref/projectdeck"
+          target="_blank"
