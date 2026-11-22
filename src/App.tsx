@@ -355,3 +355,4 @@ export default function App() {
           onNext={next}
           onSeek={seek}
           onVolume={(v) => {
+            setVolume(v);
