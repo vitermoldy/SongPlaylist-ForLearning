@@ -46,3 +46,4 @@ export function useServerSync(snapshot: Saved, apply: (state: Saved) => void) {
       const local = snap.current;
       const remote = await getState(codeRef.current);
       if (remote && remote.updatedAt > local.updatedAt) {
+        agreed.current = remote.updatedAt;
