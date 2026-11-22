@@ -32,3 +32,4 @@ export function Sheet({ open, onClose, title, children }: { open: boolean; onClo
           <button
             type="button"
             onClick={onClose}
+            aria-label="Tutup"
