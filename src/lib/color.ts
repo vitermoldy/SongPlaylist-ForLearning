@@ -74,3 +74,4 @@ export function accentFromThumb(id: string): Promise<string> {
     img.crossOrigin = "anonymous";
     img.onload = () => {
       try {
+        const canvas = document.createElement("canvas");
