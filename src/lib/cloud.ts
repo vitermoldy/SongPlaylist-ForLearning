@@ -116,6 +116,7 @@ export const signIn = (username: string, password: string) => enter("/auth/login
 export const signUp = (username: string, password: string) => enter("/auth/register", { username, password, device: loadCode() }, "register");
 
 /** Ends the session and forgets this browser's code; the caller clears the lists and reloads. */
+export async function signOut() {
   if (!body.saved) return null;
   const { saved: _, ...state } = body;
   return state as Saved;
