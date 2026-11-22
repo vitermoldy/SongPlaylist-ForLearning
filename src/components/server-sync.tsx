@@ -47,3 +47,4 @@ export function ServerSync({ code, status, checkedAt, onSwitch }: Props) {
   function ask(event: FormEvent) {
     event.preventDefault();
     setResult(null);
+    if (!entry.trim()) return setResult({ ok: false, text: "Ketik kode dari browser lain dulu." });
