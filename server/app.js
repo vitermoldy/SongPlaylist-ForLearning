@@ -140,3 +140,4 @@ export function createApi(getPool) {
       'SELECT p.playlist_id, s.* FROM playlist_songs p JOIN songs s ON s.video_id = p.video_id WHERE p.device_id = ? ORDER BY p.playlist_id, p.position',
       [req.code],
     )
+    const byList = new Map(lists.map((l) => [l.id, []]))
