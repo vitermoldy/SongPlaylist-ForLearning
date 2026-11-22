@@ -51,3 +51,4 @@ export function useYouTubePlayer(slot: RefObject<HTMLDivElement | null>, options
   const [duration, setDuration] = useState(0);
 
   /** Whether the listener wants music: true from a play press until a pause, an end or an error. */
+  const setIntent = useCallback((value: boolean) => {
