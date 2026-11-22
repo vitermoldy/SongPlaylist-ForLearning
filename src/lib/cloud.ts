@@ -92,6 +92,7 @@ export async function checkAccount() {
   setAuth({ ...auth, status: "checking" });
   try {
     const body = await call<EntryBody>("/auth/me");
+    setAuth({ status: "signed-in", account: body.user, entry: "session" });
   if (!body.saved) return null;
   const { saved: _, ...state } = body;
   return state as Saved;
