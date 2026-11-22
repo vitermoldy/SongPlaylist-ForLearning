@@ -28,3 +28,4 @@ const savedDate = (ms: number) => {
   return date.toLocaleDateString("id-ID", { day: "numeric", month: "short", ...(thisYear ? {} : { year: "numeric" }) });
 };
 
+/** Up to four covers of the playlist's first songs, as one 16:9 tile. */
