@@ -21,3 +21,4 @@ type Props = {
   onPrev: () => void;
   onNext: () => void;
   onSeek: (seconds: number) => void;
+  onVolume: (volume: number) => void;
