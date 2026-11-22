@@ -27,3 +27,4 @@ async function connectLoop() {
   try {
     pool = await connect(config.db)
     console.log(`${config.name}: database ${config.db.database} connected`)
+  } catch (err) {
