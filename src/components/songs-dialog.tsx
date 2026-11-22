@@ -120,3 +120,4 @@ export function SongsDialog({ open, onClose, songs, active, playing, savedAs, on
               </button>
               <button
                 type="button"
+                onClick={() => setConfirmClear(true)}
