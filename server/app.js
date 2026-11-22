@@ -94,3 +94,4 @@ function cleanState(body) {
     playlists.push({ id: p.id, name: text(p.name, 60) || 'Playlist', savedAt, songs: list })
   }
   const current = typeof body.current === 'string' && seen.has(body.current) ? body.current : (songs[0]?.id ?? null)
+  const volume = Number.isInteger(body.volume) && body.volume >= 0 && body.volume <= 100 ? body.volume : 80
