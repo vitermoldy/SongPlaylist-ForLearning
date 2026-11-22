@@ -158,3 +158,4 @@ export default function App() {
       const index = list.findIndex((s) => s.id === id);
       if (index < 0) return;
       const rest = list.filter((s) => s.id !== id);
+      if (id !== list[at]?.id) return changeSongs(rest, "remove");
