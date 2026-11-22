@@ -125,3 +125,4 @@ export function forgetSaved() {
   try {
     localStorage.removeItem(KEY);
   } catch {
+    // blocked storage: nothing was kept either
