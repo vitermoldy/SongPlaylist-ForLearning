@@ -168,3 +168,4 @@ export async function expandPlaylist(list: string): Promise<string[]> {
     let done = false;
     const finish = (ids: string[] | null) => {
       if (done) return;
+      done = true;
