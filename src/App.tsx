@@ -306,3 +306,4 @@ export default function App() {
             {empty
               ? "Tempel link YouTube untuk lagu pertama. Tiap lagu jadi satu kartu, dan kartunya naik ke atas tumpukan saat lagunya diputar."
               : "Tiap link jadi satu kartu baru di ujung tumpukan."}
+          </p>
