@@ -25,3 +25,4 @@ type Props = {
 const savedDate = (ms: number) => {
   const date = new Date(ms);
   const thisYear = date.getFullYear() === new Date().getFullYear();
+  return date.toLocaleDateString("id-ID", { day: "numeric", month: "short", ...(thisYear ? {} : { year: "numeric" }) });
