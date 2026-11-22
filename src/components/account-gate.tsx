@@ -60,3 +60,4 @@ export function AccountGate({ auth }: { auth: AuthState }) {
       (!name ? userRef.current : document.getElementById("gate-pass"))?.focus();
       return;
     }
+    setBusy(true);
