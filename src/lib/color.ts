@@ -30,3 +30,4 @@ function hslToRgb([h, s, l]: RGB): RGB {
 const luminance = ([r, g, b]: RGB) => {
   const c = [r, g, b].map((v) => {
     const x = v / 255;
+    return x <= 0.03928 ? x / 12.92 : ((x + 0.055) / 1.055) ** 2.4;
