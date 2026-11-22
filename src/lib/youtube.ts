@@ -18,3 +18,4 @@ export type YouTubeLink =
  * opened from a playlist; only a link without a video (youtube.com/playlist?list=...) brings the
  * whole list. YouTube's own mixes, Watch later and Liked videos never play outside YouTube.
  */
+export function parseYouTube(raw: string): YouTubeLink | null {
