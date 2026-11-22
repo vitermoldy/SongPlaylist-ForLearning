@@ -58,3 +58,4 @@ export function Confirm({
   onCancel: () => void;
   className?: string;
 }) {
+  const cancel = useRef<HTMLButtonElement>(null);
