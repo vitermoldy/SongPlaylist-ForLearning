@@ -145,3 +145,4 @@ export function createApi(getPool) {
     res.json({
       saved: true,
       updatedAt: Number(deck.client_updated),
+      current: deck.current_video,
