@@ -18,4 +18,5 @@ export default defineConfig(({ mode }) => {
     base: "./",
     plugins: [react(), tailwindcss()],
     resolve: {
+      alias: { "@": `${root}src` },
 });
