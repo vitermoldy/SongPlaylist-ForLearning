@@ -45,6 +45,8 @@ After `npm run build`, `npm start` serves `dist/` and the API on one port (8811)
 relative paths, so it can also go on a static host as is; without the server the page works on the
 browser's own storage.
 
+## Server and database
+
 
 ## Structure
 
