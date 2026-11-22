@@ -67,3 +67,4 @@ export function Confirm({
         <button
           type="button"
           onClick={onConfirm}
+          className="h-11 rounded-[12px] bg-[#8F1A1A] px-4 text-[14px] font-semibold text-white hover:bg-[#771515] active:bg-[#5E1010]"
