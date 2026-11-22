@@ -105,3 +105,4 @@ export function SongsDialog({ open, onClose, songs, active, playing, savedAs, on
               onConfirm={() => {
                 setConfirmClear(false);
                 onClear();
+              }}
