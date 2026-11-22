@@ -40,3 +40,4 @@ export function parseYouTube(raw: string): YouTubeLink | null {
   const list = url.searchParams.get("list");
   if (list && /^(RD|WL$|LL$|LM$)/.test(list)) return { kind: "mix" };
   if (list && LIST_ID.test(list)) return { kind: "playlist", list };
+  return null;
