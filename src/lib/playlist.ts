@@ -51,3 +51,4 @@ const KEY = "songplaylist-forlearning:v1";
 
 export type Saved = {
   songs: Song[];
+  current: string | null;
