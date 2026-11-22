@@ -12,3 +12,4 @@ direction; everything added around it follows it.
 | Ink | `#111318` / `#141414` | Titles, buttons. |
 | Secondary text | `#3B3F48` | Artist lines, hints. 9:1 on the ground. |
 | Panels | `#F3F4F5`, white | Side panels and the player bar sit one step lighter than the ground. |
+| Danger | `#8F1A1A` | Delete and clear actions, errors. 7.6:1 on white. |
