@@ -119,3 +119,5 @@ export function saveState(state: Saved) {
     // private mode or full storage: the list just is not remembered
   }
 }
+
+export function forgetSaved() {
