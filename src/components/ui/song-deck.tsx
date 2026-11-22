@@ -290,3 +290,4 @@ function Cover({ id, alt, className, priority = false, lazy = false }: { id: str
       loading={lazy ? "lazy" : "eager"}
       fetchPriority={priority ? "high" : "auto"}
       decoding="async"
+      onLoad={(e) => {
