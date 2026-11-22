@@ -67,3 +67,4 @@ export function useServerSync(snapshot: Saved, apply: (state: Saved) => void) {
       const kind = error instanceof ServerError ? error.kind : "offline";
       setStatus(kind === "http" ? "error" : kind);
       retry.current = window.setTimeout(() => void run(), 10_000);
+    } finally {
