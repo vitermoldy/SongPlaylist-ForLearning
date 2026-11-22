@@ -55,3 +55,4 @@ export async function addLink(raw: string, existing: string[], onProgress?: (tex
     return fail("Playlist ini tidak bisa dibuka. Mungkin privat, atau YouTube hanya memutarnya di situsnya sendiri.");
   }
   const notYet = ids.filter((id) => !existing.includes(id));
+  const already = ids.length - notYet.length;
