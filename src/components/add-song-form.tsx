@@ -53,3 +53,4 @@ export function AddSongForm({ onAdd, className, autoFocus = false }: { onAdd: Ad
         </button>
       </div>
       <p id={`${id}-hint`} className="mt-2 text-[14px] leading-snug text-[#3B3F48]">
+        Link lagu dari YouTube, YouTube Music atau Shorts. Link playlist (youtube.com/playlist?list=...) menambahkan sampai 50 lagunya.
