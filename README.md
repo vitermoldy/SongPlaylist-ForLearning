@@ -69,3 +69,4 @@ added without rewriting its imports.
 
 ## Notes
 
+- Some videos refuse to play outside YouTube (the owner turned embedding off). They are caught when
