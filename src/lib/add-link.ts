@@ -16,3 +16,4 @@ export function describeInfoError(error: unknown) {
   return "Tidak bisa menghubungi YouTube. Periksa koneksi internet, lalu coba lagi.";
 }
 
+async function mapLimit<T, R>(items: T[], limit: number, run: (item: T) => Promise<R>): Promise<R[]> {
