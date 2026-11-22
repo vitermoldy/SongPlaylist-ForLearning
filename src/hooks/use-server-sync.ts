@@ -36,3 +36,4 @@ export function useServerSync(snapshot: Saved, apply: (state: Saved) => void) {
   const agreed = useRef<number | null>(null);
 
   const sync = useCallback(async function run() {
+    if (busy.current) {
