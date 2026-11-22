@@ -95,3 +95,4 @@ export function ServerSync({ code, status, checkedAt, onSwitch }: Props) {
 
           <form onSubmit={ask} noValidate>
             <label htmlFor={inputId} className="mb-2 block text-[14px] font-semibold">
+              Kode dari browser lain
