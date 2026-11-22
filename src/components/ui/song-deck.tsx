@@ -170,3 +170,4 @@ export const SongDeck = memo(function SongDeck({
         ref={deck}
         className={cn("relative w-full", className)}
         style={{ height: `${Math.max(1, count) * 100}svh` }}
+        aria-label="Lagu di daftar putar"
