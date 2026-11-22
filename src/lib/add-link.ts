@@ -20,3 +20,4 @@ async function mapLimit<T, R>(items: T[], limit: number, run: (item: T) => Promi
   const out: R[] = new Array(items.length);
   let next = 0;
   const worker = async () => {
+    while (next < items.length) {
