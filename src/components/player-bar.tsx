@@ -160,3 +160,4 @@ export function PlayerBar(p: Props) {
 
           <IconButton label="Video layar penuh" onClick={p.onFullscreen} disabled={!p.canFullscreen}>
             <Maximize aria-hidden className="size-5" />
+          </IconButton>
