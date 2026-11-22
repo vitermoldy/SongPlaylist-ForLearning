@@ -291,3 +291,4 @@ function Cover({ id, alt, className, priority = false, lazy = false }: { id: str
       fetchPriority={priority ? "high" : "auto"}
       decoding="async"
       onLoad={(e) => {
+        if (e.currentTarget.naturalWidth <= 120) setSize("hq");
