@@ -99,3 +99,4 @@ export function useServerSync(snapshot: Saved, apply: (state: Saved) => void) {
     };
     document.addEventListener("visibilitychange", look);
     window.addEventListener("online", look);
+    return () => {
