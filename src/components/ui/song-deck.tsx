@@ -227,3 +227,4 @@ function SongCard({ song, i, pos, still, ground, playing, interactive, onToggle 
       className={CARD}
       style={{ zIndex: i + 1, visibility: m.visibility, ...(still ? { y: m.stillY } : { y: m.y, rotateX: m.rotateX, scale: m.scale, filter: m.filter }) }}
     >
+      <div className="relative overflow-hidden rounded-[24px] shadow-[0_50px_90px_-35px_rgba(10,12,20,0.5)]" style={{ background: ground }}>
