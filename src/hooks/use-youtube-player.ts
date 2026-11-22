@@ -12,3 +12,5 @@ const PAUSED = 2;
 const BUFFERING = 3;
 const CUED = 5;
 
+export type PlayerStatus = "idle" | "loading" | "ready" | "error";
+
