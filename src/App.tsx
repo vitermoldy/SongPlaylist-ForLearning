@@ -202,3 +202,4 @@ export default function App() {
     load(first.id, true);
   };
 
+  const deletePlaylist = (id: string) => {
