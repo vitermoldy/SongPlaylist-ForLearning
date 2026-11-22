@@ -305,3 +305,4 @@ export default function App() {
           <p className="mt-6 mb-0 max-w-[52ch] text-[17px] leading-relaxed text-[#3B3F48]">
             {empty
               ? "Tempel link YouTube untuk lagu pertama. Tiap lagu jadi satu kartu, dan kartunya naik ke atas tumpukan saat lagunya diputar."
+              : "Tiap link jadi satu kartu baru di ujung tumpukan."}
