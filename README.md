@@ -36,3 +36,4 @@ Player API. No server and no API key: everything is kept in the browser's localS
 npm install
 npm run dev       # http://localhost:5195
 npm run build     # type check, then a static site in dist/
+npm run preview   # serve dist/ on port 5195
