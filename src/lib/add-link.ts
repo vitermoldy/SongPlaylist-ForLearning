@@ -18,3 +18,4 @@ export function describeInfoError(error: unknown) {
 
 async function mapLimit<T, R>(items: T[], limit: number, run: (item: T) => Promise<R>): Promise<R[]> {
   const out: R[] = new Array(items.length);
+  let next = 0;
