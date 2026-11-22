@@ -70,3 +70,4 @@ export function useYouTubePlayer(slot: RefObject<HTMLDivElement | null>, options
     }, 4000);
   }, []);
 
+  const start = useCallback(
