@@ -97,3 +97,4 @@ export function useServerSync(snapshot: Saved, apply: (state: Saved) => void) {
     const look = () => {
       if (document.visibilityState === "visible") void sync();
     };
+    document.addEventListener("visibilitychange", look);
