@@ -148,3 +148,4 @@ export function PlaylistsDialog({ open, onClose, playlists, songs, linked, saved
                     <Mosaic songs={p.songs} />
                     <span className="min-w-0 flex-1">
                       <span className="block truncate text-[15px] font-semibold">{p.name}</span>
+                      <span className="block truncate text-[13px] text-[#3B3F48]">
