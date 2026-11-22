@@ -25,3 +25,4 @@ async function mapLimit<T, R>(items: T[], limit: number, run: (item: T) => Promi
       out[at] = await run(items[at]);
     }
   };
+  await Promise.all(Array.from({ length: Math.min(limit, items.length) }, worker));
