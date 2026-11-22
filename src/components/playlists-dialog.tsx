@@ -162,3 +162,4 @@ export function PlaylistsDialog({ open, onClose, playlists, songs, linked, saved
                       <Play aria-hidden className="size-4" fill="currentColor" />
                       Putar
                     </button>
+                    <button
