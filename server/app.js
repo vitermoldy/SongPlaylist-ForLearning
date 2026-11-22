@@ -17,3 +17,4 @@ const ACCENT = /^#[0-9A-F]{6}$/i
 const MAX_SONGS = 1000
 const MAX_PLAYLISTS = 200
 
+/** Writes come as JSON from this site only: no form posts, no other origin. */
