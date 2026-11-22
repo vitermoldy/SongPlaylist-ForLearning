@@ -85,3 +85,4 @@ export function PlayerBar(p: Props) {
     <section aria-label="Pemutar" className="fixed inset-x-0 bottom-0 z-40 px-3 pb-[max(12px,env(safe-area-inset-bottom))] sm:px-6">
       <div
         className="mx-auto max-w-[980px] rounded-[20px] border border-[#111318]/10 bg-white px-3 py-2 shadow-[0_18px_40px_-22px_rgba(10,12,20,0.45)] sm:px-4"
+        style={{ "--accent": accent } as CSSProperties}
