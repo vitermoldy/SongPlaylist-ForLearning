@@ -396,3 +396,4 @@ export default function App() {
         onDelete={deletePlaylist}
         onClearAll={clearPlaylists}
       />
+    </>
