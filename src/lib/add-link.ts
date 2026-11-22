@@ -14,3 +14,5 @@ export function describeInfoError(error: unknown) {
     return "YouTube tidak memberi info video ini. Coba lagi sebentar lagi.";
   }
   return "Tidak bisa menghubungi YouTube. Periksa koneksi internet, lalu coba lagi.";
+}
+
