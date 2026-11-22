@@ -143,3 +143,4 @@ export default function App() {
       const result = await addLink(raw, live.current.songs.map((s) => s.id), onProgress);
       if (result.songs.length) {
         const before = live.current.songs;
+        const first = result.songs[0];
