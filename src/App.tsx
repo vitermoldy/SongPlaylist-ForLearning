@@ -178,3 +178,5 @@ export default function App() {
     changeSongs([], "remove", null);
     setLinked(null);
     setListOpen(false);
+  };
+
