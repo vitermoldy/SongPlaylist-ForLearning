@@ -168,3 +168,4 @@ export function AccountGate({ auth }: { auth: AuthState }) {
                 setError("");
                 setInvalid(null);
                 userRef.current?.focus();
+              }}
