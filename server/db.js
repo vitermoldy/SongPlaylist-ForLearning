@@ -57,3 +57,4 @@ const TABLES = [
     playlist_id VARCHAR(40) NOT NULL,
     position SMALLINT UNSIGNED NOT NULL,
     video_id VARCHAR(16) NOT NULL,
+    PRIMARY KEY (device_id, playlist_id, position),
