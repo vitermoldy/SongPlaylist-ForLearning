@@ -8,3 +8,4 @@ export function Sheet({ open, onClose, title, children }: { open: boolean; onClo
   const titleId = useId();
 
   useEffect(() => {
+    const dialog = ref.current;
