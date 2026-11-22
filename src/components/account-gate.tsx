@@ -71,3 +71,4 @@ export function AccountGate({ auth }: { auth: AuthState }) {
       setError(e instanceof Error ? e.message : "Belum bisa masuk. Coba lagi.");
       setInvalid("pass");
     } finally {
+      setBusy(false);
