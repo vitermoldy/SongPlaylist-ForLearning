@@ -11,3 +11,5 @@ const [rows] = await pool.query(
      (SELECT COUNT(*) FROM playlists p WHERE p.device_id = u.device_id) AS playlists
    FROM users u ORDER BY u.created_at`,
 )
+await pool.end()
+
