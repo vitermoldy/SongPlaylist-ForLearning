@@ -27,3 +27,4 @@ if (rows.length === 0) {
       'lagu di daftar putar': Number(r.deck),
       playlist: Number(r.playlists),
     })),
+  )
