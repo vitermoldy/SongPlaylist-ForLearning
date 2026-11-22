@@ -88,8 +88,7 @@ src/components/sheet.tsx            side panel on <dialog>, and the in-place con
 src/components/add-song-form.tsx    the link form, with its busy, error and done states
 src/hooks/use-youtube-player.ts     one IFrame player, loaded on the first play
 src/hooks/use-server-sync.ts        keeps the server's copy in step, newer copy wins
-src/components/server-sync.tsx      "Server lokal" in the Playlist panel: status, recovery code, switch code
-src/lib/cloud.ts                    recovery code and the two API calls
+src/components/server-sync.tsx      "Akun dan server lokal" in the Playlist panel: status, account, sign out
 server/index.js                     Express: /api, dist/ after a build, waits for MySQL
 server/app.js                       the API and its checks
 server/db.js                        creates the database and the six tables
