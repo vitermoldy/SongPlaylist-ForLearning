@@ -50,3 +50,4 @@ export default function App() {
     enabled: songs.length > 0,
     initialId: song?.id ?? null,
     volume,
+    muted,
