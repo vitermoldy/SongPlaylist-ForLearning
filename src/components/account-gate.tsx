@@ -157,3 +157,4 @@ export function AccountGate({ auth }: { auth: AuthState }) {
             >
               {busy ? (mode === "in" ? "Memeriksa…" : "Membuat akun…") : mode === "in" ? "Masuk" : "Buat akun"}
             </button>
+          </form>
