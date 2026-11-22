@@ -207,3 +207,4 @@ export function createApi(getPool) {
     }
   })
 
+  api.use((err, _req, res, _next) => {
