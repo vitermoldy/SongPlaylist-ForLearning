@@ -71,3 +71,4 @@ export default function App() {
         window.setTimeout(() => {
           if (live.current.songs[live.current.active]?.id === failed.id) goTo(live.current.active + 1, true);
         }, 1400);
+      } else {
