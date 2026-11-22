@@ -167,3 +167,4 @@ export function PlaylistsDialog({ open, onClose, playlists, songs, linked, saved
                       onClick={() => setAsk({ kind: "delete", id: p.id })}
                       aria-label={`Hapus playlist ${p.name}`}
                       className="grid size-11 shrink-0 place-items-center rounded-full text-[#3B3F48] hover:bg-white hover:text-[#8F1A1A] active:bg-[#E7E8EA]"
+                    >
