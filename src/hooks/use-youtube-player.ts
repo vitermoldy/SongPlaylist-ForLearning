@@ -84,3 +84,4 @@ export function useYouTubePlayer(slot: RefObject<HTMLDivElement | null>, options
       } else {
         p.cueVideoById(id);
       }
+    },
