@@ -190,3 +190,4 @@ export function createApi(getPool) {
       }
 
       await conn.query('DELETE FROM playlists WHERE device_id = ?', [req.code])
+      if (state.playlists.length) {
