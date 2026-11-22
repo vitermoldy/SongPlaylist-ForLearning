@@ -148,3 +148,5 @@ export function loadYouTubeApi(): Promise<YTNamespace> {
     }, 15000);
   });
   return apiPromise;
+}
+
