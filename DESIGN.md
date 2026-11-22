@@ -35,3 +35,5 @@ is kept from the original demo footer.
 - Covers fade into the video over 300ms when a song starts.
 - `prefers-reduced-motion`: cards appear in place; scrolling to a song jumps instead of gliding.
 
+## Copy
+
