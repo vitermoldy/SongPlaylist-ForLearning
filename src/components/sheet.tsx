@@ -10,3 +10,4 @@ export function Sheet({ open, onClose, title, children }: { open: boolean; onClo
   useEffect(() => {
     const dialog = ref.current;
     if (!dialog) return;
+    if (open && !dialog.open) dialog.showModal();
