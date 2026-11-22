@@ -60,3 +60,5 @@ export function PlaylistsDialog({ open, onClose, playlists, songs, linked, saved
     setName(`Playlist ${count.current + 1}`);
     setAsk(null);
     setDone(null);
+  }, [open]);
+
