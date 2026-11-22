@@ -172,3 +172,4 @@ export const SongDeck = memo(function SongDeck({
         style={{ height: `${Math.max(1, count) * 100}svh` }}
         aria-label="Lagu di daftar putar"
       >
+        <div className="sticky top-0 isolate grid h-[100svh] place-items-center overflow-hidden px-4 pt-[calc(64px+7svh)] pb-[140px] [perspective:1800px] sm:px-10 sm:pb-[calc(88px+3svh)] lg:px-14">
