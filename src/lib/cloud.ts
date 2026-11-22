@@ -60,6 +60,7 @@ function setAuth(next: AuthState) {
   auth = next;
   listeners.forEach((fn) => fn());
 }
+export const authState = () => auth;
 async function call<T>(path: string, init?: RequestInit): Promise<T> {
   let res: Response;
   try {
