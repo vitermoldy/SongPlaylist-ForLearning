@@ -158,3 +158,4 @@ export function createApi(getPool) {
     const state = cleanState(req.body)
     if (typeof state === 'string') return res.status(400).json({ error: state })
     const conn = await getPool().getConnection()
+    try {
