@@ -26,3 +26,4 @@ export function Sheet({ open, onClose, title, children }: { open: boolean; onClo
     >
       <div className="flex h-full flex-col">
         <div className="flex items-center justify-between gap-4 px-5 pt-4 pb-2 sm:px-6">
+          <h2 id={titleId} className="text-[20px] font-semibold tracking-[-0.02em]">
