@@ -246,3 +246,4 @@ export default function App() {
           action: { label: "Muat ulang", run: () => window.location.reload() },
         }
       : player.needsTap
+        ? { text: "Browser menahan pemutaran otomatis. Ketuk videonya sekali untuk mulai." }
