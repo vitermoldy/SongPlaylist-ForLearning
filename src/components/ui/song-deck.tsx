@@ -75,3 +75,4 @@ function useCardMotion(i: number, pos: MotionValue<number>) {
     // reduced motion: no travel, each card simply appears in place when its turn comes
     stillY: useTransform(pos, (v) => (arrived(i, v) >= 0.5 ? "0svh" : "110svh")),
     // cards far below the window or buried under the stack are not painted at all
+    visibility: useTransform(pos, (v) => (i > v + 1.6 || i < v - 4 ? "hidden" : "visible")),
