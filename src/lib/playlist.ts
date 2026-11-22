@@ -45,3 +45,5 @@ export type SavedPlaylist = { id: string; name: string; songs: Song[]; savedAt: 
 /** Same songs in the same order. */
 export const sameSongs = (a: Song[], b: Song[]) => a.length === b.length && a.every((s, i) => s.id === b[i].id);
 
+export const newPlaylistId = () => `pl-${Date.now().toString(36)}-${Math.random().toString(36).slice(2, 7)}`;
+
