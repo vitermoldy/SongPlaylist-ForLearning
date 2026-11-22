@@ -128,3 +128,4 @@ export function ServerSync({ code, status, checkedAt, onSwitch }: Props) {
             />
           )}
           {result && (
+            <p role="status" className={cn("text-[14px] leading-snug", result.ok ? "text-[#1D5A3A]" : "text-[#8F1A1A]")}>
