@@ -59,3 +59,4 @@ export function Confirm({
   className?: string;
 }) {
   const cancel = useRef<HTMLButtonElement>(null);
+  useEffect(() => cancel.current?.focus(), []);
