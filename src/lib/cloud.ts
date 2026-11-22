@@ -77,3 +77,4 @@ export const getState = async (code: string) => {
   return state as Saved;
 };
 
+export const putState = (code: string, state: Saved) =>
