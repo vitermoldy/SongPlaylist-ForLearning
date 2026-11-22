@@ -2,6 +2,7 @@ import { useId, useState } from "react";
 import { Database } from "lucide-react";
 import { cn } from "@/lib/utils";
 import { checkAccount, signOut, type AuthState } from "@/lib/cloud";
+import { forgetSaved } from "@/lib/playlist";
 
 type Props = {
   code: string;
