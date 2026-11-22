@@ -30,3 +30,4 @@ const TABLES = [
     current_video VARCHAR(16) NULL,
     volume TINYINT UNSIGNED NOT NULL DEFAULT 80,
     muted BOOLEAN NOT NULL DEFAULT FALSE,
+    linked_playlist VARCHAR(40) NULL,
