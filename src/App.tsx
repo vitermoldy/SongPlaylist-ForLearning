@@ -48,3 +48,4 @@ export default function App() {
 
   const player = useYouTubePlayer(slot, {
     enabled: songs.length > 0,
+    initialId: song?.id ?? null,
