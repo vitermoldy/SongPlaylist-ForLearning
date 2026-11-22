@@ -17,4 +17,5 @@ export default defineConfig(({ mode }) => {
     root,
     base: "./",
     plugins: [react(), tailwindcss()],
+    resolve: {
 });
