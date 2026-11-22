@@ -59,6 +59,7 @@ then shares the code. Anyone who knows a code can read and replace its data.
 
 Database `songplaylist_forlearning` (created on start):
 
+| Table | Holds |
 
 ## Structure
 
