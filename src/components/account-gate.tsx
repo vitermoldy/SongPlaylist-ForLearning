@@ -86,3 +86,4 @@ export function AccountGate({ auth }: { auth: AuthState }) {
       onCancel={(e) => {
         // A required sign-in has no "close": Escape does nothing while the server waits for a
         // password, and means "Pakai tanpa akun" when the server is down.
+        e.preventDefault();
