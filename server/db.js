@@ -54,3 +54,4 @@ const TABLES = [
   ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci`,
   `CREATE TABLE IF NOT EXISTS playlist_songs (
     device_id CHAR(12) NOT NULL,
+    playlist_id VARCHAR(40) NOT NULL,
