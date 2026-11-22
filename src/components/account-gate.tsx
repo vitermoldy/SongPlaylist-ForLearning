@@ -42,3 +42,4 @@ export function AccountGate({ auth }: { auth: AuthState }) {
     const wanted = signedOut || (offline && !skipped) || (auth.status === "checking" && d.open);
     if (wanted && !d.open) d.showModal();
     else if (!wanted && d.open) d.close();
+    // Focus moves only when what the screen asks for changes, never on every update.
