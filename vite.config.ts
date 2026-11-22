@@ -21,4 +21,5 @@ export default defineConfig(({ mode }) => {
       alias: { "@": `${root}src` },
       dedupe: ["react", "react-dom"],
     },
+    server: { port: 5195, strictPort: true, proxy: api },
 });
