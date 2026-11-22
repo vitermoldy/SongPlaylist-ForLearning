@@ -20,3 +20,5 @@ export type YouTubeLink =
  */
 export function parseYouTube(raw: string): YouTubeLink | null {
   const text = raw.trim();
+  if (VIDEO_ID.test(text)) return { kind: "video", id: text };
+
