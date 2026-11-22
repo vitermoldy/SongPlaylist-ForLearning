@@ -26,3 +26,4 @@ is kept from the original demo footer.
 
 ## Shape and depth
 
+- Cards 24px radius, corner button 20px, panels and inputs 14px, small buttons 12px, play buttons round.
