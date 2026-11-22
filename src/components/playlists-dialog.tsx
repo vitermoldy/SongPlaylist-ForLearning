@@ -42,3 +42,4 @@ function Mosaic({ songs }: { songs: Song[] }) {
 
 type Ask = { kind: "open" | "delete"; id: string } | { kind: "clear" } | null;
 
+/** The Playlist menu: save the deck under a name, play a saved list, delete one or all of them. */
