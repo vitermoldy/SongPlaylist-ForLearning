@@ -20,3 +20,4 @@
   summary,
   label[for],
   input[type="range"]:not(:disabled) {
+    cursor: pointer;
