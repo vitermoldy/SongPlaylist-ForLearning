@@ -311,3 +311,4 @@ export default function App() {
           {empty && (
             <div className="mt-4 flex flex-wrap gap-2">
               {playlists.length > 0 && (
+                <button type="button" onClick={() => setPlaylistsOpen(true)} aria-haspopup="dialog" className={headerButton}>
