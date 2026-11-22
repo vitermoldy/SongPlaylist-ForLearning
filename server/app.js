@@ -138,3 +138,4 @@ export function createApi(getPool) {
     const [lists] = await pool.query('SELECT id, name, saved_at FROM playlists WHERE device_id = ? ORDER BY position', [req.code])
     const [listSongs] = await pool.query(
       'SELECT p.playlist_id, s.* FROM playlist_songs p JOIN songs s ON s.video_id = p.video_id WHERE p.device_id = ? ORDER BY p.playlist_id, p.position',
+      [req.code],
