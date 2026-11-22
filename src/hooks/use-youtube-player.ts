@@ -234,3 +234,4 @@ export function useYouTubePlayer(slot: RefObject<HTMLDivElement | null>, options
       player.current?.seekTo(seconds, true);
       setTime(seconds);
     },
+    [setTime],
