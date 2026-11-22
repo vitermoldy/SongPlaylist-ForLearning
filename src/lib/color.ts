@@ -78,3 +78,4 @@ export function accentFromThumb(id: string): Promise<string> {
         canvas.width = 48;
         canvas.height = 27;
         const ctx = canvas.getContext("2d", { willReadFrequently: true });
+        if (!ctx) return resolve(FALLBACK_ACCENT);
