@@ -47,3 +47,4 @@ export default function App() {
   });
 
   const player = useYouTubePlayer(slot, {
+    enabled: songs.length > 0,
