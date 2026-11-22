@@ -60,3 +60,4 @@ export async function addLink(raw: string, existing: string[], onProgress?: (tex
   onProgress?.(`Membaca judul ${fresh.length} lagu…`);
   const found = await mapLimit(fresh, 6, async (id) => {
     try {
+      return toSong(id, await fetchInfo(id));
