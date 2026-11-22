@@ -133,3 +133,4 @@ export function PlayerBar(p: Props) {
                 <Play aria-hidden className="size-5 translate-x-[1px]" fill="currentColor" />
               )}
             </button>
+            <IconButton label="Lagu berikutnya" onClick={p.onNext} disabled={p.index >= p.count - 1}>
