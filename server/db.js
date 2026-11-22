@@ -40,3 +40,4 @@ const TABLES = [
     position SMALLINT UNSIGNED NOT NULL,
     video_id VARCHAR(16) NOT NULL,
     PRIMARY KEY (device_id, position),
+    CONSTRAINT deck_songs_device FOREIGN KEY (device_id) REFERENCES devices(id) ON DELETE CASCADE,
