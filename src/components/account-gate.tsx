@@ -136,3 +136,4 @@ export function AccountGate({ auth }: { auth: AuthState }) {
                 autoComplete={mode === "in" ? "current-password" : "new-password"}
                 maxLength={128}
                 aria-invalid={invalid === "pass" ? true : undefined}
+                aria-describedby={[mode === "up" ? "gate-pass-hint" : "", error ? "gate-error" : ""].filter(Boolean).join(" ") || undefined}
