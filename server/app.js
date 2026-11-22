@@ -67,3 +67,4 @@ function cleanState(body) {
   if (!Array.isArray(body.playlists) || body.playlists.length > MAX_PLAYLISTS) return `playlists must be a list of at most ${MAX_PLAYLISTS}.`
 
   const songs = []
+  const seen = new Set()
