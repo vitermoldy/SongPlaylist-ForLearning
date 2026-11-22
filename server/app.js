@@ -56,3 +56,5 @@ function cleanSong(s) {
     accent: ACCENT.test(s.accent ?? '') ? s.accent.toUpperCase() : null,
     problem: text(s.problem, 200) || null,
   }
+}
+
