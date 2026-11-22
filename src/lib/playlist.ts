@@ -57,6 +57,7 @@ export type Saved = {
   playlists: SavedPlaylist[];
   /** The saved playlist the deck was opened from, offered first when saving again. */
   linked: string | null;
+  /** When the listener last changed any of the above (ms); the newer of this browser and the server wins. */
 };
 
 const isSong = (v: unknown): v is Song => {
