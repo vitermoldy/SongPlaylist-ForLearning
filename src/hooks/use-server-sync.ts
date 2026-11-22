@@ -14,7 +14,7 @@ export const useAuth = () => useSyncExternalStore(onAuth, authState);
 /**
  * After a change (once the listener pauses), on opening the page and on coming back to the tab,
  * the server's copy is compared with this one: a newer copy there is taken, an older one replaced.
- * With the server off the page goes on alone and tries again every 10 seconds.
+ * Signing in takes the account's copy over this browser's. Nothing is sent while nobody is
  */
 export function useServerSync(snapshot: Saved, apply: (state: Saved) => void) {
   const [code, setCode] = useState(loadCode);
