@@ -9,3 +9,4 @@ import { connect } from './db.js'
  * takes over the lists saved before accounts existed: the newest browser's deck, plus the
  * saved playlists of every other browser nobody owns yet, so none of them is left behind.
  */
+const ALPHABET = 'ABCDEFGHJKLMNPQRSTUVWXYZ23456789'
