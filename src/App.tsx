@@ -260,6 +260,7 @@ export default function App() {
       setLinked(remote.linked);
       // the song from the other browser is put ready, not started
       if (nextActive && nextActive !== before) load(nextActive, false);
+    },
 
   // each card's play button takes its colour from the song's cover, read once and remembered
   const asked = useRef(new Set<string>());
