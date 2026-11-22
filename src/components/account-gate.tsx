@@ -196,3 +196,4 @@ export function AccountGate({ auth }: { auth: AuthState }) {
             >
               Coba lagi
             </button>
+            <button
