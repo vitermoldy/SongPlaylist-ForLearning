@@ -40,3 +40,4 @@ export default function App() {
   const deck = useRef<SongDeckHandle>(null);
   const slot = useRef<HTMLDivElement>(null);
   const addSection = useRef<HTMLElement>(null);
+  // the latest list for callbacks that YouTube or a timer calls later
