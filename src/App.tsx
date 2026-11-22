@@ -388,3 +388,4 @@ export default function App() {
         onClose={() => setPlaylistsOpen(false)}
         playlists={playlists}
         songs={songs}
+        linked={linkedPlaylist}
