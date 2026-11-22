@@ -56,3 +56,4 @@ export function SongsDialog({ open, onClose, songs, active, playing, savedAs, on
                     current && "bg-white",
                   )}
                 >
+                  <span className="grid w-6 shrink-0 place-items-center text-[13px] text-[#3B3F48] tabular-nums">
