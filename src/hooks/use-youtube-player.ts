@@ -66,3 +66,4 @@ export function useYouTubePlayer(slot: RefObject<HTMLDivElement | null>, options
     window.clearTimeout(tapTimer.current);
     tapTimer.current = window.setTimeout(() => {
       const s = player.current?.getPlayerState();
+      if (intentRef.current && s !== PLAYING && s !== BUFFERING) setNeedsTap(true);
