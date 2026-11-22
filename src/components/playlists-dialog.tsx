@@ -211,3 +211,4 @@ export function PlaylistsDialog({ open, onClose, playlists, songs, linked, saved
               } Daftar putar yang sedang terbuka tidak ikut terhapus.`}
               confirmLabel="Ya, hapus semua"
               onConfirm={() => {
+                setAsk(null);
