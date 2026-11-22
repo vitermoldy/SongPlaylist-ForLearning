@@ -65,3 +65,4 @@ export function AddSongForm({ onAdd, className, autoFocus = false }: { onAdd: Ad
       >
         {status.kind === "idle" ? "" : status.text}
       </p>
+    </form>
