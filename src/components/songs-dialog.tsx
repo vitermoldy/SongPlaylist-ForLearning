@@ -39,3 +39,4 @@ export function SongsDialog({ open, onClose, songs, active, playing, savedAs, on
         <AddSongForm onAdd={onAdd} />
       </div>
 
+      {songs.length === 0 ? (
