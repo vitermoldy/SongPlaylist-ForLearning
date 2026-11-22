@@ -113,3 +113,4 @@ type YTPlayerOptions = {
 
 export type YTNamespace = { Player: new (element: HTMLElement, options: YTPlayerOptions) => YTPlayer };
 
+declare global {
