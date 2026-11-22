@@ -128,6 +128,7 @@ export async function signOut() {
 // ---------- the lists ----------
 
 /** The account's saved copy, or null when it has saved nothing yet. */
+export const getState = async () => {
   if (!body.saved) return null;
   const { saved: _, ...state } = body;
   return state as Saved;
