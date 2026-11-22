@@ -17,3 +17,4 @@ export default defineConfig({
   },
   // the deck ships its screenshots as base64 inside the JS (about 370 kB), so the one chunk is large on purpose
   build: { chunkSizeWarningLimit: 900 },
+  server: { port: 5195, strictPort: true },
