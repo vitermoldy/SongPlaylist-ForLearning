@@ -51,3 +51,4 @@ export function Confirm({
   onConfirm,
   onCancel,
   className,
+}: {
