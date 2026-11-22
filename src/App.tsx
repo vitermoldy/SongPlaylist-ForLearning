@@ -43,3 +43,4 @@ export default function App() {
   // the latest list for callbacks that YouTube or a timer calls later
   const live = useRef({ songs, active });
   useLayoutEffect(() => {
+    live.current = { songs, active };
