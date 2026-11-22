@@ -258,3 +258,4 @@ function PlayerCard({ song, i, pos, still, ground, playing, interactive, onToggl
         <div className="relative aspect-[16/9] w-full overflow-hidden max-sm:aspect-[4/5]">
           {/* on a phone the card is taller than the video: the cover, blurred, fills above and below */}
           <Cover key={`bg-${song.id}`} id={song.id} alt="" className="pointer-events-none absolute inset-0 size-full scale-110 object-cover blur-2xl brightness-[0.45]" />
+          <div
