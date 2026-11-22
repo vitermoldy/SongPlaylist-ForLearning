@@ -152,3 +152,4 @@ export function loadYouTubeApi(): Promise<YTNamespace> {
 
 /**
  * The video IDs of a public playlist. The IFrame API is the only way to read a list without an API
+ * key, so a player is built off screen, asked for its list and taken down again.
