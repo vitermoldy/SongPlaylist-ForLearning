@@ -157,3 +157,4 @@ export default function App() {
       const { songs: list, active: at } = live.current;
       const index = list.findIndex((s) => s.id === id);
       if (index < 0) return;
+      const rest = list.filter((s) => s.id !== id);
