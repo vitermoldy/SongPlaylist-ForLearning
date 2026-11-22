@@ -180,3 +180,4 @@ export function useYouTubePlayer(slot: RefObject<HTMLDivElement | null>, options
     const read = () => {
       const t = p.getCurrentTime();
       if (Number.isFinite(t)) setTime(t);
+      const d = p.getDuration();
