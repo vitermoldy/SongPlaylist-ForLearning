@@ -39,3 +39,4 @@ const spoken = (seconds: number) => {
   return `${Math.floor(s / 60)} menit ${s % 60} detik`;
 };
 
+function IconButton({ label, onClick, disabled, children }: { label: string; onClick: () => void; disabled?: boolean; children: ReactNode }) {
