@@ -194,3 +194,4 @@ export function useYouTubePlayer(slot: RefObject<HTMLDivElement | null>, options
     (id: string, autoplay: boolean) => {
       idRef.current = id;
       setIntent(autoplay);
+      setStarted(false);
