@@ -259,3 +259,4 @@ export default function App() {
         <div className="mx-auto flex h-16 max-w-[1480px] items-center justify-between gap-4 px-4 sm:px-10 lg:px-14">
           <div className="flex min-w-0 items-baseline gap-3">
             <h1 className="shrink-0 text-[18px] font-semibold tracking-[-0.02em] text-[#111318]">Daftar putar</h1>
+            {!empty && (
