@@ -13,3 +13,4 @@ export type Song = {
   problem?: string;
 };
 
+/** Official videos, checked on 2026-11-22 to play outside YouTube. */
