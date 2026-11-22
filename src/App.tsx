@@ -286,3 +286,4 @@ export default function App() {
             songs={songs}
             active={active}
             playing={player.intent}
+            showVideo={player.visible}
