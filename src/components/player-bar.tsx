@@ -18,3 +18,4 @@ type Props = {
   canFullscreen: boolean;
   note: { text: string; action?: { label: string; run: () => void } } | null;
   onToggle: () => void;
+  onPrev: () => void;
