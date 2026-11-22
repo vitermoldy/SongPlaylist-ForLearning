@@ -69,3 +69,4 @@ export function SongsDialog({ open, onClose, songs, active, playing, savedAs, on
                   {current && <span className="sr-only">{playing ? "(sedang diputar)" : "(dipilih)"}</span>}
                 </button>
                 <a
+                  href={watchUrl(s.id)}
