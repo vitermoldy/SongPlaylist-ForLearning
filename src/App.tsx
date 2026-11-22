@@ -94,3 +94,4 @@ export default function App() {
   const settle = useCallback(
     (index: number) => {
       const { songs: list, active: at } = live.current;
+      if (index === at || !list[index]) return;
