@@ -113,3 +113,4 @@ export function PlaylistsDialog({ open, onClose, playlists, songs, linked, saved
                   value={name}
                   maxLength={60}
                   onChange={(e) => setName(e.target.value)}
+                  onFocus={(e) => e.currentTarget.select()}
