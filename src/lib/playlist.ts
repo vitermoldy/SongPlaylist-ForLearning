@@ -57,3 +57,5 @@ export type Saved = {
   playlists: SavedPlaylist[];
   /** The saved playlist the deck was opened from, offered first when saving again. */
   linked: string | null;
+};
+
