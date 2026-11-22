@@ -84,3 +84,4 @@ function cleanState(body) {
     ids.add(p.id)
     const list = []
     const inList = new Set()
+    for (const raw of p.songs) {
