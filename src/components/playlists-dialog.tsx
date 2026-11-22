@@ -78,3 +78,4 @@ export function PlaylistsDialog({ open, onClose, playlists, songs, linked, saved
           <p className="text-[15px] leading-snug text-[#3B3F48]" role="status">
             {done ?? (
               <>
+                Daftar putar sekarang ({songs.length} lagu) sudah tersimpan sebagai <strong className="font-semibold text-[#111318]">{savedAs.name}</strong>.
