@@ -6,3 +6,4 @@ import type { Song } from "@/lib/playlist";
 import type { PlayerStatus } from "@/hooks/use-youtube-player";
 
 type Props = {
+  song: Song | null;
