@@ -28,3 +28,4 @@ function hslToRgb([h, s, l]: RGB): RGB {
 }
 
 const luminance = ([r, g, b]: RGB) => {
+  const c = [r, g, b].map((v) => {
