@@ -360,3 +360,4 @@ export default function App() {
           }}
           onMute={() => setMuted((m) => !m)}
           onFullscreen={player.fullscreen}
+        />
