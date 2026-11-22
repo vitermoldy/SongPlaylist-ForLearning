@@ -59,3 +59,4 @@ export type Saved = {
   linked: string | null;
 };
 
+const isSong = (v: unknown): v is Song => {
