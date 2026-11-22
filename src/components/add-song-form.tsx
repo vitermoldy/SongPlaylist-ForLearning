@@ -3,3 +3,5 @@ import { Loader2 } from "lucide-react";
 import { cn } from "@/lib/utils";
 import type { AddResult } from "@/lib/add-link";
 
+type Status = { kind: "idle" } | { kind: "busy"; text: string } | { kind: "done" | "error"; text: string };
+
