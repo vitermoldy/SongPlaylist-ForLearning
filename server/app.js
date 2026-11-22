@@ -12,3 +12,4 @@ import express from 'express'
 
 const CODE = /^[A-HJ-NP-Z2-9]{12}$/
 const VIDEO = /^[\w-]{11}$/
+const PLAYLIST_ID = /^pl-[a-z0-9-]{1,36}$/
