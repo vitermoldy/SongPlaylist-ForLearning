@@ -50,3 +50,4 @@ export function AddSongForm({ onAdd, className, autoFocus = false }: { onAdd: Ad
         >
           {busy && <Loader2 aria-hidden className="size-4 motion-safe:animate-spin" />}
           Tambah
+        </button>
