@@ -185,3 +185,4 @@ export async function expandPlaylist(list: string): Promise<string[]> {
       host: YOUTUBE_HOST,
       width: 320,
       height: 180,
+      playerVars: { listType: "playlist", list, autoplay: 0, origin: window.location.origin },
