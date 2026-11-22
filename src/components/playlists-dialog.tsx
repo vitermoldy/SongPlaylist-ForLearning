@@ -33,3 +33,4 @@ function Mosaic({ songs }: { songs: Song[] }) {
   const four = songs.length >= 4 ? songs.slice(0, 4) : songs.slice(0, 1);
   return (
     <span className={`grid h-[45px] w-20 shrink-0 overflow-hidden rounded-[8px] bg-[#D5D7DB] ${four.length === 4 ? "grid-cols-2" : ""}`}>
+      {four.map((s) => (
