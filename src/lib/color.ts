@@ -57,3 +57,4 @@ export function pickAccent(pixels: Uint8ClampedArray): string {
     bucket.weight += weight;
     bucket.r += rgb[0] * weight;
     bucket.g += rgb[1] * weight;
+    bucket.b += rgb[2] * weight;
