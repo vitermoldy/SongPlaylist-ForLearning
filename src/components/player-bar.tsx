@@ -130,3 +130,4 @@ export function PlayerBar(p: Props) {
               ) : p.playing ? (
                 <Pause aria-hidden className="size-5" fill="currentColor" />
               ) : (
+                <Play aria-hidden className="size-5 translate-x-[1px]" fill="currentColor" />
