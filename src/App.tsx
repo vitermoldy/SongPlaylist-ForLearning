@@ -140,3 +140,4 @@ export default function App() {
 
   const add: AddSong = useCallback(
     async (raw, onProgress) => {
+      const result = await addLink(raw, live.current.songs.map((s) => s.id), onProgress);
