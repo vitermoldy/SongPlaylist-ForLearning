@@ -19,3 +19,4 @@ function rgbToHsl([r, g, b]: RGB): RGB {
 }
 
 function hslToRgb([h, s, l]: RGB): RGB {
+  const f = (n: number) => {
