@@ -18,3 +18,4 @@ export const SEED_SONGS: Song[] = [
   { id: "9II3OGZETo4", title: "Hati-Hati di Jalan", artist: "Tulus" },
   { id: "dGcGbF4ex5o", title: "Dan", artist: "Sheila on 7" },
   { id: "wnAKxtEi78c", title: "Secukupnya", artist: "Hindia" },
+  { id: "viW0M5R2BLo", title: "Akad", artist: "Payung Teduh" },
