@@ -118,3 +118,4 @@ export function PlaylistsDialog({ open, onClose, playlists, songs, linked, saved
                 />
                 <button
                   type="submit"
+                  className={`h-12 shrink-0 rounded-[14px] px-5 text-[15px] font-semibold ${
