@@ -76,3 +76,4 @@ export function loadSaved(): Saved {
     if (!raw) return fallback;
     const data = JSON.parse(raw) as Partial<Saved>;
     if (!Array.isArray(data.songs)) return fallback;
+    const songs = data.songs.filter(isSong);
