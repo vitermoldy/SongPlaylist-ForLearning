@@ -144,3 +144,4 @@ export function loadYouTubeApi(): Promise<YTNamespace> {
       if (!window.YT?.Player) {
         apiPromise = null;
         reject(new Error("The YouTube player took too long to load."));
+      }
