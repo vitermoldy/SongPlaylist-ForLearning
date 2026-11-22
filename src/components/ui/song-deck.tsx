@@ -25,3 +25,4 @@ export type SongDeckHandle = {
 export type SongDeckProps = {
   songs: Song[];
   /** The song in the player. */
+  active: number;
