@@ -109,3 +109,4 @@ export function ServerSync({ code, status, checkedAt, onSwitch }: Props) {
                 placeholder="ABCD EFGH JKLM"
                 className="h-11 min-w-0 flex-1 rounded-[12px] border border-[#111318]/20 bg-white px-3 font-mono text-[16px] tracking-[0.06em] uppercase placeholder:text-[#6B707A] hover:border-[#111318]/35"
               />
+              <button
