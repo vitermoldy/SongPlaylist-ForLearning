@@ -37,3 +37,4 @@ export function useYouTubePlayer(slot: RefObject<HTMLDivElement | null>, options
   const intentRef = useRef(false);
   const timeRef = useRef(0);
   const tapTimer = useRef(0);
+  // between asking for a song and its first frame YouTube can report a passing pause or cue;
