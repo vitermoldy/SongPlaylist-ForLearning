@@ -7,3 +7,4 @@ direction; everything added around it follows it.
 ## Palette
 
 | Role | Value | Why |
+| --- | --- | --- |
