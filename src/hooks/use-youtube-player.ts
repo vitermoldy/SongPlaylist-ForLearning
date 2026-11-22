@@ -201,3 +201,4 @@ export function useYouTubePlayer(slot: RefObject<HTMLDivElement | null>, options
       window.clearTimeout(tapTimer.current);
       if (autoplay) setArmed(true);
       start(id, autoplay);
+    },
