@@ -104,3 +104,4 @@ export function useYouTubePlayer(slot: RefObject<HTMLDivElement | null>, options
         created = new YT.Player(el, {
           host: YOUTUBE_HOST,
           width: "100%",
+          height: "100%",
