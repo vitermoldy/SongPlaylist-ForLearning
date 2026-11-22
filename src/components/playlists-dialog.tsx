@@ -46,3 +46,4 @@ type Ask = { kind: "open" | "delete"; id: string } | { kind: "clear" } | null;
 export function PlaylistsDialog({ open, onClose, playlists, songs, linked, savedAs, onSave, onUpdate, onOpen, onDelete, onClearAll }: Props) {
   const nameId = useId();
   const nameInput = useRef<HTMLInputElement>(null);
+  const [name, setName] = useState("");
