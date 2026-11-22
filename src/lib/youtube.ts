@@ -155,3 +155,4 @@ export function loadYouTubeApi(): Promise<YTNamespace> {
  * key, so a player is built off screen, asked for its list and taken down again.
  */
 export async function expandPlaylist(list: string): Promise<string[]> {
+  const YT = await loadYouTubeApi();
