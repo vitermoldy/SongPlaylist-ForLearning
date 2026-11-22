@@ -81,3 +81,4 @@ function cleanState(body) {
     if (!p || !PLAYLIST_ID.test(p.id ?? '') || ids.has(p.id) || !Array.isArray(p.songs) || p.songs.length > MAX_SONGS) continue
     const savedAt = Number(p.savedAt)
     if (!Number.isFinite(savedAt)) continue
+    ids.add(p.id)
