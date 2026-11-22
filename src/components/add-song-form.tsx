@@ -67,3 +67,4 @@ export function AddSongForm({ onAdd, className, autoFocus = false }: { onAdd: Ad
       </p>
     </form>
   );
+}
