@@ -120,3 +120,4 @@ export const SongDeck = memo(function SongDeck({
   useEffect(() => {
     let timer = 0;
     const onScroll = () => {
+      measure();
