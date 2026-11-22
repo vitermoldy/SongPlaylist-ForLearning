@@ -10,6 +10,7 @@ import { useYouTubePlayer } from "@/hooks/use-youtube-player";
 import { addLink } from "@/lib/add-link";
 import { accentFromThumb } from "@/lib/color";
 import {
+  SEED_SONGS,
 import { describePlayError } from "@/lib/youtube";
 
 const GROUND = "#E7E8EA";
