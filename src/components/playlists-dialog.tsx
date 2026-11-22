@@ -70,3 +70,4 @@ export function PlaylistsDialog({ open, onClose, playlists, songs, linked, saved
   }
 
   return (
+    <Sheet open={open} onClose={onClose} title="Playlist">
