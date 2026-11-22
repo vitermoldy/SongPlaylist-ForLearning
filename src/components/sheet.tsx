@@ -63,3 +63,4 @@ export function Confirm({
   return (
     <div role="group" aria-label="Konfirmasi" className={cn("rounded-[14px] border border-[#8F1A1A]/25 bg-white p-3", className)}>
       <p className="text-[14px] leading-snug text-[#111318]">{text}</p>
+      <div className="mt-3 flex flex-wrap gap-2">
