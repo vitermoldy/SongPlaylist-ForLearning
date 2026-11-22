@@ -11,3 +11,4 @@ export default defineConfig({
   root,
   base: "./",
   plugins: [react(), tailwindcss()],
+  resolve: {
