@@ -87,6 +87,7 @@ export function ServerSync({ auth, status, checkedAt, onFlush }: Props) {
       )}
       {error && (
         <p id="account-error" role="alert" className="mt-2 text-[14px] leading-snug text-[#8F1A1A]">
+          {error}
     </section>
   );
 }
