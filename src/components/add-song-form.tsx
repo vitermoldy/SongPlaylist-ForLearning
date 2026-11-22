@@ -63,3 +63,4 @@ export function AddSongForm({ onAdd, className, autoFocus = false }: { onAdd: Ad
           status.kind === "error" ? "text-[#8F1A1A]" : status.kind === "done" ? "text-[#1D5A3A]" : "text-[#3B3F48]",
         )}
       >
+        {status.kind === "idle" ? "" : status.text}
