@@ -38,3 +38,4 @@ export function useServerSync(snapshot: Saved, apply: (state: Saved) => void) {
   const sync = useCallback(async function run() {
     if (busy.current) {
       again.current = true;
+      return;
