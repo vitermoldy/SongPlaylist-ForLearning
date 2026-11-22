@@ -118,3 +118,4 @@ export function AccountGate({ auth }: { auth: AuthState }) {
                 autoComplete="username"
                 autoCapitalize="none"
                 spellCheck={false}
+                maxLength={24}
