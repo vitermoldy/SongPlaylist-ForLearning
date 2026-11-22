@@ -185,3 +185,4 @@ export function PlaylistsDialog({ open, onClose, playlists, songs, linked, saved
                   )}
                   {asking === "delete" && (
                     <Confirm
+                      className="mt-2"
