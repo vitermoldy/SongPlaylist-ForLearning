@@ -24,3 +24,4 @@ export function AddSongForm({ onAdd, className, autoFocus = false }: { onAdd: Ad
   }
 
   return (
+    <form onSubmit={submit} className={cn("w-full", className)} noValidate>
