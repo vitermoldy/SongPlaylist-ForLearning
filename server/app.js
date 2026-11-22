@@ -122,3 +122,4 @@ export function createApi(getPool) {
     const clean = String(code).toUpperCase().replace(/[^A-Z0-9]/g, '')
     if (!CODE.test(clean)) return res.status(400).json({ error: 'A recovery code has 12 letters and digits.' })
     req.code = clean
+    next()
