@@ -153,3 +153,4 @@ export default function App() {
   );
 
   const remove = useCallback(
+    (id: string) => {
