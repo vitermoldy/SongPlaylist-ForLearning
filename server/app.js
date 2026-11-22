@@ -55,3 +55,4 @@ function cleanSong(s) {
     artist: text(s.artist, 200),
     accent: ACCENT.test(s.accent ?? '') ? s.accent.toUpperCase() : null,
     problem: text(s.problem, 200) || null,
+  }
