@@ -303,3 +303,4 @@ export default function App() {
             {empty ? "Daftar putarnya masih kosong." : "Tambah lagu berikutnya."}
           </h2>
           <p className="mt-6 mb-0 max-w-[52ch] text-[17px] leading-relaxed text-[#3B3F48]">
+            {empty
