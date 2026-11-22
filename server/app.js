@@ -196,3 +196,4 @@ export function createApi(getPool) {
         ])
         const rows = state.playlists.flatMap((p) => p.songs.map((s, i) => [req.code, p.id, i, s.id]))
         if (rows.length) await conn.query('INSERT INTO playlist_songs (device_id, playlist_id, position, video_id) VALUES ?', [rows])
+      }
