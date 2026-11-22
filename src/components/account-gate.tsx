@@ -190,3 +190,4 @@ export function AccountGate({ auth }: { auth: AuthState }) {
             <button
               ref={retryRef}
               id="gate-retry"
+              type="button"
