@@ -14,3 +14,4 @@ export type Song = {
 };
 
 /** Official videos, checked on 2026-11-22 to play outside YouTube. */
+export const SEED_SONGS: Song[] = [
