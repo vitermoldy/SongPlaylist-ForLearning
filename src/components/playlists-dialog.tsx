@@ -143,3 +143,4 @@ export function PlaylistsDialog({ open, onClose, playlists, songs, linked, saved
               const asking = ask && ask.kind !== "clear" && ask.id === p.id ? ask.kind : null;
               const isOpen = savedAs?.id === p.id;
               return (
+                <li key={p.id} className="rounded-[14px] p-2 hover:bg-white/70">
