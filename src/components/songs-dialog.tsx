@@ -12,3 +12,4 @@ type Props = {
   onClose: () => void;
   songs: Song[];
   active: number;
+  playing: boolean;
