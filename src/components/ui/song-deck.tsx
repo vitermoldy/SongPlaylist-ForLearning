@@ -168,3 +168,4 @@ export const SongDeck = memo(function SongDeck({
       {/* one screen of scroll per song; the stage stays pinned while the cards are dealt onto it */}
       <section
         ref={deck}
+        className={cn("relative w-full", className)}
