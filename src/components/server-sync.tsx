@@ -9,3 +9,4 @@ type Props = {
   code: string;
   status: SyncStatus;
   checkedAt: number | null;
+  onSwitch: (code: string) => Promise<SwitchResult>;
