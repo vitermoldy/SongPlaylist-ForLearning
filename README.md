@@ -6,3 +6,4 @@ from the list) deals its card onto the deck: it rises from below leaning toward 
 then flattens and sharpens as it lands, while the cards beneath lean back and dim. Stopping the
 scroll on a card picks that song.
 
+The card motion comes from "Project Deck" by Aakash Mehra (`scroll-stacking-cards`, a 21st.dev
