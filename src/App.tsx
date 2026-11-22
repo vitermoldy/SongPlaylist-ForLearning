@@ -330,3 +330,4 @@ export default function App() {
           href="https://aakashmehra.com/ref/projectdeck"
           target="_blank"
           rel="noopener noreferrer"
+          className="font-semibold text-[#111318] underline-offset-4 hover:underline"
