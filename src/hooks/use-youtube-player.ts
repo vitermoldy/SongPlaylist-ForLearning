@@ -212,3 +212,4 @@ export function useYouTubePlayer(slot: RefObject<HTMLDivElement | null>, options
     if (!p) {
       setArmed(true);
       if (idRef.current) pending.current = { id: idRef.current, autoplay: true };
+      return;
