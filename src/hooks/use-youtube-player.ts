@@ -124,3 +124,4 @@ export function useYouTubePlayer(slot: RefObject<HTMLDivElement | null>, options
                 setIntent(true);
                 setNeedsTap(false);
                 window.clearTimeout(tapTimer.current);
+                const d = event.target.getDuration();
