@@ -74,3 +74,5 @@ export function useServerSync(snapshot: Saved, apply: (state: Saved) => void) {
         void run();
       }
     }
+  }, []);
+
