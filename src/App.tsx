@@ -372,3 +372,4 @@ export default function App() {
         savedAs={savedAs}
         onPick={(index) => {
           setListOpen(false);
+          goTo(index, true);
