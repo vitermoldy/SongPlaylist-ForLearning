@@ -44,3 +44,4 @@ export function AccountGate({ auth }: { auth: AuthState }) {
     else if (!wanted && d.open) d.close();
     // Focus moves only when what the screen asks for changes, never on every update.
     if (d.open && shown.current !== auth.status) {
+      if (signedOut) userRef.current?.focus();
