@@ -23,3 +23,4 @@ export type SongDeckHandle = {
 };
 
 export type SongDeckProps = {
+  songs: Song[];
