@@ -40,3 +40,4 @@
   -webkit-appearance: none;
   height: 28px;
   background: transparent;
+  --accent-fill: var(--accent, #111318);
