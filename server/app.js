@@ -48,3 +48,4 @@ const text = (value, max) => (typeof value === 'string' ? value.trim().slice(0, 
 function cleanSong(s) {
   if (!s || !VIDEO.test(s.id ?? '')) return null
   const title = text(s.title, 200)
+  if (!title) return null
