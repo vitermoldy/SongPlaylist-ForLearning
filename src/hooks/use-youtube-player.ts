@@ -231,3 +231,4 @@ export function useYouTubePlayer(slot: RefObject<HTMLDivElement | null>, options
 
   const seek = useCallback(
     (seconds: number) => {
+      player.current?.seekTo(seconds, true);
