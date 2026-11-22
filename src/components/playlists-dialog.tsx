@@ -90,3 +90,4 @@ export function PlaylistsDialog({ open, onClose, playlists, songs, linked, saved
                   Daftar ini dibuka dari <strong className="font-semibold text-[#111318]">{linked.name}</strong> dan sudah berubah.
                 </p>
                 <button
+                  type="button"
