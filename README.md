@@ -18,3 +18,4 @@ Player API. No server and no API key: everything is kept in the browser's localS
 - Plays songs from YouTube links: a video, a YouTube Music link, a Short, or a public playlist
   (`youtube.com/playlist?list=...`, up to 50 songs). Titles and artists come from YouTube's oEmbed.
 - One YouTube player rides on the active card, so the video moves, blurs and dims with it.
+- Player bar: previous (or back to the start after 3 seconds), play or pause, next, position,
