@@ -34,3 +34,4 @@ export async function addLink(raw: string, existing: string[], onProgress?: (tex
   const link = parseYouTube(raw);
   if (!link) return fail("Itu bukan link video atau playlist YouTube.");
   if (link.kind === "mix") {
+    return fail("Mix buatan YouTube, Tonton Nanti dan Video yang Disukai hanya bisa diputar di YouTube. Tempel link lagunya, atau link playlist biasa.");
