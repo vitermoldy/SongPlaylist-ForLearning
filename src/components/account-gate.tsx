@@ -51,3 +51,4 @@ export function AccountGate({ auth }: { auth: AuthState }) {
   }, [auth.status, signedOut, offline, skipped]);
 
   async function submit(event: FormEvent) {
+    event.preventDefault();
