@@ -14,3 +14,4 @@ type Props = {
   time: number;
   duration: number;
   volume: number;
+  muted: boolean;
