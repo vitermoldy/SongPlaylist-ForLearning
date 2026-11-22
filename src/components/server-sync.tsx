@@ -32,3 +32,5 @@ export function ServerSync({ code, status, checkedAt, onSwitch }: Props) {
     nodb: "Server lokal menyala, tapi MySQL belum terhubung. Periksa isi .env dan pastikan MySQL berjalan.",
     error: "Server lokal menolak data ini. Perubahan tetap tersimpan di browser ini.",
   };
+  const trouble = status === "offline" || status === "nodb" || status === "error";
+
