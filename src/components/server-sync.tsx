@@ -86,3 +86,4 @@ export function ServerSync({ code, status, checkedAt, onSwitch }: Props) {
               <button
                 type="button"
                 onClick={copy}
+                className="h-11 rounded-[12px] border border-[#111318]/15 bg-white px-4 text-[14px] font-medium text-[#111318] hover:border-[#111318]/30 active:bg-[#F3F4F5]"
