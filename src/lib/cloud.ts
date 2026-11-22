@@ -9,3 +9,5 @@ const CODE = /^[A-HJ-NP-Z2-9]{12}$/;
 
 export const cleanCode = (raw: string) => raw.toUpperCase().replace(/[^A-Z0-9]/g, "");
 export const isCode = (code: string) => CODE.test(code);
+export const formatCode = (code: string) => code.match(/.{1,4}/g)?.join(" ") ?? code;
+
