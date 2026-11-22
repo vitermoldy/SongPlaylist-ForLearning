@@ -21,3 +21,4 @@ export function Sheet({ open, onClose, title, children }: { open: boolean; onClo
       onClose={onClose}
       onClick={(e) => {
         if (e.target === ref.current) onClose(); // a click on the dimmed page outside the panel
+      }}
