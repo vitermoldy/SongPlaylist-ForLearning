@@ -39,3 +39,4 @@ export function AccountGate({ auth }: { auth: AuthState }) {
     const d = ref.current;
     if (!d) return;
     // The first check is not shown: a signed-in listener should not see the screen flash by.
+    const wanted = signedOut || (offline && !skipped) || (auth.status === "checking" && d.open);
