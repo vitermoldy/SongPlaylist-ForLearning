@@ -54,6 +54,7 @@ back to the tab and after each change, the newer copy wins: a newer one on the s
 browser's, an older one is replaced.
 
 While the server runs, the page asks for an account first (username and password, at least 6 characters).
+Signing up keeps the lists already in the browser; signing in elsewhere takes the account's copy; signing out
 
 Database `songplaylist_forlearning` (created on start):
 
