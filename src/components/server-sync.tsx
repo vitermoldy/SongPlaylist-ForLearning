@@ -37,3 +37,4 @@ export function ServerSync({ code, status, checkedAt, onSwitch }: Props) {
   async function copy() {
     try {
       await navigator.clipboard.writeText(code);
+      setCopied(true);
