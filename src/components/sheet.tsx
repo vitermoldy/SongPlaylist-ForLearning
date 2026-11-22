@@ -44,3 +44,4 @@ export function Sheet({ open, onClose, title, children }: { open: boolean; onClo
   );
 }
 
+/** A question asked in place of the button that raised it, with the safe answer focused. */
