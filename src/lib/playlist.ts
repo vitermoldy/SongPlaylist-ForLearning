@@ -43,3 +43,5 @@ export const toSong = (id: string, info: VideoInfo): Song => ({ id, ...splitTitl
 export type SavedPlaylist = { id: string; name: string; songs: Song[]; savedAt: number };
 
 /** Same songs in the same order. */
+export const sameSongs = (a: Song[], b: Song[]) => a.length === b.length && a.every((s, i) => s.id === b[i].id);
+
