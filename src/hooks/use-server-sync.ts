@@ -83,3 +83,4 @@ export function useServerSync(snapshot: Saved, apply: (state: Saved) => void) {
   }, [code, sync]);
 
   // after a change, once the listener pauses
+  useEffect(() => {
