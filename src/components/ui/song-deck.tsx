@@ -335,3 +335,4 @@ function Corner({ song, i, ground, playing, onToggle }: { song: Song; i: number;
           ) : (
             <Play aria-hidden className="size-5 translate-x-[1px] sm:size-6" strokeWidth={2.2} fill="currentColor" />
           )}
+        </span>
