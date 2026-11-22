@@ -49,3 +49,4 @@ src/App.tsx                         state: songs, active song, saved playlists, 
 src/components/ui/song-deck.tsx     the playlist deck: card motion, scroll-to-pick, the card the player rides on
 src/components/ui/scroll-stacking-cards.tsx   the original Project Deck, unchanged
 src/components/player-bar.tsx       transport under the deck
+src/components/songs-dialog.tsx     "Kelola lagu" panel
