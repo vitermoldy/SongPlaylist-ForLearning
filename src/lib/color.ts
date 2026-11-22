@@ -11,3 +11,4 @@ function rgbToHsl([r, g, b]: RGB): RGB {
   const max = Math.max(rn, gn, bn), min = Math.min(rn, gn, bn);
   const l = (max + min) / 2;
   if (max === min) return [0, 0, l];
+  const d = max - min;
