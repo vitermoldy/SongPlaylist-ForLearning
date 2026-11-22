@@ -173,3 +173,4 @@ export function createApi(getPool) {
       if (catalogue.size) {
         await conn.query(
           `INSERT INTO songs (video_id, title, artist, accent, problem) VALUES ?
+           ON DUPLICATE KEY UPDATE title = VALUES(title), artist = VALUES(artist), accent = COALESCE(VALUES(accent), accent), problem = VALUES(problem)`,
