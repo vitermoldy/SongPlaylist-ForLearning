@@ -114,3 +114,4 @@ export function PlaylistsDialog({ open, onClose, playlists, songs, linked, saved
                   maxLength={60}
                   onChange={(e) => setName(e.target.value)}
                   onFocus={(e) => e.currentTarget.select()}
+                  className="h-12 min-w-0 flex-1 rounded-[14px] border border-[#111318]/20 bg-white px-4 text-[16px] hover:border-[#111318]/35"
