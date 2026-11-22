@@ -31,3 +31,4 @@ export function ServerSync({ code, status, checkedAt, onSwitch }: Props) {
     offline: "Server lokal tidak menyala. Semuanya tetap tersimpan di browser ini dan dikirim begitu server jalan (npm run server).",
     nodb: "Server lokal menyala, tapi MySQL belum terhubung. Periksa isi .env dan pastikan MySQL berjalan.",
     error: "Server lokal menolak data ini. Perubahan tetap tersimpan di browser ini.",
+  };
