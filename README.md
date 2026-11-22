@@ -34,3 +34,4 @@ Player API. No server and no API key: everything is kept in the browser's localS
 
 ```bash
 npm install
+npm run dev       # http://localhost:5195
