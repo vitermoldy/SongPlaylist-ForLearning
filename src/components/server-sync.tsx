@@ -127,3 +127,4 @@ export function ServerSync({ code, status, checkedAt, onSwitch }: Props) {
               onCancel={() => setAsking(false)}
             />
           )}
+          {result && (
