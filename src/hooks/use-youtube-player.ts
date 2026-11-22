@@ -210,3 +210,4 @@ export function useYouTubePlayer(slot: RefObject<HTMLDivElement | null>, options
     setNeedsTap(false);
     const p = player.current;
     if (!p) {
+      setArmed(true);
