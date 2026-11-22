@@ -16,3 +16,4 @@
   }
 
   a[href],
+  button:not(:disabled),
