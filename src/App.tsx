@@ -364,3 +364,4 @@ export default function App() {
       )}
 
       <SongsDialog
+        open={listOpen}
