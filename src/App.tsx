@@ -231,6 +231,7 @@ export default function App() {
     deck.current?.scrollToSong(active, false);
   }, []);
 
+  // Every change is saved in this browser at once and stamped with its time; the stamp tells the
   useEffect(() => {
     saveState({ songs, current: song?.id ?? null, volume, muted, playlists, linked });
   }, [songs, song?.id, volume, muted, playlists, linked]);
