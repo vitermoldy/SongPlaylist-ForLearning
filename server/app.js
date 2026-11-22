@@ -8,3 +8,5 @@ import express from 'express'
  *                                server already holds a newer one)
  * There are no accounts: a device is its 12-character recovery code. Anyone who knows a code can
  * read and replace its data, so the page shows the code only to its owner.
+ */
+
