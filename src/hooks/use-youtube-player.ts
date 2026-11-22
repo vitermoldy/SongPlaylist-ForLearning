@@ -178,3 +178,4 @@ export function useYouTubePlayer(slot: RefObject<HTMLDivElement | null>, options
     if (!p) return;
     // before a video has loaded the player answers with undefined, not a number
     const read = () => {
+      const t = p.getCurrentTime();
