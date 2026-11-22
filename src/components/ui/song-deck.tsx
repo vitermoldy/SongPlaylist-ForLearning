@@ -53,3 +53,4 @@ function arrived(j: number, pos: number) {
   return easeOut(clamp01((pos - (j - 1)) / ENTER));
 }
 
+/** The card lying on top of the deck at `pos`. */
