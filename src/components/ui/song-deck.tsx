@@ -278,3 +278,4 @@ function PlayerCard({ song, i, pos, still, ground, playing, interactive, onToggl
   );
 }
 
+/** A YouTube cover; when the 1280px one is missing YouTube sends a 120px grey stand-in, so drop to hq. */
