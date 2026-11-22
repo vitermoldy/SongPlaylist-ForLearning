@@ -63,3 +63,4 @@ export function pickAccent(pixels: Uint8ClampedArray): string {
   if (!counted || best.weight < counted * 0.03) return FALLBACK_ACCENT;
 
   const [h, s, l] = rgbToHsl([best.r / best.weight, best.g / best.weight, best.b / best.weight]);
+  let hsl: RGB = [h, Math.min(0.78, Math.max(0.38, s)), Math.min(l, 0.36)];
