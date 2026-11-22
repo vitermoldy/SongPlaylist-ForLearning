@@ -54,3 +54,4 @@ export function ServerSync({ code, status, checkedAt, onSwitch }: Props) {
   async function take() {
     setAsking(false);
     setBusy(true);
+    const r = await onSwitch(entry);
