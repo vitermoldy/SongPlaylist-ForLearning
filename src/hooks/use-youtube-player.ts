@@ -149,3 +149,4 @@ export function useYouTubePlayer(slot: RefObject<HTMLDivElement | null>, options
         if (!cancelled) setStatus("error");
       });
 
+    return () => {
