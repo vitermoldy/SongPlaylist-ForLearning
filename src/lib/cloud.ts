@@ -47,6 +47,7 @@ export class ServerError extends Error {
 
 // ---------- who is signed in ----------
 
+export type Account = { username: string; createdAt: string };
 async function call<T>(path: string, init?: RequestInit): Promise<T> {
   let res: Response;
   try {
