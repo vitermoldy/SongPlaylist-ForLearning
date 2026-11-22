@@ -132,3 +132,4 @@ export function PlayerBar(p: Props) {
               ) : (
                 <Play aria-hidden className="size-5 translate-x-[1px]" fill="currentColor" />
               )}
+            </button>
