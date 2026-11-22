@@ -89,3 +89,4 @@ export type YTPlayer = {
   getDuration(): number;
   getPlayerState(): number;
   setVolume(volume: number): void;
+  mute(): void;
