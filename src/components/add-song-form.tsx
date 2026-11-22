@@ -52,3 +52,4 @@ export function AddSongForm({ onAdd, className, autoFocus = false }: { onAdd: Ad
           Tambah
         </button>
       </div>
+      <p id={`${id}-hint`} className="mt-2 text-[14px] leading-snug text-[#3B3F48]">
