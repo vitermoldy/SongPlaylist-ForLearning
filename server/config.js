@@ -23,3 +23,4 @@ export const config = {
     password: process.env.DB_PASSWORD ?? '',
     database: str('DB_NAME', 'songplaylist_forlearning'),
   },
+}
