@@ -25,3 +25,4 @@ export function AddSongForm({ onAdd, className, autoFocus = false }: { onAdd: Ad
 
   return (
     <form onSubmit={submit} className={cn("w-full", className)} noValidate>
+      <label htmlFor={id} className="mb-2 block text-[15px] font-semibold text-[#111318]">
