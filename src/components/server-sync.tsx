@@ -52,3 +52,4 @@ export function ServerSync({ code, status, checkedAt, onSwitch }: Props) {
   }
 
   async function take() {
+    setAsking(false);
