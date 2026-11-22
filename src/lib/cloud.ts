@@ -19,3 +19,4 @@ function newCode() {
 
 /** This browser's recovery code, made on the first visit. */
 export function loadCode(): string {
+  try {
