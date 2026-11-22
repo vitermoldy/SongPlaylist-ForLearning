@@ -86,3 +86,4 @@ export function accentFromThumb(id: string): Promise<string> {
       }
     };
     img.onerror = () => resolve(FALLBACK_ACCENT);
+    img.src = thumbUrl(id, "mq");
