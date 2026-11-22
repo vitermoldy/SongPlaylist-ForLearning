@@ -30,3 +30,4 @@ export function AddSongForm({ onAdd, className, autoFocus = false }: { onAdd: Ad
       </label>
       <div className="flex gap-2">
         <input
+          id={id}
