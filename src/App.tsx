@@ -345,3 +345,4 @@ export default function App() {
           status={player.status}
           playing={player.intent}
           time={player.time}
+          duration={player.duration}
