@@ -41,3 +41,5 @@ npm run preview   # serve dist/ on port 5195
 
 `dist/` uses relative paths, so it can go on any static host as is.
 
+## Structure
+
