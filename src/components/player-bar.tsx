@@ -12,3 +12,4 @@ type Props = {
   status: PlayerStatus;
   playing: boolean;
   time: number;
+  duration: number;
