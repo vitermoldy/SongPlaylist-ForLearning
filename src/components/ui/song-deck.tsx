@@ -43,3 +43,4 @@ export type SongDeckProps = {
 
 const easeOut = (t: number) => 1 - (1 - t) ** 3;
 const clamp01 = (v: number) => Math.min(1, Math.max(0, v));
+const ENTER = 0.72; // share of each card's screen spent arriving; the rest it rests in place
