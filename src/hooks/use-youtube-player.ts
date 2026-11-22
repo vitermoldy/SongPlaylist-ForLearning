@@ -24,3 +24,4 @@ type Options = {
   onError: (code: number, id: string | null, wasPlaying: boolean) => void;
 };
 
+export function useYouTubePlayer(slot: RefObject<HTMLDivElement | null>, options: Options) {
