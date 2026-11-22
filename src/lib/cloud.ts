@@ -61,3 +61,4 @@ async function call<T>(path: string, init?: RequestInit): Promise<T> {
   } catch {
     throw new ServerError(0, "offline", "No answer from the server.");
   }
+  const body = (await res.json().catch(() => null)) as (T & { error?: string; updatedAt?: number }) | null;
