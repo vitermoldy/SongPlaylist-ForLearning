@@ -45,3 +45,4 @@ function IconButton({ label, onClick, disabled, children }: { label: string; onC
       type="button"
       onClick={onClick}
       disabled={disabled}
+      aria-label={label}
