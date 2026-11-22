@@ -119,3 +119,4 @@ export function createApi(getPool) {
   api.use((_req, res, next) => (getPool() ? next() : res.status(503).json({ error: 'The database is not connected yet.' })))
 
   api.param('code', (req, res, next, code) => {
+    const clean = String(code).toUpperCase().replace(/[^A-Z0-9]/g, '')
