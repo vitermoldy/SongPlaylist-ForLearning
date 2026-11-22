@@ -40,3 +40,5 @@ function rateLimit(limit) {
     if (recent.length > limit) return res.status(429).json({ error: 'Too many requests. Try again in a moment.' })
     next()
   }
+}
+
