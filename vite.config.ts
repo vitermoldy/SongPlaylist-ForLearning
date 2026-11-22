@@ -13,3 +13,4 @@ export default defineConfig({
   plugins: [react(), tailwindcss()],
   resolve: {
     alias: { "@": `${root}src` },
+    dedupe: ["react", "react-dom"],
