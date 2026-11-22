@@ -394,3 +394,4 @@ export default function App() {
         onUpdate={updatePlaylist}
         onOpen={openPlaylist}
         onDelete={deletePlaylist}
+        onClearAll={clearPlaylists}
