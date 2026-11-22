@@ -138,3 +138,4 @@ export function useYouTubePlayer(slot: RefObject<HTMLDivElement | null>, options
               const was = intentRef.current;
               starting.current = false;
               setIntent(false);
+              setNeedsTap(false);
