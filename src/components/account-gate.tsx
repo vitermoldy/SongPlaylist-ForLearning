@@ -150,3 +150,4 @@ export function AccountGate({ auth }: { auth: AuthState }) {
               </p>
             )}
             <button
+              id="gate-submit"
