@@ -61,3 +61,4 @@ export function useServerSync(snapshot: Saved, apply: (state: Saved) => void) {
       } else {
         agreed.current = local.updatedAt;
       }
+      setStatus("saved");
