@@ -50,3 +50,4 @@ export function SongsDialog({ open, onClose, songs, active, playing, savedAs, on
                 <button
                   type="button"
                   onClick={() => onPick(i)}
+                  aria-current={current ? "true" : undefined}
