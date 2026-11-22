@@ -101,3 +101,4 @@ export function SongsDialog({ open, onClose, songs, active, playing, savedAs, on
                   {savedAs ? `Lagunya tetap tersimpan di playlist ${savedAs.name}.` : "Daftar ini belum disimpan sebagai playlist."}
                 </>
               }
+              confirmLabel="Ya, kosongkan"
