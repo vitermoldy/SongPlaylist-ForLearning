@@ -102,6 +102,7 @@ export function loadSaved(): Saved {
       : [];
     const linked = typeof data.linked === "string" && playlists.some((p) => p.id === data.linked) ? data.linked : null;
     const updatedAt = typeof data.updatedAt === "number" && data.updatedAt >= 0 ? data.updatedAt : 0;
+    return { songs, current, volume, muted: data.muted === true, playlists, linked, updatedAt };
   } catch {
     return fallback;
   }
