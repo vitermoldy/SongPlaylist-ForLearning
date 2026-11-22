@@ -208,3 +208,4 @@ export function PlaylistsDialog({ open, onClose, playlists, songs, linked, saved
             <Confirm
               text={`${
                 playlists.length === 1 ? `Hapus playlist ${playlists[0].name}?` : `Hapus semua ${playlists.length} playlist?`
+              } Daftar putar yang sedang terbuka tidak ikut terhapus.`}
