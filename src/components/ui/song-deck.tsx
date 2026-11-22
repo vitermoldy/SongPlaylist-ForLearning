@@ -90,3 +90,4 @@ export const SongDeck = memo(function SongDeck({
   ground = "#E7E8EA",
   className,
   ref,
+}: SongDeckProps) {
