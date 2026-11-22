@@ -18,3 +18,4 @@ const headerButton =
 
 export default function App() {
   const [initial] = useState(loadSaved);
+  const [songs, setSongs] = useState<Song[]>(initial.songs);
