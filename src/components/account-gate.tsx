@@ -191,3 +191,4 @@ export function AccountGate({ auth }: { auth: AuthState }) {
               ref={retryRef}
               id="gate-retry"
               type="button"
+              onClick={() => void checkAccount()}
