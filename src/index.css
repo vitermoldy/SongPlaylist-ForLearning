@@ -43,3 +43,4 @@
   --accent-fill: var(--accent, #111318);
 }
 
+.range::-webkit-slider-runnable-track {
