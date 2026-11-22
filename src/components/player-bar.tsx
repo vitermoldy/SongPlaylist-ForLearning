@@ -50,3 +50,4 @@ function IconButton({ label, onClick, disabled, children }: { label: string; onC
     >
       {children}
     </button>
+  );
