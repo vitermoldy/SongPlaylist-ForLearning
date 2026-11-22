@@ -93,3 +93,4 @@ export function PlayerBar(p: Props) {
               {p.note.text}
             </p>
             {p.note.action && (
+              <button
