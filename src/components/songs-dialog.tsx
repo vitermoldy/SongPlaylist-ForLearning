@@ -70,3 +70,4 @@ export function SongsDialog({ open, onClose, songs, active, playing, savedAs, on
                 </button>
                 <a
                   href={watchUrl(s.id)}
+                  target="_blank"
