@@ -78,3 +78,4 @@
 }
 
 .range::-moz-range-thumb {
+  width: 12px;
