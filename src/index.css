@@ -67,3 +67,4 @@
 
 .range::-moz-range-track {
   height: 4px;
+  border-radius: 999px;
