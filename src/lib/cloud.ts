@@ -118,6 +118,7 @@ export const signUp = (username: string, password: string) => enter("/auth/regis
 /** Ends the session and forgets this browser's code; the caller clears the lists and reloads. */
 export async function signOut() {
   await call("/auth/logout", { method: "POST", body: "{}" }).catch(() => undefined);
+  try {
   if (!body.saved) return null;
   const { saved: _, ...state } = body;
   return state as Saved;
