@@ -292,3 +292,4 @@ function Cover({ id, alt, className, priority = false, lazy = false }: { id: str
       decoding="async"
       onLoad={(e) => {
         if (e.currentTarget.naturalWidth <= 120) setSize("hq");
+      }}
