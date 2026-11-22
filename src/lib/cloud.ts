@@ -15,6 +15,7 @@ function newCode() {
 
 /**
  * This browser's own code, made on the first visit. It is offered when signing up, so the
+ * lists this browser already saved on the server become the new account's.
   try {
     const saved = localStorage.getItem(CODE_KEY);
     if (saved && isCode(saved)) return saved;
