@@ -132,3 +132,4 @@ export function AccountGate({ auth }: { auth: AuthState }) {
                 type="password"
                 className={input}
                 value={password}
+                onChange={(e) => setPassword(e.target.value)}
