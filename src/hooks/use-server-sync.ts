@@ -72,3 +72,4 @@ export function useServerSync(snapshot: Saved, apply: (state: Saved) => void) {
       if (again.current) {
         again.current = false;
         void run();
+      }
