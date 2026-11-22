@@ -3,3 +3,5 @@
 
 import { useCallback, useEffect, useLayoutEffect, useRef, useState } from "react";
 import { ServerError, cleanCode, getState, isCode, loadCode, putState, saveCode } from "@/lib/cloud";
+import type { Saved } from "@/lib/playlist";
+
