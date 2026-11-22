@@ -331,3 +331,4 @@ function Corner({ song, i, ground, playing, onToggle }: { song: Song; i: number;
           style={{ background: accent, outlineColor: accent }}
         >
           {playing ? (
+            <Pause aria-hidden className="size-5 sm:size-6" strokeWidth={2.2} fill="currentColor" />
