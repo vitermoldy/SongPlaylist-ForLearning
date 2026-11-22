@@ -55,6 +55,8 @@ browser's, an older one is replaced.
 
 There are no accounts. Each browser gets a 12-character recovery code, shown under Playlist, Server
 lokal. Typed into another browser, it brings the list and the saved playlists there, and that browser
+then shares the code. Anyone who knows a code can read and replace its data.
+
 
 ## Structure
 
