@@ -80,3 +80,5 @@ export function useServerSync(snapshot: Saved, apply: (state: Saved) => void) {
   useEffect(() => {
     void sync();
     return () => window.clearTimeout(retry.current);
+  }, [code, sync]);
+
