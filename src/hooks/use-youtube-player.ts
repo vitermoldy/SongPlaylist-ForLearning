@@ -18,3 +18,4 @@ type Options = {
   /** False while the list is empty: the player is taken down. */
   enabled: boolean;
   initialId: string | null;
+  volume: number;
