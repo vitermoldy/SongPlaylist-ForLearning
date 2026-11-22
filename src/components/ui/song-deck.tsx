@@ -94,3 +94,4 @@ export const SongDeck = memo(function SongDeck({
   const deck = useRef<HTMLElement | null>(null);
   const reduce = useReducedMotion() ?? false;
   const count = songs.length;
+  const pos = useMotionValue(0);
