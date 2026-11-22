@@ -36,9 +36,7 @@ YouTube API key is needed.
 
 ```bash
 npm install
-npm run dev       # http://localhost:5195
-npm run build     # type check, then a static site in dist/
-npm run preview   # serve dist/ on port 5195
+cp .env.example .env   # fill in DB_USER and DB_PASSWORD of your MySQL account
 ```
 
 `dist/` uses relative paths, so it can go on any static host as is.
