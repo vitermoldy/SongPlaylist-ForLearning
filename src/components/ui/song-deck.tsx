@@ -48,3 +48,4 @@ const HALF_IN = ENTER * (1 - Math.cbrt(0.5)); // how far into its screen a card 
 const REST = (1 - ENTER) / 2; // from the middle of a card's resting stretch to its end
 
 /** How far card `j` has arrived (0 below the window, 1 landed) with the deck at `pos` cards. */
+function arrived(j: number, pos: number) {
