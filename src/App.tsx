@@ -262,3 +262,4 @@ export default function App() {
             {!empty && (
               <span className="hidden min-w-0 truncate text-[14px] text-[#3B3F48] tabular-nums sm:block">
                 {songs.length} lagu{savedAs ? `, playlist ${savedAs.name}` : ""}
+              </span>
