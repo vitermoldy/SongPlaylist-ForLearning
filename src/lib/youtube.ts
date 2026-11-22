@@ -27,3 +27,4 @@ export function parseYouTube(raw: string): YouTubeLink | null {
     url = new URL(/^https?:\/\//i.test(text) ? text : `https://${text}`);
   } catch {
     return null;
+  }
