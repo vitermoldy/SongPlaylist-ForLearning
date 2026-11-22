@@ -59,3 +59,4 @@ export function AddSongForm({ onAdd, className, autoFocus = false }: { onAdd: Ad
         id={`${id}-status`}
         role="status"
         className={cn(
+          "mt-2 min-h-[1.4em] text-[14px] leading-snug",
