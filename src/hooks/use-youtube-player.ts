@@ -230,3 +230,4 @@ export function useYouTubePlayer(slot: RefObject<HTMLDivElement | null>, options
   const toggle = useCallback(() => (intentRef.current ? pause() : play()), [pause, play]);
 
   const seek = useCallback(
+    (seconds: number) => {
