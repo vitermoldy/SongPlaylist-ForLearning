@@ -43,3 +43,5 @@ export function parseYouTube(raw: string): YouTubeLink | null {
   return null;
 }
 
+export const watchUrl = (id: string) => `https://www.youtube.com/watch?v=${id}`;
+
