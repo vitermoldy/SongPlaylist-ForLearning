@@ -204,3 +204,4 @@ export function createApi(getPool) {
       throw err
     } finally {
       conn.release()
+    }
