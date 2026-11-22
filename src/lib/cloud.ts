@@ -104,6 +104,7 @@ async function enter(path: string, payload: unknown, entry: Entry) {
     const body = await call<EntryBody>(path, { method: "POST", body: JSON.stringify(payload) });
     setAuth({ status: "signed-in", account: body.user, entry });
   } catch (error) {
+    if (error instanceof ServerError && error.kind === "http" && error.status < 500) throw error;
   if (!body.saved) return null;
   const { saved: _, ...state } = body;
   return state as Saved;
