@@ -290,3 +290,4 @@ export default function App() {
             playerSlot={slot}
             onSettle={settle}
             onToggle={toggleCard}
+            ground={GROUND}
