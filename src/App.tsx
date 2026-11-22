@@ -42,3 +42,4 @@ export default function App() {
   const addSection = useRef<HTMLElement>(null);
   // the latest list for callbacks that YouTube or a timer calls later
   const live = useRef({ songs, active });
+  useLayoutEffect(() => {
