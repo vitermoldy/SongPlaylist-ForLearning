@@ -112,6 +112,7 @@ async function enter(path: string, payload: unknown, entry: Entry) {
 
 export const signIn = (username: string, password: string) => enter("/auth/login", { username, password }, "login");
 
+/** A new account. The lists this browser holds become the account's. */
   if (!body.saved) return null;
   const { saved: _, ...state } = body;
   return state as Saved;
