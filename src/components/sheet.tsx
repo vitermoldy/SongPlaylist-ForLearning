@@ -66,3 +66,4 @@ export function Confirm({
       <div className="mt-3 flex flex-wrap gap-2">
         <button
           type="button"
+          onClick={onConfirm}
