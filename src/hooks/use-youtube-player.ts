@@ -169,3 +169,4 @@ export function useYouTubePlayer(slot: RefObject<HTMLDivElement | null>, options
     const p = player.current;
     if (status !== "ready" || !p) return;
     p.setVolume(volume);
+    if (muted) p.mute();
