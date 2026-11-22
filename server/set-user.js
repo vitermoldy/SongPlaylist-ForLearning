@@ -58,3 +58,4 @@ try {
   }
   await conn.query('INSERT INTO users (username, password_hash, device_id, created_at) VALUES (?, ?, ?, UTC_TIMESTAMP())', [username, hash, device])
   await conn.commit()
+  const [[deck]] = await pool.query('SELECT COUNT(*) AS n FROM deck_songs WHERE device_id = ?', [device])
