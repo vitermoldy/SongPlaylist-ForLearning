@@ -2,3 +2,5 @@
 
 import { thumbUrl } from "@/lib/youtube";
 
+export const FALLBACK_ACCENT = "#2B2F38";
+
