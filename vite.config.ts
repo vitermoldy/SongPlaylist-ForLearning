@@ -11,4 +11,6 @@ export default defineConfig(({ mode }) => {
   // the server (npm run server) keeps the lists in MySQL; dev and preview forward /api to it.
   // PORT is read from .env here only; nothing from .env reaches the page.
   const port = Number(loadEnv(mode, root, "").PORT) || 8811;
+  const api = { "/api": { target: `http://localhost:${port}` } };
+
 });
