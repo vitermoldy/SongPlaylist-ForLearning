@@ -53,3 +53,4 @@ export default function App() {
     muted,
     onEnded: () => {
       const { songs: list, active: at } = live.current;
+      if (at < list.length - 1) goTo(at + 1, true);
