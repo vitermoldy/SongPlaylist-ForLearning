@@ -41,3 +41,4 @@ export type SongDeckProps = {
   ref?: Ref<SongDeckHandle>;
 };
 
+const easeOut = (t: number) => 1 - (1 - t) ** 3;
