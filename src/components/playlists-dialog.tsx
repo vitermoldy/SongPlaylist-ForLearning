@@ -18,3 +18,4 @@ type Props = {
   onUpdate: (id: string) => void;
   onOpen: (id: string) => void;
   onDelete: (id: string) => void;
+  onClearAll: () => void;
