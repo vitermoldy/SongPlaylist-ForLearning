@@ -67,6 +67,7 @@ export type Saved = {
  */
 export function signatureOf(s: Omit<Saved, "updatedAt">) {
   return JSON.stringify([
+    s.songs.map((x) => [x.id, x.title, x.artist, x.problem ?? ""]),
 const isSong = (v: unknown): v is Song => {
   const s = v as Song;
   return !!s && typeof s.id === "string" && typeof s.title === "string" && typeof s.artist === "string";
