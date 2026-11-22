@@ -93,3 +93,4 @@ export function useServerSync(snapshot: Saved, apply: (state: Saved) => void) {
   }, [snapshot.updatedAt, sync]);
 
   // back to the tab, or back online: another browser may have saved meanwhile
+  useEffect(() => {
