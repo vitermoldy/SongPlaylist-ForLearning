@@ -94,3 +94,4 @@ export function ServerSync({ code, status, checkedAt, onSwitch }: Props) {
           </div>
 
           <form onSubmit={ask} noValidate>
+            <label htmlFor={inputId} className="mb-2 block text-[14px] font-semibold">
