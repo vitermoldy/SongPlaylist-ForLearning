@@ -235,3 +235,4 @@ export default function App() {
 
   useEffect(() => {
     if (!notice) return;
+    const timer = window.setTimeout(() => setNotice(null), 6000);
