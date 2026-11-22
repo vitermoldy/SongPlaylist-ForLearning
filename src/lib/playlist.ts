@@ -66,3 +66,4 @@ const isSong = (v: unknown): v is Song => {
 
 const isPlaylist = (v: unknown): v is SavedPlaylist => {
   const p = v as SavedPlaylist;
+  return !!p && typeof p.id === "string" && typeof p.name === "string" && Array.isArray(p.songs) && typeof p.savedAt === "number";
