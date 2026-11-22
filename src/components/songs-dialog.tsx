@@ -10,3 +10,4 @@ import { thumbUrl, watchUrl } from "@/lib/youtube";
 type Props = {
   open: boolean;
   onClose: () => void;
+  songs: Song[];
