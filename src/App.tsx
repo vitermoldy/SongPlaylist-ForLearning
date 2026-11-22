@@ -324,3 +324,4 @@ export default function App() {
         </section>
       </main>
 
+      <footer className="mx-auto max-w-[1180px] px-4 pt-20 pb-[200px] text-[14px] text-[#3B3F48] sm:px-8">
