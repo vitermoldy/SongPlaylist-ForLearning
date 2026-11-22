@@ -77,3 +77,4 @@
   background: var(--accent-fill);
 }
 
+.range::-moz-range-thumb {
