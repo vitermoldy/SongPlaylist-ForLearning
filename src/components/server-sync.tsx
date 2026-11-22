@@ -85,6 +85,7 @@ export function ServerSync({ auth, status, checkedAt, onFlush }: Props) {
           </button>
         </div>
       )}
+      {error && (
     </section>
   );
 }
