@@ -62,3 +62,4 @@ export function pickAccent(pixels: Uint8ClampedArray): string {
   const best = buckets.reduce((a, b) => (b.weight > a.weight ? b : a));
   if (!counted || best.weight < counted * 0.03) return FALLBACK_ACCENT;
 
+  const [h, s, l] = rgbToHsl([best.r / best.weight, best.g / best.weight, best.b / best.weight]);
