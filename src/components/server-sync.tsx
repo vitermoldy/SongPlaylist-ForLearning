@@ -120,3 +120,4 @@ export function ServerSync({ code, status, checkedAt, onSwitch }: Props) {
           </form>
 
           {asking && (
+            <Confirm
