@@ -151,3 +151,4 @@ export function useYouTubePlayer(slot: RefObject<HTMLDivElement | null>, options
 
     return () => {
       cancelled = true;
+      window.clearTimeout(tapTimer.current);
