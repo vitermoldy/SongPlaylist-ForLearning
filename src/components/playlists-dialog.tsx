@@ -66,3 +66,4 @@ export function PlaylistsDialog({ open, onClose, playlists, songs, linked, saved
     event.preventDefault();
     const clean = name.trim() || `Playlist ${playlists.length + 1}`;
     onSave(clean);
+    setDone(`Tersimpan sebagai ${clean}.`);
