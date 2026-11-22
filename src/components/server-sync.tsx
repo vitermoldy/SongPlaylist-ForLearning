@@ -16,3 +16,4 @@ const clock = (ms: number) => new Date(ms).toLocaleTimeString("id-ID", { hour: "
 
 /** Where the lists are kept besides this browser, the recovery code, and taking over another browser's data. */
 export function ServerSync({ code, status, checkedAt, onSwitch }: Props) {
+  const titleId = useId();
