@@ -8,3 +8,4 @@ export type Song = {
   title: string;
   artist: string;
   /** The play button's colour, read from the cover the first time the song is shown. */
+  accent?: string;
