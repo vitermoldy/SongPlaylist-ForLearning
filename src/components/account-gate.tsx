@@ -82,3 +82,4 @@ export function AccountGate({ auth }: { auth: AuthState }) {
     <dialog
       ref={ref}
       id="auth-gate"
+      aria-labelledby={titleId}
