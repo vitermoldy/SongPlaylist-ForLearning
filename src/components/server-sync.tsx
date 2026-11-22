@@ -79,3 +79,4 @@ export function ServerSync({ code, status, checkedAt, onSwitch }: Props) {
           <div>
             <p className="text-[14px] leading-snug text-[#3B3F48]">
               Kode browser ini. Ketik di browser lain untuk membawa daftar putar dan playlist ke sana.
+            </p>
