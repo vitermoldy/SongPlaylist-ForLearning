@@ -96,3 +96,4 @@ function cleanState(body) {
   const current = typeof body.current === 'string' && seen.has(body.current) ? body.current : (songs[0]?.id ?? null)
   const volume = Number.isInteger(body.volume) && body.volume >= 0 && body.volume <= 100 ? body.volume : 80
   const linked = typeof body.linked === 'string' && ids.has(body.linked) ? body.linked : null
+  return { updatedAt, current, volume, muted: body.muted === true, linked, songs, playlists }
