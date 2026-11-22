@@ -74,3 +74,4 @@ export async function addLink(raw: string, existing: string[], onProgress?: (tex
   let text = `${parts.join(", ")}.`;
   if (notYet.length > PLAYLIST_LIMIT) text += ` Hanya ${PLAYLIST_LIMIT} lagu pertama yang diambil.`;
   return { ok: songs.length > 0, text, songs };
+}
