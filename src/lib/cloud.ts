@@ -123,6 +123,8 @@ export async function signOut() {
   } catch {
     // blocked storage: nothing was kept either
   }
+}
+
   if (!body.saved) return null;
   const { saved: _, ...state } = body;
   return state as Saved;
