@@ -120,3 +120,4 @@ export function useYouTubePlayer(slot: RefObject<HTMLDivElement | null>, options
               setState(s);
               if (s === PLAYING) {
                 starting.current = false;
+                setStarted(true);
