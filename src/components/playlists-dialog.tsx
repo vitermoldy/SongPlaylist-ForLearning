@@ -98,3 +98,4 @@ export function PlaylistsDialog({ open, onClose, playlists, songs, linked, saved
                   className="mt-2 h-11 rounded-[12px] bg-[#111318] px-4 text-[14px] font-semibold text-white hover:bg-[#2A2E37] active:bg-black"
                 >
                   Perbarui {linked.name}
+                </button>
