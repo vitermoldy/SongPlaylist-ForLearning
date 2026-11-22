@@ -62,3 +62,4 @@ try {
   const [[lists]] = await pool.query('SELECT COUNT(*) AS n FROM playlists WHERE device_id = ?', [device])
   console.log(
     free.length
+      ? `${config.name}: akun ${username} dibuat dan memegang data yang sudah ada: ${deck.n} lagu di daftar putar, ${lists.n} playlist${moved ? ` (${moved} playlist dari browser lain ikut digabung)` : ''}.`
