@@ -66,3 +66,4 @@ export function SongsDialog({ open, onClose, songs, active, playing, savedAs, on
                       {s.problem ? `Tidak bisa diputar: ${s.problem}` : s.artist}
                     </span>
                   </span>
+                  {current && <span className="sr-only">{playing ? "(sedang diputar)" : "(dipilih)"}</span>}
