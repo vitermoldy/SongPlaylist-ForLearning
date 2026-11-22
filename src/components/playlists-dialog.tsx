@@ -29,3 +29,4 @@ const savedDate = (ms: number) => {
 };
 
 /** Up to four covers of the playlist's first songs, as one 16:9 tile. */
+function Mosaic({ songs }: { songs: Song[] }) {
