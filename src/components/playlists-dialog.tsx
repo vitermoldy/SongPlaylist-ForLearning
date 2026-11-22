@@ -146,3 +146,4 @@ export function PlaylistsDialog({ open, onClose, playlists, songs, linked, saved
                 <li key={p.id} className="rounded-[14px] p-2 hover:bg-white/70">
                   <div className="flex items-center gap-3">
                     <Mosaic songs={p.songs} />
+                    <span className="min-w-0 flex-1">
