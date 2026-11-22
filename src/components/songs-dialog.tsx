@@ -13,3 +13,4 @@ type Props = {
   songs: Song[];
   active: number;
   playing: boolean;
+  /** The saved playlist holding exactly these songs, if any. */
