@@ -91,3 +91,4 @@ export function PlayerBar(p: Props) {
           <div className="flex items-center justify-between gap-3 border-b border-[#111318]/10 px-1 pt-0.5 pb-2">
             <p role="status" className="text-[14px] leading-snug text-[#111318]">
               {p.note.text}
+            </p>
