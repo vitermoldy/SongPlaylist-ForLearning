@@ -57,3 +57,4 @@ export function useServerSync(snapshot: Saved, apply: (state: Saved) => void) {
           // another browser with this code saved in between: look again and take its copy
           if (error instanceof ServerError && error.status === 409) again.current = true;
           else throw error;
+        }
