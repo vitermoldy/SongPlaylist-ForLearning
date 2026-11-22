@@ -138,3 +138,5 @@ export function PlayerBar(p: Props) {
             </IconButton>
           </div>
 
+          <Progress time={p.time} duration={p.duration} onSeek={p.onSeek} className="hidden flex-1 sm:flex" />
+
