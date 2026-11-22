@@ -15,3 +15,4 @@ type Props = {
   duration: number;
   volume: number;
   muted: boolean;
+  canFullscreen: boolean;
