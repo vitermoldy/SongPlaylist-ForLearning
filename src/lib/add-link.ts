@@ -62,3 +62,4 @@ export async function addLink(raw: string, existing: string[], onProgress?: (tex
     try {
       return toSong(id, await fetchInfo(id));
     } catch {
+      return null;
