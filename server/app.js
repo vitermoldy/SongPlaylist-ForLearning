@@ -198,3 +198,4 @@ export function createApi(getPool) {
         if (rows.length) await conn.query('INSERT INTO playlist_songs (device_id, playlist_id, position, video_id) VALUES ?', [rows])
       }
       await conn.commit()
+      res.json({ ok: true, updatedAt: state.updatedAt, songs: state.songs.length, playlists: state.playlists.length })
