@@ -119,3 +119,4 @@ export function useServerSync(snapshot: Saved, apply: (state: Saved) => void) {
       codeRef.current = next;
       setCode(next);
       setStatus("saved");
+      setCheckedAt(Date.now());
