@@ -70,3 +70,4 @@ export function ServerSync({ code, status, checkedAt, onSwitch }: Props) {
         {line[status]}
       </p>
 
+      <details className="group mt-1">
