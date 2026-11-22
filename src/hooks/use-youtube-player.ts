@@ -108,3 +108,4 @@ export function useYouTubePlayer(slot: RefObject<HTMLDivElement | null>, options
           playerVars: { playsinline: 1, rel: 0, controls: 0, iv_load_policy: 3, disablekb: 1, origin: window.location.origin },
           events: {
             onReady: (event) => {
+              if (cancelled) return;
