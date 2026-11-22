@@ -52,3 +52,4 @@ export async function addLink(raw: string, existing: string[], onProgress?: (tex
   try {
     ids = [...new Set(await expandPlaylist(link.list))];
   } catch {
+    return fail("Playlist ini tidak bisa dibuka. Mungkin privat, atau YouTube hanya memutarnya di situsnya sendiri.");
