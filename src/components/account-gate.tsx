@@ -72,3 +72,4 @@ export function AccountGate({ auth }: { auth: AuthState }) {
       setInvalid("pass");
     } finally {
       setBusy(false);
+    }
