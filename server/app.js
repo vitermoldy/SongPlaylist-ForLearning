@@ -170,3 +170,4 @@ export function createApi(getPool) {
       // every song either list holds, newest title and colour winning
       const catalogue = new Map()
       for (const s of [...state.songs, ...state.playlists.flatMap((p) => p.songs)]) catalogue.set(s.id, s)
+      if (catalogue.size) {
