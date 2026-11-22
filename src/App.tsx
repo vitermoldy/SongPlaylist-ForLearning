@@ -66,3 +66,4 @@ export default function App() {
         setSongs((all) => all.map((s) => (s.id === failed.id ? { ...s, problem: reason } : s)));
       }
       const next = list[at + 1];
+      if (wasPlaying && next) {
