@@ -64,3 +64,4 @@ src/lib/color.ts                    accent colour from a cover
 
 shadcn's CLI (`npx shadcn add ...`) and components copied from shadcn-style libraries import each
 other through `@/components/ui/...` and `@/lib/utils`. Keeping that folder and those aliases (in
+`components.json`, `tsconfig.json` and `vite.config.ts`) means another component can be pasted or
