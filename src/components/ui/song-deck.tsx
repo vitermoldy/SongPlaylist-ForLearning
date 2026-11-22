@@ -271,3 +271,4 @@ function PlayerCard({ song, i, pos, still, ground, playing, interactive, onToggl
             className={cn("pointer-events-none absolute inset-0 size-full object-cover transition-opacity duration-300", showVideo && "opacity-0")}
           />
         </div>
+        <Corner song={song} i={i} ground={ground} playing={playing} onToggle={onToggle} />
