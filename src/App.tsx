@@ -17,6 +17,7 @@ import {
   saveState,
   signatureOf,
   type Saved,
+  type SavedPlaylist,
 import { describePlayError } from "@/lib/youtube";
 
 const GROUND = "#E7E8EA";
