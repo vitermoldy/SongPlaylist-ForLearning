@@ -96,3 +96,4 @@ export const SongDeck = memo(function SongDeck({
   const count = songs.length;
   const pos = useMotionValue(0);
   // a light, critically damped smoothing: it follows the wheel closely and never overshoots
+  const smooth = useSpring(pos, { stiffness: 380, damping: 48, mass: 0.35 });
