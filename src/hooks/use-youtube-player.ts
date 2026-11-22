@@ -39,3 +39,5 @@ export function useYouTubePlayer(slot: RefObject<HTMLDivElement | null>, options
   const tapTimer = useRef(0);
   // between asking for a song and its first frame YouTube can report a passing pause or cue;
   // those are not the listener pausing, so they leave the play button alone
+  const starting = useRef(false);
+
