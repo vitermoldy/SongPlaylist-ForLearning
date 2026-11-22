@@ -199,3 +199,4 @@ export default function App() {
     setPlaylistsOpen(false);
     changeSongs(chosen.songs, "first", first.id);
     setLinked(chosen.id);
+    load(first.id, true);
