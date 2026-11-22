@@ -91,3 +91,4 @@ export default function App() {
   );
 
   // the scroll came to rest on another card: that song is picked, and keeps playing if music was on
+  const settle = useCallback(
