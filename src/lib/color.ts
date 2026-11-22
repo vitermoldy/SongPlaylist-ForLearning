@@ -8,3 +8,4 @@ type RGB = [number, number, number];
 
 function rgbToHsl([r, g, b]: RGB): RGB {
   const rn = r / 255, gn = g / 255, bn = b / 255;
+  const max = Math.max(rn, gn, bn), min = Math.min(rn, gn, bn);
