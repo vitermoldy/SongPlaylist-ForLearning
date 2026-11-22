@@ -223,3 +223,4 @@ export default function App() {
     saveState({ songs, current: song?.id ?? null, volume, muted, playlists, linked });
   }, [songs, song?.id, volume, muted, playlists, linked]);
 
+  // each card's play button takes its colour from the song's cover, read once and remembered
