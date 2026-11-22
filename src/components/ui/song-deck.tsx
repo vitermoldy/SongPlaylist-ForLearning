@@ -136,3 +136,5 @@ export const SongDeck = memo(function SongDeck({
       window.removeEventListener("scroll", onScroll);
       window.removeEventListener("resize", onResize);
     };
+  }, [count, measure]);
+
