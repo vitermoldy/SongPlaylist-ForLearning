@@ -347,3 +347,4 @@ export default function App() {
           time={player.time}
           duration={player.duration}
           volume={volume}
+          muted={muted}
