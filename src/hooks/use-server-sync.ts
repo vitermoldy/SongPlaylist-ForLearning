@@ -112,3 +112,4 @@ export function useServerSync(snapshot: Saved, apply: (state: Saved) => void) {
     if (next === codeRef.current) return { ok: false, text: "Itu kode browser ini sendiri." };
     try {
       const remote = await getState(next);
+      if (!remote) return { ok: false, text: "Belum ada data tersimpan dengan kode ini." };
