@@ -132,3 +132,4 @@ export function useYouTubePlayer(slot: RefObject<HTMLDivElement | null>, options
                 starting.current = false;
                 setIntent(false);
                 handlers.current.onEnded();
+              }
