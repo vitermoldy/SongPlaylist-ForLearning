@@ -5,3 +5,4 @@ import type { SavedPlaylist, Song } from "@/lib/playlist";
 import { thumbUrl } from "@/lib/youtube";
 
 type Props = {
+  open: boolean;
