@@ -32,3 +32,4 @@ export default function App() {
   const active = found >= 0 ? found : 0;
   const song = songs[active] ?? null;
   const linkedPlaylist = playlists.find((p) => p.id === linked) ?? null;
+  // the saved playlist holding exactly what the deck holds now, the opened one first
