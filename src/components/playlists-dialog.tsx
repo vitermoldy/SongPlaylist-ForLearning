@@ -91,3 +91,4 @@ export function PlaylistsDialog({ open, onClose, playlists, songs, linked, saved
                 </p>
                 <button
                   type="button"
+                  onClick={() => {
