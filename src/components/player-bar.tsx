@@ -164,3 +164,4 @@ export function PlayerBar(p: Props) {
         </div>
 
         <Progress time={p.time} duration={p.duration} onSeek={p.onSeek} className="flex px-1 pb-0.5 sm:hidden" />
+      </div>
