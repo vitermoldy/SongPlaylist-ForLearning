@@ -13,8 +13,7 @@ function newCode() {
   return Array.from(bytes, (b) => ALPHABET[b % 32]).join("");
 }
 
-/** This browser's recovery code, made on the first visit. */
-export function loadCode(): string {
+/**
   try {
     const saved = localStorage.getItem(CODE_KEY);
     if (saved && isCode(saved)) return saved;
