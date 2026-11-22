@@ -6,7 +6,7 @@ import { forgetSaved } from "@/lib/playlist";
 import type { SyncStatus } from "@/hooks/use-server-sync";
 
 type Props = {
-  code: string;
+  auth: AuthState;
   status: SyncStatus;
   checkedAt: number | null;
   onSwitch: (code: string) => Promise<SwitchResult>;
