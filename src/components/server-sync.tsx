@@ -38,3 +38,4 @@ export function ServerSync({ code, status, checkedAt, onSwitch }: Props) {
     try {
       await navigator.clipboard.writeText(code);
       setCopied(true);
+      window.setTimeout(() => setCopied(false), 2000);
