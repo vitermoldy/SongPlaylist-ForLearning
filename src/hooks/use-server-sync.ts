@@ -86,3 +86,4 @@ export function useServerSync(snapshot: Saved, apply: (state: Saved) => void) {
   useEffect(() => {
     if (snapshot.updatedAt === agreed.current) return;
     window.clearTimeout(debounce.current);
+    debounce.current = window.setTimeout(() => {
