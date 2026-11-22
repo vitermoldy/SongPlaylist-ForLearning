@@ -6,7 +6,7 @@ import { useCallback, useEffect, useLayoutEffect, useRef, useState, useSyncExter
 import { ServerError, authState, getState, onAuth, putState } from "@/lib/cloud";
 import type { Saved } from "@/lib/playlist";
 
-export type SyncStatus = "checking" | "saving" | "saved" | "offline" | "nodb" | "error";
+export type SyncStatus = "signed-out" | "checking" | "saving" | "saved" | "offline" | "nodb" | "error";
 
 export type SwitchResult = { ok: boolean; text: string };
 
