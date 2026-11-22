@@ -15,3 +15,4 @@ direction; everything added around it follows it.
 | Danger | `#8F1A1A` | Delete and clear actions, errors. 7.6:1 on white. |
 | Accent | per song | Read from the song's cover and deepened until a white icon reads at 4.5:1. The music's own colour marks its play button, the way the original used each site's brand colour for its arrow. |
 
+Light only: the covers and videos carry the colour, and the deck's corner cut-outs depend on the
