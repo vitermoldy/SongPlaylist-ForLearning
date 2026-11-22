@@ -310,3 +310,4 @@ function Corner({ song, i, ground, playing, onToggle }: { song: Song; i: number;
     </svg>
   );
   return (
+    <div className="absolute right-0 bottom-0 z-10">
