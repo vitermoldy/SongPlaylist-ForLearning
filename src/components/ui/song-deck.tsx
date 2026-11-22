@@ -70,3 +70,4 @@ function useCardMotion(i: number, pos: MotionValue<number>) {
     y: useTransform(pos, (v) => `${(1 - arrived(i, v)) * 108 - above(v) * 5}svh`), // covered cards lift so their edges show
     rotateX: useTransform(pos, (v) => -(1 - arrived(i, v)) * 30 + above(v) * 5),
     scale: useTransform(pos, (v) => 0.9 + 0.1 * arrived(i, v) - above(v) * 0.05),
+    filter: useTransform(pos, (v) => `blur(${((1 - arrived(i, v)) ** 2 * 12 + above(v) * 1.1).toFixed(2)}px)`),
