@@ -30,3 +30,4 @@ export function loadCode(): string {
   }
 }
 
+export function saveCode(code: string) {
