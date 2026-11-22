@@ -144,3 +144,4 @@ export function createApi(getPool) {
     for (const r of listSongs) byList.get(r.playlist_id)?.push(toSong(r))
     res.json({
       saved: true,
+      updatedAt: Number(deck.client_updated),
