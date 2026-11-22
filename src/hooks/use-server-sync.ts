@@ -110,3 +110,4 @@ export function useServerSync(snapshot: Saved, apply: (state: Saved) => void) {
     const next = cleanCode(raw);
     if (!isCode(next)) return { ok: false, text: "Kode pemulihan terdiri dari 12 huruf dan angka." };
     if (next === codeRef.current) return { ok: false, text: "Itu kode browser ini sendiri." };
+    try {
